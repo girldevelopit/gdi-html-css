@@ -1,0 +1,518 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <meta name="description" content="Girl Develop It Web Design Essentials 1 Cohort Series">
+  <meta name="author" content="Girl Develop It">
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+
+  <!-- Update with GDI Course Name -->
+  <title>GDI - Web Design Essentials 1, Class 2</title>
+
+  <link rel="icon" type="image/x-icon" href="./assets/imgs/favicon.ico" />
+
+  <!-- RevealJS CDN -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reveal.js@4.1.0/dist/reset.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reveal.js@4.1.0/dist/reveal.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reveal.js@4.1.0/dist/theme/simple.css" id="theme">
+
+  <!-- GDI Custom Theme -->
+  <link rel="stylesheet" href="./assets/css/gdi-theme.css">
+
+  <!-- Theme used for syntax highlighted code -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.1.0/styles/monokai.min.css">
+</head>
+<body>
+  <div class="reveal">
+    <!-- Start of Slides container -- Any section element in this container is displayed as a slide -->
+    <div class="slides">
+      <!-- Course and Class Titles -->
+      <section>
+        <h2>Web Design Essentials 1</h2>
+        <h2>Class 2</h3>
+      </section>
+
+      <!-- Class Agenda -->
+      <section>
+        <h3>AGENDA</h3>
+        <ul>
+          <li>Class 1 Review</li>
+          <li>HTML, HTML Elements & Tags (contd)
+            <ul>
+              <li>Links</li>
+            </ul>
+          </li>
+          <li>Semantic HTML</li>
+          <li>Accessibility Basics</li>
+          <li>Intro to CSS</li>
+          <li>Class 3 Preview</li>
+          <li>Class Feedback and Q&A</li>
+        </ul>
+      </section>
+      
+      <!-- Stretch Break -->
+      <section>
+        <h3>Stretch - "Bio" Break</h3>
+        <p>8:00p EST / 7:00p CST / 5:00p PST</p>
+      </section>
+
+      <!-- HTML -->
+      <section>
+        <h3>HTML, HTML Elements & Tags (contd)</h3>
+      </section>
+
+      <!-- Links -->
+      <section>
+        <h3>Links</h3>
+        <p style="font-size: 36px;">Links connect an HTML page to other pages in the same project or parent directory, or to external sites.</p>
+      </section>
+
+      <!-- Anchor tag -->
+      <section>
+        <h3>Anchor Tag</h3>
+        <p style="font-size: 36px; margin-bottom: 2rem">Links are created with the anchor or "a" tag: 
+          <code>&lt;a&gt;&lt;/a&gt;</code></p>
+        <p style="font-size: 36px;">Note: The <code>&lt;a&gt;</code> should not be confused with the <code>&lt;link&gt;</code> tag.</p>
+      </section>
+
+      <!-- Creating a link -->
+      <section>
+        <h3>Creating a Link</h3>
+        <ul>
+          <li>The <code>&lt;a&gt;&lt;/a&gt;</code> tag</li>
+          <li>An <code>href</code> attribute: Destination where the link points to</li>
+          <li><strong>Content</strong>: Text or image that becomes the clickable link</li>
+        </ul><br>
+        <pre><code class="html" style="min-width: 44em;">&lt;a href="http://www.girldevelopit.com"&gt;Girl Develop It&lt;/a&gt;
+        </code></pre>
+      </section>
+
+      <!-- HREF attribute -->
+      <section>
+        <h3>href Attribute</h3>
+        <p style="font-size: 36px;"><code>href</code> attribute can point to:</p>
+        <ul>
+          <li>an external URL</li>
+          <li>an internal page (same root directory or project)</li>
+          <li>a telephone number</li>
+          <li>an email address</li>
+          <li>a section on the same page (a bookmark)</li>
+        </ul>
+      </section>
+
+      <!-- Link States  -->
+      <section>
+        <h3>Link Styles and States</h3>
+        <p style="font-size: 36px;">The default appearance of a link is <span style="text-decoration: underline;">underlined text</span>.</p>
+        <p style="font-size: 36px;">The <code>state</code> or status of a link also affects its appearance: </p>
+        <ul>
+          <li>An unvisited link is <span style="color:blue">blue</span></li>
+          <li>A visited link is <span style="color:purple">purple</span></li>
+          <li>An active link is <span style="color:red">red</span></li>
+        </ul>
+      </section>
+
+      <!-- Link Targets  -->
+      <section>
+        <h3>Link Targets</h3>
+        <p style="font-size: 36px;">The link target is an optional attribute that tells the browser where to open the link.</p>
+        <pre><code class="html">&lt;a href="home.html" target="_self"&gt;Link Text&lt;/a&gt;</code></pre>
+        <pre><code class="html">&lt;a href="home.html" target="_blank"&gt;Link Text&lt;/a&gt;</code></pre>
+      </section>
+
+      <!-- Relative & Absolute links -->
+      <section>
+        <h3>Absolute & Relative Paths</h3>
+        <ul>
+          Absolute Path:
+          <li>Points to the full name or address (including the root directory) of a file or page</li>
+          <li style="color: #f05b62;">Ex: "https://girldevelopit.com/community/some-file.html"</li><br>
+          Relative Path:
+          <li>Points to content from within the same domain or directory</li>
+          <li style="color: #f05b62;">Ex: "community/some-file.html"</li>
+        </ul>
+      </section>
+      
+      <!-- Bookmarks -->
+      <section>
+        <h3>Bookmark Links</h3>
+        <p style="font-size: 36px;">The anchor tag can be used to create links to specific parts of a page.</p>
+      </section>
+
+      <!--Creating Bookmarks  -->
+      <section>
+        <h3>Creating a Bookmark Link</h3>
+        <ul>
+          <li>Use the <code>id</code> attribute to create and name a bookmark</li>
+        </ul>
+        <pre><code class="html" style="min-width: 44em;">&lt;h3 id="seasons"&gt;Season 1 Episodes&lt;/h3&gt;</code></pre>
+
+        <ul>
+          <li>Add a link/anchor to the bookmark</li>
+        </ul>
+        <pre><code class="html" style="min-width: 44em;">&lt;a href="#seasons"&gt;Watch Season 1&lt;/a&gt;</code></pre>
+      </section>
+      
+      <!-- Exercise - External and Bookmark links-->
+      <section>
+        <h3>Practice</h3>
+        <p style="font-size: 36px;">Add a few external links and bookmark links to your project page.</p>
+      </section>
+
+      <!-- HTML Elements -->
+      <section>
+        <h3>HTML Elements</h3>
+        <p style="font-size: 36px; margin-bottom: 2rem">There are over 100 HTML elements:</p>
+        <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element" target="_blank">List of HTML Elements (MDN)</a>
+      </section>
+
+      <!-- Common Elements -->
+      <section>
+        <h3>Other Common HTML Elements</h3>
+        <p style="font-size: 36px; margin-bottom: 1rem"><code>table, form, button,</code></p>
+        <p style="font-size: 36px; margin-bottom: 1rem"><code>header, footer, nav,</code></p>
+        <p style="font-size: 36px; margin-bottom: 1rem"><code>section, main, article,</code></p>
+        <p style="font-size: 36px; margin-bottom: 1rem"><code>video, figure, embed,</code></p>
+        <p style="font-size: 36px; margin-bottom: 1rem"><code><span style="color: #f05b62;">div, span,</span> ... </code></p>
+      </section>
+
+      <!-- Semantic HTML -->
+      <section>
+        <h3>Semantic HTML</h3>
+      </section>
+
+      <!-- What is Semantic HTML  -->
+      <section>
+        <h3>What is Semantic HTML?</h3>
+        <p style="font-size: 36px; margin-bottom: 1rem">Using HTML elements that give meaning to or describe the content of a page.</p>
+      </section>
+      
+      <!-- Non Semantic HTML -->
+      <section>
+        <h3>Non-Semantic HTML</h3>
+        <p style="font-size: 36px; margin-bottom: 1rem">HTML elements that do not describe content or have any meaning.</p>
+      </section>
+
+      <!-- Example code of Semantic and Non-Semantic code -->
+      <section>
+        <h3>Semantic vs. Non-Semantic Code</h3>
+          <pre><code class="html" style="min-width: 44em;">&lt;div&gt;Watch Season 1&lt;/div&gt;</code></pre>
+          <pre><code class="html" style="min-width: 44em;">&lt;button&gt;Watch Season 1&lt;/button&gt;</code></pre>
+      </section>
+
+      <!-- Example screenshot of Semantic and Non-Semantic structure -->
+      <section>
+        <h3>Semantic vs. Non-Semantic Code</h3>
+        <img src="./assets/imgs/semantic-html.jpeg" width="700px" alt="Semantic versus non-semantic hierarchy">
+        <p><small>Image source:
+          <a href="https://seekbrevity.com/semantic-markup-important-web-design/" target="_blank">SeekBrevit.com</a></small>
+        </p>
+      </section>
+      
+      <!-- What is a Div and a Span -->
+      <section>
+        <h3>Non-Semantic HTML Elements</h3>
+        <p style="font-size: 36px; margin-bottom: 1rem">Two common non-semantic elements:</p>
+        <ul>
+          <li><code>div</code>: Often used as a generic container for grouping content</li>
+          <li><code>span</code>: Often used as a generic wrapper to style inline content </li>
+        </ul>
+      </section>
+
+      <!-- Using Divs and Spans -->
+      <section>
+        <h3>Using Divs & Spans</h3>
+        <pre><code class="html" style="min-width: 44em;">
+&lt;div&gt;
+  &lt;h2&gt;Season 1&lt;/h2&gt;
+  &lt;h3&gt;Episode 5&lt;/h3&gt;
+  &lt;p&gt;While on a mission, Lorca is captured by the Klingons 
+  and unexpectedly finds himself in the company of prisoner of war 
+  Starfleet Lieutenant Ash Tyler and notorious criminal Harry Mudd.&lt;/p&gt;
+&lt;/div&gt;</code></pre>
+        <pre><code class="html" style="min-width: 44em;">&lt;p&gt;Watch Season 1 and stay tuned for &lt;span&gt;Season 2&lt;/span&gt;&lt;/p&gt;</code></pre>
+      </section>
+      
+      <!--Why use semantic HTML? -->
+      <section>
+        <h3>Why Use Semantic HTML?</h3>
+        <ul>
+          <li>Makes our code accessible</li>
+          <li>Improves SEO ranking</li>
+          <li>Easier to read and maintain</li>
+        </ul>
+        <p style="font-size: 36px; margin-top: 1.75rem; font-weight: bolder;">Make writing semantic HTML your default practice</p>
+
+      </section>
+
+      <!-- Say no to Divs? -->
+      <section>
+        <h3>Sooo, say no to divs?</h3>
+        <ul>
+          <li>There are still good and reasonable use cases for <code>divs</code>
+            <ul>
+              <li>Ex: Grouping items for a card component</li>
+              <li>Ex: A <code>div</code> can live inside a semantic parent element and be used to organize/group other children elements</li>
+            </ul>
+          </li>
+          <li>When necessary, a <code>div</code> can be made semantic by adding accessibility attributes such as <code>role</code> or <code>aria</code> properties</li>
+        </ul>
+      </section>
+
+      <!-- Emphasis vs Presentation -->
+      <section>
+        <h3>Emphasis vs Presentation</h3>
+        <p>Need to call out important text?</p>
+        <p>Use semantic HTML elements:</p>
+        <p><code>heading tags (h1, h2, etc), strong, em</code></p>
+        <p>Otherwise, use CSS for visual or stylistic effects</p>
+      </section>
+
+      <!-- Exercise - Semantic HTML -->
+      <section>
+        <h3>A Short Semantic HTML Exercise</h3>
+        <p style="font-size: 36px; margin-bottom: 2rem"><a href="https://developer.mozilla.org/en-US/docs/Learn/Accessibility/Test_your_skills:_HTML_accessibility" target="_blank">Test Your Skills: HTML Accessibility</a> (MDN)</p>
+        <p>Attempt the first exercise: "HTML Accessibility 1"</p>
+      </section>
+
+      <!-- Accessibility -->
+      <section>
+        <h3>Accessiblity (A11Y)</h3>
+        <h3>No longer an after-thought!</h3>
+      </section>
+
+      <!-- A11Y Mindset -->
+      <section>
+        <h3>A11Y Mindset</h3>
+        <ul>
+          <li>Cultivate an A11Y-first development practice
+            <ul>
+              <li>Accessibility before aesthetics</li>
+              <li>Using semantic HTML</li>
+            </ul>
+          </li>
+          <li>Run sites/projects through A11Y plugins, such as: 
+            <ul>
+              <li><a href="https://wave.webaim.org/extension/" target="_blank">WAVE - Web Accessibility Evaluation Tool</a></li>
+              <li><a href="https://siteimprove.com/en-us/core-platform/integrations/browser-extensions/" target="_blank">SiteImprove Accessibility Checker</a></li>
+              <li>Google Lighthouse (In Chrome Developer Tools)</li>
+              <li><a href="https://www.deque.com/axe/devtools/" target="_blank">axe DevTools</a></li>
+            </ul>
+          </li>
+          <li>Take User Experience and/or A11Y courses</li>
+        </ul>
+      </section>
+      
+      <!-- A11Y Resources -->
+      <section>
+        <h3>A11Y Resources</h3>
+        <p style="font-size: 36px;"><a href="https://a11y-101.com/" target="_blank">A11Y-101</a></p>
+        <p><a href="https://www.w3.org/WAI/standards-guidelines/wcag/" target="_blank">Web Content Accessibility Guidelines (WCAG)</a></p>
+        <p><a href="https://developer.mozilla.org/en-US/docs/Learn/Accessibility" target="_blank">Accessibility Overview (MDN)</a></p>
+      </section>
+
+      <!-- CSS Basics -->
+      <section>
+        <h3>CSS</h3>
+        <h3>Cascading Style Sheets</h3>
+      </section>
+
+      <!-- What is CSS? -->
+      <section>
+        <h3>What is CSS?</h3>
+        <p style="font-size: 36px; margin-bottom: 2rem;">CSS is a "style sheet language" that lets us apply design and layout to content on an HTML page.</p>
+      </section>
+
+      <!-- Anatomy of CSS -->
+      <section>
+        <h3>Anatomy of CSS</h3>
+        <p style="font-size: 36px;">CSS syntax or rule consists of a selector and declarations of property-value pairs:</p>
+<pre><code class="css">selector {
+  property: value;
+  property: value;
+}</code></pre>
+<p>For example:</p>
+<pre><code class="css">p {
+  color: yellow;
+  background-color: black;
+}</code></pre>
+      </section>
+
+      <!-- CSS and HTML -->
+      <section>
+        <h3>CSS & HTML</h3>
+        <p style="font-size: 36px; margin-bottom: 2rem;">Some HTML elements have default style, but CSS allows for added
+          customization.</p>
+      
+        <p style="font-size: 36px;">Without CSS, an HTML page is merely a page with text, images and links.</p>
+      </section>
+
+      <!-- Connecting HTML to CSS-->
+      <section>
+        <h3>Connecting CSS to HTML</h3>
+        <p>Inline CSS</p>
+        <p>Embedded or Internal CSS</p>
+        <p>External CSS Stylesheet</p>
+      </section>
+
+      <!-- Inline CSS -->
+      <section>
+        <h3>Inline CSS</h3>
+        <pre><code class = "css">&lt;p style="color:red"&gt;Some text.&lt;/p&gt;</code></pre>
+        <ul>
+          <li>Uses the <code>style</code> attribute.</li>
+          <li>Only applies to one element at a time.</li>
+          <li>Not preferred.</li>
+        </ul>
+      </section>
+
+      <!-- Exercise - Inline CSS-->
+      <section>
+        <h3>Practice</h3>
+        <p style="font-size: 36px;">Add an inline color style to any element in your HTML document.</p>
+      </section>
+
+      <!-- Internal or Embedded CSS -->
+      <section>
+        <h3>Embedded or Internal CSS</h3>
+<pre><code class = "html">&lt;head&gt;
+  ...
+  &lt;style&gt;
+    p {
+      color: blue;
+      font-size: 12px;
+    }
+  &lt;/style&gt;
+&lt;/head&gt;</code></pre>
+        <ul>
+          <li>Inside <code>&lt;head&gt;</code> element</li>
+          <li>Uses <code>&lt;style&gt;</code> tag</li>
+          <li>Only applies to the HTML page referencing it</li>
+        </ul>
+      </section>
+
+      <!-- Exercise - Internal or Embedded CSS-->
+      <section>
+        <h3>Practice</h3>
+        <p style="font-size: 36px;">Undo the inline style and make it an embedded style instead.</p>
+      </section>
+
+      <!-- External Stylesheet-->
+      <section>
+        <h3>External CSS</h3>
+<pre><code class = "html">&lt;head&gt;
+  ...
+  &lt;link rel="stylesheet" href="style.css"&gt;
+&lt;/head&gt;</code></pre>
+        <ul>
+          <li>CSS lives in a separate file or files</li>
+          <li>Can be referenced from multiple pages</li>
+          <li>Easier to maintain in larger projects</li>
+        </ul>
+      </section>
+
+      <!-- Exercise - External Stylesheet -->
+      <section>
+        <h3>Practice</h3>
+        <ul>
+          <li>In the <code>index.html</code> of your REPL project, copy the CSS declaration you created previously in the <code>style</code> tags, and paste the code to the <code>style.css</code> file in your REPL project folder</li>
+          <li>Delete the <code>style</code> block in the <code>index.html</code> file</li>
+        </ul>
+      </section>
+
+      <!-- Home Practice -->
+      <section>
+        <h3>Home Practice</h3>
+        <ol>
+          <li>Continue to build out your project fan page</li>
+          <li>Reorganize your page using semantic HTML where possible or appropriate</li>
+          <li>Install one or two accessibility browser plugins
+            <ul>
+              <li>Use the tool to evaluate your page and see what changes or improvements you can make to your site's accessibility</li>
+            </ul></li>
+          <li>Download and install <a href="https://code.visualstudio.com/download" target="_blank">Visual Studio Code</a> or any code/text editor of your choice</li>
+        </ol>
+      </section>
+
+      <!-- Class 3 Preview -->
+      <section>
+        <h3>Class 3</h3>
+        <ul>
+          <li>Moving our projects to Visual Studio Code</li>
+          <li>Intro CSS (contd)
+            <ul>
+              <li>CSS Selectors</li>
+              <li>Basic CSS Properties</li>
+            </ul>
+          </li>
+          <li>CSS Cascade & Specificity</li>
+          <li>CSS Box Model</li>
+        </ul>
+      </section>
+
+      <!-- Q&A -->
+      <section>
+        <h3>Q&A</h3>
+      </section>
+
+      <!-- MUST USE SLIDE - Course Feedback Survey-->
+      <section>
+        <h3>Class Feedback</h3>
+        <p><a href="https://forms.gle/MzMndG5s52a2HiB77" target="_blank">https://forms.gle/MzMndG5s52a2HiB77</a></p>
+      </section>
+      
+      <!-- Thank You -->
+      <section>
+        <img src="./assets/imgs/gdi-logos/GDI-Logo_Peach.png" alt="GDI Logo" width="300px" class="noborder" />
+        <br>
+        <h3>Thank You!</h3>
+      </section>
+    </div> <!-- End of Slides container -->
+  
+    <footer>
+      <!-- Update with Course Name -->
+      <div class="copyright">
+        <img src="./assets/imgs/gdi-logos/GDI-Logo_Peach.png" alt="GDI Logo" width="40px" class="noborder" />
+        <p>Web Design Essentials 1 - Class 2</p>
+        <a rel="license" href="http://creativecommons.org/licenses/by-nc/3.0/deed.en_US"><img alt="Creative Commons License"
+            style="border-width:0" src="http://i.creativecommons.org/l/by-nc/3.0/80x15.png" /></a>
+      </div>
+    </footer>
+  </div> <!-- End of Reveal wrapper -->
+  
+  <!-- REVEAL.JS Script Files - Do Not Edit -->
+  <script src="https://cdn.jsdelivr.net/npm/reveal.js@4.1.0/dist/reveal.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/reveal.js@4.1.0/plugin/highlight/highlight.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/highlightjs-badge@0.1.9/highlightjs-badge.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jsPlumb/2.15.5/js/jsplumb.min.js"></script>
+  <script>
+    const srcUrlPrefix = "https://cdn.jsdelivr.net/npm/reveal.js@4.1.0/";
+    Reveal.initialize({
+      hash: true,
+      center: true,
+      slideNumber: true,
+      showNotes: false,
+      margin: 0.1,
+      preloadIframes: true,
+      plugins: [RevealHighlight],
+      pdfSeparateFragments: true
+    });
+
+    // add HighlightJS-badge (options are optional)
+    var options = {
+      copyIconContent: "📄",
+      checkIconContent: "✅"
+    };
+    window.highlightJsBadge(options);
+
+    if (window.location.search == "?print-pdf") {
+      var uncounted = document.querySelectorAll("[data-visibility='uncounted']");
+      uncounted.forEach(node => {
+        node.parentNode.classList.add("no-print")
+      })
+    }
+  </script>
+</body>
+</html>

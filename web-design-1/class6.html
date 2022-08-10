@@ -1,0 +1,365 @@
+<!doctype html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <meta name="description" content="Girl Develop It Web Design Essentials 1 Cohort Series">
+  <meta name="author" content="Girl Develop It">
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+
+  <!-- Update with GDI Course Name -->
+  <title>GDI - Web Design Essentials 1, Class 6</title>
+
+  <link rel="icon" type="image/x-icon" href="./assets/imgs/favicon.ico" />
+
+  <!-- RevealJS CDN -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reveal.js@4.1.0/dist/reset.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reveal.js@4.1.0/dist/reveal.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reveal.js@4.1.0/dist/theme/simple.css" id="theme">
+
+  <!-- GDI Custom Theme -->
+  <link rel="stylesheet" href="./assets/css/gdi-theme.css">
+
+  <!-- Theme used for syntax highlighted code -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.1.0/styles/monokai.min.css">
+</head>
+
+<body>
+  <div class="reveal">
+    <!-- Start of Slides container -- Any section element in this container is displayed as a slide -->
+    <div class="slides">
+
+      <!-- Course and Class Titles -->
+      <section>
+        <h2>Web Design Essentials 1</h2>
+        <h2>Class 6</h3>
+      </section>
+
+      <!-- Class Agenda -->
+      <section>
+        <h3>AGENDA</h3>
+        <ul>
+          <li>Recap</li>
+          <li>CSS "Tips & Tricks"</li>
+          <li>Code Review & Project Feedback</li>
+          <li>Cultivating a Web Dev Practice</li>
+          <li>Cohort Feedback</li>
+        </ul>
+      </section>
+
+      <!-- Stretch Break -->
+      <section>
+        <h3>Stretch - "Bio" Break</h3>
+        <p>8:00p EST / 7:00p CST / 5:00p PST</p>
+      </section>
+
+      <!-- Recap, Review -->
+      <section>
+        <h3>Recap</h3>
+      </section>
+
+      <!-- Topics Covered -->
+      <section>
+        <h3>Topics Covered</h3>
+        <ul>
+          <li>HTML Elements & CSS Properties</li>
+          <li>Semantic HTML & CSS</li>
+          <li>Accessibility</li>
+          <li>CSS Box Model</li>
+          <li>Working with Images</li>
+          <li>Media Queries </li>
+        </ul>
+      </section>
+
+      <section>
+        <h3>Topics Covered</h3>
+        <ul>
+          <li>Project Planning
+            <ul>
+              <li>Wireframing</li>
+              <li>Pseudo-coding</li>
+            </ul>
+          </li>
+          <li>Using Documentation</li>
+          <li>Working in Dev Tools</li>
+        </ul>
+      </section>
+
+      <!-- CSS Tips and Tricks -->
+      <section>
+        <h3>CSS Tips & Tricks</h3>
+      </section>
+
+      <!-- Hiding Things -->
+      <section>
+        <h3>Hiding Things</h3><pre><code class="css">
+h2 {
+  display: none;
+}
+/* Removes the element and its space from the page */
+
+
+h3 {
+  visibility: hidden;
+}
+/* Hides the element, and retains its original space */
+</code></pre>        
+      </section>
+
+      <!-- Centering Things - HTML markup-->
+      <section>
+        <h3>Centering Things</h3>
+        <p>To center horizontally and vertically: <br> Make sure the element to be centered is in a parent container</p><pre><code class="html"><div class="container">
+  <div class="content">Center Me</div>
+</div>
+</code></pre>        
+      </section>
+
+      <!-- Centering Things - CSS v1 -->
+      <section>
+        <h3>Centering Things</h3>
+        <p>Apply the CSS: <br>To center horizontally and vertically</p><pre><code class="css">
+.container {
+  /* Give the parent container width, height 
+  and the position properties */
+  width: 200px;
+  height: 200px;
+  position: relative;
+}
+
+.content {
+  /* Apply these rules to the content to be centered */
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+</code></pre>        
+      </section>
+
+      <!-- Centering Things - CSS v2 -->
+      <section>
+        <h3>Centering Things</h3>
+        <p>Apply the CSS: <br>To center horizontally alone</p><pre><code class="css">
+.container {
+  /* Parent container can have a specific width 
+  or be full width. */
+  width: 800px;
+  height: 200px;
+}
+
+.content {
+  /* The content to be centered must have a 
+  width that's less than its parent container. */
+  width: 300px;
+
+  /* This CSS rule creates the centering effect */
+  margin: 0 auto;
+}
+</code></pre>        
+      </section>
+
+      <!-- Smooth Scrolling -->
+      <section>
+        <h3>Smooth Scrolling</h3><pre><code class="css">/* Apply to the html element selector 
+at the top of your CSS stylesheet. */
+
+html {
+  scroll-behavior: smooth;
+
+  scroll-padding: 50px; /* Optional */
+  /* Adds spacing above the sections we're scrolling to */
+}</code></pre>
+      </section>
+
+      <!-- Code Review, Projects feedback -->
+      <section>
+        <h3>Code Review</h3>
+        <h3>Project Feedback</h3>
+      </section>
+
+      <!-- Cultivating a WebDev Practice -->
+      <section>
+        <h3>Cultivating a Web<br>Development Practice</h3>
+        <ul>
+          <li>Progressive Practice aka "Start Small"
+            <ul>
+              <li>How can I use what I currently know?</li>
+              <li>What do I want to do and what is my (current) knowledge gap?</li>
+              <li>Where can I find answers?</li>
+            </ul>
+          </li>
+          <li>Deliberate Practice</li>
+        </ul>
+      </section>
+
+      <section>
+        <h3>Cultivating a Web<br>Development Practice</h3>
+        <ul>
+          <li>Create checklists!
+            <ul>
+              <li>Accessibility basics</li>
+              <li>Visual Design principles</li>
+              <li>Project setup</li>
+            </ul>
+          </li>
+          <li>Start a collection of frequently-used code snippets</li>
+        </ul>
+      </section>
+
+      <section>
+        <h3>Cultivating a Web<br>Development Practice</h3>
+        <ul>
+          <li>80-20 Rule:
+            <ul>
+              <li>Spend time pre-planning a project</li>
+              <li>Organize your markup/code (indentations, etc)</li>
+            </ul>
+          </li>
+          <li>Read documentation
+            <ul>
+              <li>"Real" developers look things up!</li>
+            </ul>
+          </li>
+          <li>Review other developers' code</li>
+          <li>Be comfortable asking questions</li>
+          <li>Use Dev Tools--a lot!</li>
+        </ul>
+      </section>
+
+      <section>
+        <h3>Cultivating a Web<br>Development Practice</h3>
+        <img src="./assets/imgs/learning-to-code.jpeg" width="600px" alt="Graph of coding learning curve">
+        <p style="font-size: 14px;">Source: <a href="https://www.thinkful.com/blog/why-learning-to-code-is-so-damn-hard/" target="_blank">Why Learning to Code is So Damn Hard</a> (Thinkful.com)</p>
+      </section>
+      
+      <section>
+        <h3>Cultivating a Web<br>Development Practice</h3>
+        <ul>
+          <li>Be prepared for the "dips"
+            <ul>
+              <li>It's okay not knowing everything</li>
+            </ul>
+          </li>
+          <li>Take breaks!</li>
+          <li>Welcome "happy coincidences"</li>
+          <li>Acknowledge your growth!</li>
+        </ul>
+      </section>
+
+      <!-- Resources -->
+      <section>
+        <h3>Resources</h3>
+        <ul>
+          <li>MDN - Mozilla Developer Network</li>
+          <li>W3Schools</li>
+          <li>CSS-Tricks</li>
+          <li>Free Code Camp</li>
+          <li>And more!</li>
+        </ul>
+        <p>See <a href="https://docs.google.com/document/d/10Oq1GFWRp_79o6v8d0U7xF7Lk6R_0BYys5fqDEOwqao/edit?usp=sharing" target="_blank">Resources List</a></p>
+      </section>
+
+      
+      <!-- Course Conclusion -->
+      <!-- <section>
+        <h3>You did it!</h3>
+        <img src="assets/imgs/stock-img/celebration_hannah-busing-unsplash.jpg" alt="People celebrating" />
+        <p>
+          <small>Photo credit:
+            <a href="https://unsplash.com/@hannahbusing" target="_blank">Hannah Busing</a>
+            <a href="http://creativecommons.org/licenses/by-sa/2.0/" target="_blank">cc</a>
+          </small>
+        </p>
+      </section> -->
+
+      <!-- OPTIONAL: Show and Tell  -->
+      <!-- <section>
+        <p>(Optional Slide)</p>
+        <h2>Share What You've Built!</h2>
+      </section> -->
+
+      <!-- MUST USE SLIDE - Course Feedback Survey-->
+      <section>
+        <h3>Final Feedback</h3>
+        <p><a href="https://forms.gle/4aj2kfTfKTFjevUE6" target="_blank">https://forms.gle/4aj2kfTfKTFjevUE6</a></p>
+      </section>
+
+      <!-- Q&A -->
+      <section>
+        <h2>Q&A</h2>
+      </section>
+
+      <!-- MUST USE/SHOW SLIDE -->
+      <!-- GDI Promo - Upcoming Courses -->
+      <section>
+        <h2>Upcoming GDI Courses</h2>
+        <h4>Web Design Essentials 2</h4>
+        <h4>JavaScript Fundamentals 1</h4>
+        <h4>Intro to Git & Github Workshop</h4>
+        <h4>UI Projects Cohort</h4>
+      </section>
+
+      <!-- Instructor and/or TA Contact -->
+      <section>
+        <h2>Keep in Touch!</h2>
+        <h4>Connect with me on <a href="https://www.linkedin.com/in/tinuolaawopetu/" target=")blank">Linkedin</a></h4>
+      </section>
+
+      <!-- Thank You -->
+      <section>
+        <img src="./assets/imgs/gdi-logos/GDI-Logo_Peach.png" alt="GDI Logo" width="300px" class="noborder" />
+        <br>
+        <h2>Thank You!</h2>
+      </section>
+    </div> <!-- End of Slides container -->
+
+    <footer>
+      <!-- Update with Course Name -->
+      <div class="copyright">
+        <img src="./assets/imgs/gdi-logos/GDI-Logo_Peach.png" alt="GDI Logo" width="40px" class="noborder" />
+        <p>Web Design Essentials 1 - Class 6</p>
+        <a rel="license" href="http://creativecommons.org/licenses/by-nc/3.0/deed.en_US"><img
+            alt="Creative Commons License" style="border-width:0"
+            src="http://i.creativecommons.org/l/by-nc/3.0/80x15.png" /></a>
+      </div>
+    </footer>
+  </div> <!-- End of Reveal wrapper -->
+
+  <!-- REVEAL.JS Script Files - Do Not Edit -->
+  <script src="https://cdn.jsdelivr.net/npm/reveal.js@4.1.0/dist/reveal.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/reveal.js@4.1.0/plugin/highlight/highlight.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/highlightjs-badge@0.1.9/highlightjs-badge.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jsPlumb/2.15.5/js/jsplumb.min.js"></script>
+  <script>
+    const srcUrlPrefix = "https://cdn.jsdelivr.net/npm/reveal.js@4.1.0/";
+    Reveal.initialize({
+      hash: true,
+      center: true,
+      slideNumber: true,
+      showNotes: false,
+      margin: 0.1,
+      preloadIframes: true,
+      plugins: [RevealHighlight],
+      pdfSeparateFragments: true
+    });
+
+    // add HighlightJS-badge (options are optional)
+    var options = {
+      copyIconContent: "📄",
+      checkIconContent: "✅"
+    };
+    window.highlightJsBadge(options);
+
+    if (window.location.search == "?print-pdf") {
+      var uncounted = document.querySelectorAll("[data-visibility='uncounted']");
+      uncounted.forEach(node => {
+        node.parentNode.classList.add("no-print")
+      })
+    }
+  </script>
+</body>
+
+</html>

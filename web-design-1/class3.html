@@ -1,0 +1,564 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <meta name="description" content="Girl Develop It Web Design Essentials 1 Cohort Series">
+  <meta name="author" content="Girl Develop It">
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+
+  <!-- Update with GDI Course Name -->
+  <title>GDI - Web Design Essentials 1, Class 3</title>
+
+  <link rel="icon" type="image/x-icon" href="./assets/imgs/favicon.ico" />
+
+  <!-- RevealJS CDN -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reveal.js@4.1.0/dist/reset.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reveal.js@4.1.0/dist/reveal.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reveal.js@4.1.0/dist/theme/simple.css" id="theme">
+
+  <!-- GDI Custom Theme -->
+  <link rel="stylesheet" href="./assets/css/gdi-theme.css">
+
+  <!-- Theme used for syntax highlighted code -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.1.0/styles/monokai.min.css">
+</head>
+<body>
+  <div class="reveal">
+    <!-- Start of Slides container -- Any section element in this container is displayed as a slide -->
+    <div class="slides">
+      <!-- Course and Class Titles -->
+      <section>
+        <h2>Web Design Essentials 1</h2>
+        <h2>Class 3</h3>
+      </section>
+
+      <!-- Class Agenda -->
+      <section>
+        <h3>AGENDA</h3>
+        <ul>
+          <li>Class 2 Review</li>
+          <li>Code Editor Setup</li>
+          <li>Intro to CSS (contd)
+            <ul>
+              <li>Basic CSS Selectors</li>
+              <li>Basic CSS Properties</li>
+            </ul>
+          </li>
+          <li>Class 4 Preview</li>
+          <li>Class Feedback and Q&A</li>
+        </ul>
+      </section>
+
+      <!-- Stretch Break -->
+      <section>
+        <h3>Stretch - "Bio" Break</h3>
+        <p>8:00p EST / 7:00p CST / 5:00p PST</p>
+      </section>
+
+      <!-- Working in Visual Studio Code -->
+      <section>
+        <h3>Code Editors</h3>
+      </section>
+
+      <!-- Why use code editors?  -->
+      <section>
+        <h3>Working with Code Editors</h3>
+        <ul>
+          <li>Editors have built-in functionality such as auto-completion and auto-formatting highlighting that allow developers to be more productive</li>
+          <li>They come with integrated tools such as a terminal, so developers can work in the same interface</li>
+        </ul>
+      </section>
+
+      <section>
+        <h3>Working with Code Editors</h3>
+        <ul>
+          <li>They are great for working with large or more complex projects</li>
+          <li>They can be extended with plugins/extensions that add even more functionality!</li>
+          <li>Their visual appearance can be customized as well with themes</li>
+        </ul>
+      </section>
+
+      <!-- Download and Install -->
+      <section>
+        <h3>Download and Install</h3>
+        <p><a href="https://code.visualstudio.com/Download" target="_blank">Visual Studio Code</a> or a code editor of your choice</p> 
+      </section>
+
+      <!-- Code Editor Demo  -->
+      <section>
+        <h3>Code Editor Demo</h3>
+        <h4>Project Folder Setup</h4>
+        <h4>VS Code Extenstions</h4>
+      </section>
+
+      <!-- Intro to CSS -->
+      <section>
+        <h3>Intro to CSS (contd)</h3>
+      </section>
+
+      <!-- CSS Selector Intro -->
+      <section>
+        <h3>CSS Selector</h3>
+        <p>The selector is used to select or find which elements on the HTML page will be given the styles inside the
+          curly
+          braces.</p>
+<pre><code class="css">
+  selector {
+    property: value;
+    property: value;
+  }</code></pre>
+
+<pre><code class="css">p {
+  color: yellow;
+  background-color: black;
+}</code></pre>
+      </section>
+
+      <!-- 3 Common Selectors -->
+      <section>
+        <h3>The Three Common CSS Selectors</h3>
+        <p>Element or Type selector</p>
+        <p>Class selector</p>
+        <p>ID selector</p>
+      </section>
+
+      <!-- Element Selector -->
+      <section>
+        <h3>Element or Type Selector</h3>
+        <p>Selects all elements of the same type</p>
+        <p>This example below selects all <code>p</code> tags or paragraph elements</p>
+<pre><code class="css">p {
+  color: purple;
+}</code></pre>
+      </section>
+
+      <!-- Class Selector -->
+      <section>
+        <h3>Class Selector</h3>
+        <p><code>Class</code> selectors are prefixed with a <code>"."</code> dot, then followed by the class name</p>
+        <pre><code class="css">.product-text {
+  color: purple;
+}</code></pre>
+      </section>
+
+      <section>
+        <h3>Class Selector</h3>
+        <p>On the HTML page, the class name is associated with one or more target element or content</p>
+        <pre><code class="html">&lt;p class="product-text"&gt;This is some product text.&lt;/p&gt;
+
+&lt;p&gt;This is another paragraph of text.&lt;/p&gt;
+
+&lt;h4 class="product-text"&gt;This is headline text.&lt;/h4&gt;
+</code></pre>
+        <p>When we want multiple elements to share a style, we give them the same class name.</p>
+      </section>
+
+      <section>
+        <h3>Class Selector</h3>
+        <p>The CSS code below selects all elements with the <code>class</code> of <code>.product-text</code> in the
+          markup and applies the style</p>
+        <pre><code class="css">.product-text {
+  color: purple;
+}</code></pre>
+        <pre><code class="html">&lt;p class="product-text"&gt;This is some product text.&lt;/p&gt;
+
+&lt;p&gt;This is another paragraph of text.&lt;/p&gt;
+
+&lt;h4 class="product-text"&gt;This is headline text.&lt;/h4&gt;
+</code></pre>
+      </section>
+
+      <section>
+        <h3>Class Selector</h3>
+        <p>Elements can have more than one <code>class</code> name or selector applied to them.</p>
+<pre><code class="css">.product-text {
+  color: purple;
+}
+
+.product-container {
+  background-color: yellow;
+}
+</code></pre>
+<pre><code class="html">&lt;p class="product-text product-bground"&gt;Some product detail.&lt;/p&gt;
+</code></pre>
+      </section>
+
+      <!-- Practice -->
+      <section>
+        <h3>Practice</h3>
+        <ul>
+          <li>Identify elements on your project page that are likely to share the same style</li>
+          <li>Give these elements a shared class name</li>
+          <li>In your <code>style.css</code>, create a CSS rule that adds the color <code>red</code> to that class name </li>
+        </ul>
+      </section>
+
+      <!-- ID Selector -->
+      <section>
+        <h3>ID Selector</h3>
+        <p><code>ID</code> selectors are prefixed with a <code>"#"</code> symbol, then followed by a name</p>
+        <pre><code class="css">#product-name {
+  background: tomato;
+}</code></pre>
+      </section>
+
+      <section>
+        <h3>ID Selector</h3>
+        <p>Unlike the class selector, the ID selector is associated with only ONE target element on the HTML page</p>
+        <pre><code class="html">&lt;h2 id="product-name"&gt;First Product Title&lt;/h2&gt;
+
+&lt;h2 id="needs-a-new-id"&gt;Second Product Title&lt;/h2&gt;
+</code></pre>
+        <p>IDs cannot be shared among elements</p>
+      </section>
+
+      <!-- Combining selectors -->
+      <section>
+        <h3>Mixing Selectors</h3>
+        <p>An HTML element can have both a class name and an ID</p>
+<pre><code class="html">&lt;h2 class="product-text" id="product-name"&gt;First Product Title&lt;/h2&gt;
+</code></pre>
+      </section>
+
+      <!-- Practice -->
+      <section>
+        <h3>Practice</h3>
+        <ul>
+          <li>Identify a unique element on your project page and give it an ID</li>
+          <li>In your <code>style.css</code>, create a CSS rule that adds <code>font-size: 24px;</code> to that ID
+        </ul>
+      </section>
+
+      <!-- Working with Class & ID selectors -->
+      <section>
+        <h3>Working with Class & ID Selectors</h3>
+        <h4>Best Practices</h4>
+        <ul>
+          <li>Give selectors meaningful names</li>
+          <li>Use single word or hyphenated naming</li>
+          <li>Use classes more than IDs</li>
+          <li>Use ID selectors for:
+            <ul>
+              <li>Internal bookmarking</li>
+              <li>Elements to be targeted by JavaScript</li>
+            </ul>
+          </li>
+        </ul>
+      </section>
+
+      <!-- Naming CSS -->
+      <section>
+        <h3>Naming CSS Selectors</h3>
+        <p style="font-size: 36px;">Properly naming selectors is important.</p>
+        <ul>
+          <li>Keeps our code readable</li>
+          <li>Keeps our code maintainable</li>
+          <li>Reduces or prevents CSS specificity issues</li>
+        </ul>
+      </section>
+
+      <!-- Semantic vs Non Semantic CSS -->
+      <section>
+        <h3>Semantic vs Non-Semantic CSS</h3>
+      </section>
+
+      <!-- Semantic CSS -->
+      <section>
+        <h3>Semantic CSS</h3>
+        <p style="font-size: 32px;">Semantic CSS naming conveys meaning.</p>
+<pre><code class="html">&lt;h2 class="product-heading"&gt;My First Start Up App&lt;/h2&gt;
+</code></pre>
+      </section>
+
+      <!-- Non-Semantic CSS -->
+      <section>
+        <h3>Non-Semantic CSS</h3>
+        <p style="font-size: 32px;">Non-semantic CSS tends not to convey meaning; it usually conveys what an element might look like.</p>
+        <pre><code class="html">&lt;h2 class="large-text"&gt;My First Start Up App&lt;/h2&gt;</code></pre>
+      </section>
+
+      <!-- Semantic CSS -->
+      <section>
+        <h3>Non-Semantic CSS</h3>
+        <p style="font-size: 32px;">Non-semantic CSS naming is common in CSS frameworks such as Bootstrap and Tailwind.</p>
+  <pre><code class="html">&lt;div class="row mb-10 h-4"&gt;My First Start Up App&lt;/div&gt;
+  </code></pre>
+      </section>
+
+      <!-- Which to Choose? -->
+      <section>
+        <h3>Semantic or Non-Semantic CSS?</h3>
+        <ul>
+          <li>Good practice is to default to semantic naming</li>
+          <li>Understand the use cases for non-semantic CSS
+            <ul>
+              <li>Working with CSS frameworks</li>
+              <li>Creating your own CSS utilities</li>
+            </ul>
+          </li>
+        </ul>
+      </section>
+
+      <!-- Naming quote -->
+      <section>
+        <h4>There are only two hard problems in Computer Science: cache invalidation and naming things.</h4>
+        <h5>— Phil Karlton</h5>
+      </section>
+
+      <!-- More on Semantic naming -->
+      <section>
+        <h3>Semantic Naming Approaches</h3>
+        <p style='font-size: 32px;'>A few methodologies to research and explore in your web design or web development journey:</p>
+        <ul>
+          <li>BEM</li>
+          <li>SMACSS</li>
+          <li>ITCSS</li>
+          <li>OOCSS</li>
+          <li>SuitCSS</li>
+        </ul>
+        <p>Dev.to Article: <a href="https://dev.to/ziizium/css-naming-conventions-5gd6" target="_blank">CSS Naming conventions</a></p>
+      </section>
+
+      <!-- Commenting in CSS -->
+      <section>
+        <h3>Comments in CSS</h3>
+        <p style='font-size: 32px;'>Commenting our code also works in CSS.</p>
+<pre><code class="css">/* Sample comment */
+p {
+  color: purple;
+}</code></pre>
+
+      </section>
+
+      <!-- CSS Properties -->
+      <section>
+        <h3>CSS Properties</h3>
+      </section>
+
+      <section>
+        <h3>CSS Properties</h3>
+        <p style='font-size: 32px;'>CSS properties allow us to apply visual design, layout and even animation to our HTML code.</p>
+      </section>
+
+      <section>
+        <h3>CSS Properties</h3>
+        <p style='font-size: 32px;'>We can apply color, play with text appearance, add fonts, work with images, create unique layouts, and more.</p>
+      </section>
+
+      <section>
+        <h3>CSS Properties</h3>
+        <ul>
+          <li>200? 300? 500?</li>
+          <li>You're not expected to know them all!</li>
+          <li>Focus on the commonly used ones</li>
+          <li>Be comfortable looking things up</li>
+          <li>Note: CSS properties are case-sensitive</li>
+        </ul>
+        <hr/>
+        <p><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Properties_Reference" target="_blank">Common CSS
+            properties (MDN)</a></p>
+        <p><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/Reference" target="_blank">All standard CSS properties
+            (MDN)</a></p>
+      </section>
+
+      <!-- Can I use  -->
+      <section>
+        <h3>Browser Support for HTML & CSS</h3>
+        <p style='font-size: 32px; margin-bottom: 1.5rem;'>Although the majority of HTML elements and CSS properties are standard and work across browsers, this is not always the case for a variety of reasons.</p>
+        <p style='font-size: 32px'><a href="https://caniuse.com/" target='_blank'>caniuse.com</a> is a popular site/tool used to check for browser support for HTML and CSS features.</p>
+      
+      </section>
+
+      <!-- Practice -->
+      <section>
+        <h3>Let's Go CSS Hunting!</h3>
+      </section>
+
+      <section>
+        <h3>Practice</h3>
+        <p style='font-size:32px'>What CSS rules apply the following styles?</p>
+        <ol>
+          <li>Change the font size of a text element</li>
+          <li>Add color to the background of an element</li>
+          <li>Transform text from lower to uppercase</li>
+          <li>Change text alignment from left to center</li>
+          <li>Increase the weight of a font, i.e., make it bolder</li>
+          <li>Change the type of font being used</li>
+          <li>Create a border around an element</li>
+          <li>Create an underlined text element</li>
+        </ol>
+      </section>
+
+      <!-- CSS Colors -->
+      <section>
+        <h3>CSS Color Values</h3>
+        <p>Browsers can accept colors in different ways:</p>
+        <table style="margin: 0 auto">
+          <tr>
+            <td><strong>Color name: </strong></td>
+            <td><code>red</code></td>
+          </tr>
+          <tr>
+            <td><strong>Hexadecimal value: </strong></td>
+            <td><code>#FF0000</code></td>
+          </tr>
+          <tr>
+            <td><strong>RGB value: </strong></td>
+            <td><code>rgb(255, 0, 0)</code></td>
+          </tr>
+          <tr>
+            <td><strong>HSL value</strong></td>
+            <td><code>hsl(0, 100%, 50%)</code></td>
+          </tr>
+        </table>
+        <hr />
+        <p><a href="http://www.colors.commutercreative.com/grid/" target="_blank">CSS Color Names</a></p>
+        <p><a href="http://www.w3schools.com/colors/colors_picker.asp" target="_blank">W3Schools Color Picker</a></p>
+
+      </section>
+
+      <!-- Size Units -->
+      <section>
+        <h3>Size Units</h3>
+        <ul>
+          <li>Pixels: px</li>
+          <li>Root element font-size: rem</li>
+          <li>Element font-size: em</li>
+          <li>Percentage: %</li>
+          <li>Viewport height: vh</li>
+          <li>Viewport width: vw</li>
+        </ul>
+        <hr />
+        <p><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/font-size" target="_blank">CSS length data types (MDN)</a></p>
+      </section>
+
+      <!-- Web Safe Fonts -->
+      <section>
+        <h3>Fonts</h3>
+        <p style='font-size: 32px'>Web Safe Fonts are font families that all browsers can display by default. We don't have to load font files or link to external font libraries to use them in our projects.</p>
+<pre><code class = "css">p {
+  font-family: "Times New Roman"; /* Specific font name */
+  font-family: serif; /* Generic name */
+  font-family: "Arial", sans-serif; /* Comma-separated list */
+}
+</code></pre>
+        <hr>
+        <p><a href="https://www.w3schools.com/cssref/css_websafe_fonts.asp" target="_blank">Web Safe Fonts (W3 School)</a></p>
+      </section>
+
+      <!-- Custom Fonts -->
+      <section>
+        <h3>Fonts</h3>
+        <p style='font-size: 32px'>To apply custom fonts, we either load font files into our project directory or we link to external font libraries such as <a href="https://fonts.google.com/" target="_blank">Google Fonts</a>.</p>
+      </section>
+
+      <!-- Google Fonts Demo -->
+      <section>
+        <h3>Google Fonts Demo</h3>
+      </section>
+
+      <!-- Home Practice -->
+      <section>
+        <h3>Home Practice</h3>
+        <ol>
+          <li>Revisit your page layout
+            <ul>
+              <li>What might you add or change?</li>
+            </ul>
+          </li>
+          <li>Create <code>class</code> names</li>
+          <li>Use <code>IDs</code> if you're creating bookmarks</li>
+          <li>Apply some basic styling to your fan page project</li>
+          <li>Optional: Share your layout sketch(es) with me if you'd like feedback. Send me an email with:
+            <ul>
+              <li>A link to an image of your sketch</li>
+              <li>Your REPL project link</li>
+            </ul>
+          </li>
+        </ol>
+      </section>
+
+      <!-- Class 4 Preview -->
+      <section>
+        <h3>Class 4 - Tentative Agenda</h3>
+        <ul>
+          <li>CSS Box Model
+            <ul>
+              <li>Box-Sizing Property</li>
+              <li>Block vs Inline Elements</li>
+              <li>"CSS Reset"</li>
+            </ul>
+          </li>
+          <li>CSS Combinators</li>
+          <li>CSS Pseudo Elements and Pseudo Classes</li>
+          <li>CSS Cascade & Specificity</li>
+        </ul>
+      </section>
+
+      <!-- Q&A -->
+      <section>
+        <h3>Q&A</h3>
+      </section>
+
+      <!-- MUST USE SLIDE - Course Feedback Survey-->
+      <section>
+        <h3>Class Feedback</h3>
+        <p><a href="https://forms.gle/MzMndG5s52a2HiB77" target="_blank">https://forms.gle/MzMndG5s52a2HiB77</a></p>
+      </section>
+
+      <!-- Thank You -->
+      <section>
+        <img src="./assets/imgs/gdi-logos/GDI-Logo_Peach.png" alt="GDI Logo" width="300px" class="noborder" />
+        <br>
+        <h3>Thank You!</h3>
+      </section>
+    </div> <!-- End of Slides container -->
+
+    <footer>
+      <!-- Update with Course Name -->
+      <div class="copyright">
+        <img src="./assets/imgs/gdi-logos/GDI-Logo_Peach.png" alt="GDI Logo" width="40px" class="noborder" />
+        <p>Web Design Essentials 1 - Class 3</p>
+        <a rel="license" href="http://creativecommons.org/licenses/by-nc/3.0/deed.en_US"><img
+            alt="Creative Commons License" style="border-width:0"
+            src="http://i.creativecommons.org/l/by-nc/3.0/80x15.png" /></a>
+      </div>
+    </footer>
+  </div> <!-- End of Reveal wrapper -->
+
+  <!-- REVEAL.JS Script Files - Do Not Edit -->
+  <script src="https://cdn.jsdelivr.net/npm/reveal.js@4.1.0/dist/reveal.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/reveal.js@4.1.0/plugin/highlight/highlight.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/highlightjs-badge@0.1.9/highlightjs-badge.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jsPlumb/2.15.5/js/jsplumb.min.js"></script>
+  <script>
+    const srcUrlPrefix = "https://cdn.jsdelivr.net/npm/reveal.js@4.1.0/";
+    Reveal.initialize({
+      hash: true,
+      center: true,
+      slideNumber: true,
+      showNotes: false,
+      margin: 0.1,
+      preloadIframes: true,
+      plugins: [RevealHighlight],
+      pdfSeparateFragments: true
+    });
+
+    // add HighlightJS-badge (options are optional)
+    var options = {
+      copyIconContent: "📄",
+      checkIconContent: "✅"
+    };
+    window.highlightJsBadge(options);
+
+    if (window.location.search == "?print-pdf") {
+      var uncounted = document.querySelectorAll("[data-visibility='uncounted']");
+      uncounted.forEach(node => {
+        node.parentNode.classList.add("no-print")
+      })
+    }
+  </script>
+</body>
+</html>

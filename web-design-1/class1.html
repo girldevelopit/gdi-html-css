@@ -1,0 +1,448 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <meta name="description" content="Girl Develop It Web Design Essentials 1 Cohort Series">
+  <meta name="author" content="Girl Develop It">
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+
+  <!-- Update with GDI Course Name -->
+  <title>GDI - Web Design Essentials 1, Class 1</title>
+
+  <link rel="icon" type="image/x-icon" href="./assets/imgs/favicon.ico" />
+
+  <!-- RevealJS CDN -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reveal.js@4.1.0/dist/reset.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reveal.js@4.1.0/dist/reveal.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reveal.js@4.1.0/dist/theme/simple.css" id="theme">
+
+  <!-- GDI Custom Theme -->
+  <link rel="stylesheet" href="./assets/css/gdi-theme.css">
+
+  <!-- Theme used for syntax highlighted code -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.1.0/styles/monokai.min.css">
+</head>
+<body>
+  <div class="reveal">
+    <!-- Start of Slides container -- Any section element in this container is displayed as a slide -->
+    <div class="slides">
+
+      <!-- Course and Class Titles -->
+      <section>
+        <h2>Web Design Essentials 1</h2>
+        <h2>Class 1</h3>
+      </section>
+
+      <!-- Class Agenda -->
+      <section>
+        <h3>AGENDA</h3>
+          <ul>
+            <li>Introduction - Websites, Web Design</li>
+            <li>Setting up our coding environment (Part 1)</li>
+            <li>HTML, HTML Elements & Tags 
+              <ul>
+                <li>Headings, Paragraphs, Lists, Images, Links</li>
+              </ul>
+            </li>
+            <li>Class Feedback and Q&A</li>
+          </ul>
+      </section>
+      
+      <!-- Stretch Break -->
+      <section>
+        <h3>Stretch - "Bio" Break</h3>
+        <p>8:00p EST / 7:00p CST / 5:00p PST</p>
+      </section>
+
+      <!-- Intro -->
+      <section>
+        <h2>Introduction</h2>
+        <h3>What is a website?</h3>
+        <h3>What is web design?</h3>
+      </section>
+
+      <!-- What is a website? Anatomy of a website -->
+      <section>
+        <h3 style="margin-bottom: 2rem;">Anatomy of a Website</h3>
+        <div style="font-size:.875em;">
+          <strong>Content</strong> (Text + Media)<br><br>
+          <strong>+ HTML</strong> (Structure + Semantics)<br><br>
+          <strong>+ CSS</strong> (Presentation + Design)<br><br>
+          <strong>+ JavaScript</strong> (Interactivity)<br><br>
+          <strong> = Website</strong>
+        </div>
+      </section>
+
+      <!-- Terms: Website, Web Application -->
+      <section>
+        <h3>Terms to Know</h3>
+        <ul>
+          <li style="margin-bottom: 2rem;"><span style="color:#f05b62">Websites:</span>
+            Static pages that usually provide one-way information</li>
+          <li><span style="color:#f05b62">Web Applications:</span>
+            Websites with additional functionality and interactive/dynamic elements</li>
+        </ul>
+      </section>
+
+      <!-- Terms: Web Design, Web Development -->
+      <section>
+        <h3>Terms to Know</h3>
+        <ul>
+          <li style="margin-bottom: 2rem;"><span style="color:#f05b62">Web Design:</span>
+            The process of planning, structuring and creating a website</li>
+          <li><span style="color:#f05b62">Web Development:</span>
+            The process of building dynamic web applications</li>
+        </ul>
+      </section>
+
+      <!-- Terms: Client Side, Server Side -->
+      <section>
+        <h3>Terms to Know</h3>
+        <ul>
+          <li style="margin-bottom: 2rem;"><span style="color:#f05b62">Client-side or Frontend</span>: Aspects of a website, web application or interface that a user sees or engages with</li>
+          <li><span style="color:#f05b62">Server-side or Backend</span>: Where data and source code is stored; where the "client-side" sends a request to and receives a response from</li>
+        </ul>
+      </section>
+      
+      <!-- Tools -->
+      <section>
+        <h2>Our Tools</h2>
+      </section>
+
+      <!-- Browsers -->
+      <section>
+        <h3>Tools</h3>
+        <p style="font-size: 36px">Web Browsers such as:</p>
+        <ul>
+          <li>Chrome</li>
+          <li>FireFox</li>
+          <li>Safari</li>
+        </ul>    
+      </section>
+
+      <!-- Code Editors -->
+      <section>
+        <h3>Tools</h3>
+        <p style="font-size: 36px">Code & Text Editors such as:</p>
+        <ul>
+          <li>Visual Studio Code</li>
+          <li>Atom</li>
+          <li>Sublime Text</li>
+        </ul>
+      </section>
+
+      <!-- Online Code Editors -->
+      <section>
+        <h3>Tools</h3>
+        <p style="font-size: 36px">Online Code Editors such as:</p>
+        <ul>
+          <li>REPL.it</li>
+          <li>Codepen.io</li>
+          <li>Codesandbox.io</li>
+        </ul>
+      </section>
+
+      <!-- Additional Tools -->
+      <section>
+        <h3>Additional Tools</h3>
+        <p style="font-size: 36px">Browser Developer Tools</p>
+        <p style="font-size: 36px">Version Control: Github, BitBucket</p>
+        <p style="font-size: 36px">Command Line (aka Terminal)</p>
+        <p style="font-size: 36px">JavaScript and CSS Frameworks/Libraries</p>
+      </section>
+      
+      <!-- Code Environment -->
+      <section>
+        <h2>Our Code Environment</h2>
+      </section>
+      
+      <!-- Create REPL Account -->
+      <section>
+        <h3>REPL.it</h3>
+        <ul>
+          <li>Create a free account on <a href="https://replit.com/" target="_blank">REPL.it</a> (Recommended)</li>
+          <li>Or an online editor of your choice</li>
+        </ul>
+      </section>
+
+      <!-- HTML, HTML Elements & HTML Tags -->
+      <section>
+        <h3>HTML, HTML Elements & Tags</h3>
+      </section>
+
+      <!-- What is HTML? -->
+      <section>
+        <h3>What is HTML?</h3>
+        <p style="font-size: 36px">HTML stands for HyperText Markup Language.</p>
+      </section>
+      
+      <section>
+        <h3>What is HTML?</h3>
+        <p style="font-size: 36px">HTML is the language that allows us to build websites.</p>
+        <img src="./assets/imgs/homepage-view.png" width="500px" alt="Screenshot of the Girl Develop It Homepage">
+      </section>
+      
+      <section>
+        <h3>What is HTML?</h3>
+        <p style="font-size: 36px; line-height: 1.5;">HTML is composed of <span style="color: #f05b62;">HTML elements and tags</span> that provide the blueprint for a webpage.</p>
+      </section>
+
+      <section>
+        <h3>What is HTML?</h3>
+        <div>
+          <img style="width: 500px; height: auto;"
+            src="./assets/imgs/html-structure-code.png" alt="Sample HTML code">
+        </div>
+      </section>
+
+      <section>
+        <h3>What is HTML?</h3>
+        <p style="font-size: 36px;">"Under the hood" of a website:</p>
+        <img src="./assets/imgs/homepage-html.png" alt="Screenshot of the Girl Develop It page source code">
+      </section>
+
+      <section>
+        <h3>Anatomy of a Website</h3>
+        <ul style="line-height: 1.75;">
+          <li>A paragraph is your <code style="color: #f05b62;">content</code>.</li>
+          <li>Putting your content into an HTML tag to make it look like a paragraph is <code style="color: #f05b62;">structure</code>.
+          </li>
+        </ul>
+        <pre><code class ="html">&lt;p&gt;A paragraph is your content&lt;/p&gt;
+              </code></pre>
+      </section>
+
+      <!-- HTML Element-->
+      <section>
+        <h3>Anatomy of an HTML Element</h3>
+        <ul>
+          <li><strong>Element</strong>
+            <ul>
+              <li>An individual component of HTML</li>
+              <li>Paragraph, heading, table, list, section, footer, link, image, etc</li>
+              <li><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element" target="_blank">List of HTML Elements (MDN)</a></li>
+            </ul>
+          </li>
+          <li><strong>Tag</strong>
+            <ul>
+              <li>Marks the beginning &amp; end of an element</li>
+              <li>Opens and closes (Usually...)</li>
+              <li>Tags contain characters that indicate a tag/element's purpose
+              </li>
+            </ul>
+          </li>
+        </ul>
+        <pre><code class ="html xml">&lt;tagname&gt;Content&lt;/tagname&gt;</code></pre>
+<pre><code class ="html">&lt;p&gt;This is a sample paragraph.&lt;/p&gt;</code></pre>
+      </section>
+
+      <!--Anatomy of a Tag -->
+      <section>
+        <h3>Tag Breakdown</h3>
+        <img src="./assets/imgs/tagbreakdown.png" alt="Tag breakdown" style="border: none; box-shadow: none;" />
+      </section>
+
+      <!-- HTML Doctype -->
+      <section>
+        <h3>Doctype</h3>
+        <p>The first element on an HTML page is the <code>doctype</code>, which tells the browser what language to use to read and display the page.</p>
+<pre><code class = "html"> &lt;!DOCTYPE html&gt; </code></pre>
+      </section>
+
+      <!-- HTML tag -->
+      <section>
+        <h3>HTML Tag</h3>
+        <p>After &lt;doctype&gt;, the rest of the page elements must be contained between a pair of root &lt;html&gt; tags.</p>
+<pre><code class="html">&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+
+&lt;/html&gt;
+</code></pre>
+      </section>
+
+      <!-- HTML tag -->
+      <section>
+        <h3>HTML Tag</h3>
+        <p>The &lt;html&gt; tag holds two children tags:</p>
+        <p>the &lt;head&gt; and &lt;body&gt; tags</p>
+<pre><code class="html">&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+  &lt;head&gt;
+  ...
+  &lt;/head&gt;
+  &lt;body&gt;
+  ...
+  &lt;/body&gt;
+&lt;/html&gt;
+</code></pre>
+        
+      </section>
+
+      <!-- Head tag -->
+      <section>
+        <h3>Head Tag</h3>
+        <ul>
+          <li>The <code>head</code> tag contains information about the page and this information is primarily for the browser.</li>
+        </ul>
+<pre><code class="html">&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+  &lt;head&gt;
+    &lt;meta charset="utf-8"/&gt;
+    &lt;meta name="viewport" content="width=device-width, initial-scale=1"/&gt;
+    &lt;title&gt;Title of the page &lt;/title&gt;
+  &lt;/head&gt;
+  ...
+  ...
+&lt;/html&gt;
+</code></pre>
+      </section>
+
+      <!-- Head tag -->
+      <section>
+        <h3>Head Tag</h3>
+        <ul>
+          <li>With the exception of the page title, content in the <code>head</code> tag is not visible on a rendered page to users.</li>
+          <li>An HTML page can only contain one <code>head</code> tag.</li>
+        </ul>
+<pre><code class = "html">&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+  &lt;head&gt;
+    &lt;meta charset="utf-8"/&gt;
+    &lt;meta name="viewport" content="width=device-width, initial-scale=1"/&gt;
+    &lt;title&gt;Title of the page &lt;/title&gt;
+  &lt;/head&gt;
+  ...
+  ...
+&lt;/html&gt;
+      </code></pre>
+      </section>
+
+      <!-- Meta tags -->
+      <section>
+        <h3>Meta Tags</h3>
+        <p>The <code>meta</code> tag is used to define metadata for an HTML document and can also give additional instruction to the browser about how to display a page.</p>
+<pre><code class = "html">&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+  &lt;head&gt;
+    &lt;meta charset="utf-8"/&gt;
+    &lt;meta name="viewport" content="width=device-width, initial-scale=1"/&gt;
+    &lt;title&gt;Title of the page &lt;/title&gt;
+  &lt;/head&gt;
+&lt;/html&gt;
+</code></pre>
+      </section>
+
+      <!-- Title and Link tags -->
+      <section>
+        <h3>Title and Link Tags</h3>
+        <p>Two other tags found in the <code>head</code> tag are:</p>
+        <ul>
+          <li><code>link</code>: Links a page to internal or external resources such as stylesheets, fonts and more</li>
+          <li><code>title</code>: Defines the title of a page, which is then displayed on the browser title bar</li>
+        </ul>
+<pre><code class = "html">&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+  &lt;head&gt;
+    &lt;meta charset="utf-8"/&gt;
+    &lt;meta name="viewport" content="width=device-width, initial-scale=1"/&gt;
+    &lt;link href="style.css" rel="stylesheet" type="text/css" /&gt;
+    &lt;title&gt;Title of the page &lt;/title&gt;
+  &lt;/head&gt;
+&lt;/html&gt;
+</code></pre>
+      </section>
+
+      <!-- Body tag -->
+      <section>
+        <h3>Body Tag</h3>
+        <ul>
+          <li>The <code>body</code> tag holds all of a page's content. Information here is what will be visible to users</li>
+          <li>An HTML page can only contain one <code>body</code> tag</li>
+        </ul>
+<pre><code class="html">&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+  &lt;head&gt;
+  ...
+  &lt;/head&gt;
+  &lt;body&gt;
+    &lt;p&gt;This is body content which can
+    be text, images, links, video, etc.&lt;/p&gt;
+  &lt;/body&gt;
+&lt;/html&gt;
+</code></pre>
+      </section>
+
+      <!-- Heading tags -->
+      
+      <!-- End of class slides -->
+      <section>
+        <h2>Goodbye Slides!</h2>
+      </section>
+
+      <!-- MUST USE SLIDE - Course Feedback Survey-->
+      <section>
+        <h3>Class Feedback</h3>
+        <p><a href="https://forms.gle/MzMndG5s52a2HiB77" target="_blank">https://forms.gle/MzMndG5s52a2HiB77</a></p>
+      </section>
+
+      <!-- Q&A -->
+      <section>
+        <h2>Q&A</h2>
+      </section>
+
+      <!-- Thank You -->
+      <section>
+        <img src="./assets/imgs/gdi-logos/GDI-Logo_Peach.png" alt="GDI Logo" width="300px" class="noborder" />
+        <br>
+        <h2>Thank You!</h2>
+      </section>
+    </div> <!-- End of Slides container -->
+
+    <footer>
+      <!-- Update with Course Name -->
+      <div class="copyright">
+        <img src="./assets/imgs/gdi-logos/GDI-Logo_Peach.png" alt="GDI Logo" width="40px" class="noborder" />
+        <p>Web Design Essentials 1 - Class 1</p>
+        <a rel="license" href="http://creativecommons.org/licenses/by-nc/3.0/deed.en_US"><img
+            alt="Creative Commons License" style="border-width:0"
+            src="http://i.creativecommons.org/l/by-nc/3.0/80x15.png" /></a>
+      </div>
+    </footer>
+  </div> <!-- End of Reveal wrapper -->
+
+  <!-- REVEAL.JS Script Files - Do Not Edit -->
+  <script src="https://cdn.jsdelivr.net/npm/reveal.js@4.1.0/dist/reveal.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/reveal.js@4.1.0/plugin/highlight/highlight.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/highlightjs-badge@0.1.9/highlightjs-badge.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jsPlumb/2.15.5/js/jsplumb.min.js"></script>
+  <script>
+    const srcUrlPrefix = "https://cdn.jsdelivr.net/npm/reveal.js@4.1.0/";
+    Reveal.initialize({
+      hash: true,
+      center: true,
+      slideNumber: true,
+      showNotes: false,
+      margin: 0.1,
+      preloadIframes: true,
+      plugins: [RevealHighlight],
+      pdfSeparateFragments: true
+    });
+
+    // add HighlightJS-badge (options are optional)
+    var options = {
+      copyIconContent: "📄",
+      checkIconContent: "✅"
+    };
+    window.highlightJsBadge(options);
+
+    if (window.location.search == "?print-pdf") {
+      var uncounted = document.querySelectorAll("[data-visibility='uncounted']");
+      uncounted.forEach(node => {
+        node.parentNode.classList.add("no-print")
+      })
+    }
+  </script>
+</body>
+</html>

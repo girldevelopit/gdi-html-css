@@ -1,0 +1,478 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <meta name="description" content="Girl Develop It Web Design Essentials 1 Cohort Series">
+  <meta name="author" content="Girl Develop It">
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+
+  <!-- Update with GDI Course Name -->
+  <title>GDI - Web Design Essentials 1, Class 4</title>
+
+  <link rel="icon" type="image/x-icon" href="./assets/imgs/favicon.ico" />
+
+  <!-- RevealJS CDN -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reveal.js@4.1.0/dist/reset.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reveal.js@4.1.0/dist/reveal.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reveal.js@4.1.0/dist/theme/simple.css" id="theme">
+
+  <!-- GDI Custom Theme -->
+  <link rel="stylesheet" href="./assets/css/gdi-theme.css">
+
+  <!-- Theme used for syntax highlighted code -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.1.0/styles/monokai.min.css">
+</head>
+<body>
+  <div class="reveal">
+    <!-- Start of Slides container -- Any section element in this container is displayed as a slide -->
+    <div class="slides">
+      <!-- Course and Class Titles -->
+      <section>
+        <h2>Web Design Essentials 1</h2>
+        <h2>Class 4</h3>
+      </section>
+
+      <!-- Class Agenda -->
+      <section>
+        <h3>AGENDA</h3>
+        <ul>
+          <li>Class 3 Review</li>
+          <li>Basic CSS Properties (contd)</li>
+          <li>CSS Box Model
+            <ul>
+              <li>Block vs Inline Elements</li>
+              <li>Box-Sizing Property</li>
+              <li>"CSS Reset"</li>
+            </ul>
+          </li>
+          <li>Class 5 Preview</li>
+          <li>Class Feedback and Q&A</li>
+        </ul>
+      </section>
+
+      <!-- Stretch Break -->
+      <section>
+        <h3>Stretch - "Bio" Break</h3>
+        <p>8:00p EST / 7:00p CST / 5:00p PST</p>
+      </section>
+
+      <!-- CSS Properties -->
+      <section>
+        <h3>CSS Properties (contd)</h3>
+      </section>
+
+      <!-- CSS Colors -->
+      <section>
+        <h3>CSS Color Values</h3>
+        <p>Browsers can accept colors in different ways:</p>
+        <table style="margin: 0 auto">
+          <tr>
+            <td><strong>Color name: </strong></td>
+            <td><code>red</code></td>
+          </tr>
+          <tr>
+            <td><strong>Hexadecimal value: </strong></td>
+            <td><code>#FF0000</code></td>
+          </tr>
+          <tr>
+            <td><strong>RGB value: </strong></td>
+            <td><code>rgb(255, 0, 0)</code></td>
+          </tr>
+          <tr>
+            <td><strong>RGBa value: </strong></td>
+            <td><code>rgb(255, 0, 0, 1)</code></td>
+          </tr>
+          <tr>
+            <td><strong>HSL value</strong></td>
+            <td><code>hsl(0, 100%, 50%)</code></td>
+          </tr>
+        </table>
+        <hr />
+        <p><a href="http://www.colors.commutercreative.com/grid/" target="_blank">CSS Color Names</a></p>
+        <p><a href="http://www.w3schools.com/colors/colors_picker.asp" target="_blank">W3Schools Color Picker</a></p>
+
+      </section>
+
+      <section>
+        <h3>Color Values Demo</h3>
+      </section>
+
+      <!-- Size Units -->
+      <section>
+        <h3>Common Size Units</h3>
+        <ul>
+          <li>Pixels: px</li>
+          <li>Root element font-size: rem
+            <ul>
+              <li>Default root font-size: 16px</li>
+            </ul>
+          </li>
+          <li>Element font-size: em</li>
+          <li>Percentage: %</li>
+        </ul>
+        <hr />
+        <p><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/font-size" target="_blank">CSS Length Data Types
+            (MDN)</a></p>
+      </section>
+
+      <section>
+        <h3>Size Units Demo</h3>
+      </section>
+
+      <!-- Fonts -->
+      <section>
+        <h3>Fonts</h3>
+      </section>
+
+      <!-- Web Safe Fonts -->
+      <section>
+        <h3>Web Safe Fonts</h3>
+        <ul>
+          <li>Fonts that all browsers can display by default</li>
+          <li>They don't have to be loaded into our projects</li>
+          <li>They don't have to be linked from an external source</li>
+          <li>Web safe fonts can be used as "fallbacks" for custom fonts</li>
+        </ul> 
+        <pre><code class = "css">p {
+  font-family: "Times New Roman"; /* Specific font name */
+  font-family: serif; /* Generic name */
+  font-family: "Arial", sans-serif; /* Comma-separated list */
+}
+</code></pre>
+        <hr>
+        <p><a href="https://www.w3schools.com/cssref/css_websafe_fonts.asp" target="_blank">Web Safe Fonts (W3
+            School)</a></p>
+      </section>
+
+      <!-- Custom Fonts -->
+      <section>
+        <h3>Custom Fonts</h3>
+        <p style='font-size: 32px'>Two ways to apply custom fonts:</p>
+        <ul>
+          <li>Load font files into our project directory, or</li>
+          <li>Link to external font libraries such as <a href="https://fonts.google.com/" target="_blank">Google Fonts</a></li>
+        </ul>
+      </section>
+
+      <!-- Google Fonts Demo -->
+      <section>
+        <h3>Google Fonts</h3>
+        <h4>Demo</h4>
+      </section>
+
+      <!-- CSS Box Model -->
+      <section>
+        <h3>CSS Box Model</h3>
+      </section>
+
+      <!-- Box Model image -->
+      <section>
+        <h3>Boxes Everywhere!</h3>
+        <p style='font-size: 32px'>Every HTML element on a page is wrapped in a box.</p>
+        <img src="./assets/imgs/box-model.png" width='500px' alt="the CSS box model">
+        <p><small>Image source: <a
+              href="https://complete-concrete-concise.com/tutorials/webdev/front-end-basics/html-flow-and-the-css-box-model-the-display-property/"
+              target='_blank'>complete-concrete-concise.com</a></small></p>
+      </section>
+
+      <!-- Box Model Properties -->
+      <section>
+        <h3>Box Model Properties</h3>
+        <ul>
+          <li style="margin-bottom: 1rem;"><strong>Content</strong>: Text, image, form, etc.</li>
+          <li style="margin-bottom: 1rem;"><strong>Padding:</strong>The space around the content, or the distance between the content and its borders</li>
+          <li style="margin-bottom: 1rem;"><strong>Border:</strong>The wrapper around the content and its padding </li>
+          <li><strong>Margin:</strong> The distance between an element and its neighbors</li>
+        </ul>
+      </section>
+
+      <!-- Box Model diagram -->
+      <section>
+        <h3>Box Model</h3>
+        <img src="./assets/imgs/box-model2.png" alt="">
+        <p><small>Image source: <a href="http://thenewcode.com/49/The-CSS-Box-Model"
+              target='_blank'>thenewcode.com</a></small></p>
+      </section>
+
+      <!-- Box Model in Dev Tools demo -->
+      <section>
+        <h3>Box Model in Developer Tools</h3>
+        <h4>Demo</h4>
+      </section>
+
+      <!-- Display Flow -->
+      <section>
+        <h3>Display Flow</h3>
+        <p style='font-size: 32px'>Every element has a default flow or way that it renders on the page before any CSS styling is applied. It is either:</p>
+        <ul>
+          <li>Stacking on top of another element</li>
+          <li>Side by side with another element</li>
+        </ul>
+      </section>
+
+      <!-- Block and Inline Elements -->
+      <section>
+        <h3>Block and Inline Elements</h3>
+        <ul>
+          <li style="margin-bottom: 1rem;">Elements that stack are: <code>Block</code> elements</li>
+          <li>Elements that are side-by-side on the same line are <code>Inline</code> elements</li>
+        </ul>
+        <p style='font-size: 32px'>This is also referred to as an element's <code>display</code> property.</p>
+      </section>
+      
+      <!-- Behavior -->
+      <section>
+        <h3>Block vs Inline Behavior</h3>
+        <ul>
+          <li style="margin-bottom: 1rem;">Block elements start a new line or live on their own line; they take up the full width of their line or their parent container</li>
+          <li>Inline elements don't start a new line and take up only as much space as their content needs</li>
+        </ul>
+      </section>
+
+      <!-- Example Block Elements -->
+      <section>
+        <h3>Block Elements</h3>
+        <p style='font-size: 32px'>Block-level elements include:</p>
+        <ul>
+          <li>Headings (h1, h2, etc)</li>
+          <li>Paragraphs</li>
+          <li>Divs</li>
+          <li>Lists</li>
+        </ul>
+        <p><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Block-level_elements" target="_blank">Block Level Elements (MDN)</a></p>
+      </section>
+      
+      <!-- Example Inline Elements -->
+      <section>
+        <h3>Inline Elements</h3>
+        <p style='font-size: 32px'>Inline-level elements include:</p>
+        <ul>
+          <li>Anchor "a" tags</li>
+          <li>Images</li>
+          <li>Spans</li>
+        </ul>
+        <p><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Inline_elements" target="_blank">Inline Level Elements (MDN)</a></p>
+      </section>
+      
+      <!-- CSS Display property -->
+      <section>
+        <h3>The CSS "Display" Property</h3>
+        <ul>
+          <li style="margin-bottom: 1rem;">CSS can be used to change an element's default flow or display property</li>
+          <li>A block element can be changed to an inline element and vice versa</li>
+        </ul>
+      </section>
+
+      <!-- Display property code example -->
+      <section>
+        <h3>The CSS "Display" Property</h3>
+<pre><code class="css">/* This paragraph element will now be an inline element */
+p {
+  display: inline;
+}
+
+/* This span element will now be a block element */
+span {
+  display: block;
+}
+</code></pre>
+      </section>
+
+      <!-- Block and Inline Elements Demo -->
+      <section>
+        <h3>Block and Inline Elements</h3>
+        <h4>Demo</h4>
+      </section>
+
+      <!-- Layout Pitfalls  -->
+      <section>
+        <h3>Layout Pitfalls</h3>
+        <p>A few default properties of CSS can lead to unexpected layout behavior. There are two common culprits:</p>
+        <ol>
+          <li>the CSS property <code>box-sizing</code></li>
+          <li>Browser defaults</li>
+        </ol>
+      </section>
+      
+      <!-- Box Sizing -->
+      <section>
+        <h3>Box-Sizing</h3>
+        <p style='font-size: 32px'>The CSS <code>box-sizing</code> property determines how we calculate the total width and height of an element. It has two values:</p>
+<pre><code class="css">/* content-box is the default box-sizing 
+   value of all elements */
+box-sizing: content-box;
+
+/* border-box will be your layout's best friend! */
+box-sizing: border-box;
+</code></pre>
+      </section>
+      
+      <!-- Layout Tip #1 -->
+      <section>
+        <h3>Layout Tip #1</h3>
+        <p style='font-size: 32px'>Set the <code>box-sizing</code> property of all elements in your project to <code>border-box</code>.</p>
+<pre><code class="css">/* This declaration will target every element in the project */
+
+* {
+  box-sizing: border-box;
+}
+</code></pre>
+      </section>
+
+      <!-- Box Sizing Demo  -->
+      <section>
+        <h3>Box Sizing</h3>
+        <h4>Demo</h4>
+      </section>
+      
+      <!-- Layout Tip #2: CSS Resets -->
+      <section>
+        <h3>Layout Tip #2</h3>
+        <p style='font-size: 36px'>Use CSS resets.</p>
+      </section>
+
+      <!-- Browser Defaults -->
+      <section>
+        <h3>Browser Defaults</h3>
+        <ul>
+          <li style="margin-bottom: 1rem;">Most HTML elements have one or more default browser values, that is, they have some basic CSS that influences their appearance on a page</li>
+          <li>Some of these defaults can throw off our page layout; others may not be needed</li>
+        </ul>
+      </section>
+      
+      <!-- CSS Reset  -->
+      <section>
+        <h3>Resetting CSS</h3>
+        <ul>
+          <li style="margin-bottom: 1rem;">A "CSS Reset" stylesheet is one way to remove some of these defaults globally in our project</li>
+          <li>In this stylesheet, we are writing new CSS values to overwrite the browser defaults</li>
+        </ul>
+      </section>
+      
+      <!-- Popular CSS Resets -->
+      <section>
+        <h3>CSS Resets</h3>
+        <p style='font-size: 32px'>You can create your own reset rules or use any number of well-known reset stylesheets such as:</p>
+        <ul>
+          <li><a href="https://piccalil.li/blog/a-modern-css-reset/" target="_blank">Andy Bell's CSS Reset</a></li>
+          <li><a href="https://meyerweb.com/eric/tools/css/reset/" target="_blank">MeyerWeb CSS</a></li>
+          <li><a href="https://necolas.github.io/normalize.css/" target="_blank">Normalize.css</a></li>
+        </ul>
+      </section>
+      
+      <!-- Two ways to reset -->
+      <section>
+        <h3>Two Ways to Reset</h3>
+        <ol>
+          <li style="margin-bottom: 1rem;">Add a separate reset.css stylesheet to your project with the <code>link</code> tag in the <code>head</code> section of your HTML page
+          <ul>
+            <li>Make sure the link comes before the project's stylesheet link</li>
+          </ul></li>
+          <li>Include/Import the new CSS rules at the top of your project's stylesheet</li>
+        </ol>
+      </section>
+
+      <!-- CSS Reset demo  -->
+      <section>
+        <h3>CSS Reset</h3>
+        <h4>Demo</h4>
+      </section>
+
+      <!-- Home Practice -->
+      <section>
+        <h3>Home Practice</h3>
+        <ol>
+          <li>Continue refining your page markup</li>
+          <li>Continue styling with CSS properties we've covered and/or other properties you look up!</li>
+          <li>Add custom font(s) from Google Fonts</li>
+          <li>Optional: Share your layout sketch and markup with me:
+            <ul>
+              <li>Image link to your sketch</li>
+              <li>Your REPL project link</li>
+            </ul>
+          </li>
+        </ol>
+      </section>
+
+      <!-- Class 5 Preview -->
+      <section>
+        <h3>Class 5 - Agenda</h3>
+        <ul>
+          <li>CSS Box Model (contd)</li>
+          <li>CSS Combinators & Pseudo-Classes</li>
+          <li>Working with Images</li>
+          <li>Responsive Web Design
+            <ul>
+              <li>Media Queries</li>
+            </ul>
+          </li>
+        </ul>
+      </section>
+
+      <!-- Q&A -->
+      <section>
+        <h3>Q&A</h3>
+      </section>
+
+      <!-- MUST USE SLIDE - Course Feedback Survey-->
+      <section>
+        <h3>Class Feedback</h3>
+        <p><a href="https://forms.gle/MzMndG5s52a2HiB77" target="_blank">https://forms.gle/MzMndG5s52a2HiB77</a></p>
+      </section>
+
+      <!-- Thank You -->
+      <section>
+        <img src="./assets/imgs/gdi-logos/GDI-Logo_Peach.png" alt="GDI Logo" width="300px" class="noborder" />
+        <br>
+        <h3>Thank You!</h3>
+      </section>
+    </div> <!-- End of Slides container -->
+
+    <footer>
+      <!-- Update with Course Name -->
+      <div class="copyright">
+        <img src="./assets/imgs/gdi-logos/GDI-Logo_Peach.png" alt="GDI Logo" width="40px" class="noborder" />
+        <p>Web Design Essentials 1 - Class 4</p>
+        <a rel="license" href="http://creativecommons.org/licenses/by-nc/3.0/deed.en_US"><img
+            alt="Creative Commons License" style="border-width:0"
+            src="http://i.creativecommons.org/l/by-nc/3.0/80x15.png" /></a>
+      </div>
+    </footer>
+  </div> <!-- End of Reveal wrapper -->
+
+  <!-- REVEAL.JS Script Files - Do Not Edit -->
+  <script src="https://cdn.jsdelivr.net/npm/reveal.js@4.1.0/dist/reveal.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/reveal.js@4.1.0/plugin/highlight/highlight.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/highlightjs-badge@0.1.9/highlightjs-badge.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jsPlumb/2.15.5/js/jsplumb.min.js"></script>
+  <script>
+    const srcUrlPrefix = "https://cdn.jsdelivr.net/npm/reveal.js@4.1.0/";
+    Reveal.initialize({
+      hash: true,
+      center: true,
+      slideNumber: true,
+      showNotes: false,
+      margin: 0.1,
+      preloadIframes: true,
+      plugins: [RevealHighlight],
+      pdfSeparateFragments: true
+    });
+
+    // add HighlightJS-badge (options are optional)
+    var options = {
+      copyIconContent: "📄",
+      checkIconContent: "✅"
+    };
+    window.highlightJsBadge(options);
+
+    if (window.location.search == "?print-pdf") {
+      var uncounted = document.querySelectorAll("[data-visibility='uncounted']");
+      uncounted.forEach(node => {
+        node.parentNode.classList.add("no-print")
+      })
+    }
+  </script>
+</body>
+</html>
