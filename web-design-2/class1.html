@@ -1,0 +1,511 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <meta name="description" content="Girl Develop It Web Design Essentials 2 Cohort Series">
+  <meta name="author" content="Girl Develop It">
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+
+  <!-- Update with GDI Course Name -->
+  <title>GDI - Web Design Essentials 2, Class 1</title>
+
+  <link rel="icon" type="image/x-icon" href="./assets/images/favicon.ico" />
+
+  <!-- RevealJS CDN -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reveal.js@4.1.0/dist/reset.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reveal.js@4.1.0/dist/reveal.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reveal.js@4.1.0/dist/theme/simple.css" id="theme">
+
+  <!-- GDI Custom Theme -->
+  <link rel="stylesheet" href="./assets/css/gdi-theme.css">
+
+  <!-- Theme used for syntax highlighted code -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.1.0/styles/monokai.min.css">
+  <style>
+    p.gdi-p {
+      font-size: 32px;
+      line-height: 1.5;
+    }
+  </style>
+</head>
+<body>
+  <div class="reveal">
+    <!-- Start of Slides container -- Any section element in this container is displayed as a slide -->
+    <div class="slides">
+
+      <!-- Course and Class Titles -->
+      <section>
+        <h2>Web Design Essentials 2</h2>
+        <h2>Class 1</h3>
+      </section>
+
+      <!-- Class Agenda -->
+      <section>
+        <h3>AGENDA</h3>
+          <ul>
+            <li>Web Design Essentials 1 Recap</li>
+            <li>Review: Selectors</li>
+            <li>More Selectors!
+              <ul>
+                <li>Combinators</li>
+                <li>Pseudo Classes</li>
+                <li>Pseudo Elements</li>
+              </ul>
+            </li>
+            <li>Cohort Project</li>
+            <li>Feedback & Class 2 Preview</li>
+          </ul>
+      </section>
+      
+      <!-- Stretch Break -->
+      <section>
+        <h3>Stretch - "Bio" Break</h3>
+        <p>11:30a PST /  1:30p CST / 2:30p EST</p>
+      </section>
+
+      <!-- Web Design Essentials 1 Recap -->
+      <section>
+        <h3>Web Design Essentials 1 Overview</h3>
+        <ul>
+          <li>Semantic HTML and Accessibility</li>
+          <li>HTML Elements & CSS Properties</li>
+          <li>Basic CSS Selectors</li>
+          <li>CSS Box Model</li>
+          <li>Images</li>
+          <li>Media Queries</li>
+        </ul>
+      </section>
+
+      <!-- Review: Selectors -->
+      <section>
+        <h3>Review: CSS Selectors</h3>
+      </section>
+
+      <!-- Quiz -->
+      <section>
+        <h3>CSS Selectors</h3>
+        <p>What are selectors? What do selectors do?</p>
+        <p>What are the three common selectors?</p>
+      </section>
+
+      <!-- Selectors  -->
+      <section>
+        <h3>CSS Selectors</h3>
+        <ul>
+          <li>A selector is used to select, identify or find HTML elements on a page</li>
+          <li>The elements will then be given the styles declared in between curly braces</li>
+        </ul>
+<pre><code class="css">selector {
+    property: value;
+    property: value;
+  }</code></pre>
+
+<pre><code class="css">p {
+  color: yellow;
+  background-color: black;
+}</code></pre>
+      </section>
+
+      <!-- 3 Common Selectors -->
+      <section>
+        <h3>The Three Common CSS Selectors</h3>
+        <p>Element or Type selector</p>
+        <p>Class selector</p>
+        <p>ID selector</p>
+      </section>
+
+      <!-- Element or Type Selector -->
+      <section>
+        <h3>Element or Type Selector</h3>
+        <p>An element selector targets or finds HTML elements on the page: <code>div</code>, <code>p</code>, <code>h3</code>, <code>section</code>, <code>nav</code>, etc.</p>
+<pre><code class="css">h2 {
+  color: yellow;
+  background-color: black;
+}</code></pre>
+
+<pre><code class="html">&lt;h2&gt;First Product Title&lt;/h2&gt;
+</code></pre>
+      </section>
+
+      <!-- Class Selector -->
+      <section>
+        <h3>Class Selector</h3>
+        <p><code>Class</code> selectors are prefixed with a dot: <code>"."</code>, followed by the class name</p>
+<pre><code class="css">.product-text {
+  color: purple;
+}</code></pre>
+
+<pre><code class="html">&lt;p class="product-text product-bground"&gt;Some product detail.&lt;/p&gt;
+</code></pre>
+      </section>
+
+      <!-- ID Selector -->
+      <section>
+        <h3>ID Selector</h3>
+        <p><code>ID</code> selectors are prefixed with a hash symbol: <code>"#"</code>, followed by an ID name</p>
+<pre><code class="css">#product-name {
+  background: tomato;
+}</code></pre>
+
+<pre><code class="html">&lt;h2 id="product-name"&gt;First Product Title&lt;/h2&gt;
+</code></pre>
+        </ul>
+      </section>
+
+      <!-- Diff between Class and ID  -->
+      <section>
+        <h3>Class vs ID Selector</h3>
+        <p>What's the primary difference between a Class and an ID selector?</p>
+      </section>
+
+      <!--  Diff between Class and ID -->
+      <section>
+        <h3>Class vs ID Selector</h3>
+        <ul>
+          <li>A Class selector can be applied to multiple elements</li>
+          <li>An ID selector can only be applied to a single element</li>
+        </ul>
+      </section>
+
+      <!-- More Selectors -->
+      <section>
+        <h3>Additional Selectors</h3>
+        <p>There are more ways to select or target HTML elements for styling.</p>
+      </section>
+
+      <!-- Universal selector -->
+      <section>
+        <h3>The Universal Selector</h3>
+        <ul>
+          <li>The <code>universal</code> selector selects all elements on a page</li>
+          <li>It is mostly used for applying the box-sizing property </li>
+<pre><code class="css">* {
+  box-sizing: border-box;
+}
+</code></pre>
+        </ul>
+        <p><a href="https://www.w3schools.com/css/css3_box-sizing.asp" target="_blank">Box-sizing (W3Schools)</a></p>
+        
+      </section>
+
+      <!-- Grouping selector -->
+      <section>
+        <h3>Grouping Selectors</h3>
+        <ul>
+          <li>The <code>selector list</code> groups other selectors and applies the same style(s) to them</li>
+<pre><code class="css">p, h2, h4 {
+  color: purple;
+}
+</code></pre>
+        </ul>
+      </section>
+
+      <!-- Chaining selectors -->
+      <section>
+        <h3>Chaining Selectors</h3>
+        <p>We can chain selectors to more directly target them with CSS.</p>
+<pre><code class="html">&lt;h2 id="product-name"&gt;First Product Title&lt;/h2&gt;
+</code></pre>
+<pre><code class="html">&lt;a href="url.com" class="btn-large"&gt;Click Me!&lt;/a&gt;
+</code></pre>
+<pre><code class="css">h2#productname,
+a.btn-large {
+  color: purple;
+}
+/* Only add the color purple to the h2 
+with an id of product-name, and to an
+a tag with the class name of btn-large. */
+</code></pre>
+      </section>
+
+      <!-- Attribute selectors -->
+      <section>
+        <h3>Attribute Selectors</h3>
+        <p>We can define selectors to identify elements by their attributes</p>
+<pre><code class="html">&lt;a href="url.com" class="btn-large"&gt;Click Me!&lt;/a&gt;
+</code></pre>
+<pre><code class="html">&lt;a href="apple.com" class="btn-large"&gt;Click Me!&lt;/a&gt;
+</code></pre>
+<pre><code class="css">a[href="apple.com"] {
+    color:green;
+  }
+/* Apply the color green to any anchor tag
+pointing to the apple.com site */
+</code></pre>
+        <p><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/Attribute_selectors" target="_blank">Attribute Selectors (MDN)</a>
+      </section>
+
+      <!-- CSS Combinators -->
+      <section>
+        <h3>CSS Combinators</h3>
+        <p>CSS Combinators describe the relationship between selectors. They help make our CSS more specific. There are four types:</p>
+        <ul>
+          <li>Descendant combinator</li>
+          <li>Child combinator</li>
+          <li>Adjacent Sibling combinator</li>
+          <li>General Sibling combinator</li>
+        </ul>
+        <p><a href="https://developer.mozilla.org/en-US/docs/Learn/CSS/Building_blocks/Selectors/Combinators" target="_blank">CSS Combinators (MDN)</a></p>
+      </section>
+
+      <!-- Descendant Combinator  -->
+      <section>
+        <h3>Descendant Combinator</h3>
+        <ul>
+          <li>Targets all (similar) elements that are descendants of a specified element</li>
+          <li>It is characterized by a single space between the elements</li>
+        </ul>
+<pre><code class="css">div p {
+  color: purple;
+}
+</code></pre>
+      </section>
+
+      <!-- Child Combinator -->
+      <section>
+        <h3>Child Combinator</h3>
+        <ul>
+          <li>Targets only child elements that are direct children of the specified parent element</li>
+          <li>It is characterized by a closing angle bracket: <code>></code></li>
+        </ul>
+        <pre><code class="css">div > p {
+  color: purple;
+}
+</code></pre>
+      </section>
+
+      <!-- Adjacent Sibling -->
+      <section>
+        <h3>Adjacent Sibling Combinator</h3>
+        <ul>
+          <li>Targets elements that come directly after each other and share the same parent</li>
+          <li>It is characterized by a plus mark: <code>+</code></li>
+        </ul>
+<pre><code class="css">h2 + p {
+  color: aquamarine;
+}
+</code></pre>
+      </section>
+
+      <!-- General Sibling Combinator -->
+      <section>
+        <h3>General Sibling Combinator</h3>
+        <ul>
+          <li>Targets sibling elements that share the same parent, but do not necessarily come after each other</li>
+          <li>It is characterized by the tilde mark: <code>~</code></li>
+        </ul>
+<pre><code class="css">h2 ~ p {
+  color: yellowgreen;
+}
+</code></pre>
+      </section>
+
+      <!-- Pseudo Classes -->
+      <section>
+        <h3>Pseudo Classes</h3>
+        <p>Pseudo-classes are selectors that select and style elements in a particular state. For example:</p>
+        <ul>
+          <li>Styling anchor tags depending on their state</li>
+          <li>Styling an element when a user hovers/mouses over it</li>
+          <li>Styling the first or last or nth type of an element</li>
+        </ul>
+        <p><a href="https://developer.mozilla.org/en-US/docs/Learn/CSS/Building_blocks/Selectors/Pseudo-classes_and_pseudo-elements" target="_blank">Pseudo-Classes (MDN)</a></p>
+      </section>
+
+      <section>
+        <h3>Pseudo Classes</h3>
+        <p>Pseudo-classes start with the target selector/element, then a colon <code>:</code>, and the pseudo-class keyword:</p>
+<pre><code class="css">/* Pseudo-Class Syntax */
+
+selector:pseudo-class-keyword {
+  property: value;
+}
+
+/* Target every first-child p tag */
+p:first-child {
+  color:yellowgreen;
+}
+</code></pre>
+      </section>
+
+      <!-- Hover State -->
+      <section>
+        <h3>Hover State</h3>
+<pre><code class="css">
+h2 {
+  color: red;
+}
+
+/* Change the color on hover */
+h2:hover {
+  color:yellowgreen;
+}
+</code></pre>
+      </section>
+
+      <!-- Anchor tag states -->
+      <section>
+        <h3>Anchor Tag States</h3>
+        <p>Anchor tags exists in the five following states.</p> <p>Note that there's a pseudo-class for each state.</p>
+        <ul>
+          <li><code>a:link</code> - an unvisited link; the default state</li>
+          <li><code>a:visited</code> - when the link has been visited</li>
+          <li><code>a:hover</code> - when a mouse hovers over the link</li>
+          <li><code>a:active</code> - when the mouse is clicked</li>
+          <li><code>a:focus</code> - when a user uses the tab key to select a link </li>
+        </ul>
+
+      </section>
+
+      <!-- Anchor state order -->
+      <section>
+        <h3>Ordering Anchor Tag States</h3>
+        <p>Anchor tag states have to be defined in a specific order in CSS.</p>
+        <ul>
+          <li><code>:hover</code> must come after <code>:link</code> and <code>:visited</code></li>
+          <li><code>:active</code> must come after <code>:hover</code></li>
+        </ul>
+        <p><a href="https://www.w3schools.com/css/css_link.asp" target="_blank">Styling Links (W3Schools)</a></p>
+      </section>
+
+      <!-- Type Position -->
+      <section>
+        <h3>Type Position</h3>
+        <p>Pseudo-classes can be used to target specific elements in a group.</p>
+<pre><code class="css">/* Target every first-child h3 tag */
+h3:first-child {
+  color:yellowgreen;
+}
+</code></pre>
+      </section>
+
+      <!-- Pseudo Element -->
+      <section>
+        <h3>Pseudo-Elements</h3>
+        <ul>
+          <li>Pseudo-elements add specific styling effects to page elements or add "extra" content to elements</li>
+          <li>The four commonly used pseudo-elements are:
+            <ul>
+              <li>::before</li>
+              <li>::after</li>
+              <li>::first-line</li>
+              <li>::first-letter</li>
+            </ul>
+          </li>
+        </ul>
+      </section>
+
+      <!-- Pseudo element syntax -->
+      <section>
+        <h3>Pseudo-Element Syntax</h3>
+        <p>The syntax of pseudo-classes and pseudo-elements look the same, with one exception. Can you spot it?</p>
+<pre><code class="css">/* Pseudo-Class Syntax */
+selector:pseudo-class-keyword {
+  css-property: value;
+}
+
+/* Pseudo-Elements Syntax */
+selector::pseudo-element-keyword {
+  css-property: value;
+}
+</code></pre>
+      </section>
+
+      <!-- Home Practice -->
+      <section>
+        <h3>Home Practice</h3>
+        <ol>
+          <li>If you don't have a project yet:
+            <ul>
+              <li>Decide on your project choice and create a hand-drawn sketch</li>
+              <li>Code the markup (HTML) for the page</li>
+              <li>Apply basic styling (CSS) to the page</li>
+              <li>Optional: Email me links if you'd like feedback</li>
+            </ul>
+          </li>
+          <li>For those with ongoing projects from WDE1:
+            <ul>
+              <li>Continue to refine and build out your page</li>
+            </ul>
+          </li>
+        </ol>
+      </section>
+
+      <!-- Next Class -->
+      <section>
+        <h3>Class 2 - Agenda</h3>
+        <ul>
+          <li>Project Pages Review-Feedback</li>
+          <li>Positioning</li>
+          <li>CSS Cascade, Inheritance & Specificity</li>
+          <li>CSS Flexbox</li>
+        </ul>
+      </section>
+
+      <!-- MUST USE SLIDE - Course Feedback Survey-->
+      <section>
+        <h3>Class Feedback</h3>
+        <p><a href="https://forms.gle/5K8bizABE4sqiYNx8" target="_blank">https://forms.gle/5K8bizABE4sqiYNx8</a></p>
+      </section>
+
+      <!-- Q&A -->
+      <section>
+        <h2>Q&A</h2>
+      </section>
+
+      <!-- Thank You -->
+      <section>
+        <img src="./assets/images/gdi-logos/GDI-Logo_Peach.png" alt="GDI Logo" width="300px" class="noborder" />
+        <br>
+        <h2>Thank You!</h2>
+      </section>
+    </div> <!-- End of Slides container -->
+
+    <footer>
+      <!-- Update with Course Name -->
+      <div class="copyright">
+        <img src="./assets/images/gdi-logos/GDI-Logo_Peach.png" alt="GDI Logo" width="40px" class="noborder" />
+        <p>Web Design Essentials 2 - Class 1</p>
+        <a rel="license" href="http://creativecommons.org/licenses/by-nc/3.0/deed.en_US"><img
+            alt="Creative Commons License" style="border-width:0"
+            src="http://i.creativecommons.org/l/by-nc/3.0/80x15.png" /></a>
+      </div>
+    </footer>
+  </div> <!-- End of Reveal wrapper -->
+
+  <!-- REVEAL.JS Script Files - Do Not Edit -->
+  <script src="https://cdn.jsdelivr.net/npm/reveal.js@4.1.0/dist/reveal.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/reveal.js@4.1.0/plugin/highlight/highlight.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/highlightjs-badge@0.1.9/highlightjs-badge.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jsPlumb/2.15.5/js/jsplumb.min.js"></script>
+  <script>
+    const srcUrlPrefix = "https://cdn.jsdelivr.net/npm/reveal.js@4.1.0/";
+    Reveal.initialize({
+      hash: true,
+      center: true,
+      slideNumber: true,
+      showNotes: false,
+      margin: 0.1,
+      preloadIframes: true,
+      plugins: [RevealHighlight],
+      pdfSeparateFragments: true
+    });
+
+    // add HighlightJS-badge (options are optional)
+    var options = {
+      copyIconContent: "📄",
+      checkIconContent: "✅"
+    };
+    window.highlightJsBadge(options);
+
+    if (window.location.search == "?print-pdf") {
+      var uncounted = document.querySelectorAll("[data-visibility='uncounted']");
+      uncounted.forEach(node => {
+        node.parentNode.classList.add("no-print")
+      })
+    }
+  </script>
+</body>
+</html>

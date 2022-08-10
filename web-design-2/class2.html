@@ -1,0 +1,425 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <meta name="description" content="Girl Develop It Web Design Essentials 2 Cohort Series">
+  <meta name="author" content="Girl Develop It">
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+
+  <!-- Update with GDI Course Name -->
+  <title>GDI - Web Design Essentials 2, Class 2</title>
+
+  <link rel="icon" type="image/x-icon" href="./assets/images/favicon.ico" />
+
+  <!-- RevealJS CDN -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reveal.js@4.1.0/dist/reset.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reveal.js@4.1.0/dist/reveal.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reveal.js@4.1.0/dist/theme/simple.css" id="theme">
+
+  <!-- GDI Custom Theme -->
+  <link rel="stylesheet" href="./assets/css/gdi-theme.css">
+
+  <!-- Theme used for syntax highlighted code -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.1.0/styles/monokai.min.css">
+  <style>
+    p.gdi-p {
+      font-size: 32px;
+      line-height: 1.5;
+    }
+  </style>
+</head>
+<body>
+  <div class="reveal">
+    <!-- Start of Slides container -- Any section element in this container is displayed as a slide -->
+    <div class="slides">
+
+      <!-- Course and Class Titles -->
+      <section>
+        <h2>Web Design Essentials 2</h2>
+        <h2>Class 2</h3>
+      </section>
+
+      <!-- Class Agenda -->
+      <section>
+        <h3>AGENDA</h3>
+          <ul>
+            <li>Project Pages Review</li>
+            <li>Positioning</li>
+            <li>CSS Cascade, Specificity & Inheritance</li>
+            <li>CSS Flexbox</li>
+            <li>Feedback & Class 3 Preview</li>
+          </ul>
+      </section>
+      
+      <!-- Stretch Break -->
+      <section>
+        <h3>Stretch - "Bio" Break</h3>
+        <p>11:30a PST /  1:30p CST / 2:30p EST</p>
+      </section>
+
+      <!-- Project page review -->
+      <section>
+        <h3>Project Review - Feedback</h3>
+      </section>
+
+      <!-- Positioning -->
+      <section>
+        <h3>The Position Property</h3>
+      </section>
+
+      <!-- Position -->
+      <section>
+        <h3>Position</h3>
+        <p>The <code>position</code> property defines how and where an element can move on the page. It has five values and five coordinate properties:</p>
+        <div style="display: flex; justify-content: space-between; width:400px; margin:0 auto;">
+          <ul>
+            <li>Static</li>
+            <li>Fixed</li>
+            <li>Absolute</li>
+            <li>Relative</li>
+            <li>Sticky</li>
+          </ul>
+          <ul>
+            <li>Top</li>
+            <li>Bottom</li>
+            <li>Left</li>
+            <li>Right</li>
+            <li>Z-Index</li>
+          </ul>
+        </div>
+      </section>
+
+      <!-- Static -->
+      <section>
+        <h3>position: static</h3>
+        <p>This is the default position of all elements; the normal document flow</p>
+      </section>
+
+      <!-- Fixed Positioning  -->
+      <section>
+        <h3>position: fixed</h3>
+        <ul>
+          <li>An element is fixed to a position relative to the browser window</li>
+          <li>The element is also moved out of the document flow</li>
+          <li>Coordinates can be applied for precise positioning</li>
+        </ul>
+<pre><code class="css">
+.box-three {
+  position: fixed;
+  top: 10px;
+  left: 0;
+}
+</code></pre>
+      </section>     
+      
+      <!-- Absolute -->
+      <section>
+        <h3>position: absolute</h3>
+        <ul>
+          <li>The element is positioned relative to its parent container</li>
+          <li>The parent container must have a position value of <code>relative</code>, or the element will be positioned relative to the closest parent with a non-static value</li>
+          <li>The element is removed out of the normal document flow</li>
+          <li>Coordinates can be applied for precise positioning</li>
+
+        </ul>
+<pre><code class="css">
+.box-two {
+  position: absolute;
+  top: 0;
+}
+</code></pre>
+      </section>
+
+      <!-- Relative -->
+      <section>
+        <h3>position: relative</h3>
+        <ul>
+          <li>An element is positioned relative to itself</li>
+          <li>It does not move out of the document flow</li>
+          <li>Coordinates can be applied for precise positioning</li>
+        </ul>
+<pre><code class="css">
+.box-five {
+  position: relative;
+  right: 100px;
+}
+</code></pre>
+      </section>
+
+      <!-- Sticky -->
+      <section>
+        <h3>position: sticky</h3>
+        <ul>
+          <li>The element is fixed and relative to a parent container until the parent container moves out of the viewport</li>
+          <li>Browser support is not at 100%; use with care</li>
+        </ul>
+<pre><code class="css">
+.box-one {
+  position: sticky;
+  top: 10px;
+}
+</code></pre>
+      </section>
+
+      <!-- Z Index -->
+      <section>
+        <h3>Z-Index</h3>
+        <ul>
+          <li>The z-index property defines the order of how elements overlap each other</li>
+          <li>The default value of an element's z-index is auto or 0</li>
+          <li>An element with a high z-index will stack over elements with lower z-index values </li>
+          <li>Only works on elements that have a non-static position</li>
+        </ul>
+<pre><code class="css">
+.box-four {
+  position: sticky;
+  top: 10px;
+}
+</code></pre>
+      </section>
+
+      <!-- Cascade, Inheritance, Specificity -->
+      <section>
+        <h3>CSS Cascade, Specificity & Inheritance</h3>
+      </section>
+
+      <!-- Cascade -->
+      <section>
+        <h3>CSS Cascade</h3>
+        <p>The <code>cascade</code> is how CSS determines what CSS rule or declaration takes precedence when multiple stylesheets are in use; or when more than one rule applies to a given element.</p>
+      </section>
+
+      <!-- Stylesheets -->
+      <section>
+        <h3>Origin of CSS Declarations</h3>
+        <p>The browser reads CSS from three sources:</p>
+        <ul>
+          <li>User Agent stylesheet (Browser defaults)</li>
+          <li>Author stylesheet (Our site's custom styles)</li>
+          <li>User stylesheet (CSS set by the user)</li>
+        </ul>
+        <p><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/Cascade" target="_blank">CSS Cascade (MDN)</a></p>
+      </section>
+
+      <!-- Importance -->
+      <section>
+        <h3>Stylesheet Order of Importance</h3>
+        <p>CSS calculates the importance of declarations from the three types of stylesheets from most to least importance:</p>
+        <ul>
+          <li>User <code>!important</code> declarations</li>
+          <li>Author <code>!important</code> declarations</li>
+          <li>Author declarations</li>
+          <li>User declarations</li>
+          <li>Default browser declarations</li>
+        </ul>
+      </section>
+
+      <section>
+        <h3>!important</h3>
+        <p>The <code>!important</code> flag in CSS means a style<br> will override any other declaration</p>
+<pre><code class="css">p {
+  color: yellow !important;
+}</code></pre>
+      </section>
+
+      <!-- CSS Specificity -->
+      <section>
+        <h3>CSS Specificity</h3>
+        <p>CSS is also calculating and comparing the weight or <code>specificity</code> of the rules in our stylesheets;<br> from most to least specific:</p>
+        <ul>
+          <li>Inline CSS</li>
+          <li>IDs</li>
+          <li>Classes, Pseudo-classes, <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/Attribute_selectors" target="_blank">Attribute selectors</a></li>
+          <li>Elements, Pseudo-elements</li>
+        </ul>
+      </section>
+
+      <!-- Calculating Specificity -->
+      <section>
+        <h3>Calculating Specificity</h3>
+        <img src="./assets/images/css-specificity1.webp" alt="">
+        <p>Source: <a href="https://sudipta-deb.in/2021/08/understand-basic-css-selectors-and-specificity-part-2-of-fundamental-css-tutorial.html" target="_blank">Technical Potpourri</a></p>
+      </section>
+
+      <section>
+        <h3>Calculating Specificity</h3>
+        <img src="./assets/images/css-specificity2.jpeg" alt="">
+        <p>Source: <a href="https://devopedia.org/css-specificity" target="_blank">Devopedia</a></p>
+      </section>
+
+      <!-- Order -->
+      <section>
+        <h3>Same Specificity?</h3>
+        <p>When two or more declarations targeting <br>an element have the same specificity weight,<br> the rule that comes last in the code wins</p>
+
+<pre><code class="html"><p class="square rectangle">Color me!</p>
+</code></pre>
+<pre><code class="css">/*The two rules are both class selectors
+  with the same specificity; but the 
+  rectangle is the last code declared and 
+  will be applied to the element. */
+
+.square {
+  color: red;
+}
+
+.rectangle {
+  color: blue;
+}
+</code></pre>
+      </section>
+
+      <!-- Specificity Resources  -->
+      <section>
+        <h3>CSS Specificity Resources</h3>
+        <p><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/Specificity" target="_blank">CSS Specificity (MDN)</a></p>
+        <p><a href="https://specificity.keegan.st/" target="_blank">CSS Specificity Calculator</a></p>
+        <p><a href="https://isellsoap.github.io/specificity-visualizer/" target="_blank">CSS Specificity Visualizer</a></p>
+        <p><a href="https://cssspecificity.com/" target="_blank">CSS Specificity (The Shining)</a></p>
+        <p><a href="https://specifishity.com/" target="_blank">CSS Specifishity (Estelle Weyl)</a></p>
+      </section>
+
+      <!--  -->
+      <section>
+        <h3>Debugging the Cascade</h3>
+      </section>
+
+      <!-- Specificity Tips -->
+      <section>
+        <h3>Specificity Tips</h3>
+        <ul>
+          <li>1 ID selector out weighs 100+ class selectors</li>
+          <li>1 class selector outweighs 100+ element selectors</li>
+          <li>The Universal selector <code>*</code> has no specificity</li>
+          <li>Code architecture changes: Choose specificity over order</li>
+          <li>List your main stylesheet last</li>
+          <li><code>!important</code> only as a last resort</li>
+        </ul>
+      </section>
+
+      <section>
+        <h3>CSS Inheritance</h3>
+        <ul>
+          <li>Some CSS property values set on parent elements <br>are inherited by their child elements, and some are not</li>
+          <li>Understanding inheritance can help us write fewer, less redundant code</li>
+        </ul>
+        <p><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/inheritance" target="_blank">CSS Inheritance (MDN)</a>
+      </section>
+
+      <section>
+        <h3>Inheritable Properties</h3>
+        <p>Font properties, color, text alignment are common <br>properties can be inherited by default when a child <br>element has no declared values for these properties </p>
+<pre><code class="css">.parent {
+  color: red;
+  font-size: 20px;
+  text-align: center;
+}
+
+.child {
+}
+</code></pre>
+      </section>
+
+      <section>
+        <h3>CSS Inheritance</h3>
+        <p>We can force inheritance with the <code>inherit</code> keyword</p>
+<pre><code class="css">.parent {
+  color: red;
+  border: 1px solid black;
+}
+
+.child {
+  border: inherit;
+}
+</code></pre>
+      </section>
+
+      <section>
+        <h3>CSS Inheritance</h3>
+        <p>We can revert inheritance with three values:<br> <code>initial</code>, <code>unset</code>, <code>revert</code></p>
+      </section>
+
+      <!-- Home Practice -->
+      <section>
+        <h3>Home Practice</h3>
+        <ul>
+          <li>Add a fixed nav or footer to your page</li>
+        </ul>
+      </section>
+
+      <!-- Next Class -->
+      <section>
+        <h3>Class 3 - Agenda</h3>
+        <ul>
+          <li>Project Review-Feedback</li>
+          <li>CSS Flexbox</li>
+        </ul>
+      </section>
+
+      <!-- MUST USE SLIDE - Course Feedback Survey-->
+      <section>
+        <h3>Class Feedback</h3>
+        <p><a href="https://forms.gle/5K8bizABE4sqiYNx8" target="_blank">https://forms.gle/5K8bizABE4sqiYNx8</a></p>
+      </section>
+
+      <!-- Q&A -->
+      <section>
+        <h2>Q&A</h2>
+      </section>
+
+      <!-- Thank You -->
+      <section>
+        <img src="./assets/images/gdi-logos/GDI-Logo_Peach.png" alt="GDI Logo" width="300px" class="noborder" />
+        <br>
+        <h2>Thank You!</h2>
+      </section>
+    </div> <!-- End of Slides container -->
+
+    <footer>
+      <!-- Update with Course Name -->
+      <div class="copyright">
+        <img src="./assets/images/gdi-logos/GDI-Logo_Peach.png" alt="GDI Logo" width="40px" class="noborder" />
+        <p>Web Design Essentials 2 - Class 2</p>
+        <a rel="license" href="http://creativecommons.org/licenses/by-nc/3.0/deed.en_US"><img
+            alt="Creative Commons License" style="border-width:0"
+            src="http://i.creativecommons.org/l/by-nc/3.0/80x15.png" /></a>
+      </div>
+    </footer>
+  </div> <!-- End of Reveal wrapper -->
+
+  <!-- REVEAL.JS Script Files - Do Not Edit -->
+  <script src="https://cdn.jsdelivr.net/npm/reveal.js@4.1.0/dist/reveal.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/reveal.js@4.1.0/plugin/highlight/highlight.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/highlightjs-badge@0.1.9/highlightjs-badge.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jsPlumb/2.15.5/js/jsplumb.min.js"></script>
+  <script>
+    const srcUrlPrefix = "https://cdn.jsdelivr.net/npm/reveal.js@4.1.0/";
+    Reveal.initialize({
+      hash: true,
+      center: true,
+      slideNumber: true,
+      showNotes: false,
+      margin: 0.1,
+      preloadIframes: true,
+      plugins: [RevealHighlight],
+      pdfSeparateFragments: true
+    });
+
+    // add HighlightJS-badge (options are optional)
+    var options = {
+      copyIconContent: "📄",
+      checkIconContent: "✅"
+    };
+    window.highlightJsBadge(options);
+
+    if (window.location.search == "?print-pdf") {
+      var uncounted = document.querySelectorAll("[data-visibility='uncounted']");
+      uncounted.forEach(node => {
+        node.parentNode.classList.add("no-print")
+      })
+    }
+  </script>
+</body>
+</html>
