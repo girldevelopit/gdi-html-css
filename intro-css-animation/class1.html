@@ -1,0 +1,834 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+		<meta name="description" content="Girl Develop It framework for easily creating beautiful presentations using HTML in GDI theme. Forked from Hakim El Hattab's reveal.js">
+		<meta name="author" content="Girl Develop It">
+		<meta name="apple-mobile-web-app-capable" content="yes" />
+		<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+
+		<!-- Update with GDI Course Name -->
+		<title>Intro to CSS Animation</title>
+
+		<link rel="icon" type="image/x-icon" href="assets/imgs/favicon.ico" />
+
+		<!-- RevealJS CDN -->
+		<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reveal.js@4.1.0/dist/reset.css">
+		<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reveal.js@4.1.0/dist/reveal.css">
+		<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reveal.js@4.1.0/dist/theme/simple.css" id="theme">
+
+		<!-- GDI Custom Theme -->
+		<link rel="stylesheet" href="assets/css/gdi-theme.css">
+
+		<!-- Theme used for syntax highlighted code -->
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.1.0/styles/monokai.min.css">
+	</head>
+	<body>
+		<div class="reveal">
+			<!-- Start of Slides container -- Any section element in this container is displayed as a slide -->
+			<div class="slides"> 
+				
+				<!-- Opening Slide -->
+				<!-- <section>
+					<img src="assets/imgs/gdi-logos/gdi-circle-logo_peach.png" alt="GDI Logo" width="400px" class="noborder"/>
+					<br>
+					<h2 style="font-weight: bolder;">Welcome to Girl Develop It</h2>
+				</section>
+				
+				<!-- GDI Mission Statement -->
+				<!-- <section>
+					<img src="assets/imgs/gdi-logos/gdi-circle-logo_peach.png" alt="GDI Logo" width="300px" class="noborder"/>
+					<br>
+					<h3>We create welcoming, supportive and accessible environments for women and non-binary adults to learn software development.</h3>
+				</section> -->
+
+				<!-- GDI Code of Conduct -->
+				<!-- <section>
+					<h3>We are dedicated to providing a welcoming and comfortable environment for all to learn coding and every attendee is expected to uphold our <span style="font-weight: bolder;">Code of Conduct</span>:</h3>
+					<h4><a href="https://girldevelopit.com/code-of-conduct/" target="_blank">girldevelopit.com/codeofconduct/</a></h4>
+					<h4><a href="bit.ly/gdi-incident-report" target="_blank">bit.ly/gdi-incident-report</a></h4>
+				</section> -->
+
+				<!-- GDI Promo - Part 1-->
+				<!-- <section>
+					<h2 style="font-weight: bolder;">What Does<br>Girl Develop It<br>Teach?</h2>
+				</section> -->
+
+				<!-- <section id="fragments">
+					<h3>Web Development</h3>
+					<h3 class="fragment">Data Science</h3>
+					<h3 class="fragment">UX Design & Research</h3>
+					<h3 class="fragment">Workforce Classes</h3>
+					<h3 class="fragment">Career-Building Events & Conferences</h3>
+				</section> -->
+
+				<!-- GDI Promo - Part 2 -->
+				<!-- <section>
+					<img src="assets/imgs/gdi-logos/gdi-circle-logo_peach.png" alt="GDI Logo" width="300px" class="noborder"/>
+					<br>
+					<h3>Find All Our Classes & Events:</h3>
+					<h3><a href="https://girldevelopit.com/" target="_blank">www.girldevelopit.com</a></h3>
+				</section> -->
+
+				<!-- HouseKeeping -->
+				<section>
+					<h2>Housekeeping</h2>
+					<ul>
+						<li>Display your preferred name and pronoun.</li>
+						<li>We are here for you!</li>
+						<li>Every question is important.</li>
+						<li>Participate, Experiment, Have Fun!</li>
+					</ul>
+				</section>
+
+				<!-- Course Title -->
+				<section>
+					<h2>Intro to CSS Animation</h2>
+				</section>
+				<!--Stretch - "Bio" Break-->
+				<section>
+					<h2>Stretch - "Bio" Break</h2>
+					<h3>4:00 PST / 6:00 CST / 7:00 EST</h3>
+				</section>
+				<!-- Instructor Intro -->
+				<section>
+					<h2>Introductions</h2>
+					<p>Morgan Jones</p>
+					<p>Front End Developer</p>
+				</section>
+
+				<!-- OPTIONAL: TAs Intro -->
+				<section>
+					<!-- <p style="font-size: 16px; font-style: italic;">(Optional Slide for TAs.<br>Comment out the slide section if there is no TA or not using.)</p> -->
+					<h2>TA Intro(s)</h2>
+					<p>Faraja Thompson</p>
+					<p>Educator</p>
+				</section>
+				<section>
+					<!-- <p style="font-size: 16px; font-style: italic;">(Optional Slide for TAs.<br>Comment out the slide section if there is no TA or not using.)</p> -->
+					<h2>TA Intro(s)</h2>
+					<p>Anne Katzeff</p>
+					<p>Web Designer &amp; Front-End Developer, Artist, Teacher</p>
+				</section>
+
+
+				<!-- Student Intros / IceBreaker -->
+				<!-- <section>
+					<p style="font-size: 16px; font-style: italic;">(Instructor's choice.<br> This is a title slide. Use a new slide for the intros.<br>Comment out this note for class.)</p>
+					<h2>Student Intros or<br> Ice Breaker</h2>
+				</section> -->
+
+				<!-- Course Agenda/Topics/Course Outline -->
+				<section>
+					<h2>Workshop Topics</h2>
+						<ul>
+							<li>Transitions &amp; Transforms </li>
+							<li>Working in 2D &amp; 3D </li>
+							<li>Accessibility guidelines for animated elements</li>
+							<li>Animations &amp; Keyframes</li>
+							<li>Animation &amp; the Clip-path property</li>
+						</ul>
+				</section>
+			
+				<!-- Course Goals -->
+				<section>
+					<h2>Workshop Goals</h2>
+					<ul>
+						<li>Introduce the basics of animating elements</li>
+						<li>Adding animated elements to your projects</li>
+						<li>Understand Accessibility guidelines for animation</li>
+						<li>Exploring more of what you can do with CSS!</li>
+					</ul>
+				</section>
+
+				<!-- Class Agenda -->
+				<section>
+					<h2>AGENDA</h2>
+					<ul>
+						<li>Why Animate?</li>
+						<li>Environment Setup</li>
+						<li>Transition &amp; Transforms</li>
+						<li>Working in 2D &amp; 3D</li>
+					</ul>
+				</section>
+
+				<!-- Course Slides -->
+				<!-- Create as many new sections as needed -->
+
+				<!-- Why Animate?-->
+				<section>
+					<h2>Why Animate?</h2>
+				</section>
+				<!-- Why Animate? -->
+				<section>
+					<h3>Enhances the user experience</h3>
+					<ul>
+						<li class = "fragment">Conveys Information</li>
+						<li class = "fragment">Grab The User's Attention</li>
+					</ul>
+				</section>
+				<!-- Why CSS over JavaScript?-->
+				<section>
+					<h2>Why CSS over JavaScript?</h2>
+						<ul>
+							<li class = "fragment">We use it for simple movement of UI element states</li>
+								<ul class = "fragment">
+									<li>toggle</li>
+									<li>buttons</li>
+									<li>menu items</li>
+								</ul>
+						</ul>
+						<div>
+							<small class = "credit"><a href = "https://web.dev/css-vs-javascript/#:~:text=Use%20CSS%20animations%20for%20simpler,%2C%20rewind%2C%20or%20slow%20down." target= "_blank">css-vs-javascript</a>
+							<br>
+							<br>
+	
+							</small>
+						</div>
+
+				</section>
+				
+				<!--Animate-Less is More!-->
+				<section>
+					<h2>Less is More!</h2>
+					<br/>
+						<p class = "fragment">Too much movement on a page can be distracting.</p>
+					<br/>
+					<small class = "credit">
+						<a href = "https://web.dev/prefers-reduced-motion/#:~:text=The%20media%20query%20prefers%2Dreduced,animation%20or%20motion%20it%20uses." target="_blank">prefers-reduced-motion:Sometimes less movement is more</a>
+						"(web.dev article, Thomas Steiner)"
+					</small>
+
+				</section>
+				<!--Accessibility-->
+				<section>
+					<h3>there are media queries we use: </h3>
+					<br>
+					<p><em>prefers-reduced-motion</em>
+					is a CSS feature for users with non-essential motion settings.</p>
+					
+					<small class = "credit">
+						<a href = "https://developer.mozilla.org/en-US/docs/Web/CSS/@media/prefers-reduced-motion#examples"
+						target= "_blank"> mdn webdocs | prefers-reduced-motion</a>
+					</small>
+				</section>
+				<!--Setting up Our Environment-->
+				<section>
+					<h3>Setting up our Environment</h3>
+					<br>
+					<ul>
+						<li>Codepen</li>
+						<li>Text Editor</li>
+					</ul>
+					<br>
+					<br>
+					<small class = "credit">
+						<a href = "https://codepen.io/" target= "_blank">Codepen.io</a>
+					</small>
+					
+				</section>
+				<!--Codepen set up-->
+				<section>
+					<h3>Codepen setup</h3>
+					<ul>
+						<li>create account on <a href = "https://codepen.io/" target= "_blank">Codepen.io</a></li>
+						<li>create a new pen, select gear icon in CSS window</li>
+						<li>Pen Settings > CSS > Vendor Prefixing > Autoprefixer</li>
+						<li>for each new exercise we are going to fork their pens</li>
+		
+					</ul>
+					<br>
+					<br>
+					
+					
+				</section>
+				<!--Local Setup-->
+				<section>
+					<h3>Local Setup in Text Editor</h3>
+					<ul>
+						<li>link your css file to your html file</li>
+						<li>When writing in CSS you can use Vendor Prefixes</li>
+							<!-- Vendor Prefix Code Example-->
+				
+					<pre>
+						<code class="css">
+h1 {
+	-webkit-transition: all 3s ease-out;
+		transition: all 3s ease-out;
+}
+
+h1{	-webkit-transform: translate(-50%, -50%);
+	-ms-transform: translate(-50%, -50%);
+		transform: translate(-50%, -50%);
+}
+						</code>
+					</pre>
+						<p class = "fragment"><em>These exercises will work without vendor prefixes</em></p>
+					<small class = "fragment">For information on vendor prefixes - <a href = "https://developer.mozilla.org/en-US/docs/Glossary/Vendor_Prefix" target= "_blank">Vendor Prefixes</a>
+					</small>
+						
+				</section>
+
+				<!--Transitions-->
+				<section>
+					<h3>Transitions</h3>
+					<p><code>transitions</code> enable you to control the transition between two states of an element.</p>
+					<p> Transitions require two sub properties to work:</p>
+						<ul>
+							<code class = "fragment">Transition-property</code>
+							<br>
+							<code class = "fragment">Transition-duration</code>
+						</ul>
+					
+				</section>
+			
+				<section>
+					<h3>Transition Property</h3>
+					<p>We name the property that we want to change.</p>
+				
+					
+				<pre>
+					<code class="css">
+							
+button {
+  background-color: green;
+  transition-property:background-color;
+  transition-duration:300ms;
+}
+button:hover{
+  background-color:orange;
+}
+					</code>
+				</pre>
+					
+				</section>
+				<section>
+					<!--Pseudo classes-->
+					<h3>Transitions &amp; pseudo-classes</h3>
+					<p>a <em>pseudo-class</em> is added to a selector that specifies a special state of the selected element(s)</p>
+					<small class = "credit">
+						<a href = "https://developer.mozilla.org/en-US/docs/Web/CSS/Pseudo-classes" target = "_blank">mdn docs | pseudo-classes </a>
+					</small>
+					<pre>
+						<code class="css">
+/* Any button over which the user's pointer is hovering */
+
+button {
+	background-color: green;
+	transition-property:background-color;
+	transition-duration:300ms;
+}
+
+button:hover{
+	background-color:orange;
+}
+						</code>
+					</pre>
+				</section>
+				
+				<!--Transition Duration-->	
+
+				<section>
+					<h3>Transition-Duration</h3>
+					<p>We set the time of the transition in seconds(s) or milliseconds(ms)</p>
+					
+			
+
+					<pre>
+						<code class="css">
+							
+button {
+	background-color: green;
+	transition-property:background-color;
+	transition-duration:300ms;
+	}
+
+button:hover{
+	background-color:orange;
+}
+						</code>
+					</pre>
+					<small><a href = "https://codepen.io/morganejla/pen/OJzeBqe" target="_blank">codepen.io | button-hover</a>
+					</small>
+				</section>
+				
+				
+					<!--Additional transition properties -->
+
+	
+				<section>
+					<h3>Additional Properties for Transition</h3>
+					<br/>
+					<ul>
+						<code>transition-timing-function</code>
+						<br>
+						<code>transition-delay</code>
+					</ul>
+
+					<pre>
+						<code class="css">
+button{
+	transition-timing-function:ease-in-out;
+	transition-delay:2s;
+}
+						</code>
+					</pre>
+					
+
+				</section>
+				<!--Transition Timing Function -->
+				<section>
+					<code>transition-timing-function</code>
+					<p>A CSS Property that sets a speed curve, allowing you to change the speed during the transition</p>
+					<small>
+					<a href = "https://codepen.io/morganejla/pen/BaJgEjZ" target = "_blank">codepen.io | transition-timing-functions</a>
+					</small>
+				</section>
+				<!-- Additional Transition Timing Functions -->
+				<section>
+					<h3>Additional Transition Timing Functions</h3>
+					<p><code>cubic-bezier</code></p>
+					<p><code>steps</code></p>
+					<pre>
+						<code class = "css">
+button{
+	transition-timing-function: cubic-bezier(.29, 1.01, 1, -0.68);
+}
+
+button{						
+	transition-timing-function: steps(6, end);
+}
+						</code>
+					</pre>
+					<small>
+						<a href = "https://developer.mozilla.org/en-US/docs/Web/CSS/transition-timing-function#values" target= "_blank">mdn docs | cubic bezier &amp; steps</a>
+					</small>
+				</section>
+				<section>
+					<code>transition-delay</code>
+					<br>
+					<p>specifies the duration to wait before starting the transition of the property.</p>
+					<pre>
+						<code class = "css">
+button{
+	transition-delay: 250ms;
+	transition-property: margin-right;
+}
+
+						</code>
+					</pre>
+
+				</section>
+				<section>
+					<h3>setting more than one property to be changed</h3>
+					<pre>
+						<code class = "css">
+button {
+	width:20px;
+	height:40px;
+	background-color:#da7b93;
+	transition: height 1s, background-color 2s;
+ /* we can write the transition-property and duration for each,
+ separated by a comma. */
+
+}
+
+button:hover{
+	height:50px;
+	background-color:#da8735;
+
+}
+						</code>
+					</pre>
+					<small>
+						<p>
+						<a href = "https://codepen.io/morganejla/pen/bGLdMyp" target = "_blank">codepen.io | shorthand transitions - multiple properties</a>
+						</p>
+					</small>
+				</section>
+				
+				<section>
+					<h3>Shorthand keyword: <code>all</code></h3>
+					<pre>
+						<code class="css">
+button {
+	width:20px;
+	height:40px;
+	background-color:#da7b93;
+	transition: all 2s;
+
+}
+
+button:hover{
+	width:50px;
+	background-color:#da8735;
+
+}
+
+</code>
+</pre>
+				<small>
+				<a href = "https://codepen.io/morganejla/pen/bGLdMyp" target = "_blank"> codepen.io | shorthand practice</a>
+				</small>
+				</section>
+
+				<!-- Hands-on Work -->
+				
+				<!--Note about transitions-->
+				<section>
+					<h3>Transitions Do Not Work on</h3>
+					<br/>
+					<ul>
+						<li class = "fragment"><code>background-images</code></li>
+						<li class = "fragment"><code>border-style</code></li>
+						<li class = "fragment"><code>font-family</code></li>
+					</ul>
+					<p class = "fragment">General rule: We can use transition on properties expressed by numbers (<code>width, height, color</code>)</p>
+					<small>
+					<a href = "https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_animated_properties" target ="_blank"> mdn docs | CSS Animated Properties</a>
+					</small>
+
+				</section>
+
+				<!--Transforms-->
+				<section>
+					<h4>Are we just changing timing and color? What if I want to change the shape?</h4>
+					<br/>
+					<p class = "fragment"><code>transition</code> works with a partner...</p>
+					
+
+				</section>
+				<section>
+					<h3>Transform</h3>
+				</section>
+				<section>
+					<p><code>transform</code> is a property that moves or changes an element's appearance.</p>
+						<ul>
+							<li>Size</li>
+							<li>Position</li>
+							<li>Shape</li>
+						</ul>
+						<br>
+						<br>
+					<small>
+					<a href = "https://developer.mozilla.org/en-US/docs/Web/CSS/transform" target = "_blank">mdn docs | transform</a>
+					</small>
+				</section>
+				
+				<section>
+					<h4>How it Works</h4>
+					<p>The <code>transform</code> property uses function values:</p>
+						<ul>
+							<li><code>scale()</code></li>
+							<li><code>translate()</code></li>
+							<li><code>rotate()</code></li>
+							<li><code>skew()</code></li>
+						</ul>
+				
+			
+				</section>
+				<!--Accessibility-->
+				<section>
+					<h3>Transforms &amp; Accessibility</h3>
+						<div>
+						  <img src="assets/imgs/stock-img/accessibility-scale.png" alt="accesibility-screenshot-mdn docs">
+						</div>
+						
+						<small>
+							<a href="https://developer.mozilla.org/en-US/docs/Web/CSS/transform" target="_blank">mdn docs | transform-accessibility-concerns</a>
+						</small>
+				</section>
+				<!-- Transform functions & definitions -->
+				
+				<section>
+					<p><code>transform</code> relies on the (x,y) axis for 2D animation.</p>
+					<div>
+						
+						<small>
+							<a href = "https://css-tricks.com/almanac/properties/t/transform/" target = "_blank">CSS-tricks | transform </a>
+						</small>
+						<br>
+						<small>
+							<a href = "https://codepen.io/morganejla/pen/eYyqOMz?editors=1100" target = "_blank">codepen.io | transform demo </a>
+						</small>
+					</div>
+				</section>
+				<!-- Transform-function scale() -->
+				<section>
+					<p><code>scale()</code></p>
+					<p>defines a transformation that resizes an element on the 2D plane</p>
+
+					<pre>
+						<code class="css">
+div {
+	width:100px;
+	height:100px;
+	transform: scale(0);
+/*When the scale is zero, we don't see the element at all.*/
+}
+
+div {
+	width:100px;
+	height:100px;
+ 	transform: scale(1);
+/* When the scale is one, the element stays in place. */
+
+}
+div{
+	width:100px;
+	height:100px;
+	transform:scale(2);
+/* When the scale is 2 the element doubles in size. */
+/* it is now 200px wide and tall */
+}
+						</code>
+					</pre>
+					<small><a href = "https://developer.mozilla.org/en-US/docs/Web/CSS/transform-function/scale" target="_blank">mdn docs | transform-function : scale()</a></small>
+					<br>
+					<small>
+						<a href = "https://codepen.io/morganejla/pen/eYyqOMz?editors=1100" target = "_blank">codepen.io | transform demo</a>
+					</small>
+				</section>
+				<section>
+					<p><code>translate</code></p>
+					<p>repositions an element in horizontal or vertical directions.</p>
+					<small>values are in length or percentage</small>
+
+					<pre>
+						<code class="css">
+div {
+ transform: translate(42px, 35px);
+}
+						</code>
+					</pre>
+					<small><a href = "https://developer.mozilla.org/en-US/docs/Web/CSS/transform-function/translate" target="_blank">mdn docs | transform-function : translate()</a></small>
+					<br>
+					<small>
+						<a href = "https://codepen.io/morganejla/pen/eYyqOMz?editors=1100" target = "_blank"> codepen.io | transform demo</a>
+					</small>
+				</section>
+				<section>
+					<p><code>rotate()</code></p>
+					<p>rotates an element on a fixed point.</p>
+					<p class = "fragments"> values are set in degrees </p>
+					<small>
+						Other values used are turns and radians. we will be focusing on degrees.
+					</small>
+
+					<pre>
+						<code class="css">
+div {
+ transform: rotate(90deg);
+}
+						</code>
+					</pre>
+					<small><a href = "https://developer.mozilla.org/en-US/docs/Web/CSS/transform-function/rotate" target="_blank">mdn docs | transform-function : rotate()</a></small>
+					<br>
+					<small>
+						<a href = "https://codepen.io/morganejla/pen/eYyqOMz?editors=1100" target = "_blank">codepen.io | transform demo</a>
+					</small>
+				</section>
+				<section>
+					<p><code>skew()</code></p>
+					<p>skews an element on the 2D plane.</p>
+				
+					<pre>
+						<code class="css">
+div {
+ transform: skew(90deg);
+}
+					</code>
+					</pre>
+					<small><a href = "https://developer.mozilla.org/en-US/docs/Web/CSS/transform-function/rotate" target="_blank">mdn docs | transform-function : skew()</a></small>
+					<br>
+					<small>
+						<a href = "https://codepen.io/morganejla/pen/eYyqOMz?editors=1100" target = "_blank">codepen.io | transform demo</a>
+					</small>
+				</section>
+				
+				<section>
+					<p><code>transform-origin</code></p>
+					<ul>
+						<li><code>transform-origin: </code>separate from the <code>transform</code> property.</li>
+						<li>specifies the origin point of the transform.</li>
+						<li>apply it to the parent element.</li>
+						<li>default for rotating is the center.</li>
+					</ul>
+					<small>
+						<a href = "https://codepen.io/morganejla/pen/bGaXrZK" target= "_blank">codepen.io | transform demo</a>
+					</small>
+					
+					
+				</section>
+				<section>
+					<h3>Practice</h3>
+					<p>Put Transition & Transform together</p>
+					
+					<small>
+						<a href = "https://codepen.io/morganejla/pen/dydowmq" target="_blank">codepen.io | transition &amp; transform together</a></small>
+				</section>
+				<section>
+					<h3>Something to remember with <code>transform</code></h3>
+						<ul>
+							<li>positive values move elements right and down.</li>
+							<li>negative values move elements left and up.</li>
+							
+						</ul>
+
+				</section>
+				<section>
+					<h3>pseudo-classes vs. pseudo-elements</h3>
+					<p>Remember a <em>pseudo-class</em> we use by adding to a selector that specifies the state of the element.</p>
+				</section>
+				<section>
+					<h3>pseudo-classes vs. pseudo-elements</h3>
+					<p><em> pseudo-elements </em> let you style a part of a selected element.
+						<pre>
+							<code class="css">
+a::before{
+	content:'';
+	position:absolute;
+	left:0;
+	top:0;
+	background-color:#fe6437;
+	height:100%;
+	width:100%;
+	z-index:-1;
+	transform-origin:top left; 
+	transform:rotate(-90deg);
+	transition:transform 1s;
+	}
+								  
+							</code>
+						</pre>
+						<small>
+						<a href = "https://developer.mozilla.org/en-US/docs/Web/CSS/Pseudo-elements" target= "_blank">mdn docs | pseudo-elements</a>
+						</small>
+				</section>
+				<section>
+					<h3>Common pseudo-elements</h3>
+						<ul>
+							<li>::before</li>
+							<li>::after</li>
+							
+						</ul>
+						<br>
+						
+							<p>Using :: helps us differentiate between elements &amp; classes.</p>
+				</section>
+				<section>
+					<h3><code>Z-index</code></h3>
+					<p>property used to set the order of a positioned element.</p>
+					<p>elements with a larger z-index overlap and cover those with a smaller one.</p>
+				</section>	
+				<section>
+					<!--Hands-on-work-->
+					<h2>Let's Develop It!</h2>
+					<p>let's add the pseudo-elements a button.</p>
+					<a href = "https://codepen.io/morganejla/pen/xxYGmLP" target= "_blank">codepen.io | project button code-along </a>
+				</section>
+				<section>
+					<h4>perspective &amp; the Z axis</h4>
+					<h4 class = "fragment">working in 3D</p>
+				</section>		
+				<section>
+					<h4>the Z axis</h4>
+					<ul>
+						<li>the Z axis is perpendicular to the x & y axis.</li>
+					</ul>
+				</section>
+				<section>
+					<h4>the Z axis </h4>
+					<ul>
+						<li>uses the <code>perspective: </code> property which is the distance between the viewer and the screen. </p></li>
+					</ul>
+					<pre>
+						<code class="css">
+body{
+	perspective:500px;
+}
+
+div{
+	height:150px;
+	width:150px;
+	background-color:#e58064;
+	position:absolute;
+	top:50%;
+	left:50%;
+	transition:transform 2s;
+}
+div:hover{
+	transform: translateZ(300px);
+}
+						</code>
+					</pre>
+					
+				
+				</section>
+				<section>
+					<p><code>translateZ()</code> is to be less than the perspective.</p>
+				</section>
+				<section>
+					<h3>Practice</h3>
+					<br>
+					<a href = "https://codepen.io/morganejla/pen/wvpVrdQ" target="_blank">translateZ() & perspective</a>
+				</section>
+				<section>
+					<h3>Let's Develop It!</h3>
+					
+					<a href = "https://codepen.io/morganejla/pen/RwxXxVR" target="_blank">codepen.io | rotating a card code-along</a>
+
+				</section>
+
+				
+				<section>
+					<h2>end of day one!</h2>
+				</section>
+				
+			</div> <!--End of Slides container -->
+		
+  		<footer>
+				<!-- Update with Course Name -->
+        <div class="copyright">
+					<img src="assets/imgs/gdi-logos/gdi-logo_peach.png" alt="GDI Logo" width="40px" class="noborder"/>
+					<p>Intro to CSS Animations</p>
+          <a rel="license" href="http://creativecommons.org/licenses/by-nc/3.0/deed.en_US"><img alt="Creative Commons License" style="border-width:0" src="http://i.creativecommons.org/l/by-nc/3.0/80x15.png"/></a>
+        </div>
+      </footer>
+		</div> <!-- End of Reveal wrapper -->
+		
+		<!-- REVEAL.JS Script Files - Do Not Edit -->
+		<script src="https://cdn.jsdelivr.net/npm/reveal.js@4.1.0/dist/reveal.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/reveal.js@4.1.0/plugin/highlight/highlight.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/highlightjs-badge@0.1.9/highlightjs-badge.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jsPlumb/2.15.5/js/jsplumb.min.js"></script>
+		<script>
+			const srcUrlPrefix = "https://cdn.jsdelivr.net/npm/reveal.js@4.1.0/";
+			Reveal.initialize({
+				hash: true,
+				center: true,
+				slideNumber: true,
+				showNotes: false,
+				margin: 0.1,
+				preloadIframes: true,
+				plugins: [ RevealHighlight ],
+				pdfSeparateFragments: true
+			});
+
+      // add HighlightJS-badge (options are optional)
+			var options = {
+					copyIconContent: "📄",
+					checkIconContent: "✅"
+			};
+			window.highlightJsBadge(options);
+
+			if (window.location.search == "?print-pdf") {
+					var uncounted = document.querySelectorAll("[data-visibility='uncounted']");
+					uncounted.forEach(node => {
+							node.parentNode.classList.add("no-print")
+					})
+			}
+		</script>
+	</body>
+</html>
