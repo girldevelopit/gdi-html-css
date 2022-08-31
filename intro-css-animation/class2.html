@@ -1,0 +1,538 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+		<meta name="description" content="Girl Develop It framework for easily creating beautiful presentations using HTML in GDI theme. Forked from Hakim El Hattab's reveal.js">
+		<meta name="author" content="Girl Develop It">
+		<meta name="apple-mobile-web-app-capable" content="yes" />
+		<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+
+		<!-- Update with GDI Course Name -->
+		<title>Intro to CSS Animation</title>
+
+		<link rel="icon" type="image/x-icon" href="assets/imgs/favicon.ico" />
+
+		<!-- RevealJS CDN -->
+		<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reveal.js@4.1.0/dist/reset.css">
+		<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reveal.js@4.1.0/dist/reveal.css">
+		<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reveal.js@4.1.0/dist/theme/simple.css" id="theme">
+
+		<!-- GDI Custom Theme -->
+		<link rel="stylesheet" href="assets/css/gdi-theme.css">
+
+		<!-- Theme used for syntax highlighted code -->
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.1.0/styles/monokai.min.css">
+	</head>
+	<body>
+		<div class="reveal">
+			<!-- Start of Slides container -- Any section element in this container is displayed as a slide -->
+			<div class="slides"> 
+				
+				
+
+				<!-- Course Slides -->
+				<!-- Create as many new sections as needed -->
+
+				<!-- Slide Name -->
+				<section>
+					<!-- Class Agenda -->
+				<section>
+					<h2>AGENDA</h2>
+					<ul>
+						<li>Review of Transition &amp; Transforms</li>
+						<li>Accessibility-media queries</li>
+						<li>Animations &amp; Keyframes</li>
+						<li>Clip Path</li>
+						<li>Resources &amp; next steps</li>
+					</ul>
+				</section>
+			
+			</section>
+			<section>
+				<h2>Questions about Transitions &amp; Transforms?</h2>
+					<p>Let's review...&amp; practice!</p>
+					<p class =  "fragment">
+							<a href = "https://codepen.io/morganejla/pen/OJzeBqe?editors=0110" target="_blank">practicing transitions</a>
+					</p>
+							<br>
+							<br>
+							<small class = "fragment">
+								<a href = "https://codepen.io/morganejla/pen/QWaXoJM" target="_blank">reference-codepen: examples of properties we can transition</a>
+							</small>
+						</li>
+					</ul>
+			</section>
+			<section>
+				<h2>Questions about Transitions &amp; Transforms?</h2>
+				<p class = "fragment">Let's review...&amp; practice!</p>
+				<br>
+				<br>
+				<ul>
+					<p class = "fragment">
+						<a href = "https://codepen.io/morganejla/pen/eYyqOMz" target="_blank">practicing transforms</a> 
+					</li>
+				
+				</ul>
+			</section>
+			<section>
+				<h2>Questions about Transitions &amp; Transforms?</h2>
+				<p class = "fragment">Let's review...&amp; practice!</p>
+				<br>
+				<br>
+				<ul>
+					<p class = "fragment">
+						<a href = "https://codepen.io/morganejla/pen/wvpVrdQ" target="_blank">translateZ() & transforms</a> 
+					</li>
+				
+				</ul>
+			</section>
+			<section>
+				<h2>Intro to Animation & Keyframes</h2>
+			</section>
+			<section>
+				<h3>Animation vs Transitions</h3>
+				<h4>How is the animation property different from the transition property?</h4>
+					<ul>
+						<li class = "fragment">can run automatically, as well as be triggered by a user</li>
+						<li class = "fragment">can loop infinitely</li>
+						<li class = "fragment">for more complex movements</li>
+						<li class = "fragment">we can change more than just the start &amp; finished states.</li>
+					</ul>
+					<small>
+						<a href = "https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Animations" target="_blank">mdn docs | CSS Animations</a>
+					</small>
+				<!-- Keyframes -->
+				<!-- Naming animations -->
+				<!-- https://codepen.io/morganejla/pen/wvpVyME -->
+			</section>
+			
+			<section>
+				<h2>Accessibility</h2>
+					<p>we want everyone to have access to what we create for the web. </p>
+					
+					
+			</section>
+			<section>
+				<h2>Accessibility</h2>
+				<p><code>prefers-reduced-motion</code> is a media query used to detect if the user has settings that minimize non-essential motion. </p>
+				<small class = "credit">
+					<a href = https://developer.mozilla.org/en-US/docs/Web/CSS/@media/prefers-reduced-motion target="_blank"> mdn docs | prefers-reduced-motion.</a>
+				</small>
+			</section> 
+			<section>
+				<h2>Accessibility</h2>
+				<p>prefers-reduce-motion example</p>
+				<pre>
+					<code class="css">
+.animation{
+
+	animation:pulse 1s linear infinite both;
+
+}
+
+@media(prefers-reduce-motion){
+	.animation{
+		animation-name:none;
+
+/*here is where you write the styling that you want to
+ replace the animation with*/
+	}
+}
+		
+
+					</code>
+				</pre>
+				<small>
+				<a href = "https://developer.mozilla.org/en-US/docs/Web/CSS/@media/prefers-reduced-motion" target= "_blank">mdn docs | prefers-reduced-motion</a>
+				</small>
+				<br>
+				<small>
+					<a href = "https://css-tricks.com/introduction-reduced-motion-media-query/" target= "_blank"> CSS Tricks | Introduction to reduced motion media query</a>
+					</small>
+			</section>
+			<!--Prefers Reduce Motion in Action-->
+			
+			<section>
+				<h2>prefers reduce motion in action</h2>
+				<a href="https://webkit.org/blog-files/prefers-reduced-motion/prm.htm" target="_blank">webkit.org</a>
+				<br>
+				<small>
+				<a href = "https://codepen.io/morganejla/pen/MWQeRZM?editors=0110" target ="_blank">codepen.io | prefers-reduced-motion-demo</a>
+				</small>
+			</section>
+			<section>
+				<p><code>Animation </code> has three required components</h3>
+				
+						<ul>
+							<li class = "fragment"><code>animation-name</code> </li>
+							<li class = "fragment"><code>animation-duration</code></li>
+							<li class = "fragment"><code>keyframes</code></li>
+						</ul>
+						<pre>
+							<code class="css">
+div{
+	width:150px;
+	height:150px;
+	background-color: #fe6437;
+	animation-name:whatever;
+	animation-duration:3s;
+}
+							</code>
+						</pre>
+					<small><a href = "https://codepen.io/morganejla/pen/gOvaWrO" target="_blank">animation-demo | codepen.io</a>
+					</small>
+			</section>
+			<section>
+				<h4>@keyframes</h4>
+				<p>defines the start and finish of the animation</p>
+				<p class ="fragment">...and the steps in between</p>
+				<small>
+				<a href = "https://developer.mozilla.org/en-US/docs/Web/CSS/@keyframes" target ="_blank">mdn docs | @keyframes</a>
+				</small>
+
+			</section>
+			<section>
+				<h3>@keyframe keywords</h3>
+					<p>keywords we use to determine the steps in the @keyframe</p>
+						<ul>
+							<li><code>from</code> &amp; <code>to</code></li>
+							<li><code>percentages</code></li>
+							<li><code>px</code></li>
+					
+						</ul>
+						<pre>
+							<code class="css">
+@keyframes whatever{
+	0% { transform: translateX(0);}
+	10%{transform:translateX(100px);}
+	100% {transform: translate(500px, 400px);}
+	}
+							</code>
+						</pre>
+			</section>
+			<section>
+				<h3>Practice</h3>
+				<p>Let's see the different ways we can write @keyframes</p>
+				<small>
+				<a href = "https://codepen.io/morganejla/pen/NWXQvvX" target="_blank">codepen.io | keyframes in action</a>
+				</small>
+
+			</section>
+			<section>
+				
+					<h2>Let's Develop It!</h2>
+					<p>changing a background animation</p>
+					<a href = "https://codepen.io/morganejla/pen/wvpVyME" target="_blank">codepen.io | changing background colors</a>
+			
+			</section>
+			<section>
+				<h3>additional animation properties</h3>
+					<ul>
+						<li class = "fragment"><code>animation-timing-function</code></li>
+						<li class = "fragment"><code>animation-delay</code></li>
+						<li class = "fragment"><code>animation-iteration-count</code></li>
+						<li class = "fragment"><code>animation-direction</code></li>
+						<li class = "fragment"><code>animation-fill-mode</code></li>
+						<li class = "fragment"><code>animation-play-state</code></li>
+					</ul>
+					<br>
+					<br>
+					<small>
+						<a href = "https://developer.mozilla.org/en-US/docs/Web/CSS/animation" target="_blank">mdn docs | animation properties</a>
+					</small>
+					
+			</section>
+			<section>
+				<!-- Additional-properties -->
+
+				<!-- Animation-Timing-function -->
+					<p><code>animation-timing-function</code></p>
+					<p>sets how an animation progresses through the duration of each cycle.</p>
+
+					<pre>
+						<code class="css">
+
+animation-timing-function:ease-in;
+
+						</code>
+					</pre>
+					<small><a href = "https://developer.mozilla.org/en-US/docs/Web/CSS/animation-timing-function" target="_blank">mdn docs | animation-timing-function</a></small>
+					<br>
+					<small>
+						<a href = "https://codepen.io/morganejla/pen/gOvaWrO" target = "_blank">Animation-timing-function | Codepen.io</a>
+					</small>
+			</section>
+			<section>
+				<!--animation-delay -->
+				<p><code>animation-delay</code></p>
+				<p>sets the amount of time to wait before applying the animation to the element. </p>
+
+				<pre>
+					<code class="css">
+
+animation-delay:2s;
+
+					</code>
+				</pre>
+				<small><a href = "https://developer.mozilla.org/en-US/docs/Web/CSS/animation-timing-function" target="_blank">mdn docs | animation-delay</a></small>
+				<br>
+				<small>
+					<a href = "https://codepen.io/morganejla/pen/gOvaWrO" target = "_blank">Animation-delay | Codepen.io</a>
+				</small>
+		</section>
+		<section>
+				<!-- Animation-iteration-count -->
+				<p><code>animation-iteration-count</code></p>
+				<p>sets how an animation progresses through the duration of each cycle.</p>
+				<p class = "fragment">basically you can control the function from going back to its start. </p>
+
+				<pre>
+					<code class="css">
+
+animation-fill-mode: forwards;
+
+
+					</code>
+				</pre>
+				<small><a href = "https://developer.mozilla.org/en-US/docs/Web/CSS/animation-fill-mode" target="_blank">mdn docs | animation-fill-mode</a></small>
+				<br>
+				<small>
+					<a href = "https://codepen.io/morganejla/pen/gOvaWrO" target = "_blank">Animation-timing-function | Codepen.io</a>
+				</small>
+		</section>
+	
+		<section>
+	<!-- animation-direction -->
+			<p><code>animation-direction</code></p>
+			<p>declares whether an animation should play forwards, backwards, or alternate back &amp; and forth.</p>
+
+			<pre>
+				<code class="css">
+
+animation-direction:alternate;
+
+
+		</code>
+	</pre>
+		<small><a href = "https://developer.mozilla.org/en-US/docs/Web/CSS/animation-direction" target="_blank">mdn docs | animation-direction</a></small>
+		<br>
+		<small>
+		<a href = "https://codepen.io/morganejla/pen/gOvaWrO" target = "_blank">animation-direction | Codepen.io</a>
+		</small>
+	</section>
+	
+
+<!-- animation-play-state-->
+	<section>
+		<p><code>animation-play-state</code></p>
+		<p>sets whether an animation is running or paused.</p>
+
+		<pre>
+			<code class="css">
+
+animation-play-state:paused;
+
+
+			</code>
+		</pre>		
+		<small><a href = "https://developer.mozilla.org/en-US/docs/Web/CSS/animation-play-state" target="_blank">mdn docs | animation-play-state</a></small>
+		
+	</section>
+	<section>
+		<h3>animation shorthand</h3>
+		<pre>
+			<code class="css">
+div {
+animation: |animation-name|animation-duration| animation-timing-function| animation-delay| animation-iteration-count | animation-direction | animation-fill-mode| animation-play-state;
+}
+
+			</code>
+		</pre>
+		<small>
+			<a href = "https://codepen.io/morganejla/pen/gOvaWrO" target = "_blank">animation-shorthand | codepen.io</a>
+		</small>
+		</section>
+		<section>
+			<h2>Let's Develop It! </h2>
+			
+			<p>
+			<a href = "https://codepen.io/morganejla/pen/bGLVREa?editors=1100" target = "_blank">codepen.io | animation code along</a>	
+			</p>
+		
+		</section>
+		
+	
+	<section>
+		<h3>Clip-path</h3>
+		<p><code>clip-path</code>  is a property that lets us decide what parts of an element should be shown</p>
+		<p class= "fragment">we do this with shapes we create out of points on our page.</p>
+		<small>
+			<a href= "https://developer.mozilla.org/en-US/docs/Web/CSS/clip-path" target="_blank">mdn docs | clip-path</a>
+		</small>
+	</section>
+		
+	
+	</code>
+	</pre>
+						
+
+	</section>
+		
+			<section>
+				<h3>Clip-path</h3>
+				<p>we don't have to figure out the coordinates ourselves</p>
+				<p>we have <a href = "https://bennettfeely.com/clippy/" target="_blank">Clippy</a> </p>
+				<pre>
+					<code class="css">
+.element {
+	transition:all 0.5s;
+ 	clip-path: circle(9.4% at 81% 16%); 
+}
+					</code>
+				</pre>
+				
+			</section>
+			<section>
+				<h3>Clip-path-practice</h3>
+				<p>here is a short exercise to get you started with the clip-path</p>
+				<small>
+				<a href = "https://codepen.io/morganejla/pen/bGLVrNz" target="_blank">codepen.io | clip-path code along</a>
+				</small>
+				<br>
+				<small>
+					<p>a source I like to use for lorem ipsum</p>
+				<a href = "http://www.cupcakeipsum.com/paragraphs/5/length/short/with_love/false/start_with_cupcake/false/seed/6e79100068bcccac53cee0096af1e18e699d1f33dc77ba3ef3757b8198076f7a">cupcakeipsum</a>
+				</small>
+				
+			</section>
+			<!--Further Research-->
+			<section>
+				<h2>Further Research</h2>
+				<p>here are some of my favorite sources for CSS Animations</p>
+				<ul>
+					<li><a href = "https://cssanimation.rocks/" target="_blank">CSS Animation Rocks</a></li>
+					<li><a href = "https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Animations/Using_CSS_animations" target="_blank">mdn webdocs | css animations</a></li>
+					<li><a href ="https://css-tricks.com/almanac/properties/t/transition/" target="_blank">CSS tricks</a></li>
+					<li><a href="https://animate.style/" target ="_blank">Animate.css</a></li>
+					<li><a href = "https://www.kevinpowell.co" target= "_blank">Kevin Powell - CSS Evangelist</a></li>
+					<li><a href = "https://100dayscss.com/about/">100daysCSS Challenge</a></li>
+
+				</ul>
+			</section>
+			<section>
+				<h2>Resources for projects</h2>
+				
+				<ul>
+					<li><a href = "https://bennettfeely.com/clippy/" target="_blank">Clip-path maker</a></li>
+					<li><a href = "https://heropatterns.com/" target="_blank">hero patterns</a></li>
+					
+
+				</ul>
+			</section>
+			<section>
+				<h2>What's next?</h2>
+				
+	
+			
+			</section>	
+				<!-- Course Conclusion -->
+				<section>
+					<h3>You did it!</h3>
+					<img src="assets/imgs/stock-img/celebration_hannah-busing-unsplash.jpg"  alt="People celebrating"/>
+					<p>
+						<small>Photo credit: 
+							<a href="https://unsplash.com/@hannahbusing" target="_blank">Hannah Busing</a>
+							<a href="http://creativecommons.org/licenses/by-sa/2.0/" target="_blank">cc</a>
+            </small>
+					</p>
+					
+				</section>
+
+				<!-- OPTIONAL: Show and Tell  -->
+				<section>
+					<p>(Optional Slide)</p>
+					<h2>Share What You've Built!</h2>
+				</section>
+
+				<!-- MUST USE/SHOW SLIDE -->
+				<!-- Course Survey -->
+				<section>
+					<p style="font-size: 16px; font-style: italic;"></p>
+					<h2>Give Us Your Feedback</h2>
+					<h3><a href="https://forms.gle/LSr82zxvRYFAQC1m8">Survey Link</a></h3>
+				</section>
+				
+				<!-- Q&A -->
+				<section>
+					<h2>Q&A</h2>
+				</section>
+
+
+				<!-- MUST USE/SHOW SLIDE -->
+				<!-- GDI Promo - Upcoming Courses -->
+				<section>
+					<!-- <p style="font-size: 16px; font-style: italic;">(Visit GDI's <a href="https://girldevelopit.com/events/#/list" target="blank">events page</a> to select new and/or related courses to promote here.<br> 
+						Comment out this note after adding courses.)</p> -->
+					<h3>New GDI Courses</h3>
+					<ul style="list-style: none; font-size: 30px;">
+						<li><a href = "https://girldevelopit.com/events/details/girl-develop-it-virtual-classes-presents-introduction-to-cloud-computing-with-microsoft-azure/" target="_blank">Introduction to Cloud Computing with Microsoft Azure</li>
+						<li<a href = "https://girldevelopit.com/events/details/girl-develop-it-user-experience-ux-presents-intro-to-ux-research/" target="_blank">Intro to UX Research</li>
+						<li><a href = "https://girldevelopit.com/events/details/girl-develop-it-user-experience-ux-presents-advanced-user-experience-research/" target="_blank">Advanced User Experience Research</a></li>
+					</ul>
+				</section>	
+				
+				<!-- Instructor and/or TA Contact -->
+			
+				<!-- Thank You -->
+				<section>
+					<img src="assets/imgs/gdi-logos/gdi-logo_peach.png" alt="GDI Logo" width="300px" class="noborder"/>
+					<br>
+					<h2>Thank You!</h2>
+				</section>
+			</div> <!-- End of Slides container -->
+		
+  		<footer>
+				<!-- Update with Course Name -->
+        <div class="copyright">
+					<img src="assets/imgs/gdi-logos/gdi-logo_peach.png" alt="GDI Logo" width="40px" class="noborder"/>
+					<p>Intro to CSS Animation</p>
+          <a rel="license" href="http://creativecommons.org/licenses/by-nc/3.0/deed.en_US"><img alt="Creative Commons License" style="border-width:0" src="http://i.creativecommons.org/l/by-nc/3.0/80x15.png"/></a>
+        </div>
+      </footer>
+		</div> <!-- End of Reveal wrapper -->
+		
+		<!-- REVEAL.JS Script Files - Do Not Edit -->
+		<script src="https://cdn.jsdelivr.net/npm/reveal.js@4.1.0/dist/reveal.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/reveal.js@4.1.0/plugin/highlight/highlight.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/highlightjs-badge@0.1.9/highlightjs-badge.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jsPlumb/2.15.5/js/jsplumb.min.js"></script>
+		<script>
+			const srcUrlPrefix = "https://cdn.jsdelivr.net/npm/reveal.js@4.1.0/";
+			Reveal.initialize({
+				hash: true,
+				center: true,
+				slideNumber: true,
+				showNotes: false,
+				margin: 0.1,
+				preloadIframes: true,
+				plugins: [ RevealHighlight ],
+				pdfSeparateFragments: true
+			});
+
+      // add HighlightJS-badge (options are optional)
+			var options = {
+					copyIconContent: "📄",
+					checkIconContent: "✅"
+			};
+			window.highlightJsBadge(options);
+
+			if (window.location.search == "?print-pdf") {
+					var uncounted = document.querySelectorAll("[data-visibility='uncounted']");
+					uncounted.forEach(node => {
+							node.parentNode.classList.add("no-print")
+					})
+			}
+		</script>
+	</body>
+</html>
