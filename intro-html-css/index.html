@@ -226,6 +226,29 @@
 					<h3>REPL.it Demo</h3>
 				</section>
 
+        <!-- HTML ELEMENTS -->
+				<section>
+					<h3>Anatomy of an HTML element</h3>
+					<p>HTML pages are made up of elements.</p>
+          <p>Element</p>
+					<ul style="font-size: .8em; line-height: 1.75;">
+            <li>An individual component of HTML.</li>
+            <li>Paragraph, heading, table, list, div, link, image, etc.</li>
+					</ul>
+<pre><code class ="html">&lt;p&gt;This is a sample paragraph.&lt;/p&gt;</code></pre>
+				</section>
+
+        <section>
+					<h3>Anatomy of an HTML element</h3>
+					<p>Tag</p>
+            <ul style="font-size: .8em; line-height: 1.75;">
+              <li>Marks the beginning &amp; end of an element.</li>
+              <li>Tags contain characters that indicate the tag's purpose.</li>
+            </ul>
+<pre><code class ="html xml">&lt;tagname&gt;Content&lt;/tagname&gt;</code></pre>
+<pre><code class ="html">&lt;p&gt;This is a sample paragraph.&lt;/p&gt;</code></pre>
+				</section>
+
         <!-- HTML TAGS -->
 				<section>
 					<h3>Tag Breakdown</h3>
@@ -233,6 +256,40 @@
 					<hr />
 					<p><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element" target="_blank">List of HTML Elements (MDN)</a></p>
 				</section>
+
+        <!-- SELF CLOSING TAGS -->
+        <section>
+          <h3>Self Closing Tags</h3>
+          These elements don't need a closing tag:<br>
+<pre><code class = "html">&lt;br/&gt;
+&lt;hr/&gt;
+&lt;img/&gt;
+&lt;link/&gt;
+&lt;input/&gt;
+</code></pre>
+        </section>
+
+        <!-- NESTING -->
+        <section>
+          <h3><img style="width:15%; margin: 0;" src="assets/imgs/matryoshka-doll-g469658faf_1920-removebg-preview.png" alt="image of matryoshka dolls"> Nesting &amp; Indentation</h3>
+          <img src="assets/imgs/nesting-dolls-gae2a50120_1920.png" alt="image of nesting dolls"><br>
+        </section>
+        
+        <section>
+          <h3><img style="width:15%; margin: 0;" src="assets/imgs/flipped nesting dolls.png" alt="image of matryoshka dolls">Nesting &amp; Indentation</h3>
+          <p style="font-size:.8em;">Elements "nest" inside the tag that contains them.</p>
+          <p style="font-size:.8em;">What elements are nested here?</p>
+<pre><code class="html">&lt;html&gt;
+ &lt;head&gt;
+  &lt;title&gt;Title of the page&lt;/title&gt;
+ &lt;/head&gt;
+ &lt;body&gt;
+  &lt;p&gt;A paragraph inside the body tag&lt;/p&gt;
+ &lt;/body&gt;
+&lt;/html&gt;
+</code></pre>
+          <p style="font-size:.65em;">Notice: Whichever element opens first, closes last.</p>
+        </section>
 
         <!-- The Boiler Plate -->
         <section>
@@ -307,29 +364,6 @@
           </ul>
         </section>
 
-				<!-- HTML ELEMENTS -->
-				<section>
-					<h3>Anatomy of an HTML element</h3>
-					<p>HTML pages are made up of elements.</p>
-          <p>Element</p>
-					<ul style="font-size: .8em; line-height: 1.75;">
-            <li>An individual component of HTML.</li>
-            <li>Paragraph, heading, table, list, div, link, image, etc.</li>
-					</ul>
-<pre><code class ="html">&lt;p&gt;This is a sample paragraph.&lt;/p&gt;</code></pre>
-				</section>
-
-        <section>
-					<h3>Anatomy of an HTML element</h3>
-					<p>Tag</p>
-            <ul style="font-size: .8em; line-height: 1.75;">
-              <li>Marks the beginning &amp; end of an element.</li>
-              <li>Tags contain characters that indicate the tag's purpose.</li>
-            </ul>
-<pre><code class ="html xml">&lt;tagname&gt;Content&lt;/tagname&gt;</code></pre>
-<pre><code class ="html">&lt;p&gt;This is a sample paragraph.&lt;/p&gt;</code></pre>
-				</section>
-
         <!-- HTML DOCTYPE -->
         <section>
           <h3>Doctype</h3>
@@ -391,23 +425,6 @@
  &lt;/head&gt;
 &lt;/html&gt;
 </code></pre>
-        </section>
-
-        <!-- NESTING -->
-        <section>
-          <h3>Nesting &amp; Indentation</h3>
-          <p style="font-size:.8em;">Elements "nest" inside the tag that contains them.</p>
-          <p style="font-size:.8em;">What elements are nested here?</p>
-<pre><code class="html">&lt;html&gt;
- &lt;head&gt;
-  &lt;title&gt;Title of the page&lt;/title&gt;
- &lt;/head&gt;
- &lt;body&gt;
-  &lt;p&gt;A paragraph inside the body tag&lt;/p&gt;
- &lt;/body&gt;
-&lt;/html&gt;
-</code></pre>
-          <p style="font-size:.65em;">Notice: Whichever element opens first, closes last.</p>
         </section>
 
         <!-- ELEMENTS: HEADINGS -->
@@ -526,17 +543,7 @@ us &lt;br/&gt;Above us only sky
           </div>
         </section>
 
-        <!-- SELF CLOSING TAGS -->
-        <section>
-          <h3>Self Closing Tags</h3>
-          These elements don't need a closing tag:<br>
-<pre><code class = "html">&lt;br/&gt;
-&lt;hr/&gt;
-&lt;img/&gt;
-&lt;link/&gt;
-&lt;input/&gt;
-</code></pre>
-        </section>
+        
 
         <!--PRACTICE - ADD A BREAK OR HORIZONTAL RULE -->
         <section >
@@ -728,6 +735,19 @@ alt=""/&gt;
         <section>
           <h2>CSS</h2>
         </section>
+
+
+        <!-- ANATOMY OF A WEBSITE -->
+        <section>
+					<h3>Anatomy of a website</h3>
+					<div style="font-size:.875em;">
+            <p>Content (Text + Media)</p>
+            <p>+ HTML(Structure + Semantics)</p>
+            <p style="background-color: rgb(236, 201, 201);">+ CSS (Presentation + Design)</p>
+            <p>+ JavaScript (Interactivity)</p>
+            <p>= Website</p>
+					</div>
+				</section>
 
         <section>
           <h3>CSS: What is it?</h3>
@@ -1077,6 +1097,7 @@ property: value;
 				hash: true,
 				center: true,
 				slideNumber: true,
+        hashOneBasedIndex: true,
 				showNotes: false,
 				margin: 0.1,
 				preloadIframes: true,
