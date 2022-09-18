@@ -334,18 +334,51 @@
           <p style="font-size:.65em;">Notice: Whichever element opens first, closes last.</p>
         </section>
 
-        <!--PRACTICE: HEADINGS, PARAGRAPHS, LINE BREAKS, HORIZONTAL RULES, ORDERD/UNORDERED LISTS, -->
+        <!--PRACTICE: HEADINGS, PARAGRAPHS, LINE BREAKS, HORIZONTAL RULES, ORDERED/UNORDERED LISTS, ATTRIBUTES, FORMATTING, IMAGES -->
         <section >
           <h3>Let's Develop It!</h3>
-          <p class="left-align">A basic practic page about a topic of choice. Include the following HTML elements:</p>
+          <p class="left-align">Develop a basic practic page about a topic of choice. Include the following HTML elements:</p>
           <ol style="font-size: .8em; line-height: 1.75;">
-            <li>a header</li>
+            <li>a heading</li>
             <li>a paragraph</li>
             <li> a line break or horizontal rule</li>
             <li>an ordered or unordered list</li>
+            <li>an image<a target= "blank" href="https://pixabay.com/images/search/transparent%20background/"> Pixabay Images</a></li>
+            <li>Experiment with formatting and adding attributes.</li>
           </ol>
           <p style="font-size:30px;">*IMPORTANT: A page can contain only ONE h1 tag.</p>
         </section>
+
+<!-- ELEMENTS: HEADINGS -->
+<section>
+  <h3>Headings</h3>
+  <img src="assets/imgs/html-headings.png" alt="Example of headings" />
+</section>
+
+<section>
+  <h3>Element: Heading</h3>
+  <div>
+    <div class="flex-container">
+      <div class="flex-item">
+<pre><code class="html">&lt;h1&gt;Heading 1&lt;/h1&gt;
+&lt;h2&gt;Heading 2&lt;/h2&gt;
+&lt;h3&gt;Heading 3&lt;/h3&gt;
+&lt;h4&gt;Heading 4&lt;/h4&gt;
+&lt;h5&gt;Heading 5&lt;/h5&gt;
+&lt;h6&gt;Heading 6&lt;/h6&gt;</code></pre>
+    </div>
+    <div class="flex-item">
+      <h1 style = "font-size: 120%">Heading 1</h1>
+      <h2 style = "font-size: 110%">Heading 2</h2>
+      <h3 style = "font-size: 105%">Heading 3</h3>
+      <h4 style = "font-size: 95%">Heading 4</h4>
+      <h5 style = "font-size: 85%">Heading 5</h5>
+      <h6 style = "font-size: 75%">Heading 6</h6>
+    </div>
+  </div>
+<p style="font-size:30px;">* Heading number indicates hierarchy, not size.<br>Think of outlines from high school papers.</p>
+</section>
+
 
         <section>
 					<h3>Anatomy of a website</h3>
@@ -356,36 +389,6 @@
 </code></pre>
             </li>
           </ul>
-        </section>
-
-         <!-- ELEMENTS: HEADINGS -->
-         <section>
-          <h3>Headings</h3>
-          <img src="assets/imgs/html-headings.png" alt="Example of headings" />
-        </section>
-
-        <section>
-          <h3>Element: Heading</h3>
-          <div>
-            <div class="flex-container">
-              <div class="flex-item">
-<pre><code class="html">&lt;h1&gt;Heading 1&lt;/h1&gt;
-&lt;h2&gt;Heading 2&lt;/h2&gt;
-&lt;h3&gt;Heading 3&lt;/h3&gt;
-&lt;h4&gt;Heading 4&lt;/h4&gt;
-&lt;h5&gt;Heading 5&lt;/h5&gt;
-&lt;h6&gt;Heading 6&lt;/h6&gt;</code></pre>
-            </div>
-            <div class="flex-item">
-              <h1 style = "font-size: 120%">Heading 1</h1>
-              <h2 style = "font-size: 110%">Heading 2</h2>
-              <h3 style = "font-size: 105%">Heading 3</h3>
-              <h4 style = "font-size: 95%">Heading 4</h4>
-              <h5 style = "font-size: 85%">Heading 5</h5>
-              <h6 style = "font-size: 75%">Heading 6</h6>
-            </div>
-          </div>
-			  <p style="font-size:30px;">* Heading number indicates hierarchy, not size.<br>Think of outlines from high school papers.</p>
         </section>
 
         <!-- ELEMENTS: PARAGRAPHS -->
@@ -449,12 +452,6 @@ us &lt;br/&gt;Above us only sky
           </div>
         </section>
 
-        <!--PRACTICE - ADD A BREAK OR HORIZONTAL RULE -->
-        <section >
-          <h3>Let's Develop It!</h3>
-          <p>Add a break tag or a horizontal rule to your code.</p>
-        </section>
-  
         <!-- ELEMENTS: LISTS -->
         <section>
           <h3>Lists</h3>
@@ -498,19 +495,66 @@ us &lt;br/&gt;Above us only sky
           </div>
         </section>
 
-        <!-- PRACTICE - ADD A LIST -->
-        <section >
-          <h3>Let's Develop It!</h3>
-          <ol style="font-size: .8em; line-height: 1.75;">
-            <li>Add an unordered list to your code.</li>
-            <li>Add an ordered list to your code.</li>
-            <li>EXTRA CHALLENGE:
-            <ul>
-              <li>Nest an ordered list within an unordered list!</li>
-            </ul>
-            </li>
-          </ol>
+        <!-- ELEMENTS: Em and Strong -->
+        <section>
+          <h3>Formatted Text</h3>
+          <div>
+<pre><code class="html xml">&lt;p&gt;This paragraph has &lt;em&gt;emphasized&lt;/em&gt; text 
+and &lt;strong&gt;important&lt;/strong&gt; text.&lt;/p&gt;
+</code></pre>
+          <p>This paragraph has <em>emphasized</em> text and <strong>important</strong> text.</p>
+        </div>
+        <p style="font-size:24px;">* <code>em</code> and <code>strong</code> are meant to indicate meaning through style. If you want to have italicized for appearance and not to communicate meaning, you should use CSS.</p>
+        </section>       
+
+        <!-- IMAGES -->
+        <section>
+          <h3>Images</h3>
+          <p>To make an image, you need 3 parts:</p>
+          <ul style="font-size: .8em; line-height: 1.75;">
+            <li>An image tag: <code>&lt;img /&gt;</code></li>
+            <li>A <code>src</code> attribute: the location and name of the image file</li>
+            <li>An <code>alt</code> attribute: a brief description of the image content</li>
+          </ul>
         </section>
+
+        <section>
+          <h3>Images</h3>
+          <div class="flex-container">
+            <div class="flex-item">
+<pre><code class="html">&lt;img src="img/example-gdi-logo.png"
+alt="Girl Develop It logo"/&gt;
+</code></pre>
+            </div>
+            <div class="flex-item">
+              <img src="assets/imgs/example-gdi-logo.png" width="150px" alt="Girl Develop It logo">
+            </div>
+          </div>
+
+          <div class="flex-container">
+            <div class="flex-item">
+<pre><code class="html">&lt;img src="img/blinkylights.gif"
+alt=""/&gt;
+</code></pre>
+            </div>
+            <div class="flex-item">
+              <img src="assets/imgs/blinkylights.gif" alt="" style="border:0">
+            </div>
+          </div>
+        </section>
+
+         <!-- ATTRIBUTES -->
+         <section>
+          <h3>Element Details: Attributes</h3>
+          <ul style="font-size: .8em; line-height: 1.75;">
+            <li>Attributes describe additional characteristics of an HTML element</li>
+            <li>An attribute has 2 parts: Name &amp; Value.</li>
+          </ul>
+          <br>
+<pre><code class ="html">&lt;tagname name="value"&gt;content&lt;/tagname&gt;</code></pre>
+          <p style="font-size:30px;">*Values should be contained inside quotation marks.</p>
+        </section>
+        
 
         <!-- The Boiler Plate -->
         <section>
@@ -563,9 +607,9 @@ us &lt;br/&gt;Above us only sky
 </code></pre>
         </section>
 
-        <!-- HEAD AND BODY TAGS -->
+        <!-- HEAD AND TAGS -->
         <section>
-          <h3>Head and Body Tags</h3>
+          <h3>Head Tag</h3>
           <p class="left-align"><code>head</code>: Information about the page, such as its title.</p>
   <pre><code class = "html">&lt;!DOCTYPE html&gt;
   &lt;html&gt;
@@ -576,9 +620,24 @@ us &lt;br/&gt;Above us only sky
   </code></pre>
         </section>
 
-        <!-- HEAD AND BODY TAGS -->
+        <!-- META TAGS -->
         <section>
-          <h3>Head and Body Tags</h3>
+          <h3>Meta Tags</h3>
+          <p>It's best practice to include meta tags that tell the browser the <code>charset</code> and <code>viewport</code> for cross-browser compatibility.</p>
+<pre><code class = "html">&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+ &lt;head&gt;
+  &lt;meta charset="utf-8"/&gt;
+  &lt;meta name="viewport" content="width=device-width, initial-scale=1"/&gt;
+  &lt;title&gt;Title of the page &lt;/title&gt;
+ &lt;/head&gt;
+&lt;/html&gt;
+</code></pre>
+        </section>
+
+        <!-- BODY TAG -->
+        <section>
+          <h3>Body Tag</h3>
           <p class="left-align"><code>body</code>: The actual content of the page, what shows up in the browser window.</p>
   <pre><code class = "html">&lt;!DOCTYPE html&gt;
   &lt;html&gt;
@@ -592,26 +651,6 @@ us &lt;br/&gt;Above us only sky
   </code></pre>
         </section>
 
-        <!-- META TAGS -->
-        <section>
-          <h3>Meta Tags</h3>
-          <p>It's best practice to include meta tags that tell the browser the <code>charset</code> and <code>viewport</code>.</p>
-<pre><code class = "html">&lt;!DOCTYPE html&gt;
-&lt;html&gt;
- &lt;head&gt;
-  &lt;meta charset="utf-8"/&gt;
-  &lt;meta name="viewport" content="width=device-width, initial-scale=1"/&gt;
-  &lt;title&gt;Title of the page &lt;/title&gt;
- &lt;/head&gt;
-&lt;/html&gt;
-</code></pre>
-        </section>
-
-        <!-- BREAK -->
-        <section>
-          <h2>Break - 10 Minutes</h2>
-        </section>
-
          <!-- HTML Part 2: The Hero Image Web Page -->
          <section>
           <h3>HTML Part 2: The Hero Image Web Page</h3>
@@ -621,7 +660,7 @@ us &lt;br/&gt;Above us only sky
           <a href="https://uxplanet.org/hero-image-website-design-21-best-examples-templates-for-your-inspiration-56cd3d79c688">UX Planet: More examples</a>
         </section>
 
-           <!-- PRACTICE - ADD COMMENTS, ATTRIBUTES, LINKS -->
+           <!-- PRACTICE - ADD COMMENTS AND LINKS-->
            <section >
             <h3>Let's Develop It!</h3>
             <ol style="font-size: .8em; line-height: 1.75;">
@@ -634,10 +673,8 @@ us &lt;br/&gt;Above us only sky
                   </ul>
               </li>
               <li>Add comments to organize your sections.</li>
-              <li>Add attributes to target specific elements.</li>
-              <li>Add absolute and relative links.</li>
-              <li>Experiment with formatting text and adding an image.</li>
-              <a href="https://pixabay.com/images/search/transparent%20background/">Pixabay Images</a>
+              <li>Add links to direct users to other websites.</li>
+              
             </ol>
           </section>
   
@@ -666,79 +703,6 @@ us &lt;br/&gt;Above us only sky
 </code></pre>
         </section>
 
-        <!-- ATTRIBUTES -->
-        <section>
-          <h3>Element Details: Attributes</h3>
-          <ul style="font-size: .8em; line-height: 1.75;">
-            <li>Attributes describe additional characteristics of an HTML element</li>
-            <li>An attribute has 2 parts: Name &amp; Value.</li>
-          </ul>
-          <br>
-<pre><code class ="html">&lt;tagname name="value"&gt;content&lt;/tagname&gt;</code></pre>
-          <p style="font-size:30px;">*Values should be contained inside quotation marks.</p>
-        </section>
-
-        <!-- ELEMENTS: Em and Strong -->
-        <section>
-          <h3>Formatted Text</h3>
-          <div>
-<pre><code class="html xml">&lt;p&gt;This paragraph has &lt;em&gt;emphasized&lt;/em&gt; text 
-and &lt;strong&gt;important&lt;/strong&gt; text.&lt;/p&gt;
-</code></pre>
-          <p>This paragraph has <em>emphasized</em> text and <strong>important</strong> text.</p>
-        </div>
-        <p style="font-size:24px;">* <code>em</code> and <code>strong</code> are meant to indicate meaning through style. If you want to have italicized for appearance and not to communicate meaning, you should use CSS.</p>
-        </section>       
-
-        <!-- IMAGES -->
-        <section>
-          <h3>Images</h3>
-          <p>To make an image, you need 3 parts:</p>
-          <ul style="font-size: .8em; line-height: 1.75;">
-            <li>An image tag: <code>&lt;img /&gt;</code></li>
-            <li>A <code>src</code> attribute: the location and name of the image file</li>
-            <li>An <code>alt</code> attribute: a brief description of the image content</li>
-          </ul>
-        </section>
-
-        <section>
-          <h3>Images</h3>
-          <div class="flex-container">
-            <div class="flex-item">
-<pre><code class="html">&lt;img src="img/example-gdi-logo.png"
-alt="Girl Develop It logo"/&gt;
-</code></pre>
-            </div>
-            <div class="flex-item">
-              <img src="assets/imgs/example-gdi-logo.png" width="150px" alt="Girl Develop It logo">
-            </div>
-          </div>
-
-          <div class="flex-container">
-            <div class="flex-item">
-<pre><code class="html">&lt;img src="img/blinkylights.gif"
-alt=""/&gt;
-</code></pre>
-            </div>
-            <div class="flex-item">
-              <img src="assets/imgs/blinkylights.gif" alt="" style="border:0">
-            </div>
-          </div>
-        </section>
-
-        <!-- PRACTICE - ADD AN IMAGE -->
-        <section >
-          <h3>Let's Develop It!</h3>
-          <ol style="font-size: .8em; line-height: 1.75;">
-            <li>Using the img tag, add an image to your page.
-              <ul>
-                <li>Tip: Do an online search; copy an image link from the web.</li>
-              </ul>
-            </li>
-            <li>Include an ALT attribute in the img tag.</li>
-          </ol>
-        </section>
-
         <!-- LINKS-->
         <section>
           <h3>Links</h3>
@@ -763,13 +727,6 @@ alt=""/&gt;
           <p style="font-size: 30px;">Opens the GDI site in a new tab:<br>
             <a href="http://www.girldevelopit.com" target="_blank">Girl Develop It</a>
           </p>
-        </section>
-
-        <!-- PRACTICE: LINKS-->
-        <section>
-          <h3>Let's Develop It!</h3>
-            <p>Add 2 or more links that open up in a new tab.</p> 
-          <br>
         </section>
 
         <!-- CSS -->
