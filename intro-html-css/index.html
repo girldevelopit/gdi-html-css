@@ -156,8 +156,8 @@
 					<h2>Steps</h2>
           <div class = "left-align">
             <ol style="line-height: 1.75;">
-              <li>Build a Practice HTML Webpage</li>
-              <li>Build a Hero Image Webpage Styled with CSS</li>
+              <li>Build a Quick Practice HTML Web Page</li>
+              <li>Build a Hero Image Web Page Styled with CSS</li>
               <li>Optional Pairing Sessions</li>
             </ol>
           </div>
@@ -184,19 +184,7 @@
 					</div>
 				</section>
 
-				<!-- WHAT IS HTML?-->
-				<section>
-					<h3>What is HTML?</h3>
-					<p>HTML stands for <span style="color: red;">H</span>yper <span style="color: red;">T</span>ext <span style="color: red;">M</span>arkup  <span style="color: red;">L</span>anguage.</p>
-				</section>
-				
-				<section>
-					<h3>What is HTML?</h3>
-					<p>HTML is the language that allows us to build websites.</p>
-					<img src = "assets/imgs/construction-ga190beeb8_1920.jpg" width="500px" alt="Screenshot of construction house building shell">
-				</section>
-
-				<section>
+        <section>
 					<h3>A Very, Very Quick History of HTML</h3>
 					<ul style="font-size: .8em; line-height: 1.75;">
 						<li>Invented by Tim Berners-Lee</li>
@@ -207,9 +195,21 @@
 					</ul>
 				</section>
 
+				<!-- WHAT IS HTML?-->
 				<section>
 					<h3>What is HTML?</h3>
-					<p>HTML is composed of HTML tags that together provide a blueprint for a webpage.</p>
+					<p>HTML stands for <span style="color: red;">H</span>yper <span style="color: red;">T</span>ext <span style="color: red;">M</span>arkup  <span style="color: red;">L</span>anguage.</p>
+				</section>
+				
+				<section>
+					<h3>What is HTML?</h3>
+					<p>HTML is the language that allows us to build the structure of websites.</p>
+					<img src = "assets/imgs/construction-ga190beeb8_1920.jpg" width="500px" alt="Screenshot of construction house building shell">
+				</section>
+
+				<section>
+					<h3>What is HTML?</h3>
+					<p>HTML is composed of HTML elements, which are containers for placing content. Together, HTML elements provide the blueprint for a web page.</p>
 					<img src = "assets/imgs/blueprint-g6b416464d_1920.jpg"500px" alt="Screenshot of a blueprint">
 				</section>
 
@@ -218,6 +218,37 @@
 					<p>"Under the hood" of a website:</p>
 					<img src = "assets/imgs/gdi-homepage-html.png" alt="Screenshot of the Girl Develop It page source code">
 				</section>
+
+        <!-- TOOLS -->
+				<section>
+					<h3>Basic Tools</h3>
+          <p>Browsers:</p>
+          <ul style="font-size: .8em; line-height: 1.75;">
+            <li>Chrome</li>
+            <li>FireFox</li>
+            <li>Safari</li>
+          </ul>
+        </section>
+
+        <section>
+					<h3>Basic Tools</h3>
+          <p>Code or Text Editors:</p>
+          <ul style="font-size: .8em; line-height: 1.75;">
+            <li>Visual Studio Code</li>
+            <li>Atom</li>
+            <li>Sublime Text</li>
+          </ul>
+        </section>
+
+        <section>
+					<h3>Basic Tools</h3>
+          <p>Online Code Editors:</p>
+          <ul style="font-size: .8em; line-height: 1.75;">
+            <li>REPL.it</li>
+            <li>Codepen.io</li>
+            <li>Codesandbox.io</li>
+          </ul>
+        </section>
 
         				<!-- PRACTICE -->
 				<section>
@@ -303,6 +334,184 @@
           <p style="font-size:.65em;">Notice: Whichever element opens first, closes last.</p>
         </section>
 
+        <!--PRACTICE: HEADINGS, PARAGRAPHS, LINE BREAKS, HORIZONTAL RULES, ORDERD/UNORDERED LISTS, -->
+        <section >
+          <h3>Let's Develop It!</h3>
+          <p class="left-align">A basic practic page about a topic of choice. Include the following HTML elements:</p>
+          <ol style="font-size: .8em; line-height: 1.75;">
+            <li>a header</li>
+            <li>a paragraph</li>
+            <li> a line break or horizontal rule</li>
+            <li>an ordered or unordered list</li>
+          </ol>
+          <p style="font-size:30px;">*IMPORTANT: A page can contain only ONE h1 tag.</p>
+        </section>
+
+        <section>
+					<h3>Anatomy of a website</h3>
+					<ul style="line-height: 1.75;">
+            <li>A paragraph is your <code>content</code>.</li>
+            <li>Putting your content into an HTML tag to make it look like a paragraph is <code>structure</code>.
+<pre><code class ="html">&lt;p&gt;A paragraph is your content&lt;/p&gt;
+</code></pre>
+            </li>
+          </ul>
+        </section>
+
+         <!-- ELEMENTS: HEADINGS -->
+         <section>
+          <h3>Headings</h3>
+          <img src="assets/imgs/html-headings.png" alt="Example of headings" />
+        </section>
+
+        <section>
+          <h3>Element: Heading</h3>
+          <div>
+            <div class="flex-container">
+              <div class="flex-item">
+<pre><code class="html">&lt;h1&gt;Heading 1&lt;/h1&gt;
+&lt;h2&gt;Heading 2&lt;/h2&gt;
+&lt;h3&gt;Heading 3&lt;/h3&gt;
+&lt;h4&gt;Heading 4&lt;/h4&gt;
+&lt;h5&gt;Heading 5&lt;/h5&gt;
+&lt;h6&gt;Heading 6&lt;/h6&gt;</code></pre>
+            </div>
+            <div class="flex-item">
+              <h1 style = "font-size: 120%">Heading 1</h1>
+              <h2 style = "font-size: 110%">Heading 2</h2>
+              <h3 style = "font-size: 105%">Heading 3</h3>
+              <h4 style = "font-size: 95%">Heading 4</h4>
+              <h5 style = "font-size: 85%">Heading 5</h5>
+              <h6 style = "font-size: 75%">Heading 6</h6>
+            </div>
+          </div>
+			  <p style="font-size:30px;">* Heading number indicates hierarchy, not size.<br>Think of outlines from high school papers.</p>
+        </section>
+
+        <!-- ELEMENTS: PARAGRAPHS -->
+        <section>
+          <h3>Paragraphs</h3>
+          <p>Paragraphs allow you to format your content in a readable fashion.</p>
+          <img src="assets/imgs/html-paragraphs.png" width="600px" alt="Example of Paragraphs in the wild" />
+          <p style="font-size:30px;">* You can edit how paragraphs are displayed with CSS.</p>
+        </section>
+
+        <section>
+          <h3>Element: Paragraph</h3>
+          <div class="flex-container">
+            <div class="flex-item">
+<pre><code class="html">&lt;p&gt;Paragraph 1&lt;/p&gt;
+&lt;p&gt;Paragraph 2&lt;/p&gt;
+&lt;p&gt;Paragraph 3&lt;/p&gt;
+</code></pre>
+<pre><code class="html">&lt;p&gt;Paragraph 1&lt;/p&gt; &lt;p&gt;Paragraph 2&lt;/p&gt;
+</code></pre>
+<pre><code class="html">&lt;p&gt;Paragraph 1&lt;/p&gt;
+
+&lt;p&gt;Paragraph 2&lt;/p&gt;
+&lt;p&gt;Paragraph 3&lt;/p&gt;
+</code></pre>
+            </div>
+            <div class="flex-item">
+              <p style="font-size:24px;">Paragraph 1</p>
+              <p style="font-size:24px;">Paragraph 2</p>
+              <p style="font-size:24px;">Paragraph 3</p>
+              <br>
+              <p style="font-size:24px;">* White space in your editor is only for humans. You can write your code with any spacing. But it's better to write code in a formatted structure or use a linter to clean up formatting issues.</p>
+            </div>
+          </div>
+        </section>
+
+        <section>
+          <h3>Element: Paragraph</h3>
+					<ul>
+            <li>Making the font of your paragraph green and smaller is  <code>presentation</code>.
+					  <p style="font-size:30px; color:green;">This paragraph has been styled with CSS.</p>
+					  </li>
+					</ul>
+				</section>    
+
+        <!-- ELEMENTS: Line Break -->
+        <section>
+          <h3>Element: Line Break</h3>
+          <div class="flex-container">
+            <div class="flex-item">
+<pre><code class="html xml">&lt;p&gt;
+Imagine there&apos;s no Heaven&lt;br/&gt;It's
+easy if you try &lt;br/&gt;No hell below
+us &lt;br/&gt;Above us only sky
+&lt;/p&gt;
+</code></pre>
+            </div>
+            <div class="flex-item">
+              <p class="left-align" style="font-size:30px;">Imagine there's no Heaven<br/>It's easy if you try<br/> No hell below us<br/>Above us only sky</p>
+            </div>
+          </div>
+        </section>
+
+        <!--PRACTICE - ADD A BREAK OR HORIZONTAL RULE -->
+        <section >
+          <h3>Let's Develop It!</h3>
+          <p>Add a break tag or a horizontal rule to your code.</p>
+        </section>
+  
+        <!-- ELEMENTS: LISTS -->
+        <section>
+          <h3>Lists</h3>
+          <p>Lists can be used to organize any list of items.</p>
+          <img src="assets/imgs/html-lists.png" width="500px"/>
+          <p style="font-size:30px;">You'd be surprised how often lists are used in web design.</p>
+        </section>
+
+        <section>
+          <h3>Unordered and ordered lists</h3>
+          <div class="flex-container">
+            <div class="flex-item">
+<pre><code class="html">&lt;ul&gt;
+ &lt;li&gt;List Item&lt;/li&gt;
+ &lt;li&gt;Another List Item&lt;/li&gt;
+&lt;/ul&gt;
+</code></pre>
+            </div>
+            <div class="flex-item">
+              <ul style="font-size: 26px;">
+                <li>List Item</li>
+                <li>Another List Item</li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="flex-container">
+            <div class="flex-item">
+<pre><code class="html">&lt;ol&gt;
+ &lt;li&gt;List Item&lt;/li&gt;
+ &lt;li&gt;Another List Item&lt;/li&gt;
+&lt;/ol&gt;
+</code></pre>
+            </div>
+            <div class="flex-item">
+              <ol style="font-size: 26px;">
+                <li>List Item</li>
+                <li>Another List Item</li>
+              </ol>
+            </div>
+          </div>
+        </section>
+
+        <!-- PRACTICE - ADD A LIST -->
+        <section >
+          <h3>Let's Develop It!</h3>
+          <ol style="font-size: .8em; line-height: 1.75;">
+            <li>Add an unordered list to your code.</li>
+            <li>Add an ordered list to your code.</li>
+            <li>EXTRA CHALLENGE:
+            <ul>
+              <li>Nest an ordered list within an unordered list!</li>
+            </ul>
+            </li>
+          </ol>
+        </section>
+
         <!-- The Boiler Plate -->
         <section>
           <h3>The Boiler Plate</h3>
@@ -323,57 +532,16 @@
 <a href="https://www.freecodecamp.org/news/html-starter-template-a-basic-html5-boilerplate-for-index-html/">freeCodeCamp: HTML5 Boilerplate</a>
 
         </section>
-        
 
-				<section>
-					<h3>Anatomy of a website</h3>
-					<ul style="line-height: 1.75;">
-            <li>A paragraph is your <code>content</code>.</li>
-            <li>Putting your content into an HTML tag to make it look like a paragraph is <code>structure</code>.
-<pre><code class ="html">&lt;p&gt;A paragraph is your content&lt;/p&gt;
-</code></pre>
-            </li>
-          </ul>
-        </section>
-
-        <section>
-          <h3>Anatomy of a website</h3>
-					<ul>
-            <li>Making the font of your paragraph green and smaller is  <code>presentation</code>.
-					  <p style="font-size:30px; color:green;">This paragraph has been styled with CSS.</p>
-					  </li>
-					</ul>
-				</section>    
-        
-				<!-- TOOLS -->
-				<section>
-					<h3>Basic Tools</h3>
-          <p>Browsers:</p>
-          <ul style="font-size: .8em; line-height: 1.75;">
-            <li>Chrome</li>
-            <li>FireFox</li>
-            <li>Safari</li>
-          </ul>
-        </section>
-
-        <section>
-					<h3>Basic Tools</h3>
-          <p>Code or Text Editors:</p>
-          <ul style="font-size: .8em; line-height: 1.75;">
-            <li>Visual Studio Code</li>
-            <li>Atom</li>
-            <li>Sublime Text</li>
-          </ul>
-        </section>
-
-        <section>
-					<h3>Basic Tools</h3>
-          <p>Online Code Editors:</p>
-          <ul style="font-size: .8em; line-height: 1.75;">
-            <li>REPL.it</li>
-            <li>Codepen.io</li>
-            <li>Codesandbox.io</li>
-          </ul>
+         <!-- PRACTICE - ADD THE BOILERPLATE -->
+         <section >
+          <h3>Let's Develop It!</h3>
+          <ol style="font-size: .8em; line-height: 1.75;">
+            <li>Copy the boilerplate from the previous slide and paste it at the top of your web page.</li>
+            <li>Enter a title to display in the tab.</li>
+            <li>Find the body tags.</li>
+            <li>Copy and paste all of your content within the body tags.</li>
+          </ol>
         </section>
 
         <!-- HTML DOCTYPE -->
@@ -439,185 +607,62 @@
 </code></pre>
         </section>
 
-        <!-- ELEMENTS: HEADINGS -->
+        <!-- BREAK -->
         <section>
-          <h3>Headings</h3>
-          <img src="assets/imgs/html-headings.png" alt="Example of headings" />
+          <h2>Break - 10 Minutes</h2>
         </section>
 
-        <section>
-          <h3>Element: Heading</h3>
-          <div>
-            <div class="flex-container">
-              <div class="flex-item">
-<pre><code class="html">&lt;h1&gt;Heading 1&lt;/h1&gt;
-&lt;h2&gt;Heading 2&lt;/h2&gt;
-&lt;h3&gt;Heading 3&lt;/h3&gt;
-&lt;h4&gt;Heading 4&lt;/h4&gt;
-&lt;h5&gt;Heading 5&lt;/h5&gt;
-&lt;h6&gt;Heading 6&lt;/h6&gt;</code></pre>
-            </div>
-            <div class="flex-item">
-              <h1 style = "font-size: 120%">Heading 1</h1>
-              <h2 style = "font-size: 110%">Heading 2</h2>
-              <h3 style = "font-size: 105%">Heading 3</h3>
-              <h4 style = "font-size: 95%">Heading 4</h4>
-              <h5 style = "font-size: 85%">Heading 5</h5>
-              <h6 style = "font-size: 75%">Heading 6</h6>
-            </div>
-          </div>
-			  <p style="font-size:30px;">* Heading number indicates hierarchy, not size.<br>Think of outlines from high school papers.</p>
+         <!-- HTML Part 2: The Hero Image Web Page -->
+         <section>
+          <h3>HTML Part 2: The Hero Image Web Page</h3>
+          <p style="font-size:.8em;">The purpose of placing a hero image within the header element is to capture the visitor's attention.</p>
+          <a href="https://uxplanet.org/how-to-design-a-hero-image-website-in-2022-best-practices-and-examples-256b7e8c31fb">UX Planet: Best Practices and Examples</a>
+          <br>
+          <a href="https://uxplanet.org/hero-image-website-design-21-best-examples-templates-for-your-inspiration-56cd3d79c688">UX Planet: More examples</a>
         </section>
 
-        <!--PRACTICE: HEADINGS-->
-        <section >
-          <h3>Let's Develop It!</h3>
-          <p class="left-align">A basic page about your favorite television show.</p>
-          <ol style="font-size: .8em; line-height: 1.75;">
-            <li>Include an h1 header.</li>
-            <li>Add additional headings for potential sections of your page.</li>
-          </ol>
-          <p style="font-size:30px;">*IMPORTANT: A page can contain only ONE h1 tag.</p>
-        </section>
-
-        <!-- ELEMENTS: PARAGRAPHS -->
-        <section>
-          <h3>Paragraphs</h3>
-          <p>Paragraphs allow you to format your content in a readable fashion.</p>
-          <img src="assets/imgs/html-paragraphs.png" width="600px" alt="Example of Paragraphs in the wild" />
-          <p style="font-size:30px;">* You can edit how paragraphs are displayed with CSS.</p>
-        </section>
-
-        <section>
-          <h3>Element: Paragraph</h3>
-          <div class="flex-container">
-            <div class="flex-item">
-<pre><code class="html">&lt;p&gt;Paragraph 1&lt;/p&gt;
-&lt;p&gt;Paragraph 2&lt;/p&gt;
-&lt;p&gt;Paragraph 3&lt;/p&gt;
-</code></pre>
-<pre><code class="html">&lt;p&gt;Paragraph 1&lt;/p&gt; &lt;p&gt;Paragraph 2&lt;/p&gt;
-</code></pre>
-<pre><code class="html">&lt;p&gt;Paragraph 1&lt;/p&gt;
-
-&lt;p&gt;Paragraph 2&lt;/p&gt;
-&lt;p&gt;Paragraph 3&lt;/p&gt;
-</code></pre>
-            </div>
-            <div class="flex-item">
-              <p style="font-size:24px;">Paragraph 1</p>
-              <p style="font-size:24px;">Paragraph 2</p>
-              <p style="font-size:24px;">Paragraph 3</p>
-              <br>
-              <p style="font-size:24px;">* White space in your editor is only for humans. You can write your code with any spacing. But it's better to write code in a formatted structure or use a linter to clean up formatting issues.</p>
-            </div>
-          </div>
-        </section>
-
-        <!-- ELEMENTS: Em and Strong -->
-        <section>
-          <h3>Formatted Text</h3>
-          <div>
-<pre><code class="html xml">&lt;p&gt;This paragraph has &lt;em&gt;emphasized&lt;/em&gt; text 
-and &lt;strong&gt;important&lt;/strong&gt; text.&lt;/p&gt;
-</code></pre>
-          <p>This paragraph has <em>emphasized</em> text and <strong>important</strong> text.</p>
-        </div>
-        <p style="font-size:24px;">* <code>em</code> and <code>strong</code> are meant to indicate meaning through style. If you want to have italicized for appearance and not to communicate meaning, you should use CSS.</p>
-        </section>
+           <!-- PRACTICE - ADD COMMENTS, ATTRIBUTES, LINKS -->
+           <section >
+            <h3>Let's Develop It!</h3>
+            <ol style="font-size: .8em; line-height: 1.75;">
+              <li>Open an new repl. <a target="_blank" href="file:///Users/aja/gdi-html-css/intro-html-css/index.html#/47">Boiler Plate</a></li>
+              <li>Develop the following sections for your hero image web page using HTML elements:
+                  <ul>
+                    <li>navigation bar</li>
+                    <li>header</li>
+                    <li>footer</li>
+                  </ul>
+              </li>
+              <li>Add comments to organize your sections.</li>
+              <li>Add attributes to target specific elements.</li>
+              <li>Add absolute and relative links.</li>
+              <li>Experiment with formatting text and adding an image.</li>
+            </ol>
+          </section>
   
-        <!--PRACTICE - PARAGRAPH-->
-        <section >
-          <h3>Let's Develop It!</h3>
-          <p>Add on to the page for your favorite television show.</p>
-          <ol style="font-size: .8em; line-height: 1.75;">
-            <li>Text! You can either copy and paste from a Wikipedia article, or generate text from an Ipsum like <a href="https://hipsum.co/">Hipster Ipsum</a>.</li>
-            <li>Add paragraph tags to break up your text into at least 2 paragraphs.</li>
-            <li>Add formatting tags to emphasize "important" words.</li>
-          </ol>
-        </section>
-  
-        <!-- ELEMENTS: Line Break -->
+
+        <!--COMMENTS 1-->
         <section>
-          <h3>Element: Line Break</h3>
-          <div class="flex-container">
-            <div class="flex-item">
-<pre><code class="html xml">&lt;p&gt;
-Imagine there&apos;s no Heaven&lt;br/&gt;It's
-easy if you try &lt;br/&gt;No hell below
-us &lt;br/&gt;Above us only sky
-&lt;/p&gt;
+          <h3>Comments</h3>
+          <p style="font-size: .8em;">You can add comments to your code that will not be displayed by the browser, but only visible when viewing the code.</p>
+<pre><code class="html">&lt;!-- Comment goes here --&gt;
 </code></pre>
-            </div>
-            <div class="flex-item">
-              <p class="left-align" style="font-size:30px;">Imagine there's no Heaven<br/>It's easy if you try<br/> No hell below us<br/>Above us only sky</p>
-            </div>
-          </div>
-        </section>
-
-        
-
-        <!--PRACTICE - ADD A BREAK OR HORIZONTAL RULE -->
-        <section >
-          <h3>Let's Develop It!</h3>
-          <p>Add a break tag or a horizontal rule to your code.</p>
-        </section>
-  
-        <!-- ELEMENTS: LISTS -->
-        <section>
-          <h3>Lists</h3>
-          <p>Lists can be used to organize any list of items.</p>
-          <img src="assets/imgs/html-lists.png" width="500px"/>
-          <p style="font-size:30px;">You'd be surprised how often lists are used in web design.</p>
         </section>
 
         <section>
-          <h3>Unordered and ordered lists</h3>
-          <div class="flex-container">
-            <div class="flex-item">
-<pre><code class="html">&lt;ul&gt;
- &lt;li&gt;List Item&lt;/li&gt;
- &lt;li&gt;Another List Item&lt;/li&gt;
-&lt;/ul&gt;
-</code></pre>
-            </div>
-            <div class="flex-item">
-              <ul style="font-size: 26px;">
-                <li>List Item</li>
-                <li>Another List Item</li>
-              </ul>
-            </div>
-          </div>
+        <h3>Comments</h3>
+        <p style="font-size: .8em">Comments can be used to organize your code into sections so you (or someone else) can easily understand your code. It can also be used to 'comment out' large chunks of code to hide it from the browser.</p>
+<pre><code class="html">&lt;!-- Beginning of header --&gt;
+&lt;div id="header"&gt;Header Content&lt;/div&gt;
+&lt;!-- End of header --&gt;
 
-          <div class="flex-container">
-            <div class="flex-item">
-<pre><code class="html">&lt;ol&gt;
- &lt;li&gt;List Item&lt;/li&gt;
- &lt;li&gt;Another List Item&lt;/li&gt;
-&lt;/ol&gt;
+&lt;!--
+&lt;ol&gt;
+&lt;li&gt;List Item&lt;/li&gt;
+&lt;li&gt;Another List Item&lt;/li&gt;
+&lt;/ol>
+-->
 </code></pre>
-            </div>
-            <div class="flex-item">
-              <ol style="font-size: 26px;">
-                <li>List Item</li>
-                <li>Another List Item</li>
-              </ol>
-            </div>
-          </div>
-        </section>
-
-        <!-- PRACTICE - ADD A LIST -->
-        <section >
-          <h3>Let's Develop It!</h3>
-          <ol style="font-size: .8em; line-height: 1.75;">
-            <li>Add an unordered list of characters from your favorite show to your code.</li>
-            <li>Add an ordered list of seasons or episodes to your code.</li>
-            <li>EXTRA CHALLENGE:
-            <ul>
-              <li>Nest an ordered list in an unordered list</li>
-            </ul>
-            </li>
-          </ol>
         </section>
 
         <!-- ATTRIBUTES -->
@@ -631,6 +676,18 @@ us &lt;br/&gt;Above us only sky
 <pre><code class ="html">&lt;tagname name="value"&gt;content&lt;/tagname&gt;</code></pre>
           <p style="font-size:30px;">*Values should be contained inside quotation marks.</p>
         </section>
+
+        <!-- ELEMENTS: Em and Strong -->
+        <section>
+          <h3>Formatted Text</h3>
+          <div>
+<pre><code class="html xml">&lt;p&gt;This paragraph has &lt;em&gt;emphasized&lt;/em&gt; text 
+and &lt;strong&gt;important&lt;/strong&gt; text.&lt;/p&gt;
+</code></pre>
+          <p>This paragraph has <em>emphasized</em> text and <strong>important</strong> text.</p>
+        </div>
+        <p style="font-size:24px;">* <code>em</code> and <code>strong</code> are meant to indicate meaning through style. If you want to have italicized for appearance and not to communicate meaning, you should use CSS.</p>
+        </section>       
 
         <!-- IMAGES -->
         <section>
@@ -672,7 +729,7 @@ alt=""/&gt;
         <section >
           <h3>Let's Develop It!</h3>
           <ol style="font-size: .8em; line-height: 1.75;">
-            <li>Using the img tag, add an image of your TV show to your page.
+            <li>Using the img tag, add an image to your page.
               <ul>
                 <li>Tip: Do an online search; copy an image link from the web.</li>
               </ul>
@@ -710,37 +767,8 @@ alt=""/&gt;
         <!-- PRACTICE: LINKS-->
         <section>
           <h3>Let's Develop It!</h3>
-            <p>Add 2 or more links about your show that open up in a new tab.</p> 
+            <p>Add 2 or more links that open up in a new tab.</p> 
           <br>
-        </section>
-
-        <!--COMMENTS 1-->
-        <section>
-          <h3>Comments</h3>
-          <p style="font-size: .8em;">You can add comments to your code that will not be displayed by the browser, but only visible when viewing the code.</p>
-<pre><code class="html">&lt;!-- Comment goes here --&gt;
-</code></pre>
-        </section>
-
-        <section>
-        <h3>Comments</h3>
-        <p style="font-size: .8em">Comments can be used to organize your code into sections so you (or someone else) can easily understand your code. It can also be used to 'comment out' large chunks of code to hide it from the browser.</p>
-<pre><code class="html">&lt;!-- Beginning of header --&gt;
-&lt;div id="header"&gt;Header Content&lt;/div&gt;
-&lt;!-- End of header --&gt;
-
-&lt;!--
-&lt;ol&gt;
-&lt;li&gt;List Item&lt;/li&gt;
-&lt;li&gt;Another List Item&lt;/li&gt;
-&lt;/ol>
--->
-</code></pre>
-        </section>
-
-        <!-- BREAK -->
-        <section>
-          <h2>Break - 10 Minutes</h2>
         </section>
 
         <!-- CSS -->
@@ -1076,7 +1104,7 @@ property: value;
 				<!-- Instructor and/or TA Contact -->
 				<section>
 					<h2>Keep in Touch</h2>
-					<p>Instructor: <a href="" target="_blank">LinkedIn</a>, <a href="">Github</a></p>
+					<p>Instructor: <a href="https://www.linkedin.com/in/faraja-thompson-m-ed-70885b8/" target="_blank">LinkedIn</a>, <a href="https://github.com/Faraja17/">Github</a></p>
           <p>TAs: <a href="" target="_blank">LinkedIn</a>, <a href="">Github</a></p>
 				</section>
 
