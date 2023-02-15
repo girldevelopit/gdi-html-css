@@ -1,0 +1,517 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+		<meta name="description" content="Girl Develop It framework for easily creating beautiful presentations using HTML in GDI theme. Based on Hakim El Hattab's reveal.js">
+		<meta name="author" content="Girl Develop It">
+		<meta name="apple-mobile-web-app-capable" content="yes" />
+		<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+
+		<!-- Update with GDI Course Name -->
+		<title>Modern Layouts with CSS: Class 1</title>
+
+		<link rel="icon" type="image/x-icon" href="assets/imgs/favicon.ico" />
+
+		<!-- RevealJS CDN -->
+		<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reveal.js@4.1.0/dist/reset.css">
+		<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reveal.js@4.1.0/dist/reveal.css">
+		<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reveal.js@4.1.0/dist/theme/simple.css" id="theme">
+
+		<!-- GDI Custom Theme -->
+		<link rel="stylesheet" href="css/gdi-theme.css">
+
+    <!-- Course Custom Styles if Applicable-->
+    <link rel="stylesheet" href="css/style.css">
+
+		<!-- Theme used for syntax highlighted code -->
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.1.0/styles/monokai.min.css">
+	</head>
+	<body>
+		<div class="reveal">
+		<!-- Start of Slides container -->
+    <!-- Any section element in this container is displayed as a single slide -->
+    <!-- Comment out rather than delete slide instructions -->
+			<div class="slides"> 
+				
+				<!-- Opening Slide -->
+				<section>
+					<img src="assets/imgs/gdi-logos/gdi-circle-logo_peach.png" alt="GDI Logo" width="400px" class="noborder"/>
+					<br>
+					<h2 style="font-weight: bolder;">Welcome to Girl Develop It</h2>
+				</section>
+
+				<!-- Course Title -->
+				<section>
+					<h1>Modern Layouts with CSS</h1>
+          <h2>Class 1</h2>
+				</section>
+
+				<!-- Instructor Intro -->
+				<section>
+					<h2>Instructor Intro</h2>
+					<h3>Brenda Storer</h3>
+					<h4>Founder, Web Developer & Designer @ Coquelicot.io</h4>
+					<ul>
+						<li>14 years as a hybrid web designer & developer</li>
+						<li>Presented on CSS at conferences on 3 continents</li>
+						<li>The first woman owned agency to have a theme for sale in the Shopify Theme Store (in 2022 🫠)</li>
+						<li>One of GDIs first students in 2010!</li>
+					</ul>
+				</section>
+
+				<!-- OPTIONAL: TA Intro -->
+				<section>
+					<h2>TA Intro</h2>
+					<h3>Anne Katzeff</h3>
+					<h4>Web Designer / Front-End Developer</h4>
+					<ul>
+						<li>20+ years in print design</li>
+						<li>10+ years in web design</li>
+						<li>15+ years teaching</li>
+						<li>15+ years painting</li>
+						<li>Webmaestro: 20+ websites</li>
+						<li>ASK Design specializes in designing custom websites for creative folks, small businesses, and nonprofits.</li>
+					</ul>
+				</section>
+
+				<!-- Student Intros; IceBreakers, etc. -->
+				<section>
+					<h2>Student Intros</h2>
+					<p>Where are you joining us from?</p>
+					<p>If you could be any place else in the world right now, where would you be?</p>
+				</section>
+
+				<!-- Course Agenda / Topics / Course Outline -->
+				<section>
+					<h2>Course Outline</h2>
+					<h3>Day 1</h3>
+					<h4>The Display "Outer" Properties</h4>
+					<ul>
+						<li>
+							Instruction & Demo: Inline, Block, Inline-block, None
+						</li>
+						<li>
+							Break (10 min)
+						</li>
+						<li>
+							Instruction: Centering & Hiding Elements with Intention
+						</li>
+						<li>
+							Demo & Practice
+						</li>
+						<li>
+							Q&A
+						</li>
+					</ul>
+				</section>
+
+				<section>
+					<h2>Course Outline</h2>
+					<h3>Day 2</h3>
+					<h4>The Display "Inner" Properties</h4>
+					<ul>
+						<li>
+							Instruction & Demo: Flexbox
+						</li>
+						<li>
+							Break (10 min)
+						</li>
+						<li>
+							Instruction: CSS Grid
+						</li>
+						<li>
+							Demo & Practice
+						</li>
+						<li>
+							Q&A (10 min)
+						</li>
+					</ul>
+				</section>
+			
+				<!-- Course Goals -->
+				<section>
+					<h2>Course Goals</h2>
+					<ul>
+						<li>
+							A better grasp of the display property will ease debugging common CSS issues related to layout and hopefully save you hours of frustration.
+						</li>
+						<li>
+							Understand the differences between Flexbox and CSS Grid so you can choose one over the other to solve different problems.
+						</li>
+						<li>
+							Take everything you have learned and use it right away! Everything that's being taught is well supported in modern browsers.
+						</li>
+					</ul>
+				</section>
+
+        <!-- HouseKeeping -->
+				<section>
+					<h2>Housekeeping</h2>
+					<ul>
+						<li>Display your preferred name and pronoun.</li>
+						<li>We are here for you!</li>
+						<li>Every question is important.</li>
+						<li>Participate, Experiment, Have Fun!</li>
+					</ul>
+				</section>
+
+				<!-- Course Slides -->
+				<!-- Create as many new sections (slides) as needed -->
+
+				<!-- Slide / Content / Topic Name -->
+				<!-- Instruction Part 1 -->
+				<section>
+					<h2>The Display "Outer" Properties</h2>
+					<h3>Inline, Block, Inline-block, None</h3>
+					<p>These values all affect the element that the style is applied to.</p>
+				</section>
+
+				<section>
+					<h2>In the beginning...</h2>
+					<p>In HTML, there were block & inline elements.</p>
+					<img src="assets/imgs/course-img/spiral-space.gif"  alt="A swirling galaxy in space surrounded by stars"/>
+				</section>
+
+				<section>
+					<h2 class="visually-hidden">Block vs. Inline</h2>
+					<p class="visually-hidden">Block: Layout vertically, one below the other</p>
+					<p class="visually-hidden">Inline: Display one after another in the direction that sentences run.</p>
+					<img src="assets/imgs/course-img/illustration-block-vs-inline.png"  alt="A visual illustration of how block and inline elements are displayed in the browser" class="full-slide-image"/>
+				</section>
+
+				<section>
+					<h2>display: block;</h2>
+					<p>A few elements with block as a default</p>
+					<ul class="list--unstyled">
+						<li>
+							<code>&lt;div&gt;</code>
+						</li>
+						<li>
+							<code>&lt;p&gt;</code>
+						</li>
+						<li>
+							<code>&lt;form&gt;</code>
+						</li>
+						<li>
+							<code>&lt;header&gt;</code>
+						</li>
+						<li>
+							<code>&lt;footer&gt;</code>
+						</li>
+						<li>
+							<code>&lt;h1&gt;&lt;h2&gt;&lt;h3&gt;&lt;h4&gt;&lt;h5&gt;&lt;h6&gt;</code>
+						</li>
+						<li>
+							<code>&lt;main&gt;</code>
+						</li>
+						<li>
+							<code>&lt;section&gt;</code>
+						</li>
+						<li>
+							<code>&lt;ul&gt;&lt;ol&gt;</code>
+						</li>
+						<li>
+							<code>&lt;li&gt;</code>
+						</li>
+					</ul>
+				</section>
+
+				<section>
+					<h2>display: block;</h2>
+					<p>Often used as containers</p>
+					<img src="assets/imgs/course-img/illustration-block-containers.png"  alt="A visual illustration of a block element with a paragraph of text inside of it" class="full-slide-image"/>
+				</section>
+
+				<section>
+					<h2>display: block;</h2>
+					<p>Takes margin & padding on all sides</p>
+					<img src="assets/imgs/course-img/illustration-block-margin-padding.png"  alt="A visual illustration of a block element with a paragraph of text inside of it with margin and padding added to the element" class="full-slide-image"/>
+				</section>
+
+				<section>
+					<h2>display: inline;</h2>
+					<p>A few elements with inline as a default</p>
+					<ul class="list--unstyled">
+						<li>
+							<code>&lt;span&gt;</code>
+						</li>
+						<li>
+							<code>&lt;a&gt;</code>
+						</li>
+						<li>
+							<code>&lt;button&gt;</code>
+						</li>
+						<li>
+							<code>&lt;strong&gt;</code>
+						</li>
+						<li>
+							<code>&lt;em&gt;</code>
+						</li>
+						<li>
+							<code>&lt;img&gt;*</code>
+						</li>
+					</ul>
+					<p class="copy--sidenote">* Image elements work a little differently than the others, but we'll get to that</p>
+				</section>
+
+				<section>
+					<h2>display: inline;</h2>
+					<p>Display one after another in the direction that sentences run.</p>
+					<img src="assets/imgs/course-img/illustration-inline.png"  alt="A visual illustration of a paragraph with different inline elements" class="full-slide-image"/>
+				</section>
+
+				<section>
+					<h2>display: inline;</h2>
+					<p><strong>CAN</strong> take side spacing and reflow content around it.<br>
+					<strong>CANNOT</strong> reflow content around it with top or bottom spacing. Margin will have no effect on inline elements.</p>
+					<img src="assets/imgs/course-img/illustration-inline-margin-padding.png"  alt="A visual illustration of a paragraph with a link inside of it that has margin and padding applied." class="full-slide-image"/>
+				</section>
+
+				<section>
+					<h2>display: inline;</h2>
+					<p>Top and bottom spacing comes from line height on its parent element.</p>
+					<img src="assets/imgs/course-img/illustration-inline-line-height.png"  alt="A visual illustration of a paragraph with a large line height applied that shows a lot of space between lines." class="full-slide-image"/>
+				</section>
+
+				<section>
+					<h2>display: inline-block;</h2>
+					<p>The best of both worlds. This is also like how images behave by default.</p>
+					<img src="assets/imgs/course-img/illustration-inline-block.png"  alt="A visual illustration of a how 3 elements would behave if they were inline block, they hold width and height but align side to side." class="full-slide-image"/>
+					<p class="copy--sidenote">Watch out for extra spacing, especially on default &lt;img&gt;!<br>
+					<a href="https://dev.to/christiankaindl/the-strange-img-gap-in-html
+" target="_blank">https://dev.to/christiankaindl/the-strange-img-gap-in-html
+</a><br><a href="https://css-tricks.com/fighting-the-space-between-inline-block-elements/" target="_blank">https://css-tricks.com/fighting-the-space-between-inline-block-elements/</a></p>
+				</section>
+
+				<section>
+					<h2>display: inline-block;</h2>
+					<p>They can take spacing on all sizes, and height and width.</p>
+					<img src="assets/imgs/course-img/illustration-inline-block-margin-padding.png"  alt="A visual illustration of a how 3 elements would behave if they were inline block, when one has margin and padding applied" class="full-slide-image"/>
+				</section>
+
+				<section>
+					<h2>Semantics, & Accessiblity</h2>
+					<p>You can always change the display property to fit your layout needs. A button can become block element, a div can become inline element, etc. It's more important to use the proper semantic HTML element, and then change how it displays, rather than choose an element for its default display property.</p>
+					<img src="assets/imgs/course-img/div-soup-resized.jpg"  alt="A green bowl filled with alphabet soup that spells out 'DIV SOUP'"/>
+				</section>
+
+				<section>
+					<h2>Div Soup 🤮</h2>
+					<img src="assets/imgs/course-img/gmail.png"  alt="A screenshot of a webpage source code where the only element is a div and there are dozens nested inside of each other."/>
+				</section>
+
+				<section>
+					<h2>Prefer Minestrone 😋</h2>
+					<img src="assets/imgs/course-img/semantic-markup.png"  alt="A screenshot of a webpage source code with semantic markup."/>
+				</section>
+
+				<!-- Hands-on Work -->
+				<section>
+					<h2>Let's Develop It!</h2>
+					<p>Instructions...</p>
+					<ol>
+						<li>
+							Fork the Codepen "Display Playground, Outer Properties"
+						</li>
+						<li>
+							Follow along as I demonstrate the different display properties
+						</li>
+					</ol>
+				</section>
+
+				<section>
+					<h2>Break</h2>
+				</section>
+				
+				<!-- Instruction Part 2 -->
+				<section>
+					<h2>display: none;</h2>
+					<ul>
+						<li>Removes an element visually and the space it takes up in the layout so that the page renders as if that element does not exist.</li>
+						<li>Removes the item from the accessibility tree, which means it will not be announced to screen readers. This includes all of its descendants.</li>
+					</ul>
+				</section>
+
+				<section>
+					<img src="assets/imgs/course-img/visibility-table.png"  alt="" class="full-slide-image"/>
+				</section>
+
+				<section>
+					<h2 class="small-slide-title">A robust class to visually hide an element but preserve it for accessibility</h2>
+					<pre><code class="language-css">.screen-reader-only {
+  border: 0;
+  clip: rect(0 0 0 0);
+  height: auto;
+  margin: 0;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  width: 1px;
+  white-space: nowrap;
+}</code></pre>
+				<p><a href="https://zellwk.com/blog/hide-content-accessibly/" target="_blank">https://zellwk.com/blog/hide-content-accessibly/</a></p>
+				</section>
+
+				<section>
+					<h2>Centering things</h2>
+					<img src="assets/imgs/course-img/css-frustration.gif"  alt="An animated GIF of the Family Guy trying to open and close blinds in frustration"/>
+				</section>
+
+				<section>
+					<h2>Centering things</h2>
+					<p>Not so stressful if you know which display property you are working with.</p>
+					<img src="assets/imgs/course-img/css-relief.gif"  alt="An animated GIF of the Family Guy easily opening blinds"/>
+				</section>
+
+				<section>
+					<h2>display: block;</h2>
+					<p>Center horizontally using auto margins</p>
+					<p><code>margin-left: auto;</code></p><p><code>margin-right: auto;</code></p>
+					<img src="assets/imgs/course-img/illustration-block-centering.png"  alt="A visual illustration of centered block elements." class="full-slide-image"/>
+				</section>
+
+				<section>
+					<h2>display: inline;<br>display: inline-block;</h2>
+					<p>Center horizontally using <code>text-align: center;</code> on the parent element.</p>
+					<img src="assets/imgs/course-img/illustration-inline-centering.png"  alt="A visual illustration of centered inline block elements with a paragraph inside one that is also centered." class="full-slide-image"/>
+				</section>
+
+				<section>
+					<h2>Center vertically</h2>
+					<h3>Inline & Inline-block</h3>
+					<p>It's not worth it. There's <code>vertical-align: middle;</code> but it's unreliable.</p>
+					<br>
+					<h3>Block</h3>
+					<p>Use positioning trick.</p>
+				</section>
+
+				<section>
+					<h2 class="small-slide-title">Vertically center an element with positioning</h2>
+					<pre><code>.center-me {
+  display: block;
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+}</code></pre>
+				</section>
+
+				<section>
+					<h2 class="small-slide-title">Okay, this is getting complicated and confusing.</h2>
+					<p>Can't we just use floats?</p>
+					<img src="assets/imgs/course-img/cake-throw.gif"  alt="Animated gif of a man in eating a cake and throwing it down in frustration." height="459" width="400" class="full-slide-image"/>
+				</section>
+
+				<section>
+					<h2>Relax</h2>
+					<p>Flexbox and Grid were made to solve these problems.</p>
+					<img src="assets/imgs/course-img/cat-massage.gif"  alt="An animated gif of a cat getting a massage" class="full-slide-image"/>
+				</section>
+
+				<!-- Hands-on Work -->
+				<section>
+					<h2>Let's Develop It!</h2>
+					<p>Instructions...</p>
+					<ol>
+						<li>
+							Fork the Codepen "Gallery Playground (unstyled)"
+						</li>
+						<li>
+							Align the navbar items horizontally and space out the items
+						</li>
+						<li>
+							Center the "about__wrapper" and the "gallery" on the page with a maximum width of 1100px. 
+						</li>
+						<li>
+							Align the gallery images in a grid using inline-block and add space between each image
+						</li>
+						<li>
+							Center align the copyright in the footer
+						</li>
+						<li>
+							Hide the name of each social media link so only the icon is visible, but still make it accessible to screen readers
+						</li>
+					</ol>
+				</section>
+				<!-- MUST-USE SLIDE -->
+				<!-- Add Course Survey Link -->
+				<section>
+					<h2>Give Us Your Feedback</h2>
+					<h3><a href="https://forms.gle/A4cby9HxTEbSw2Ty5" target="_blank">Survey Link</a></h3>
+				</section>
+				
+				<!-- Q&A -->
+				<section>
+					<h2>Q&A</h2>
+				</section>
+
+				<!-- Resources -->
+				<section>
+					<h2>Resources</h2>
+					<ul>
+						<li><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Flow_Layout/Block_and_Inline_Layout_in_Normal_Flow" target="_blank">MDN: Block and inline layout in normal flow</a></li>
+						<li><a href="https://zellwk.com/blog/hide-content-accessibly/" target="_blank">Deeper into hiding content accessibly</a></li>
+						<li><a href="https://css-tricks.com/fighting-the-space-between-inline-block-elements/" target="_blank">Fighting the Space Between Inline Block Elements</a></li>
+						<li><a href="https://dev.to/christiankaindl/the-strange-img-gap-in-html
+" target="_blank">The Strange Image Gap in HTML</a></li>
+					</ul>
+				</section>	
+				
+				<!-- Add Instructor and/or TA Contact -->
+				<section>
+					<h3>Keep in Touch</h3>
+					<!-- <p>Contact</p> -->
+				</section>
+
+				<!-- Thank You -->
+				<section>
+					<img src="assets/imgs/gdi-logos/gdi-logo_peach.png" alt="GDI Logo" width="300px" class="noborder"/>
+					<br>
+					<h2>Thank You!</h2>
+				</section>
+			</div> <!-- End of Slides container -->
+		
+  		<footer>
+				<!-- Update with Course Name -->
+        <div class="copyright">
+					<img src="assets/imgs/gdi-logos/gdi-logo_peach.png" alt="GDI Logo" width="40px" class="noborder"/>
+					<p>Modern Layouts with CSS</p>
+          <a rel="license" href="http://creativecommons.org/licenses/by-nc/3.0/deed.en_US"><img alt="Creative Commons License" style="border-width:0" src="http://i.creativecommons.org/l/by-nc/3.0/80x15.png"/></a>
+        </div>
+      </footer>
+		</div> <!-- End of Reveal wrapper -->
+		
+		<!-- REVEAL.JS Script Files - Do Not Edit -->
+		<script src="https://cdn.jsdelivr.net/npm/reveal.js@4.1.0/dist/reveal.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/reveal.js@4.1.0/plugin/highlight/highlight.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/highlightjs-badge@0.1.9/highlightjs-badge.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jsPlumb/2.15.5/js/jsplumb.min.js"></script>
+		<script>
+			const srcUrlPrefix = "https://cdn.jsdelivr.net/npm/reveal.js@4.1.0/";
+			Reveal.initialize({
+				hash: true,
+				center: true,
+				slideNumber: true,
+				showNotes: false,
+				margin: 0.1,
+				preloadIframes: true,
+				plugins: [ RevealHighlight ],
+				pdfSeparateFragments: true
+			});
+
+      // add HighlightJS-badge (options are optional)
+			var options = {
+					copyIconContent: "📄",
+					checkIconContent: "✅"
+			};
+			window.highlightJsBadge(options);
+
+			if (window.location.search == "?print-pdf") {
+					var uncounted = document.querySelectorAll("[data-visibility='uncounted']");
+					uncounted.forEach(node => {
+							node.parentNode.classList.add("no-print")
+					})
+			}
+		</script>
+	</body>
+</html>

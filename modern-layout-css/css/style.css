@@ -1,0 +1,40 @@
+/* Add Custom CSS Here */
+.reveal .list--unstyled {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+
+.reveal .copy--sidenote {
+  font-size: 1.3rem;
+  font-style: italic;
+}
+
+.reveal .visually-hidden {
+  border: 0;
+  clip: rect(0 0 0 0);
+  height: auto;
+  margin: 0; 
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  width: 1px;
+  white-space: nowrap;
+}
+
+.reveal section .full-slide-image {
+  box-shadow: none;
+  max-height: unset;
+  max-width: unset;
+  margin: 0;
+}
+
+.reveal .small-slide-title {
+  font-size: 1.3em;
+}
+
+.reveal li {
+  line-height: 1.2;
+  margin-bottom: 0.5em;
+}

@@ -1,0 +1,342 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+		<meta name="description" content="Girl Develop It framework for easily creating beautiful presentations using HTML in GDI theme. Based on Hakim El Hattab's reveal.js">
+		<meta name="author" content="Girl Develop It">
+		<meta name="apple-mobile-web-app-capable" content="yes" />
+		<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+
+		<!-- Update with GDI Course Name -->
+		<title>Modern Layouts with CSS: Class 2</title>
+
+		<link rel="icon" type="image/x-icon" href="assets/imgs/favicon.ico" />
+
+		<!-- RevealJS CDN -->
+		<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reveal.js@4.1.0/dist/reset.css">
+		<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reveal.js@4.1.0/dist/reveal.css">
+		<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reveal.js@4.1.0/dist/theme/simple.css" id="theme">
+
+		<!-- GDI Custom Theme -->
+		<link rel="stylesheet" href="css/gdi-theme.css">
+
+    <!-- Course Custom Styles if Applicable-->
+    <link rel="stylesheet" href="css/style.css">
+
+		<!-- Theme used for syntax highlighted code -->
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.1.0/styles/monokai.min.css">
+	</head>
+	<body>
+		<div class="reveal">
+		<!-- Start of Slides container -->
+    <!-- Any section element in this container is displayed as a single slide -->
+    <!-- Comment out rather than delete slide instructions -->
+			<div class="slides"> 
+				
+				<!-- Opening Slide -->
+				<section>
+					<img src="assets/imgs/gdi-logos/gdi-circle-logo_peach.png" alt="GDI Logo" width="400px" class="noborder"/>
+					<br>
+					<h2 style="font-weight: bolder;">Welcome to Girl Develop It</h2>
+				</section>
+
+				<!-- Course Title -->
+				<section>
+					<h1>Modern Layouts with CSS</h1>
+          <h2>Class 2</h2>
+				</section>
+
+				<!-- Student Intros; IceBreakers, etc. -->
+				<section>
+					<h2>Student Check in</h2>
+				</section>
+
+				<!-- Course Agenda / Topics / Course Outline -->
+				<section>
+					<h2>Course Outline</h2>
+					<h3>Yesterday's Recap</h3>
+					<h4>The Display "Outer" Properties</h4>
+					<ul>
+						<li>
+							Inline, Block, Inline-block, None
+						</li>
+						<li>
+							Centering & Hiding Elements with Intention
+						</li>
+						<li>
+							Start styling our single page image gallery
+						</li>
+					</ul>
+				</section>
+
+				<section>
+					<h2>Course Outline</h2>
+					<h3>Day 2</h3>
+					<h4>The Display "Inner" Properties</h4>
+					<ul>
+						<li>
+							Instruction & Demo: Flexbox
+						</li>
+						<li>
+							Break (10 min)
+						</li>
+						<li>
+							Instruction: CSS Grid
+						</li>
+						<li>
+							Demo & Practice
+						</li>
+						<li>
+							Q&A (10 min)
+						</li>
+					</ul>
+				</section>
+
+				<!-- Course Slides -->
+				<!-- Create as many new sections (slides) as needed -->
+
+				<!-- Slide / Content / Topic Name -->
+				<!-- Instruction Part 1 -->
+				<section>
+					<h2>The Display "Inner" Properties</h2>
+					<h4>Grid, Flex</h4>
+					<p>Their values affect the elements inside of the element that the style is applied to.</p>
+				</section>
+
+				<section>
+					<h2>display: flex;</h2>
+					<p>Use it on the parent element to position its immediate children.</p>
+					<p><code>display: flex;<br>align-items: center;<br>justify-content: space-between;</code></p>
+					<img src="assets/imgs/course-img/illustration-flexbox.png"  alt="" class="full-slide-image"/>
+				</section>
+
+				<section>
+					<h2>display: flex;</h2>
+					<p>The following are a few of Flexbox's Greatest Hits.</p>
+				</section>
+
+				<section>
+					<h2>display: flex;</h2>
+					<h3>Properties for the parent of flex</h3>
+					<ul>
+						<li><code>justify-content</code> (horizontal alignment)</li>
+						<li><code>align-items</code> (vertical alignment)</li>
+						<li><code>flex-wrap</code></li>
+						<li><code>gap</code></li>
+						<li><code>flex-direction</code></li>
+					</ul>
+				</section>
+
+				<section>
+					<h2>display: flex;</h2>
+					<h3>Properties for children of flex</h3>
+					<ul>
+						<li><code>order</code></li>
+						<li><code>flex-direction</code></li>
+						<li><code>align-self</code></li>
+						<li><code>justify-self</code></li>
+						<li><code>flex-basis</code></li>
+						<li><code>flex: none</code></li>
+					</ul>
+				</section>
+
+				<section>
+					<h2>display: flex;</h2>
+					<p>Favorite cheatsheet by Joni Trythall</p>
+					<p><a href="https://jonitrythall.com/content/flexboxsheet.pdf" target="_blank">https://jonitrythall.com/content/flexboxsheet.pdf</a></p>
+				</section>
+
+				<!-- Hands-on Work -->
+				<section>
+					<h2>Let's Develop It!</h2>
+					<p>Instructions...</p>
+					<ol>
+						<li>
+							Fork the Codepen "Display Playground, Inner Properties"
+						</li>
+						<li>
+							Follow along as I demonstrate different things with Flexbox
+						</li>
+					</ol>
+				</section>
+
+				<section>
+					<h2>Break</h2>
+				</section>
+				
+				<!-- Instruction Part 2 -->
+				<section>
+					<h2>Flexbox vs. Grid</h2>
+					<img src="assets/imgs/course-img/cats-boxing.gif"  alt="An animated GIF of two kittens play fighting with each other in a toy boxing ring" height="452" width="600"/>
+				</section>
+
+				<section>
+					<h2 class="small-slide-title">Flexbox and all other layout methods are only 1 dimensional</h2>
+					<img src="assets/imgs/course-img/illustration-flex-grid.png"  alt="" class="full-slide-image"/>
+				</section>
+
+				<section>
+					<h2 class="small-slide-title">This can lead to unexpected results</h2>
+					<img src="assets/imgs/course-img/illustration-flex-grid-off.png"  alt="" class="full-slide-image"/>
+				</section>
+
+				<section>
+					<h2 class="small-slide-title">The Evolution of Grid Frameworks</h2>
+					<p>To achieve a grid layout in the past required complex hacks using the only CSS that was available at the time, never meant to do more than layout basic documents. These frameworks were once standard and really useful.</p>
+					<p>Popular frameworks: Bootstrap, Foundation, Bulma, Materialize, Skeleton, Neat, Suzy, Simple Grid</p>
+				</section>
+
+				<section>
+					<h2 class="small-slide-title">The Evolution of Grid Frameworks</h2>
+					<p>Grid Frameworks rely on specific markup structure and class names to achieve layout. At first they used floats or inline-block. Later they used Flexbox. Still, none of these CSS properties were meant to lay out content in this way.</p>
+					<p>CSS Grid was built specifically to solve that problem.</p>
+				</section>
+
+				<section>
+					<h2 class="small-slide-title">CSS Grid allows you to lay out elements in 2D, rows & columns</h2>
+					<img src="assets/imgs/course-img/illustration-grid.png"  alt="" class="full-slide-image"/>
+				</section>
+
+				<section>
+					<h2 class="small-slide-title">Placing items on the grid</h2>
+					<img src="assets/imgs/course-img/illustration-grid-placement.png"  alt="" class="full-slide-image"/>
+				</section>
+
+				<section>
+					<h2>display: grid;</h2>
+					<p>Favorite Grid Cheatshit by Malven Co.</p>
+					<p><a href="https://grid.malven.co/" target="_blank">https://grid.malven.co/</a></p>
+				</section>
+
+				<!-- Hands-on Work -->
+				<section>
+					<h2>Let's Develop It!</h2>
+					<p>Instructions...</p>
+					<ol>
+						<li>
+							Convert the navbar to grid with a centered logo. Use flexbox to horizontally align items in the nav.
+						</li>
+						<li>
+							Convert the about section to grid
+						</li>
+						<li>
+							Convert the image gallery to grid
+						</li>
+					</ol>
+				</section>
+
+				<!-- Course Conclusion -->
+				<section>
+					<h3>You did it!</h3>
+					<img src="assets/imgs/stock-img/celebration_hannah-busing-unsplash.jpg"  alt="People celebrating"/>
+					<p>
+						<small>Photo credit: 
+							<a href="https://unsplash.com/@hannahbusing" target="_blank">Hannah Busing</a>
+							<a href="http://creativecommons.org/licenses/by-sa/2.0/" target="_blank">cc</a>
+            </small>
+					</p>
+					
+				</section>
+
+				<!-- OPTIONAL: Showcase Student Work -->
+				<section>
+					<h2>Share What You've Built!</h2>
+				</section>
+
+				<!-- MUST-USE SLIDE -->
+				<!-- Add Course Survey Link -->
+				<section>
+					<h2>Give Us Your Feedback</h2>
+					<h3><a href=" https://forms.gle/zmjGHZRwFqdGgopPA" target="_blank">Survey Link</a></h3>
+				</section>
+				
+				<!-- Q&A -->
+				<section>
+					<h2>Q&A</h2>
+				</section>
+
+				<!-- Resources -->
+				<section>
+					<h2>Resources</h2>
+					<ul>
+						<li><a href="https://jonitrythall.com/content/flexboxsheet.pdf" target="_blank">Joni Trythall's Flexbox Cheatsheet</a></li>
+						<li><a href="https://flexboxfroggy.com/" target="_blank">Flexbox Froggy</a></li>
+						<li><a href="https://grid.malven.co/" target="_blank">Malven Co.'s Grid cheatsheet</a></li>
+						<li><a href="https://css-tricks.com/snippets/css/complete-guide-grid/" target="_blank">CSS Tricks Complete Guide to Grid</a></li>
+						<li><a href="https://cssgridgarden.com/" target="_blank">CSS Grid Garden</a></li>
+						<li><a href="https://gridbyexample.com/learn/" target="_blank">Getting Started with Grid Layout by Rachel Andrew</a></li>
+						<li><a href="https://labs.jensimmons.com/" target="_blank">Labs by Jen Simmons for cool examples</a></li>
+					</ul>
+				</section>	
+
+				<!-- MUST-USE SLIDE -->
+				<!-- Promote Upcoming GDI Courses -->
+				<section>
+					<p style="font-size: 16px; font-style: italic;">(Visit GDI's <a href="https://girldevelopit.com/events/#/list" target="blank">events page</a> to select new and/or related courses to promote here.<br> Comment out this note after adding courses.)</p>
+					<h3>New GDI Courses</h3>
+					<ul style="list-style: none; font-size: 30px;">
+						<li>Course Name</li>
+						<li>Course Name</li>
+						<li>Course Name</li>
+					</ul>
+				</section>	
+				
+				<!-- Add Instructor and/or TA Contact -->
+				<section>
+					<h3>Keep in Touch</h3>
+					<!-- <p>Contact</p> -->
+				</section>
+
+				<!-- Thank You -->
+				<section>
+					<img src="assets/imgs/gdi-logos/gdi-logo_peach.png" alt="GDI Logo" width="300px" class="noborder"/>
+					<br>
+					<h2>Thank You!</h2>
+				</section>
+			</div> <!-- End of Slides container -->
+		
+  		<footer>
+				<!-- Update with Course Name -->
+        <div class="copyright">
+					<img src="assets/imgs/gdi-logos/gdi-logo_peach.png" alt="GDI Logo" width="40px" class="noborder"/>
+					<p>Modern Layouts with CSS</p>
+          <a rel="license" href="http://creativecommons.org/licenses/by-nc/3.0/deed.en_US"><img alt="Creative Commons License" style="border-width:0" src="http://i.creativecommons.org/l/by-nc/3.0/80x15.png"/></a>
+        </div>
+      </footer>
+		</div> <!-- End of Reveal wrapper -->
+		
+		<!-- REVEAL.JS Script Files - Do Not Edit -->
+		<script src="https://cdn.jsdelivr.net/npm/reveal.js@4.1.0/dist/reveal.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/reveal.js@4.1.0/plugin/highlight/highlight.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/highlightjs-badge@0.1.9/highlightjs-badge.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jsPlumb/2.15.5/js/jsplumb.min.js"></script>
+		<script>
+			const srcUrlPrefix = "https://cdn.jsdelivr.net/npm/reveal.js@4.1.0/";
+			Reveal.initialize({
+				hash: true,
+				center: true,
+				slideNumber: true,
+				showNotes: false,
+				margin: 0.1,
+				preloadIframes: true,
+				plugins: [ RevealHighlight ],
+				pdfSeparateFragments: true
+			});
+
+      // add HighlightJS-badge (options are optional)
+			var options = {
+					copyIconContent: "📄",
+					checkIconContent: "✅"
+			};
+			window.highlightJsBadge(options);
+
+			if (window.location.search == "?print-pdf") {
+					var uncounted = document.querySelectorAll("[data-visibility='uncounted']");
+					uncounted.forEach(node => {
+							node.parentNode.classList.add("no-print")
+					})
+			}
+		</script>
+	</body>
+</html>
