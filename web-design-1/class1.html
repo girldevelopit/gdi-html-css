@@ -152,13 +152,9 @@
               <li>Setting up our coding environment (Part 1)</li>
               <li>HTML Elements & Tags 
                 <ul>
-                  <li>Semantics, Headings, Paragraphs, Lists, Images, Links</li>
+                  <li>Semantics, Headings, Paragraphs, Lists, Images, Links, and more!</li>
                 </ul>
               </li>
-              <li>CSS Properties</li>
-                <ul>
-                  <li>Fonts, Colors, Sizing, Positioning</li>
-                </ul>
               <li>Supported practice, optional break-out rooms</li>
               <li>Class Feedback and Q&A</li>
             </ul>
@@ -169,8 +165,9 @@
 					<h2>Steps</h2>
           <div class = "left-align">
             <ol style="line-height: 1.75;">
+              <li>Complete a practice page.</li>
               <li>Plan our web page.</li>
-              <li>Structure foundational HTML sections styled with CSS.</li>
+              <li>Structure foundational HTML sections.</li>
               <li>Optional: Join break-out rooms to collaborate.</li>
             </ol>
           </div>
@@ -404,7 +401,7 @@
         <!--PRACTICE: HEADINGS, PARAGRAPHS, LINE BREAKS, HORIZONTAL RULES, ORDERED/UNORDERED LISTS, ATTRIBUTES, FORMATTING, IMAGES -->
         <section >
           <h3>Let's Develop It!</h3>
-          <p class="left-align">Brainstorm and plan a web page about a topic of choice. Include the following HTML elements:</p>
+          <p class="left-align">Develop a basic practice page about a topic of choice. Include the following HTML elements:</p>
           <ol style="font-size: .8em; line-height: 1.75;">
             <li>a heading</li>
             <li>a paragraph</li>
@@ -674,18 +671,59 @@ alt=""&gt;
 </code></pre>
         </section>
 
-        <!-- HEAD AND TAGS -->
-        <section>
-          <h3>Head Tag</h3>
-          <p class="left-align"><code>head</code>: Information about the page, such as its title.</p>
-  <pre><code class = "html">&lt;!DOCTYPE html&gt;
-  &lt;html&gt;
-   &lt;head&gt;
-    &lt;title&gt;The title of the page&lt;/title&gt;
-   &lt;/head&gt;
-  &lt;/html&gt;
-  </code></pre>
-        </section>
+              <!-- Head tag -->
+      <section>
+        <h3>Head Tag</h3>
+        <ul>
+          <li>The <code>head</code> tag contains information about the page and this information is primarily for the browser.</li>
+        </ul>
+<pre><code class="html">&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+  &lt;head&gt;
+    &lt;meta charset="utf-8"/&gt;
+    &lt;meta name="viewport" content="width=device-width, initial-scale=1"/&gt;
+    &lt;title&gt;Title of the page &lt;/title&gt;
+  &lt;/head&gt;
+  ...
+  ...
+&lt;/html&gt;
+</code></pre>
+      </section>
+
+      <!-- Head tag -->
+      <section>
+        <h3>Head Tag</h3>
+        <ul>
+          <li>With the exception of the page title, content in the <code>head</code> tag is not visible on a rendered page to users.</li>
+          <li>An HTML page can only contain one <code>head</code> tag.</li>
+        </ul>
+<pre><code class = "html">&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+  &lt;head&gt;
+    &lt;meta charset="utf-8"/&gt;
+    &lt;meta name="viewport" content="width=device-width, initial-scale=1"/&gt;
+    &lt;title&gt;Title of the page &lt;/title&gt;
+  &lt;/head&gt;
+  ...
+  ...
+&lt;/html&gt;
+      </code></pre>
+      </section>
+
+      <!-- Meta tags -->
+      <section>
+        <h3>Meta Tags</h3>
+        <p>The <code>meta</code> tag is used to define metadata for an HTML document and can also give additional instruction to the browser about how to display a page.</p>
+<pre><code class = "html">&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+  &lt;head&gt;
+    &lt;meta charset="utf-8"/&gt;
+    &lt;meta name="viewport" content="width=device-width, initial-scale=1"/&gt;
+    &lt;title&gt;Title of the page &lt;/title&gt;
+  &lt;/head&gt;
+&lt;/html&gt;
+</code></pre>
+      </section>
 
         <!-- META TAGS -->
         <section>
@@ -701,6 +739,26 @@ alt=""&gt;
 &lt;/html&gt;
 </code></pre>
         </section>
+
+     <!-- Title and Link tags -->
+     <section>
+      <h3>Title and Link Tags</h3>
+      <p>Two other tags found in the <code>head</code> tag are:</p>
+      <ul>
+        <li><code>link</code>: Links a page to internal or external resources such as stylesheets, fonts and more</li>
+        <li><code>title</code>: Defines the title of a page, which is then displayed on the browser title bar</li>
+      </ul>
+<pre><code class = "html">&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+&lt;head&gt;
+  &lt;meta charset="utf-8"/&gt;
+  &lt;meta name="viewport" content="width=device-width, initial-scale=1"/&gt;
+  &lt;link href="style.css" rel="stylesheet" type="text/css" /&gt;
+  &lt;title&gt;Title of the page &lt;/title&gt;
+&lt;/head&gt;
+&lt;/html&gt;
+</code></pre>
+    </section>
 
         <!-- BODY TAG -->
         <section>
@@ -726,6 +784,105 @@ alt=""&gt;
           <br>
           <a target="_blank" href="https://uxplanet.org/hero-image-website-design-21-best-examples-templates-for-your-inspiration-56cd3d79c688">UX Planet: More examples</a>
         </section>
+
+      <!-- Semantic HTML -->
+      <section>
+        <h3>Semantic HTML</h3>
+      </section>
+
+      <!-- What is Semantic HTML  -->
+      <section>
+        <h3>What is Semantic HTML?</h3>
+        <p style="font-size: 36px; margin-bottom: 1rem">Using HTML elements that give meaning to or describe the content of a page.</p>
+      </section>
+      
+      <!-- Non Semantic HTML -->
+      <section>
+        <h3>Non-Semantic HTML</h3>
+        <p style="font-size: 36px; margin-bottom: 1rem">HTML elements that do not describe content or have any meaning.</p>
+      </section>
+
+      <!-- Example code of Semantic and Non-Semantic code -->
+      <section>
+        <h3>Semantic vs. Non-Semantic Code</h3>
+          <pre><code class="html" style="min-width: 44em;">&lt;div&gt;Watch Season 1&lt;/div&gt;</code></pre>
+          <pre><code class="html" style="min-width: 44em;">&lt;button&gt;Watch Season 1&lt;/button&gt;</code></pre>
+      </section>
+
+      <!-- Example screenshot of Semantic and Non-Semantic structure -->
+      <section>
+        <h3>Semantic vs. Non-Semantic Code</h3>
+        <img src="./assets/imgs/semantic-html.jpeg" width="700px" alt="Semantic versus non-semantic hierarchy">
+        <p><small>Image source:
+          <a href="https://seekbrevity.com/semantic-markup-important-web-design/" target="_blank">SeekBrevit.com</a></small>
+        </p>
+      </section>
+      
+      <!-- What is a Div and a Span -->
+      <section>
+        <h3>Non-Semantic HTML Elements</h3>
+        <p style="font-size: 36px; margin-bottom: 1rem">Two common non-semantic elements:</p>
+        <ul>
+          <li><code>div</code>: Often used as a generic container for grouping content</li>
+          <li><code>span</code>: Often used as a generic wrapper to style inline content </li>
+        </ul>
+      </section>
+
+      <!-- Using Divs and Spans -->
+      <section>
+        <h3>Using Divs & Spans</h3>
+        <pre><code class="html" style="min-width: 44em;">
+&lt;div&gt;
+  &lt;h2&gt;Season 1&lt;/h2&gt;
+  &lt;h3&gt;Episode 5&lt;/h3&gt;
+  &lt;p&gt;While on a mission, Lorca is captured by the Klingons 
+  and unexpectedly finds himself in the company of prisoner of war 
+  Starfleet Lieutenant Ash Tyler and notorious criminal Harry Mudd.&lt;/p&gt;
+&lt;/div&gt;</code></pre>
+        <pre><code class="html" style="min-width: 44em;">&lt;p&gt;Watch Season 1 and stay tuned for &lt;span&gt;Season 2&lt;/span&gt;&lt;/p&gt;</code></pre>
+      </section>
+      
+      <!--Why use semantic HTML? -->
+      <section>
+        <h3>Why Use Semantic HTML?</h3>
+        <ul>
+          <li>Makes our code accessible</li>
+          <li>Improves SEO ranking</li>
+          <li>Easier to read and maintain</li>
+        </ul>
+        <p style="font-size: 36px; margin-top: 1.75rem; font-weight: bolder;">Make writing semantic HTML your default practice</p>
+
+      </section>
+
+      <!-- Say no to Divs? -->
+      <section>
+        <h3>Sooo, say no to divs?</h3>
+        <ul>
+          <li>There are still good and reasonable use cases for <code>divs</code>
+            <ul>
+              <li>Ex: Grouping items for a card component</li>
+              <li>Ex: A <code>div</code> can live inside a semantic parent element and be used to organize/group other children elements</li>
+            </ul>
+          </li>
+          <li>When necessary, a <code>div</code> can be made semantic by adding accessibility attributes such as <code>role</code> or <code>aria</code> properties</li>
+        </ul>
+      </section>
+
+      <!-- Emphasis vs Presentation -->
+      <section>
+        <h3>Emphasis vs Presentation</h3>
+        <p>Need to call out important text?</p>
+        <p>Use semantic HTML elements:</p>
+        <p><code>heading tags (h1, h2, etc), strong, em</code></p>
+        <p>Otherwise, use CSS for visual or stylistic effects</p>
+      </section>
+
+      <!-- Exercise - Semantic HTML -->
+      <section>
+        <h3>A Short Semantic HTML Exercise</h3>
+        <p style="font-size: 36px; margin-bottom: 2rem"><a href="https://developer.mozilla.org/en-US/docs/Learn/Accessibility/Test_your_skills:_HTML_accessibility" target="_blank">Test Your Skills: HTML Accessibility</a> (MDN)</p>
+        <p>Attempt the first exercise: "HTML Accessibility 1"</p>
+      </section>
 
            <!-- PRACTICE - ADD COMMENTS AND LINKS-->
            <section >
@@ -787,313 +944,112 @@ alt=""&gt;
           </p>
         </section>
 
-        <!-- LINK TARGETS-->
-        <section>
-          <h3>Link Targets</h3>
-          <p>An optional <code>target</code> attribute tells the browser to open the link in a new tab.</p>
-<pre><code class="html">&lt;a href="http://www.girldevelopit.com" target="_blank"&gt;Girl Develop It&lt;/a&gt;</code></pre>
-          <p style="font-size: 30px;">Opens the GDI site in a new tab:<br>
-            <a href="http://www.girldevelopit.com" target="_blank">Girl Develop It</a>
-          </p>
-        </section>
+<!-- Links -->
+<section>
+  <h3>Links</h3>
+  <p style="font-size: 36px;">Links connect an HTML page to other pages in the same project or parent directory, or to external sites.</p>
+</section>
 
-        <!-- CSS -->
-        <section>
-          <h2>CSS</h2>
-        </section>
+<!-- Anchor tag -->
+<section>
+  <h3>Anchor Tag</h3>
+  <p style="font-size: 36px; margin-bottom: 2rem">Links are created with the anchor or "a" tag: 
+    <code>&lt;a&gt;&lt;/a&gt;</code></p>
+  <p style="font-size: 36px;">Note: The <code>&lt;a&gt;</code> should not be confused with the <code>&lt;link&gt;</code> tag.</p>
+</section>
 
+<!-- Creating a link -->
+<section>
+  <h3>Creating a Link</h3>
+  <ul>
+    <li>The <code>&lt;a&gt;&lt;/a&gt;</code> tag</li>
+    <li>An <code>href</code> attribute: Destination where the link points to</li>
+    <li><strong>Content</strong>: Text or image that becomes the clickable link</li>
+  </ul><br>
+  <pre><code class="html" style="min-width: 44em;">&lt;a href="http://www.girldevelopit.com"&gt;Girl Develop It&lt;/a&gt;
+  </code></pre>
+</section>
 
-        <!-- ANATOMY OF A WEBSITE -->
-        <section>
-					<h3>Anatomy of a website</h3>
-					<div style="font-size:.875em;">
-            <p>Content (Text + Media)</p>
-            <p>+ HTML(Structure + Semantics)</p>
-            <p style="background-color: rgb(236, 201, 201);">+ CSS (Presentation + Design)</p>
-            <p>+ JavaScript (Interactivity)</p>
-            <p>= Website</p>
-					</div>
-				</section>
+<!-- HREF attribute -->
+<section>
+  <h3>href Attribute</h3>
+  <p style="font-size: 36px;"><code>href</code> attribute can point to:</p>
+  <ul>
+    <li>an external URL</li>
+    <li>an internal page (same root directory or project)</li>
+    <li>a telephone number</li>
+    <li>an email address</li>
+    <li>a section on the same page (a bookmark)</li>
+  </ul>
+</section>
 
-        <section>
-          <h3>CSS: What is it?</h3>
-          <p><strong>CSS</strong> = <strong>C</strong>ascading <strong>S</strong>tyle <strong>S</strong>heets</p>
-          <p>CSS is a "style sheet language" that lets you style the elements on your page.</p>
-          <p>CSS is works in conjunction with HTML, but is not HTML itself.</p>
-        </section>
+<!-- Link States  -->
+<section>
+  <h3>Link Styles and States</h3>
+  <p style="font-size: 36px;">The default appearance of a link is <span style="text-decoration: underline;">underlined text</span>.</p>
+  <p style="font-size: 36px;">The <code>state</code> or status of a link also affects its appearance: </p>
+  <ul>
+    <li>An unvisited link is <span style="color:blue">blue</span></li>
+    <li>A visited link is <span style="color:purple">purple</span></li>
+    <li>An active link is <span style="color:red">red</span></li>
+  </ul>
+</section>
 
-        <section>
-          <h3>CSS: What can it do?</h3>
-          <p>Adds all the bells and whistles!</p>
-          <img src="assets/imgs/kitchen-gdc3113a61_1920.jpg " alt="image of kitchen" height="400" />
-        </section>
-  
-        <section>
-          <h3>CSS: What can it do?</h3>
-          <p>All colored text, position, and size</p>
-          <img src="assets/imgs/gdi-homepage-view.png" alt="Screenshot of homepage" height="400" />
-        </section>
+<!-- Link Targets  -->
+<section>
+  <h3>Link Targets</h3>
+  <p style="font-size: 36px;">The link target is an optional attribute that tells the browser where to open the link.</p>
+  <pre><code class="html">&lt;a href="home.html" target="_self"&gt;Link Text&lt;/a&gt;</code></pre>
+  <pre><code class="html">&lt;a href="home.html" target="_blank"&gt;Link Text&lt;/a&gt;</code></pre>
+</section>
 
-        <!-- The CSS Rule-->
-        <section>
-          <h3>Anatomy of CSS</h3>
-          <p>CSS consists of <strong>style rules</strong>.</p> 
-          <p>Each style rule consists of a <strong>selector</strong> and <strong>declarations</strong> of <strong>property-value</strong> pairs:
-          </p>
-<pre><code class="css">selector {
-  property: value;
-  property: value;
-}</code></pre>
-        </section>
+<!-- Relative & Absolute links -->
+<section>
+  <h3>Absolute & Relative Paths</h3>
+  <ul>
+    Absolute Path:
+    <li>Points to the full name or address (including the root directory) of a file or page</li>
+    <li style="color: #f05b62;">Ex: "https://girldevelopit.com/community/some-file.html"</li><br>
+    Relative Path:
+    <li>Points to content from within the same domain or directory</li>
+    <li style="color: #f05b62;">Ex: "community/some-file.html"</li>
+  </ul>
+</section>
 
-        <section>
-          <p>Syntax</p>
-<pre><code class="css">selector {
-  property: value;
-  property: value;
-}</code></pre>
-          <p>Example:</p>
-<pre><code class="css">body {
-  color: yellow;
-  background-color: black;
-}</code></pre>
-        </section>
+<!-- Bookmarks -->
+<section>
+  <h3>Bookmark Links</h3>
+  <p style="font-size: 36px;">The anchor tag can be used to create links to specific parts of a page.</p>
+</section>
 
-        <!-- Connecting HTML to CSS-->
-        <section>
-          <h3>Connecting CSS to HTML</h3>
-          <p class="green">3 Ways:</p>
-          <p>Inline</p>
-          <p>Embedded</p>
-          <p style="background-color: rgb(236, 201, 201);">External</p>
-        </section>
+<!--Creating Bookmarks  -->
+<section>
+  <h3>Creating a Bookmark Link</h3>
+  <ul>
+    <li>Use the <code>id</code> attribute to create and name a bookmark</li>
+  </ul>
+  <pre><code class="html" style="min-width: 44em;">&lt;h3 id="seasons"&gt;Season 1 Episodes&lt;/h3&gt;</code></pre>
 
-        <!-- PRACTICE STYLING THE HERO IMAGE WEB PAGE-->
-        <section>
-          <h3>Let's Develop It!</h3>
-          <ol style="font-size: .8em; line-height: 1.75;">
-            <li>Open the CSS file of your hero web page. <a target="_blank" href="https://replit.com/@faraja/GDI-HTML-and-CSS-Hero-Image-CSS-Template#style.css">Optional Template</a></li>
-            <li>Style the following sections for your hero image web page using CSS properties:
-                <ul>
-                  <li>navigation bar</li>
-                  <li>header</li>
-                  <li>footer</li>
-                </ul>
-            </li>
-            <li>Add a logo image to the nav bar and a hero image to the header. <a target="_blank" href="https://pixabay.com/images/search/transparent%20background/"> Pixabay Images</a></li>
-            <li>Change justification of text and images.</li>
-            <li>Experiment with font and background colors.</li>
-            <li>Experiment with different font families and font sizes.</li>
-            <li>Add links to direct users to other websites.</li>
-            
-          </ol>
-        </section>
+  <ul>
+    <li>Add a link/anchor to the bookmark</li>
+  </ul>
+  <pre><code class="html" style="min-width: 44em;">&lt;a href="#seasons"&gt;Watch Season 1&lt;/a&gt;</code></pre>
+</section>
 
-        <!-- Inline -->
-        <section>
-          <h3>Connecting CSS to HTML: Inline</h3><br>
-<pre><code class = "html">&lt;p style="color:red"&gt;Some text.&lt;/p&gt;
-</code></pre>
-          <ul style="font-size: .85em; line-height: 1.75;">
-            <li>Uses the HTML <code>style</code> attribute.</li>
-            <li>Only applies to one element at a time.</li>
-            <li>Not preferred.</li>
-          </ul>
-        </section>
-
-        <!-- Embedded -->
-        <section>
-          <h3>Connecting CSS to HTML: Embedded</h3>
-<pre><code class = "html">&lt;head&gt;
-  &lt;style&gt;
-    p {
-      color: blue;
-      font-size: 12px;
-    }
-  &lt;/style&gt;
-&lt;/head&gt;
-</code></pre>
-          <ul style="font-size: .85em; line-height: 1.75;">
-            <li>Inside <code>&lt;head&gt;</code> element.</li>
-            <li>Uses <code>&lt;style&gt;</code> tag.</li>
-            <li>Only applies to that page.</li>
-          </ul>
-        </section>
-
-        <!-- External-->
-        <section>
-          <h3>Connecting CSS to HTML: External</h3>
-<pre><code class = "html">&lt;head&gt;
-  &lt;link rel="stylesheet" href="style.css"&gt;
-&lt;/head&gt;
-</code></pre><br>
-          <ul style="font-size: .85em; line-height: 1.75;">
-            <li>Can be referenced from multiple pages.</li>
-            <li>Reduced file size &amp; bandwidth.</li>
-            <li>Easier to maintain in larger projects.</li>
-            <li> This is the best practice!</li>
-          </ul>
-        </section>
+<!-- Exercise - External and Bookmark links-->
+<section>
+  <h3>Practice</h3>
+  <p style="font-size: 36px;">Add a few external links and bookmark links to your project page.</p>
+</section>
 
         <!-- PRACTICE-->
         <section>
           <h3>Let's Develop It!</h3>
-          <p>Embedded CSS:</p>
-          <ol style="font-size: .8em; line-height: 1.75;">
-            <li>In the <code>head</code> tag of your index.html file, beneath the title tag, add an opening and closing <code>style</code> tag.</li>
-            <li>Add / nest the CSS rule below in the <code>style</code> tag:</li>
-          
-<pre><code class = "css">body {
-  background-color: turquoise;
-}
-</code></pre>
-            <li>Check your page and see what happens.</li>
-          </ol>
-        </section>
-
-        <!-- CSS SELECTORS -->
-        <section>
-        <h3>CSS: The Selector</h3>
-<pre><code class="css">selector {
-  property: value;
-  property: value;
-}</code></pre>
-          <p>
-          The selector is used to select which elements in the HTML page will be given the styles inside the curly braces.
-          </p>
-        </section>
-
-        <section>
-          <h3>Types of Selectors: Element</h3>
-<pre><code class="css">p {
-property: value;
-}
-</code></pre>
-          <p>Selects all paragraph elements.</p><br>
-<pre><code class="css">img {
-property: value;
-}
-</code></pre>
-          <p>Selects all image elements.</p>
-        </section>
-
-        <!-- CSS PROPERTIES -->
-        <section>
-          <h3>CSS Properties</h3>
-          <ul style="font-size: .8em; line-height: 1.75;">
-            <li>200? 300? 500?</li>
-            <li>You're not expected to know them all!</li>
-            <li>Focus on the commonly used ones</li>
-            <li>Be okay looking things up!</li>
-            <li>Note: CSS properties are case-sensitive</li>
-          </ul>
-          <hr />
-          <p><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Properties_Reference" target="_blank">Common CSS properties (MDN)</a></p>
-          <p><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/Reference" target="_blank">All standard CSS properties (MDN)</a></p>
-        </section>
-
-        <!-- FONT FAMILY-->
-        <section>
-          <h3>Property: font-family</h3>
-          <p>The font-family property defines which font is used.</p>
-<pre><code class = "css">p {
-  font-family: "Times New Roman"; /* Specific font name */
-  /* or */
-  font-family: serif; /* Generic name */
-  /* or */
-  font-family: "Arial", sans-serif; /* Comma-separated list */
-}
-</code></pre>
-          <p style="font-size: 28px;">*When listing multiple fonts, always list a generic name last.</p>
-          <p><a href="https://www.w3schools.com/cssref/css_websafe_fonts.asp" target="_blank">Web Safe Fonts (W3 School)</a></p>
-          <p><a href="https://fonts.google.com/" target="_blank">Google Fonts</a></p>
-        </section>
-
-        <!-- BACKGROUND COLOR -->
-        <section>
-          <h3>Property: background-color</h3>
-          <p>The <code>background-color</code> property changes the color of the background.</p>
-<pre><code class = "css">body {
-  background-color: hotpink;
-}
-</code></pre>
-        </section>
-  
-        <!-- COLOR VALUES -->
-        <section>
-          <h3>CSS Color Values</h3>
-          <p>Your browser can accept colors in many different ways:</p>
-
-          <table style="margin: 0 auto">
-            <tr>
-              <td><strong>Color name: </strong></td>
-              <td><code>red</code></td>
-            </tr>
-            <tr>
-              <td><strong>Hexadecimal value: </strong></td>
-              <td><code>#FF0000</code></td>
-            </tr>
-            <tr>
-              <td><strong>RGB value: </strong></td>
-              <td><code>rgb(255, 0, 0)</code></td>
-            </tr>
-          </table>
-          <hr />
-          <p><a href="http://www.w3schools.com/colors/colors_picker.asp" target="_blank">W3Schools Color Picker</a></p>
-          <p><a href="http://www.colors.commutercreative.com/grid/" target="_blank">CSS Color Names</a></p>
-          <h5>Tip: A quick way to pick colors is to start with either white (#FFFFFF) or black (#000000). The code editor will show a small sample square. 
-            <br>Click the square to reveal and select other color choices.</h5>
-        </section>
-
-        <!-- FONT SIZE -->
-        <section>
-          <h3>Property: font-size</h3>
-          <p>The <code>font-size</code> property specifies the size of font.</p>
-<pre><code class = "css">body {
-  font-size: 12px;
-  font-size: 1.5em;
-  font-size: 100%;
-}
-</code></pre>
-        </section>
-
-        <section>
-          <h3>Font-size units:</h3>
-          <ul>
-            <li>Pixels - "px"</li>
-            <li>"rem" or "em" </li>
-            <li>Percentage - %</li>
-            <li>xx-small, medium, large, x-large, etc</li>
-          </ul>
-          <hr />
-          <p><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/font-size" target="_blank">font-size property (MDN)</a></p>
-        </section>
-
-        <!-- COLOR -->
-        <section>
-          <h3>Property: color</h3>
-          <p>The <code>color</code> property changes the color of the text.</p>
-<pre><code class = "css">p {
-  color: red;
-}
-</code></pre>
-        </section>
-
-        <!-- PRACTICE-->
-        <section>
-          <h3>Let's Develop It!</h3>
-          <h3>Next Steps</h3>
+          <h3>Independent Practice</h3>
           <ul style="font-size: .8em; line-height: 1.75;">
             <li>Revisit the <a target="_blank" href="https://uxplanet.org/how-to-design-a-hero-image-website-in-2022-best-practices-and-examples-256b7e8c31fb"> hero image web page examples </a>for inspiration.</li>
             <li>Add more <a target="_blank" href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element">HTML elements</a> to your web page.</li>
-            <li>Experiment with different<a target="_blank" href="https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Properties_Reference"> CSS properties.</a></li>
             <li>Join a break-out room to share progress or to tackle bugs.</li>
-            <li>Make plans for <a target="_blank" href="https://girldevelopit.com/events/details/girl-develop-it-frontend-classes-presents-web-design-essentials-1-four-class-cohort/">further development</a>:</li>
-              <ul>
-                <li>Learn about bookmark links for the nav bar.</li>
-                <li>Learn about the box model for spacing and positioning.</li>
-                <li>Learn about making your web page responsive and accessible.</li>
-              </ul>
           </ul>
         </section>
 
@@ -1156,253 +1112,6 @@ property: value;
 					<h2>Thank You!</h2>
 				</section>      
 
-      
-      
-      <!-- Code Environment -->
-      <section>
-        <h2>Our Code Environment</h2>
-      </section>
-      
-      <!-- Create REPL Account -->
-      <section>
-        <h3>REPL.it</h3>
-        <ul>
-          <li>Create a free account on <a href="https://replit.com/" target="_blank">REPL.it</a> (Recommended)</li>
-          <li>Or an online editor of your choice</li>
-        </ul>
-      </section>
-
-      <!-- HTML, HTML Elements & HTML Tags -->
-      <section>
-        <h3>HTML, HTML Elements & Tags</h3>
-      </section>
-
-      <!-- What is HTML? -->
-      <section>
-        <h3>What is HTML?</h3>
-        <p style="font-size: 36px">HTML stands for HyperText Markup Language.</p>
-      </section>
-      
-      <section>
-        <h3>What is HTML?</h3>
-        <p style="font-size: 36px">HTML is the language that allows us to build websites.</p>
-        <img src="./assets/imgs/homepage-view.png" width="500px" alt="Screenshot of the Girl Develop It Homepage">
-      </section>
-      
-      <section>
-        <h3>What is HTML?</h3>
-        <p style="font-size: 36px; line-height: 1.5;">HTML is composed of <span style="color: #f05b62;">HTML elements and tags</span> that provide the blueprint for a webpage.</p>
-      </section>
-
-      <section>
-        <h3>What is HTML?</h3>
-        <div>
-          <img style="width: 500px; height: auto;"
-            src="./assets/imgs/html-structure-code.png" alt="Sample HTML code">
-        </div>
-      </section>
-
-      <section>
-        <h3>What is HTML?</h3>
-        <p style="font-size: 36px;">"Under the hood" of a website:</p>
-        <img src="./assets/imgs/homepage-html.png" alt="Screenshot of the Girl Develop It page source code">
-      </section>
-
-      <section>
-        <h3>Anatomy of a Website</h3>
-        <ul style="line-height: 1.75;">
-          <li>A paragraph is your <code style="color: #f05b62;">content</code>.</li>
-          <li>Putting your content into an HTML tag to make it look like a paragraph is <code style="color: #f05b62;">structure</code>.
-          </li>
-        </ul>
-        <pre><code class ="html">&lt;p&gt;A paragraph is your content&lt;/p&gt;
-              </code></pre>
-      </section>
-
-      <!-- HTML Element-->
-      <section>
-        <h3>Anatomy of an HTML Element</h3>
-        <ul>
-          <li><strong>Element</strong>
-            <ul>
-              <li>An individual component of HTML</li>
-              <li>Paragraph, heading, table, list, section, footer, link, image, etc</li>
-              <li><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element" target="_blank">List of HTML Elements (MDN)</a></li>
-            </ul>
-          </li>
-          <li><strong>Tag</strong>
-            <ul>
-              <li>Marks the beginning &amp; end of an element</li>
-              <li>Opens and closes (Usually...)</li>
-              <li>Tags contain characters that indicate a tag/element's purpose
-              </li>
-            </ul>
-          </li>
-        </ul>
-        <pre><code class ="html xml">&lt;tagname&gt;Content&lt;/tagname&gt;</code></pre>
-<pre><code class ="html">&lt;p&gt;This is a sample paragraph.&lt;/p&gt;</code></pre>
-      </section>
-
-      <!--Anatomy of a Tag -->
-      <section>
-        <h3>Tag Breakdown</h3>
-        <img src="./assets/imgs/tagbreakdown.png" alt="Tag breakdown" style="border: none; box-shadow: none;" />
-      </section>
-
-      <!-- HTML Doctype -->
-      <section>
-        <h3>Doctype</h3>
-        <p>The first element on an HTML page is the <code>doctype</code>, which tells the browser what language to use to read and display the page.</p>
-<pre><code class = "html"> &lt;!DOCTYPE html&gt; </code></pre>
-      </section>
-
-      <!-- HTML tag -->
-      <section>
-        <h3>HTML Tag</h3>
-        <p>After &lt;doctype&gt;, the rest of the page elements must be contained between a pair of root &lt;html&gt; tags.</p>
-<pre><code class="html">&lt;!DOCTYPE html&gt;
-&lt;html&gt;
-
-&lt;/html&gt;
-</code></pre>
-      </section>
-
-      <!-- HTML tag -->
-      <section>
-        <h3>HTML Tag</h3>
-        <p>The &lt;html&gt; tag holds two children tags:</p>
-        <p>the &lt;head&gt; and &lt;body&gt; tags</p>
-<pre><code class="html">&lt;!DOCTYPE html&gt;
-&lt;html&gt;
-  &lt;head&gt;
-  ...
-  &lt;/head&gt;
-  &lt;body&gt;
-  ...
-  &lt;/body&gt;
-&lt;/html&gt;
-</code></pre>
-        
-      </section>
-
-      <!-- Head tag -->
-      <section>
-        <h3>Head Tag</h3>
-        <ul>
-          <li>The <code>head</code> tag contains information about the page and this information is primarily for the browser.</li>
-        </ul>
-<pre><code class="html">&lt;!DOCTYPE html&gt;
-&lt;html&gt;
-  &lt;head&gt;
-    &lt;meta charset="utf-8"/&gt;
-    &lt;meta name="viewport" content="width=device-width, initial-scale=1"/&gt;
-    &lt;title&gt;Title of the page &lt;/title&gt;
-  &lt;/head&gt;
-  ...
-  ...
-&lt;/html&gt;
-</code></pre>
-      </section>
-
-      <!-- Head tag -->
-      <section>
-        <h3>Head Tag</h3>
-        <ul>
-          <li>With the exception of the page title, content in the <code>head</code> tag is not visible on a rendered page to users.</li>
-          <li>An HTML page can only contain one <code>head</code> tag.</li>
-        </ul>
-<pre><code class = "html">&lt;!DOCTYPE html&gt;
-&lt;html&gt;
-  &lt;head&gt;
-    &lt;meta charset="utf-8"/&gt;
-    &lt;meta name="viewport" content="width=device-width, initial-scale=1"/&gt;
-    &lt;title&gt;Title of the page &lt;/title&gt;
-  &lt;/head&gt;
-  ...
-  ...
-&lt;/html&gt;
-      </code></pre>
-      </section>
-
-      <!-- Meta tags -->
-      <section>
-        <h3>Meta Tags</h3>
-        <p>The <code>meta</code> tag is used to define metadata for an HTML document and can also give additional instruction to the browser about how to display a page.</p>
-<pre><code class = "html">&lt;!DOCTYPE html&gt;
-&lt;html&gt;
-  &lt;head&gt;
-    &lt;meta charset="utf-8"/&gt;
-    &lt;meta name="viewport" content="width=device-width, initial-scale=1"/&gt;
-    &lt;title&gt;Title of the page &lt;/title&gt;
-  &lt;/head&gt;
-&lt;/html&gt;
-</code></pre>
-      </section>
-
-      <!-- Title and Link tags -->
-      <section>
-        <h3>Title and Link Tags</h3>
-        <p>Two other tags found in the <code>head</code> tag are:</p>
-        <ul>
-          <li><code>link</code>: Links a page to internal or external resources such as stylesheets, fonts and more</li>
-          <li><code>title</code>: Defines the title of a page, which is then displayed on the browser title bar</li>
-        </ul>
-<pre><code class = "html">&lt;!DOCTYPE html&gt;
-&lt;html&gt;
-  &lt;head&gt;
-    &lt;meta charset="utf-8"/&gt;
-    &lt;meta name="viewport" content="width=device-width, initial-scale=1"/&gt;
-    &lt;link href="style.css" rel="stylesheet" type="text/css" /&gt;
-    &lt;title&gt;Title of the page &lt;/title&gt;
-  &lt;/head&gt;
-&lt;/html&gt;
-</code></pre>
-      </section>
-
-      <!-- Body tag -->
-      <section>
-        <h3>Body Tag</h3>
-        <ul>
-          <li>The <code>body</code> tag holds all of a page's content. Information here is what will be visible to users</li>
-          <li>An HTML page can only contain one <code>body</code> tag</li>
-        </ul>
-<pre><code class="html">&lt;!DOCTYPE html&gt;
-&lt;html&gt;
-  &lt;head&gt;
-  ...
-  &lt;/head&gt;
-  &lt;body&gt;
-    &lt;p&gt;This is body content which can
-    be text, images, links, video, etc.&lt;/p&gt;
-  &lt;/body&gt;
-&lt;/html&gt;
-</code></pre>
-      </section>
-
-      <!-- Heading tags -->
-      
-      <!-- End of class slides -->
-      <section>
-        <h2>Goodbye Slides!</h2>
-      </section>
-
-      <!-- MUST USE SLIDE - Course Feedback Survey-->
-      <section>
-        <h3>Class Feedback</h3>
-        <p><a href="https://forms.gle/MzMndG5s52a2HiB77" target="_blank">https://forms.gle/MzMndG5s52a2HiB77</a></p>
-      </section>
-
-      <!-- Q&A -->
-      <section>
-        <h2>Q&A</h2>
-      </section>
-
-      <!-- Thank You -->
-      <section>
-        <img src="./assets/imgs/gdi-logos/GDI-Logo_Peach.png" alt="GDI Logo" width="300px" class="noborder" />
-        <br>
-        <h2>Thank You!</h2>
-      </section>
     </div> <!-- End of Slides container -->
 
     <footer>
