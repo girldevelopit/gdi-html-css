@@ -236,7 +236,7 @@
         <h3>ELEMENTS: Input</h3>
         <p>Input fields enable you to collect user information.</p>
         <img src="assets/imgs/illustration of form.jpg" width="300px" alt="Example of a rendered form" />
-        <p style="font-size:30px;">The input element, along with the label element, is very important in creating forms</p>
+        <p style="font-size:30px;">The input element, along with the label element, is very important in creating forms.</p>
         <a target="_blank" href="https://www.w3schools.com/html/html_form_input_types.asp"> W3 Schools: HTML Input Types </a>
       </section>
       
@@ -273,7 +273,305 @@
               </section>
 
 <!-- CSS Starts Here -->
+        <!-- CSS -->
+        <section>
+          <h2>CSS</h2>
+        </section>
 
+
+        <!-- ANATOMY OF A WEBSITE -->
+        <section>
+					<h3>Anatomy of a website</h3>
+					<div style="font-size:.875em;">
+            <p>Content (Text + Media)</p>
+            <p>+ HTML(Structure + Semantics)</p>
+            <p style="background-color: rgb(236, 201, 201);">+ CSS (Presentation + Design)</p>
+            <p>+ JavaScript (Interactivity)</p>
+            <p>= Website</p>
+					</div>
+				</section>
+
+        <section>
+          <h3>CSS: What is it?</h3>
+          <p><strong>CSS</strong> = <strong>C</strong>ascading <strong>S</strong>tyle <strong>S</strong>heets</p>
+          <p>CSS is a "style sheet language" that lets you style the elements on your page.</p>
+          <p>CSS is works in conjunction with HTML, but is not HTML itself.</p>
+        </section>
+
+        <section>
+          <h3>CSS: What can it do?</h3>
+          <p>Adds all the bells and whistles!</p>
+          <img src="assets/imgs/kitchen-gdc3113a61_1920.jpg " alt="image of kitchen" height="400" />
+        </section>
+  
+        <section>
+          <h3>CSS: What can it do?</h3>
+          <p>All colored text, position, and size</p>
+          <img src="assets/imgs/gdi-homepage-view.png" alt="Screenshot of homepage" height="400" />
+        </section>
+
+        <!-- The CSS Rule-->
+        <section>
+          <h3>Anatomy of CSS</h3>
+          <p>CSS consists of <strong>style rules</strong>.</p> 
+          <p>Each style rule consists of a <strong>selector</strong> and <strong>declarations</strong> of <strong>property-value</strong> pairs:
+          </p>
+<pre><code class="css">selector {
+  property: value;
+  property: value;
+}</code></pre>
+        </section>
+
+        <section>
+          <p>Syntax</p>
+<pre><code class="css">selector {
+  property: value;
+  property: value;
+}</code></pre>
+          <p>Example:</p>
+<pre><code class="css">body {
+  color: yellow;
+  background-color: black;
+}</code></pre>
+        </section>
+
+        <!-- Connecting HTML to CSS-->
+        <section>
+          <h3>Connecting CSS to HTML</h3>
+          <p class="green">3 Ways:</p>
+          <p>Inline</p>
+          <p>Embedded</p>
+          <p style="background-color: rgb(236, 201, 201);">External</p>
+        </section>
+
+        <!-- PRACTICE STYLING THE HERO IMAGE WEB PAGE-->
+        <section>
+          <h3>Let's Develop It!</h3>
+          <ol style="font-size: .8em; line-height: 1.75;">
+            <li>Open the CSS file of your hero web page. <a target="_blank" href="https://replit.com/@faraja/GDI-HTML-and-CSS-Hero-Image-CSS-Template#style.css">Optional Template</a></li>
+            <li>Style the following sections for your hero image web page using CSS properties:
+                <ul>
+                  <li>navigation bar</li>
+                  <li>header</li>
+                  <li>footer</li>
+                </ul>
+            </li>
+            <li>Add a logo image to the nav bar and a hero image to the header. <a target="_blank" href="https://pixabay.com/images/search/transparent%20background/"> Pixabay Images</a></li>
+            <li>Change justification of text and images.</li>
+            <li>Experiment with font and background colors.</li>
+            <li>Experiment with different font families and font sizes.</li>
+            <li>Add links to direct users to other websites.</li>
+            
+          </ol>
+        </section>
+
+        <!-- Inline -->
+        <section>
+          <h3>Connecting CSS to HTML: Inline</h3><br>
+<pre><code class = "html">&lt;p style="color:red"&gt;Some text.&lt;/p&gt;
+</code></pre>
+          <ul style="font-size: .85em; line-height: 1.75;">
+            <li>Uses the HTML <code>style</code> attribute.</li>
+            <li>Only applies to one element at a time.</li>
+            <li>Not preferred.</li>
+          </ul>
+        </section>
+
+        <!-- Embedded -->
+        <section>
+          <h3>Connecting CSS to HTML: Embedded</h3>
+<pre><code class = "html">&lt;head&gt;
+  &lt;style&gt;
+    p {
+      color: blue;
+      font-size: 12px;
+    }
+  &lt;/style&gt;
+&lt;/head&gt;
+</code></pre>
+          <ul style="font-size: .85em; line-height: 1.75;">
+            <li>Inside <code>&lt;head&gt;</code> element.</li>
+            <li>Uses <code>&lt;style&gt;</code> tag.</li>
+            <li>Only applies to that page.</li>
+          </ul>
+        </section>
+
+        <!-- External-->
+        <section>
+          <h3>Connecting CSS to HTML: External</h3>
+<pre><code class = "html">&lt;head&gt;
+  &lt;link rel="stylesheet" href="style.css"&gt;
+&lt;/head&gt;
+</code></pre><br>
+          <ul style="font-size: .85em; line-height: 1.75;">
+            <li>Can be referenced from multiple pages.</li>
+            <li>Reduced file size &amp; bandwidth.</li>
+            <li>Easier to maintain in larger projects.</li>
+            <li> This is the best practice!</li>
+          </ul>
+        </section>
+
+        <!-- PRACTICE-->
+        <section>
+          <h3>Let's Develop It!</h3>
+          <p>Embedded CSS:</p>
+          <ol style="font-size: .8em; line-height: 1.75;">
+            <li>In the <code>head</code> tag of your index.html file, beneath the title tag, add an opening and closing <code>style</code> tag.</li>
+            <li>Add / nest the CSS rule below in the <code>style</code> tag:</li>
+          
+<pre><code class = "css">body {
+  background-color: turquoise;
+}
+</code></pre>
+            <li>Check your page and see what happens.</li>
+          </ol>
+        </section>
+
+        <!-- CSS SELECTORS -->
+        <section>
+        <h3>CSS: The Selector</h3>
+<pre><code class="css">selector {
+  property: value;
+  property: value;
+}</code></pre>
+          <p>
+          The selector is used to select which elements in the HTML page will be given the styles inside the curly braces.
+          </p>
+        </section>
+
+        <section>
+          <h3>Types of Selectors: Element</h3>
+<pre><code class="css">p {
+property: value;
+}
+</code></pre>
+          <p>Selects all paragraph elements.</p><br>
+<pre><code class="css">img {
+property: value;
+}
+</code></pre>
+          <p>Selects all image elements.</p>
+        </section>
+
+        <!-- CSS PROPERTIES -->
+        <section>
+          <h3>CSS Properties</h3>
+          <ul style="font-size: .8em; line-height: 1.75;">
+            <li>200? 300? 500?</li>
+            <li>You're not expected to know them all!</li>
+            <li>Focus on the commonly used ones</li>
+            <li>Be okay looking things up!</li>
+            <li>Note: CSS properties are case-sensitive</li>
+          </ul>
+          <hr />
+          <p><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Properties_Reference" target="_blank">Common CSS properties (MDN)</a></p>
+          <p><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/Reference" target="_blank">All standard CSS properties (MDN)</a></p>
+        </section>
+
+        <!-- FONT FAMILY-->
+        <section>
+          <h3>Property: font-family</h3>
+          <p>The font-family property defines which font is used.</p>
+<pre><code class = "css">p {
+  font-family: "Times New Roman"; /* Specific font name */
+  /* or */
+  font-family: serif; /* Generic name */
+  /* or */
+  font-family: "Arial", sans-serif; /* Comma-separated list */
+}
+</code></pre>
+          <p style="font-size: 28px;">*When listing multiple fonts, always list a generic name last.</p>
+          <p><a href="https://www.w3schools.com/cssref/css_websafe_fonts.asp" target="_blank">Web Safe Fonts (W3 School)</a></p>
+          <p><a href="https://fonts.google.com/" target="_blank">Google Fonts</a></p>
+        </section>
+
+        <!-- BACKGROUND COLOR -->
+        <section>
+          <h3>Property: background-color</h3>
+          <p>The <code>background-color</code> property changes the color of the background.</p>
+<pre><code class = "css">body {
+  background-color: hotpink;
+}
+</code></pre>
+        </section>
+  
+        <!-- COLOR VALUES -->
+        <section>
+          <h3>CSS Color Values</h3>
+          <p>Your browser can accept colors in many different ways:</p>
+
+          <table style="margin: 0 auto">
+            <tr>
+              <td><strong>Color name: </strong></td>
+              <td><code>red</code></td>
+            </tr>
+            <tr>
+              <td><strong>Hexadecimal value: </strong></td>
+              <td><code>#FF0000</code></td>
+            </tr>
+            <tr>
+              <td><strong>RGB value: </strong></td>
+              <td><code>rgb(255, 0, 0)</code></td>
+            </tr>
+          </table>
+          <hr />
+          <p><a href="http://www.w3schools.com/colors/colors_picker.asp" target="_blank">W3Schools Color Picker</a></p>
+          <p><a href="http://www.colors.commutercreative.com/grid/" target="_blank">CSS Color Names</a></p>
+          <h5>Tip: A quick way to pick colors is to start with either white (#FFFFFF) or black (#000000). The code editor will show a small sample square. 
+            <br>Click the square to reveal and select other color choices.</h5>
+        </section>
+
+        <!-- FONT SIZE -->
+        <section>
+          <h3>Property: font-size</h3>
+          <p>The <code>font-size</code> property specifies the size of font.</p>
+<pre><code class = "css">body {
+  font-size: 12px;
+  font-size: 1.5em;
+  font-size: 100%;
+}
+</code></pre>
+        </section>
+
+        <section>
+          <h3>Font-size units:</h3>
+          <ul>
+            <li>Pixels - "px"</li>
+            <li>"rem" or "em" </li>
+            <li>Percentage - %</li>
+            <li>xx-small, medium, large, x-large, etc</li>
+          </ul>
+          <hr />
+          <p><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/font-size" target="_blank">font-size property (MDN)</a></p>
+        </section>
+
+        <!-- COLOR -->
+        <section>
+          <h3>Property: color</h3>
+          <p>The <code>color</code> property changes the color of the text.</p>
+<pre><code class = "css">p {
+  color: red;
+}
+</code></pre>
+        </section>
+
+        <!-- PRACTICE-->
+        <section>
+          <h3>Let's Develop It!</h3>
+          <h3>Next Steps</h3>
+          <ul style="font-size: .8em; line-height: 1.75;">
+            <li>Revisit the <a target="_blank" href="https://uxplanet.org/how-to-design-a-hero-image-website-in-2022-best-practices-and-examples-256b7e8c31fb"> hero image web page examples </a>for inspiration.</li>
+            <li>Add more <a target="_blank" href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element">HTML elements</a> to your web page.</li>
+            <li>Experiment with different<a target="_blank" href="https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Properties_Reference"> CSS properties.</a></li>
+            <li>Join a break-out room to share progress or to tackle bugs.</li>
+            <li>Make plans for <a target="_blank" href="https://girldevelopit.com/events/details/girl-develop-it-frontend-classes-presents-web-design-essentials-1-four-class-cohort/">further development</a>:</li>
+              <ul>
+                <li>Learn about bookmark links for the nav bar.</li>
+                <li>Learn about the box model for spacing and positioning.</li>
+                <li>Learn about making your web page responsive and accessible.</li>
+              </ul>
+          </ul>
+        </section>
 
 
       <!-- Home Practice -->
