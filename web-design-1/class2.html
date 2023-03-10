@@ -454,6 +454,203 @@ property: value;
           <p>Selects all image elements.</p>
         </section>
 
+        <!-- 3 Common Selectors -->
+      <section>
+        <h3>The Three Common CSS Selectors</h3>
+        <p>Element or Type selector</p>
+        <p>Class selector</p>
+        <p>ID selector</p>
+      </section>
+
+      <!-- Element Selector -->
+      <section>
+        <h3>Element or Type Selector</h3>
+        <p>Selects all elements of the same type</p>
+        <p>This example below selects all <code>p</code> tags or paragraph elements</p>
+<pre><code class="css">p {
+  color: purple;
+}</code></pre>
+      </section>
+
+      <!-- Class Selector -->
+      <section>
+        <h3>Class Selector</h3>
+        <p><code>Class</code> selectors are prefixed with a <code>"."</code> dot, then followed by the class name</p>
+        <pre><code class="css">.product-text {
+  color: purple;
+}</code></pre>
+      </section>
+
+      <section>
+        <h3>Class Selector</h3>
+        <p>On the HTML page, the class name is associated with one or more target element or content</p>
+        <pre><code class="html">&lt;p class="product-text"&gt;This is some product text.&lt;/p&gt;
+
+&lt;p&gt;This is another paragraph of text.&lt;/p&gt;
+
+&lt;h4 class="product-text"&gt;This is headline text.&lt;/h4&gt;
+</code></pre>
+        <p>When we want multiple elements to share a style, we give them the same class name.</p>
+      </section>
+
+      <section>
+        <h3>Class Selector</h3>
+        <p>The CSS code below selects all elements with the <code>class</code> of <code>.product-text</code> in the
+          markup and applies the style</p>
+        <pre><code class="css">.product-text {
+  color: purple;
+}</code></pre>
+        <pre><code class="html">&lt;p class="product-text"&gt;This is some product text.&lt;/p&gt;
+
+&lt;p&gt;This is another paragraph of text.&lt;/p&gt;
+
+&lt;h4 class="product-text"&gt;This is headline text.&lt;/h4&gt;
+</code></pre>
+      </section>
+
+      <section>
+        <h3>Class Selector</h3>
+        <p>Elements can have more than one <code>class</code> name or selector applied to them.</p>
+<pre><code class="css">.product-text {
+  color: purple;
+}
+
+.product-container {
+  background-color: yellow;
+}
+</code></pre>
+<pre><code class="html">&lt;p class="product-text product-bground"&gt;Some product detail.&lt;/p&gt;
+</code></pre>
+      </section>
+
+      <!-- ID Selector -->
+      <section>
+        <h3>ID Selector</h3>
+        <p><code>ID</code> selectors are prefixed with a <code>"#"</code> symbol, then followed by a name</p>
+        <pre><code class="css">#product-name {
+  background: tomato;
+}</code></pre>
+      </section>
+
+      <section>
+        <h3>ID Selector</h3>
+        <p>Unlike the class selector, the ID selector is associated with only ONE target element on the HTML page</p>
+        <pre><code class="html">&lt;h2 id="product-name"&gt;First Product Title&lt;/h2&gt;
+
+&lt;h2 id="needs-a-new-id"&gt;Second Product Title&lt;/h2&gt;
+</code></pre>
+        <p>IDs cannot be shared among elements</p>
+      </section>
+
+      <!-- Combining selectors -->
+      <section>
+        <h3>Mixing Selectors</h3>
+        <p>An HTML element can have both a class name and an ID</p>
+<pre><code class="html">&lt;h2 class="product-text" id="product-name"&gt;First Product Title&lt;/h2&gt;
+</code></pre>
+      </section>
+
+      <!-- Working with Class & ID selectors -->
+      <section>
+        <h3>Working with Class & ID Selectors</h3>
+        <h4>Best Practices</h4>
+        <ul>
+          <li>Give selectors meaningful names</li>
+          <li>Use single word or hyphenated naming</li>
+          <li>Use classes more than IDs</li>
+          <li>Use ID selectors for:
+            <ul>
+              <li>Internal bookmarking</li>
+              <li>Elements to be targeted by JavaScript</li>
+            </ul>
+          </li>
+        </ul>
+      </section>
+
+      <!-- Naming CSS -->
+      <section>
+        <h3>Naming CSS Selectors</h3>
+        <p style="font-size: 36px;">Properly naming selectors is important.</p>
+        <ul>
+          <li>Keeps our code readable</li>
+          <li>Keeps our code maintainable</li>
+          <li>Reduces or prevents CSS specificity issues</li>
+        </ul>
+      </section>
+
+      <!-- Semantic vs Non Semantic CSS -->
+      <section>
+        <h3>Semantic vs Non-Semantic CSS</h3>
+      </section>
+
+      <!-- Semantic CSS -->
+      <section>
+        <h3>Semantic CSS</h3>
+        <p style="font-size: 32px;">Semantic CSS naming conveys meaning.</p>
+<pre><code class="html">&lt;h2 class="product-heading"&gt;My First Start Up App&lt;/h2&gt;
+</code></pre>
+      </section>
+
+      <!-- Non-Semantic CSS -->
+      <section>
+        <h3>Non-Semantic CSS</h3>
+        <p style="font-size: 32px;">Non-semantic CSS tends not to convey meaning; it usually conveys what an element might look like.</p>
+        <pre><code class="html">&lt;h2 class="large-text"&gt;My First Start Up App&lt;/h2&gt;</code></pre>
+      </section>
+
+      <!-- Semantic CSS -->
+      <section>
+        <h3>Non-Semantic CSS</h3>
+        <p style="font-size: 32px;">Non-semantic CSS naming is common in CSS frameworks such as Bootstrap and Tailwind.</p>
+  <pre><code class="html">&lt;div class="row mb-10 h-4"&gt;My First Start Up App&lt;/div&gt;
+  </code></pre>
+      </section>
+
+      <!-- Which to Choose? -->
+      <section>
+        <h3>Semantic or Non-Semantic CSS?</h3>
+        <ul>
+          <li>Good practice is to default to semantic naming</li>
+          <li>Understand the use cases for non-semantic CSS
+            <ul>
+              <li>Working with CSS frameworks</li>
+              <li>Creating your own CSS utilities</li>
+            </ul>
+          </li>
+        </ul>
+      </section>
+
+      <!-- Naming quote -->
+      <section>
+        <h4>There are only two hard problems in Computer Science: cache invalidation and naming things.</h4>
+        <h5>— Phil Karlton</h5>
+      </section>
+
+      <!-- More on Semantic naming -->
+      <section>
+        <h3>Semantic Naming Approaches</h3>
+        <p style='font-size: 32px;'>A few methodologies to research and explore in your web design or web development journey:</p>
+        <ul>
+          <li>BEM</li>
+          <li>SMACSS</li>
+          <li>ITCSS</li>
+          <li>OOCSS</li>
+          <li>SuitCSS</li>
+        </ul>
+        <p>Dev.to Article: <a href="https://dev.to/ziizium/css-naming-conventions-5gd6" target="_blank">CSS Naming conventions</a></p>
+      </section>
+
+      <!-- Commenting in CSS -->
+      <section>
+        <h3>Comments in CSS</h3>
+        <p style='font-size: 32px;'>Commenting our code also works in CSS.</p>
+<pre><code class="css">/* Sample comment */
+p {
+  color: purple;
+}</code></pre>
+
+      </section>
+
         <!-- CSS PROPERTIES -->
         <section>
           <h3>CSS Properties</h3>
@@ -469,22 +666,38 @@ property: value;
           <p><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/Reference" target="_blank">All standard CSS properties (MDN)</a></p>
         </section>
 
-        <!-- FONT FAMILY-->
-        <section>
-          <h3>Property: font-family</h3>
-          <p>The font-family property defines which font is used.</p>
+        <!-- Can I use  -->
+      <section>
+        <h3>Browser Support for HTML & CSS</h3>
+        <p style='font-size: 32px; margin-bottom: 1.5rem;'>Although the majority of HTML elements and CSS properties are standard and work across browsers, this is not always the case for a variety of reasons.</p>
+        <p style='font-size: 32px'><a href="https://caniuse.com/" target='_blank'>caniuse.com</a> is a popular site/tool used to check for browser support for HTML and CSS features.</p>
+      </section>
+
+        <!-- Web Safe Fonts -->
+      <section>
+        <h3>Fonts</h3>
+        <p style='font-size: 32px'>Web Safe Fonts are font families that all browsers can display by default. We don't have to load font files or link to external font libraries to use them in our projects.</p>
 <pre><code class = "css">p {
   font-family: "Times New Roman"; /* Specific font name */
-  /* or */
   font-family: serif; /* Generic name */
-  /* or */
   font-family: "Arial", sans-serif; /* Comma-separated list */
 }
 </code></pre>
-          <p style="font-size: 28px;">*When listing multiple fonts, always list a generic name last.</p>
-          <p><a href="https://www.w3schools.com/cssref/css_websafe_fonts.asp" target="_blank">Web Safe Fonts (W3 School)</a></p>
-          <p><a href="https://fonts.google.com/" target="_blank">Google Fonts</a></p>
-        </section>
+        <hr>
+        <p><a href="https://www.w3schools.com/cssref/css_websafe_fonts.asp" target="_blank">Web Safe Fonts (W3 School)</a></p>
+      </section>
+
+      <!-- Custom Fonts -->
+      <section>
+        <h3>Fonts</h3>
+        <p style='font-size: 32px'>To apply custom fonts, we either load font files into our project directory or we link to external font libraries such as <a href="https://fonts.google.com/" target="_blank">Google Fonts</a>.</p>
+      </section>
+
+      <!-- Google Fonts Demo -->
+      <section>
+        <h3>Google Fonts Demo</h3>
+      </section>
+
 
         <!-- BACKGROUND COLOR -->
         <section>
@@ -574,21 +787,6 @@ property: value;
           </ul>
         </section>
 
-
-      <!-- Home Practice -->
-      <section>
-        <h3>Home Practice</h3>
-        <ol>
-          <li>Continue to build out your project fan page</li>
-          <li>Reorganize your page using semantic HTML where possible or appropriate</li>
-          <li>Install one or two accessibility browser plugins
-            <ul>
-              <li>Use the tool to evaluate your page and see what changes or improvements you can make to your site's accessibility</li>
-            </ul></li>
-          <li>Download and install <a href="https://code.visualstudio.com/download" target="_blank">Visual Studio Code</a> or any code/text editor of your choice</li>
-        </ol>
-      </section>
-
       <!-- Class 3 Preview -->
       <section>
         <h3>Class 3</h3>
@@ -605,23 +803,92 @@ property: value;
         </ul>
       </section>
 
-      <!-- Q&A -->
-      <section>
-        <h3>Q&A</h3>
-      </section>
+      <!-- Course Conclusion -->
+				<section>
+					<h3>You did it!</h3>
+					<img src="assets/imgs/stock-img/celebration_hannah-busing-unsplash.jpg"  alt="Happy woman jumping"/>
+					<p> 
+            <small>Photo credit:
+              <a href="https://unsplash.com/@hannahbusing" target="_blank">Hannah Busing</a>
+              <a href="http://creativecommons.org/licenses/by-sa/2.0/" target="_blank">cc</a>
+            </small>
+					</p>		
+				</section>
 
-      <!-- MUST USE SLIDE - Course Feedback Survey-->
-      <section>
-        <h3>Class Feedback</h3>
-        <p><a href="https://forms.gle/MzMndG5s52a2HiB77" target="_blank">https://forms.gle/MzMndG5s52a2HiB77</a></p>
-      </section>
-      
-      <!-- Thank You -->
-      <section>
-        <img src="./assets/imgs/gdi-logos/GDI-Logo_Peach.png" alt="GDI Logo" width="300px" class="noborder" />
-        <br>
-        <h3>Thank You!</h3>
-      </section>
+				<!-- OPTIONAL: Show and Tell  -->
+				<section>
+					<h2>Share What You've Built!</h2>
+				</section>
+
+        <!-- OPTIONAL: Home Practice  -->
+				<section>
+          <h3>OPTIONAL: Home Practice</h3>
+          <li>Revisit the <a target="_blank" href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element">List of HTML Elements (MDN).</a></li>
+					<p>Research and experiment with some of the elements that we will use in our project. They are listed on the next slide...</p>
+				</section>
+
+        <section >
+          <h3>Project Preview</h3>
+          <ol style="font-size: .8em; line-height: 1.75;">
+            <li>Open a new index.html file. <a target="_blank" href="https://faraja17.github.io/gdi-html-css/web-design-1/class1.html#/61">Boiler Plate | </a>
+              <a target="_blank" href="https://replit.com/@faraja/Netflix-Mock-up-HTML-Template#index.html">Optional Template</a>  </li>
+            <li>Develop the following sections for your hero image web page using HTML elements:
+                <ul>
+                  <li>navigation bar</li>
+                  <li>anchor (for creating links)</li>
+                  <li>header</li>
+                  <li>input</li>
+                  <li>button</li>
+                  <li>section</li>
+                  <li>details</li>
+                  <li>footer</li>
+                </ul>
+            </li>
+            <li>Add comments to organize your sections.</li>             
+          </ol>
+        </section>
+
+				<!-- MUST USE/SHOW SLIDE -->
+				<!-- Course Survey -->
+				<section>
+					<h2>Give Us Your Feedback</h2>
+					<h3><a href="https://forms.gle/odMnQSbo4eqNtxWL8" target="blank">Survey Link</a></h3>
+				</section>
+				
+				<!-- Q&A -->
+				<section>
+					<h2>Q&A</h2>
+				</section>
+
+				<!-- Resources -->
+				<section>
+					<h2>External Resources</h2>
+					<p>Free Code Camp</p>
+					<p>Codecademy</p>
+					<p>CSS Tricks</p>
+          <p>Udemy</p>
+				</section>	
+
+				<!-- MUST USE/SHOW SLIDE -->
+				<!-- GDI Promo - Upcoming Courses -->
+				<section>
+					<h2>New GDI Courses</h2>
+          <h4>Visit our <a href="https://girldevelopit.com/events/#/list" target="_blank">Events Page</a>!</h4>
+				</section>	
+				
+				<!-- Instructor and/or TA Contact -->
+				<section>
+					<h2>Keep in Touch</h2>
+					<p>Faraja, Instructor: <a href="https://www.linkedin.com/in/faraja-thompson-m-ed-70885b8/" target="_blank">LinkedIn</a>, <a href="https://github.com/Faraja17/" target="_blank">Github</a></p>
+          <p>Marki, Teaching Assistant: <a href="https://www.linkedin.com/in/marki-lyons/" target="_blank">LinkedIn</a>, <a href="https://github.com/MsMLyons" target="_blank">Github</a></p>
+				</section>
+
+				<!-- Thank You -->
+				<section>
+					<img src="assets/imgs/gdi-logos/gdi-logo_peach.png" alt="GDI Logo" width="300px" class="noborder"/>
+					<br>
+					<h2>Thank You!</h2>
+				</section>      
     </div> <!-- End of Slides container -->
   
     <footer>
