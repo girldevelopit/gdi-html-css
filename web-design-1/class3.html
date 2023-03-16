@@ -358,6 +358,224 @@ color: red;
         <p>Dev.to Article: <a href="https://dev.to/ziizium/css-naming-conventions-5gd6" target="_blank">CSS Naming conventions</a></p>
       </section>
 
+      <!-- CSS Box Model -->
+      <section>
+        <h3>CSS Box Model</h3>
+      </section>
+
+      <!-- Box Model image -->
+      <section>
+        <h3>Boxes Everywhere!</h3>
+        <p style='font-size: 32px'>Every HTML element on a page is wrapped in a box.</p>
+        <img src="./assets/imgs/box-model.png" width='500px' alt="the CSS box model">
+        <p><small>Image source: <a
+              href="https://complete-concrete-concise.com/tutorials/webdev/front-end-basics/html-flow-and-the-css-box-model-the-display-property/"
+              target='_blank'>complete-concrete-concise.com</a></small></p>
+      </section>
+
+      <!-- Box Model Properties -->
+      <section>
+        <h3>Box Model Properties</h3>
+        <ul>
+          <li style="margin-bottom: 1rem;"><strong>Content</strong>: Text, image, form, etc.</li>
+          <li style="margin-bottom: 1rem;"><strong>Padding:</strong>The space around the content, or the distance between the content and its borders</li>
+          <li style="margin-bottom: 1rem;"><strong>Border:</strong>The wrapper around the content and its padding </li>
+          <li><strong>Margin:</strong> The distance between an element and its neighbors</li>
+        </ul>
+      </section>
+
+      <!-- Box Model diagram -->
+      <section>
+        <h3>Box Model</h3>
+        <img src="./assets/imgs/box-model2.png" alt="">
+        <p><small>Image source: <a href="http://thenewcode.com/49/The-CSS-Box-Model"
+              target='_blank'>thenewcode.com</a></small></p>
+      </section>
+
+      <!-- Box Model in Dev Tools demo -->
+      <section>
+        <h3>Box Model in Developer Tools</h3>
+        <h4>Demo</h4>
+      </section>
+
+      <!-- Display Flow -->
+      <section>
+        <h3>Display Flow</h3>
+        <p style='font-size: 32px'>Every element has a default flow or way that it renders on the page before any CSS styling is applied. It is either:</p>
+        <ul>
+          <li>Stacking on top of another element</li>
+          <li>Side by side with another element</li>
+        </ul>
+      </section>
+
+      <!-- Block and Inline Elements -->
+      <section>
+        <h3>Block and Inline Elements</h3>
+        <ul>
+          <li style="margin-bottom: 1rem;">Elements that stack are: <code>Block</code> elements</li>
+          <li>Elements that are side-by-side on the same line are <code>Inline</code> elements</li>
+        </ul>
+        <p style='font-size: 32px'>This is also referred to as an element's <code>display</code> property.</p>
+      </section>
+      
+      <!-- Behavior -->
+      <section>
+        <h3>Block vs Inline Behavior</h3>
+        <ul>
+          <li style="margin-bottom: 1rem;">Block elements start a new line or live on their own line; they take up the full width of their line or their parent container</li>
+          <li>Inline elements don't start a new line and take up only as much space as their content needs</li>
+        </ul>
+      </section>
+
+      <!-- Example Block Elements -->
+      <section>
+        <h3>Block Elements</h3>
+        <p style='font-size: 32px'>Block-level elements include:</p>
+        <ul>
+          <li>Headings (h1, h2, etc)</li>
+          <li>Paragraphs</li>
+          <li>Divs</li>
+          <li>Lists</li>
+        </ul>
+        <p><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Block-level_elements" target="_blank">Block Level Elements (MDN)</a></p>
+      </section>
+      
+      <!-- Example Inline Elements -->
+      <section>
+        <h3>Inline Elements</h3>
+        <p style='font-size: 32px'>Inline-level elements include:</p>
+        <ul>
+          <li>Anchor "a" tags</li>
+          <li>Images</li>
+          <li>Spans</li>
+        </ul>
+        <p><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Inline_elements" target="_blank">Inline Level Elements (MDN)</a></p>
+      </section>
+      
+      <!-- CSS Display property -->
+      <section>
+        <h3>The CSS "Display" Property</h3>
+        <ul>
+          <li style="margin-bottom: 1rem;">CSS can be used to change an element's default flow or display property</li>
+          <li>A block element can be changed to an inline element and vice versa</li>
+        </ul>
+      </section>
+
+      <!-- Display property code example -->
+      <section>
+        <h3>The CSS "Display" Property</h3>
+<pre><code class="css">/* This paragraph element will now be an inline element */
+p {
+  display: inline;
+}
+
+/* This span element will now be a block element */
+span {
+  display: block;
+}
+</code></pre>
+      </section>
+
+      <!-- Block and Inline Elements Demo -->
+      <section>
+        <h3>Block and Inline Elements</h3>
+        <h4>Demo</h4>
+      </section>
+
+      <!-- Layout Pitfalls  -->
+      <section>
+        <h3>Layout Pitfalls</h3>
+        <p>A few default properties of CSS can lead to unexpected layout behavior. There are two common culprits:</p>
+        <ol>
+          <li>the CSS property <code>box-sizing</code></li>
+          <li>Browser defaults</li>
+        </ol>
+      </section>
+      
+      <!-- Box Sizing -->
+      <section>
+        <h3>Box-Sizing</h3>
+        <p style='font-size: 32px'>The CSS <code>box-sizing</code> property determines how we calculate the total width and height of an element. It has two values:</p>
+<pre><code class="css">/* content-box is the default box-sizing 
+   value of all elements */
+box-sizing: content-box;
+
+/* border-box will be your layout's best friend! */
+box-sizing: border-box;
+</code></pre>
+      </section>
+      
+      <!-- Layout Tip #1 -->
+      <section>
+        <h3>Layout Tip #1</h3>
+        <p style='font-size: 32px'>Set the <code>box-sizing</code> property of all elements in your project to <code>border-box</code>.</p>
+<pre><code class="css">/* This declaration will target every element in the project */
+
+* {
+  box-sizing: border-box;
+}
+</code></pre>
+      </section>
+
+      <!-- Box Sizing Demo  -->
+      <section>
+        <h3>Box Sizing</h3>
+        <h4>Demo</h4>
+      </section>
+      
+      <!-- Layout Tip #2: CSS Resets -->
+      <section>
+        <h3>Layout Tip #2</h3>
+        <p style='font-size: 36px'>Use CSS resets.</p>
+      </section>
+
+      <!-- Browser Defaults -->
+      <section>
+        <h3>Browser Defaults</h3>
+        <ul>
+          <li style="margin-bottom: 1rem;">Most HTML elements have one or more default browser values, that is, they have some basic CSS that influences their appearance on a page</li>
+          <li>Some of these defaults can throw off our page layout; others may not be needed</li>
+        </ul>
+      </section>
+      
+      <!-- CSS Reset  -->
+      <section>
+        <h3>Resetting CSS</h3>
+        <ul>
+          <li style="margin-bottom: 1rem;">A "CSS Reset" stylesheet is one way to remove some of these defaults globally in our project</li>
+          <li>In this stylesheet, we are writing new CSS values to overwrite the browser defaults</li>
+        </ul>
+      </section>
+      
+      <!-- Popular CSS Resets -->
+      <section>
+        <h3>CSS Resets</h3>
+        <p style='font-size: 32px'>You can create your own reset rules or use any number of well-known reset stylesheets such as:</p>
+        <ul>
+          <li><a href="https://piccalil.li/blog/a-modern-css-reset/" target="_blank">Andy Bell's CSS Reset</a></li>
+          <li><a href="https://meyerweb.com/eric/tools/css/reset/" target="_blank">MeyerWeb CSS</a></li>
+          <li><a href="https://necolas.github.io/normalize.css/" target="_blank">Normalize.css</a></li>
+        </ul>
+      </section>
+      
+      <!-- Two ways to reset -->
+      <section>
+        <h3>Two Ways to Reset</h3>
+        <ol>
+          <li style="margin-bottom: 1rem;">Add a separate reset.css stylesheet to your project with the <code>link</code> tag in the <code>head</code> section of your HTML page
+          <ul>
+            <li>Make sure the link comes before the project's stylesheet link</li>
+          </ul></li>
+          <li>Include/Import the new CSS rules at the top of your project's stylesheet</li>
+        </ol>
+      </section>
+
+      <!-- CSS Reset demo  -->
+      <section>
+        <h3>CSS Reset</h3>
+        <h4>Demo</h4>
+      </section>
+
         <!-- PRACTICE-->
         <section>
           <h3>Let's Develop It!</h3>
