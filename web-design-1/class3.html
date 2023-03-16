@@ -584,6 +584,32 @@ box-sizing: content-box;
 box-sizing: border-box;
 </code></pre>
       </section>
+
+      <!-- Universal selector -->
+      <section>
+        <h3>Two Additional Selectors</h3>
+        <ul>
+          <li>The <code>universal</code> selector selects all elements</li>
+          <li>It is best used for setting global or base properties such as box-sizing</li>
+<pre><code class="css">* {
+  box-sizing: border-box;
+}
+</code></pre>
+        </ul>
+      </section>
+      
+      <!-- Grouping selector -->
+      <section>
+        <h3>Two Additional Selectors</h3>
+        <ul>
+          <li>The <code>selector list</code> groups selectors and applies the same style(s) to them</li>
+<pre><code class="css">p, h2, h4 {
+  color: purple;
+}
+/* All p, h2, and h4 elements will be purple. */
+</code></pre>
+        </ul>
+      </section>
       
       <!-- Layout Tip #1 -->
       <section>
