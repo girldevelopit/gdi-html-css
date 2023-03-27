@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <meta
+      name="description"
+      content="Girl Develop It framework for easily creating beautiful presentations using HTML in GDI theme. Based on Hakim El Hattab's reveal.js" />
+    <meta name="author" content="Girl Develop It" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta
+      name="apple-mobile-web-app-status-bar-style"
+      content="black-translucent" />
+
+    <!-- Update with GDI Course Name -->
+    <title>CSS Grid Basics - Introductions</title>
+
+    <link rel="icon" type="image/x-icon" href="/assets/imgs/favicon.ico" />
+
+    <!-- RevealJS CDN -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/reveal.js@4.1.0/dist/reset.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/reveal.js@4.1.0/dist/reveal.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/reveal.js@4.1.0/dist/theme/simple.css"
+      id="theme" />
+
+    <!-- GDI Custom Theme -->
+    <link rel="stylesheet" href="/assets/css/gdi-theme.css" />
+
+    <!-- Course Custom Styles if Applicable-->
+    <link rel="stylesheet" href="style.css" />
+
+    <!-- Theme used for syntax highlighted code -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.1.0/styles/monokai.min.css" />
+  </head>
+  <body>
+    <div class="reveal">
+      <!-- Start of Slides container -->
+
+      <!-- Any section element in this container is displayed as a single slide -->
+
+      <!-- Comment out rather than delete slide instructions -->
+
+      <div class="slides">
+        <!-- Opening Slide -->
+        <section>
+          <img
+            src="/assets/imgs/gdi-logos/gdi-circle-logo_peach.png"
+            alt="GDI Logo"
+            width="400px"
+            class="noborder" />
+          <br />
+          <h2 style="font-weight: bolder">Welcome to Girl Develop It</h2>
+        </section>
+
+        <!-- Course Title -->
+        <section>
+          <h1>CSS Grid Basics</h1>
+          <!-- <h2>Course Title</h2> -->
+        </section>
+
+        <!-- Instructor Intro -->
+        <section>
+          <h3>Tinuola Awopetu</h3>
+          <h4>Frontend Developer</h4>
+        </section>
+
+        <!-- OPTIONAL: TA Intro -->
+        <section>
+          <h3>Anne Katzeff</h3>
+          <h4>Web Designer, Artist, Entrepreneur</h4>
+        </section>
+
+        <!-- Student Intros; IceBreakers, etc. -->
+        <section>
+          <h2>Favorite Pet Breed?</h2>
+          <img src="./images/kevin-turcios-unsplash.jpg" width="500px" alt="" />
+        </section>
+
+        <!-- HouseKeeping -->
+        <section>
+          <h2>Before we start...</h2>
+          <ul>
+            <li>Display your preferred name and/or pronoun</li>
+            <li>Don't be camera-shy 🙂</li>
+            <li>Participate and experiment (This is CSS!)</li>
+            <li>Every question is important</li>
+            <li>Have fun!</li>
+          </ul>
+        </section>
+
+        <!-- Course Agenda / Topics / Course Outline -->
+        <section data-background="./images/daniel-mccullough-unsplash.jpg">
+          <div class="data-bground-contrast">
+            <h2>Course Outline</h2>
+            <ul>
+              <li>Introduction to CSS Grid</li>
+              <li>Learn and work with CSS Grid Syntax</li>
+              <li>Understand when to Flex and when to Grid</li>
+              <li>Explore Common Layout Solutions with CSS Grid</li>
+              <!-- <li>Work with Dev Tools</li> -->
+              <li>Practice, Practice, Practice!</li>
+              <li>Build a final project</li>
+            </ul>
+          </div>
+        </section>
+
+        <!-- Course Goals -->
+        <section data-background="./images/daniel-mccullough-unsplash.jpg">
+          <div class="data-bground-contrast">
+            <h2>Course Goals</h2>
+            <ul>
+              <li>Get comfortable exploring and using CSS Grid</li>
+              <li>Gain a new powerful tool to build unique layouts</li>
+              <li>
+                Learn to develop more creative or easier approaches to solve
+                layout challenges
+              </li>
+            </ul>
+          </div>
+        </section>
+
+        <!-- Self Assessment Poll -->
+        <section data-background="./images/william-warby-unsplash.jpg">
+          <h2 class="data-bground-contrast">Self Assessment</h2>
+        </section>
+      </div>
+      <!-- End of Slides container -->
+
+      <!-- Update Footer with Course Name -->
+      <footer>
+        <div class="copyright">
+          <img
+            src="/assets/imgs/gdi-logos/gdi-logo_peach.png"
+            alt="GDI Logo"
+            width="40px"
+            class="noborder" />
+          <p>CSS Grid Basics</p>
+          <a
+            rel="license"
+            href="http://creativecommons.org/licenses/by-nc/3.0/deed.en_US"
+            ><img
+              alt="Creative Commons License"
+              style="border-width: 0"
+              src="http://i.creativecommons.org/l/by-nc/3.0/80x15.png"
+          /></a>
+        </div>
+      </footer>
+    </div>
+    <!-- End of Reveal wrapper -->
+
+    <!-- REVEAL.JS Script Files - Do Not Edit -->
+    <script src="https://cdn.jsdelivr.net/npm/reveal.js@4.1.0/dist/reveal.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/reveal.js@4.1.0/plugin/highlight/highlight.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/highlightjs-badge@0.1.9/highlightjs-badge.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jsPlumb/2.15.5/js/jsplumb.min.js"></script>
+    <script>
+      const srcUrlPrefix = 'https://cdn.jsdelivr.net/npm/reveal.js@4.1.0/';
+      Reveal.initialize({
+        hash: true,
+        center: true,
+        slideNumber: true,
+        showNotes: false,
+        margin: 0.1,
+        preloadIframes: true,
+        plugins: [RevealHighlight],
+        pdfSeparateFragments: true,
+      });
+
+      // add HighlightJS-badge (options are optional)
+      var options = {
+        copyIconContent: '📄',
+        checkIconContent: '✅',
+      };
+      window.highlightJsBadge(options);
+
+      if (window.location.search == '?print-pdf') {
+        var uncounted = document.querySelectorAll(
+          "[data-visibility='uncounted']"
+        );
+        uncounted.forEach((node) => {
+          node.parentNode.classList.add('no-print');
+        });
+      }
+    </script>
+  </body>
+</html>
