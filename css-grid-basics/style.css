@@ -1,0 +1,22 @@
+/* Add Custom CSS Here */
+
+.data-bground-contrast {
+  background-color: white;
+  font-weight: 600 !important;
+  opacity: 0.95;
+  padding: 3.5rem 0;
+}
+
+.width-800 {
+  max-width: 800px;
+  margin: 0 auto !important;
+}
+
+.width-900 {
+  max-width: 900px;
+  margin: 0 auto !important;
+}
+
+.bold-600 {
+  font-weight: 600;
+}
