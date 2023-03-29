@@ -1,0 +1,836 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <meta
+      name="description"
+      content="Girl Develop It framework for easily creating beautiful presentations using HTML in GDI theme. Based on Hakim El Hattab's reveal.js" />
+    <meta
+      name="author"
+      content="Girl Develop It" />
+    <meta
+      name="apple-mobile-web-app-capable"
+      content="yes" />
+    <meta
+      name="apple-mobile-web-app-status-bar-style"
+      content="black-translucent" />
+    <!-- Update with GDI Course Name -->
+    <title>CSS Grid Basics - Class 2</title>
+    <link
+      rel="icon"
+      type="image/x-icon"
+      href="../assets/imgs/favicon.ico" />
+    <!-- RevealJS CDN -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/reveal.js@4.1.0/dist/reset.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/reveal.js@4.1.0/dist/reveal.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/reveal.js@4.1.0/dist/theme/simple.css"
+      id="theme" />
+    <!-- GDI Custom Theme -->
+    <link
+      rel="stylesheet"
+      href="../assets/css/gdi-theme.css" />
+    <!-- Course Custom Styles if Applicable-->
+    <link
+      rel="stylesheet"
+      href="style.css" />
+    <!-- Theme used for syntax highlighted code -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.1.0/styles/monokai.min.css" />
+  </head>
+
+  <body>
+    <div class="reveal">
+      <!-- Start of Slides container -->
+      <!-- A section element is displayed as a single slide -->
+      <!-- Do Not Delete slide instructions -->
+      <!---->
+      <!---->
+      <div class="slides">
+        <!-- Course Title -->
+        <section>
+          <h2>CSS Grid Basics</h2>
+          <h2>Class 2</h2>
+        </section>
+
+        <!-- Course Agenda / Topics / Course Outline -->
+        <section>
+          <h2>Class Agenda</h2>
+          <ul>
+            <li>Overlapping Elements</li>
+            <li>Name-based Placement</li>
+            <li>CSS Grid and Media Queries</li>
+            <li>Explicit and Implicit Grid</li>
+            <li>Sizing with Functions & Keywords</li>
+            <li>Demos and Practice</li>
+          </ul>
+        </section>
+
+        <!-- Break -->
+        <section>
+          <h2>Break</h2>
+          <p>7p EST / 6p CST / 4p PST</p>
+        </section>
+
+        <!-- Course Slides -->
+        <!-- Create as many new sections (slides) as needed -->
+        <!---->
+        <!---->
+
+        <!-- Quiz / Class 1 Review  -->
+        <section>
+          <h3>Class 1 Review</h3>
+          <h4>Complete the Zoom poll/quiz</h4>
+        </section>
+
+        <!-- Overlapping Grid Items -->
+        <section>
+          <h3>Overlapping Grid Items</h3>
+          <p>
+            Grid items can be positioned to occupy the same cell or track spaces--creating
+            an overlapping or stacking effect
+          </p>
+        </section>
+
+        <!-- Demo: Original State -->
+        <section>
+          <h3>Original State</h3>
+          <pre>
+  <code class="css">
+.item1 {
+  grid-column: 2 / 5;
+  grid-row: 2 / 4;
+}
+
+.item7 {
+  grid-column: 1;
+  grid-row: 1 / span 4;
+}
+  </code>
+</pre>
+          <img
+            src="./images/grid-overlap-initial.png"
+            alt=""
+            width="600px" />
+        </section>
+
+        <!-- Demo: Overlapped State -->
+        <section>
+          <h3>Overlapped State</h3>
+          <pre>
+  <code class="css">
+.item1 {
+  grid-column: 2 / 5;
+  grid-row: 2 / 4;
+}
+
+.item7 {
+  grid-column: 2; /* Shares same column line start as item1 */
+  grid-row: 3 / span 4;
+}
+  </code>
+</pre>
+          <img
+            src="./images/grid-overlap-end.png"
+            alt=""
+            width="600px" />
+        </section>
+
+        <!-- z-index -->
+        <section>
+          <h3>Controlling Overlaps with Z-Index</h3>
+          <p>Use the <code>z-index</code> property to control the stacking order</p>
+          <small
+            ><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/z-index"
+              >z-index</a
+            >
+            (MDN Docs)</small
+          >
+        </section>
+
+        <!-- Demo: z-Index -->
+        <section>
+          <h3>Overlapped State with <code>z-index</code></h3>
+          <pre>
+  <code class="css">
+.item1 {
+  grid-column: 2 / 5;
+  grid-row: 2 / 4;
+  z-index: 1;
+}
+
+.item7 {
+  grid-column: 2; /* Shares same column line start as item1 */
+  grid-row: 3 / span 4;
+}
+  </code>
+</pre>
+          <img
+            src="./images/grid-overlap-end-zIndex.png"
+            alt=""
+            width="600px" />
+        </section>
+
+        <!-- Hands-on Work -->
+        <section>
+          <h2>Let's Develop It!</h2>
+          <p>
+            <a
+              href="https://codepen.io/tinuola/full/BaOvbRe"
+              target="_blank"
+              >Codepen Sandbox
+            </a>
+          </p>
+          <p>
+            Clone or Fork:<br />
+            <code>Overlapping Exercise</code>
+          </p>
+        </section>
+
+        <!-- Finished Result -->
+        <section>
+          <h3>Finished Result</h3>
+          <img
+            src="./images/grid-overlap-exercise-result.png"
+            alt="" />
+        </section>
+
+        <!-- Grid Area -->
+        <section>
+          <h3>Grid Area</h3>
+          <p>
+            An alternative (and visual) way to size and place elements on a grid is to use
+            grid areas
+          </p>
+        </section>
+
+        <!-- Definition: Grid Area -->
+        <section>
+          <h3>Grid Area</h3>
+          <p class="width-800">
+            A <code>grid area</code> is the total space surrounded by four grid lines. It
+            can contain any number of grid cells
+          </p>
+          <img
+            src="./images/grid-track-cell-area.png"
+            alt=""
+            width="400px" />
+        </section>
+
+        <!-- Name-based Sizing & Placement -->
+        <section>
+          <h3>Name-Based Sizing & Placement</h3>
+          <p>
+            Areas of the grid can be given specific names that can then be applied to grid
+            items
+          </p>
+          <small></small>
+        </section>
+
+        <!-- grid-template-areas Syntax -->
+        <section>
+          <h3><code>grid-template-areas</code></h3>
+          <ul style="font-size: 28px">
+            <li>
+              The <code>grid-template-areas</code> property is declared on the grid
+              container and accepts one or more string values (enclosed in quotes)
+            </li>
+            <li>Each string sequence represents a row</li>
+            <li>Each word represents a column cell</li>
+          </ul>
+          <pre>
+  <code class="css">
+.container {
+  display: grid;
+
+  grid-template-areas: 
+    'logo menu menu  menu'
+    'hero hero hero hero'
+    'sidebar content content content'
+    'gallery gallery gallery gallery '
+    'footer footer footer footer';
+}
+  </code>
+</pre>
+        </section>
+
+        <!-- grid-area Syntax -->
+        <section>
+          <h3><code>grid-area</code></h3>
+          <p style="font-size: 28px">
+            Grid items are then placed or positioned into the layout using the
+            <code>grid-area</code> property and referencing the named areas
+          </p>
+
+          <pre>
+  <code class="css">
+.item1 {
+  grid-area: logo;
+}
+
+.item3 {
+  grid-area: hero
+}
+...
+  </code>
+</pre>
+        </section>
+
+        <!-- Visual -->
+        <section>
+          <div class="flex-container">
+            <div class="flex-item">
+              <pre>
+  <code class="css">
+.container {
+  display: grid;
+
+  grid-template-areas: 
+    'logo menu menu  menu'
+    'hero hero hero hero'
+    'sidebar content content content'
+    'gallery gallery gallery gallery '
+    'footer footer footer footer';
+}
+  </code>
+</pre>
+            </div>
+            <div class="flex-item">
+              <pre>
+  <code class="css">
+.item1 {
+  grid-area: logo;
+}
+
+.item3 {
+  grid-area: hero
+}
+...
+  </code>
+</pre>
+            </div>
+          </div>
+          <img
+            src="./images/grid-named-areas.png"
+            width="600px"
+            alt="" />
+        </section>
+
+        <!-- Creating empty space -->
+        <section>
+          <h3>Creating Empty Space</h3>
+          <p
+            class="width-800"
+            style="font-size: 28px">
+            To leave a cell blank or create empty space, insert a period (<code>.</code>)
+            into the desired area in the grid
+          </p>
+          <pre>
+  <code class="css">
+.container {
+  display: grid;
+
+  grid-template-areas: 
+    'logo . menu  menu'
+    'hero hero hero hero'
+    'sidebar content content content'
+    'gallery gallery gallery gallery '
+    'footer footer footer footer';
+}
+  </code>
+</pre>
+        </section>
+
+        <!-- Visual -->
+        <section>
+          <img
+            src="./images/grid-named-areas-blank.png"
+            alt="" />
+        </section>
+
+        <!-- Specific column and row sizing -->
+        <section>
+          <h3>Track Sizing and Named Areas</h3>
+          <p>
+            More specific sizing can still be declared or combined with
+            <code>grid-template-areas</code>
+          </p>
+          <pre>
+  <code class="css">
+.container {
+  display: grid;
+  grid-template-columns: 100px 1fr 1fr auto;
+  grid-template-rows: auto 250px 50vh 150px auto;
+
+  grid-template-areas: 
+    'logo menu menu  menu'
+    'hero hero hero hero'
+    'sidebar content content content'
+    'gallery gallery gallery gallery '
+    'footer footer footer footer';
+}
+  </code>
+</pre>
+        </section>
+
+        <section>
+          <h3><code>grid-area</code> and Line Numbers</h3>
+          <p>
+            The <code>grid-area</code> property can also be used with grid line numbers
+          </p>
+          <pre>
+  <code class="css">
+.item1 {
+  grid-area: 1 / 3 / 2 / 4
+}
+/* The values correspond to:
+grid-row-start
+grid-column-start
+grid-row-end
+grid-column-end
+*/
+  </code>
+</pre>
+        </section>
+
+        <section>
+          <h3>Overlapping and Named Areas</h3>
+          <p
+            class="width-800"
+            style="font-size: 28px">
+            With named areas, only one name can be assigned to a cell; to create an
+            overlap effect, use line numbers with either <code>grid-area</code>,
+            <code>grid-column</code> or <code>grid-row</code>
+          </p>
+        </section>
+
+        <!-- Hands-on Work -->
+        <section>
+          <h2>Let's Develop It!</h2>
+          <p>
+            <a
+              href="https://codepen.io/tinuola/full/BaOvbRe"
+              target="_blank"
+              >Codepen Sandbox
+            </a>
+          </p>
+          <p>
+            Clone or Fork:<br />
+            <code>Named Areas Exercise</code>
+          </p>
+        </section>
+
+        <!-- Finished Result -->
+        <section>
+          <h3>Finished Result</h3>
+          <img
+            src="./images/frontend-mentor-testimonials-grid-results.png"
+            alt="" />
+        </section>
+
+        <!-- Responsive Grid with Media Queries -->
+        <section>
+          <h3>CSS Grid and Media Queries</h3>
+          <p>
+            Media queries can be used with CSS Grid to alter page layout as screen sizes
+            change
+          </p>
+          <pre>
+  <code class="css">
+  /* Go from 4 cols to 2 col */
+  /* Change the placement of items */
+
+  @media (max-width: 900px) {
+    .container {    
+      grid-template-areas:
+        'logo menu'
+        'hero content'
+        'sidebar gallery'
+        'footer footer';
+    }
+  }
+  </code>
+</pre>
+        </section>
+
+        <!-- Hands-on Work -->
+        <section>
+          <h2>Let's Develop It!</h2>
+          <p class="width-800">
+            Let's make the <code>Named Areas</code> layout exercise responsive!
+          </p>
+          <p>
+            <a
+              href="https://codepen.io/tinuola/full/BaOvbRe"
+              target="_blank"
+              >Codepen Sandbox
+            </a>
+          </p>
+        </section>
+
+        <section>
+          <h3>Exercise Instructions</h3>
+          <ul style="font-size: 28px">
+            <li>
+              Create media queries to change the layout to 2 columns at tablet size and 1
+              column at mobile size
+            </li>
+            <li>
+              At tablet size, <code>Daniel</code> and <code>Jonathan</code> should share a
+              row; <code>Jeanette</code> and <code>Patrick</code> should share a row
+            </li>
+            <li>
+              At mobile size, they each have their own row; and the row height is only as
+              high as the content
+            </li>
+          </ul>
+        </section>
+
+        <!-- Finished Result: Tablet -->
+        <section>
+          <h3>Finished Result: Tablet</h3>
+          <img
+            src="./images/responsive-exe-tablet-result.png"
+            alt="" />
+        </section>
+
+        <!-- Finished Result: Mobile -->
+        <section>
+          <h3>Finished Result: Mobile</h3>
+          <img
+            src="./images/responsive-exe-mobile-result.png"
+            alt="" />
+        </section>
+
+        <!-- Explicit Grid -->
+        <section>
+          <h3>Explicit Grid</h3>
+          <p
+            class="width-800"
+            style="font-size: 28px">
+            When a grid is created with a specfic number of columns and/or rows, it is
+            called an <code>explicit grid</code> and has explicit columns and rows
+          </p>
+          <pre>
+  <code class="css">
+.container {    
+  display: grid;
+  grid-template-columns: 1fr 2fr auto;
+  grid-template-rows: 2fr 1fr 2fr;
+}
+  </code>
+</pre>
+        </section>
+
+        <!-- Implicit Grid -->
+        <section>
+          <h3>Implicit Grid</h3>
+          <p
+            class="width-800"
+            style="font-size: 28px">
+            When a grid has more grid items than cells, it will automatically add new
+            tracks to accommodate the extra items, and create what's known as an
+            <code>implicit grid</code> that has implicit tracks
+          </p>
+        </section>
+
+        <!-- Auto Placement -->
+        <section>
+          <h3>Auto Placement</h3>
+          <p
+            class="width-900"
+            style="font-size: 28px">
+            The implicit grid is controlled by CSS Grid's
+            <code>auto placement </code>algorithm which by default creates extra row
+            tracks when there are more items than cells explicitly defined
+          </p>
+        </section>
+
+        <!-- grid-auto-flow -->
+        <section>
+          <h3><code>grid-auto-flow</code></h3>
+          <p
+            class="width-800"
+            style="font-size: 28px">
+            CSS Grid's ability to create extra tracks is defined by the
+            <code>grid-auto-flow</code> property
+          </p>
+          <br />
+          <p
+            class="width-800"
+            style="font-size: 28px">
+            When we have more grid items than cells, by using
+            <code>grid-auto-flow</code> we can tell the browser to create extra tracks as
+            either rows (the default) or columns
+          </p>
+        </section>
+
+        <!-- grid-auto-flow -->
+        <section>
+          <h3><code>grid-auto-flow</code></h3>
+          <p style="font-size: 28px">
+            By default, <code>grid-auto-flow</code> is set to <code>row</code>, but can be
+            set to <code>column</code>
+          </p>
+          <pre>
+  <code class="css">
+.container {    
+  display: grid;
+
+  /* Explicitly create a 2x2 grid */
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 100px 100px;
+
+  grid-auto-flow: column;
+  /* Make extra columns if there are more
+  items than can fit the explicit grid  */
+  
+  /* grid-auto-flow: row; is the default setting */
+}
+  </code>
+</pre>
+        </section>
+
+        <!-- Sizing Implicit Tracks -->
+        <section>
+          <h3>Sizing Implicit Tracks</h3>
+          <p
+            class="width-800"
+            style="font-size: 28px">
+            We can define the sizing of implicit columns and rows by using
+            <code>grid-auto-columns</code> and <code>grid-auto-rows</code>
+          </p>
+        </section>
+
+        <!-- grid-auto columns -->
+        <!-- grid-auto-rows -->
+        <section>
+          <h3><code>grid-auto-columns</code></h3>
+          <h3><code>grid-auto-rows</code></h3>
+          <pre>
+  <code class="css">
+.container {    
+  display: grid;
+
+  /* Explicitly create a 2x2 grid */
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 100px 100px;
+
+  grid-auto-flow: column;
+  grid-auto-columns: 100px;
+  /* Make every implicit/extra column 100px */
+  
+  /*
+  grid-auto-rows: 200px;
+  Sets height for implicit rows
+  */
+}
+  </code>
+</pre>
+        </section>
+
+        <!-- grid-auto-flow: dense -->
+        <section>
+          <h3><code>grid-auto-flow: dense</code></h3>
+          <p
+            class="width-800"
+            style="font-size: 28px">
+            CSS Grid has the ability to fill up blank spaces that are left after explicit
+            placement
+          </p>
+          <pre>
+  <code class="css">
+.container {    
+  display: grid;
+  grid-template-columns: repeat(4, 1fr 2fr);
+  grid-template-rows: repeat(10, 50px);
+  gap: 0.5rem;
+
+  grid-auto-flow: dense;
+}
+  </code>
+</pre>
+        </section>
+
+        <!-- Before applying dense -->
+        <section>
+          <h3>Before <code>dense</code></h3>
+          <img
+            src="./images/grid-auto-flow-dense-before.png"
+            alt="" />
+        </section>
+
+        <!-- After applying dense -->
+        <section>
+          <h3>After <code>dense</code></h3>
+          <img
+            src="./images/grid-auto-flow-dense-after.png"
+            alt="" />
+        </section>
+
+        <!-- Hands-on Work -->
+        <section>
+          <h2>Let's Develop It!</h2>
+          <p>
+            <a
+              href="https://codepen.io/tinuola/full/BaOvbRe"
+              target="_blank"
+              >Codepen Sandbox
+            </a>
+          </p>
+          <p style="font-size: 28px; margin-bottom: 2rem">
+            Clone or Fork:<br />
+            <code>Implicit Sizing: Student's Choice!</code>
+          </p>
+          <p style="font-size: 28px">
+            Come up with your own grid and practice implicit sizing with
+            <code>grid-auto-flow</code> and the values/properties you've just learned
+          </p>
+        </section>
+
+        <!-- Resources -->
+        <!-- <section>
+          <h3>Resources</h3>
+          <div class="width-900">
+            <small>
+              <a
+                href="https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Grid_Layout"
+                target="_blank"
+                rel="noopener noreferrer"
+                >CSS Grid Layout (MDN Docs)</a
+              ></small
+            >
+            <small>
+              <a
+                href="https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Grid_Layout/Basic_Concepts_of_Grid_Layout"
+                target="_blank"
+                rel="noopener noreferrer"
+                >Basic Concepts of Grid Layout (MDN Docs)</a
+              ></small
+            >
+            <small>
+              <a
+                href="https://css-tricks.com/snippets/css/complete-guide-grid/"
+                target="_blank"
+                rel="noopener noreferrer"
+                >A Complete Guide to CSS Grid (CSS Tricks)</a
+              >
+            </small>
+          </div>
+        </section> -->
+
+        <!-- OPTIONAL: Next Class and Topics -->
+        <section>
+          <h3>Class 3</h3>
+          <ul>
+            <li>Sizing with <code>minmax()</code></li>
+            <li>Sizing with <code>auto-fit</code> and <code>auto-fill</code></li>
+            <li>Combining CSS Grid and Flexbox</li>
+            <li>Common Layout Solutions with Grid</li>
+            <li>Demos and Practice</li>
+          </ul>
+        </section>
+
+        <!-- OPTIONAL: Showcase Student Work -->
+        <!-- <section>
+          <h2>Share What You've Built!</h2>
+        </section> -->
+
+        <!-- MUST-USE SLIDE -->
+        <!-- Add Course Survey Link -->
+        <section>
+          <h2>Give Us Your Feedback</h2>
+          <h3>
+            <a
+              href="https://forms.gle/Y1nbJ79JqJThYM9z6"
+              target="_blank"
+              >Survey Link</a
+            >
+          </h3>
+        </section>
+
+        <!-- Q&A -->
+        <section>
+          <h2>Q&A</h2>
+        </section>
+
+        <!-- Thank You -->
+        <section>
+          <img
+            src="../assets/imgs/gdi-logos/gdi-logo_peach.png"
+            alt="GDI Logo"
+            width="300px"
+            class="noborder" />
+          <br />
+          <h2>Thank You!</h2>
+        </section>
+      </div>
+      <!-- End of Slides container -->
+      <!---->
+      <!---->
+      <!-- Update Footer with Course Name -->
+      <footer>
+        <div class="copyright">
+          <img
+            src="../assets/imgs/gdi-logos/gdi-logo_peach.png"
+            alt="GDI Logo"
+            width="40px"
+            class="noborder" />
+          <p>CSS Grid Basics</p>
+          <a
+            rel="license"
+            href="http://creativecommons.org/licenses/by-nc/3.0/deed.en_US"
+            ><img
+              alt="Creative Commons License"
+              style="border-width: 0"
+              src="http://i.creativecommons.org/l/by-nc/3.0/80x15.png"
+          /></a>
+        </div>
+      </footer>
+    </div>
+    <!-- End of Reveal wrapper -->
+    <!---->
+    <!---->
+    <!-- REVEAL.JS Script Files - Do Not Edit -->
+    <script src="https://cdn.jsdelivr.net/npm/reveal.js@4.1.0/dist/reveal.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/reveal.js@4.1.0/plugin/highlight/highlight.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/highlightjs-badge@0.1.9/highlightjs-badge.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jsPlumb/2.15.5/js/jsplumb.min.js"></script>
+    <script>
+      const srcUrlPrefix = 'https://cdn.jsdelivr.net/npm/reveal.js@4.1.0/';
+      Reveal.initialize({
+        hash: true,
+        center: true,
+        slideNumber: true,
+        showNotes: false,
+        margin: 0.1,
+        preloadIframes: true,
+        plugins: [RevealHighlight],
+        pdfSeparateFragments: true,
+      });
+
+      // add HighlightJS-badge (options are optional)
+      var options = {
+        copyIconContent: '📄',
+        checkIconContent: '✅',
+      };
+      window.highlightJsBadge(options);
+
+      if (window.location.search == '?print-pdf') {
+        var uncounted = document.querySelectorAll("[data-visibility='uncounted']");
+        uncounted.forEach((node) => {
+          node.parentNode.classList.add('no-print');
+        });
+      }
+    </script>
+  </body>
+</html>
