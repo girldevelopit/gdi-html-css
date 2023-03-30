@@ -70,7 +70,7 @@
             <li>Name-based Placement</li>
             <li>CSS Grid and Media Queries</li>
             <li>Explicit and Implicit Grid</li>
-            <li>Auto Placement & Sizing Implicit Tracks</li>
+            <li>Sizing Implicit Tracks</li>
             <li>Demos and Practice</li>
           </ul>
         </section>
@@ -325,7 +325,7 @@
             alt="" />
         </section>
 
-        <!-- Creating empty space -->
+        <!-- Creating empty space in named areas -->
         <section>
           <h3>Creating Empty Space</h3>
           <p
@@ -350,8 +350,22 @@
 </pre>
         </section>
 
-        <!-- Visual -->
+        <!-- Code & Visual: Creating empty space in named areas -->
         <section>
+          <pre>
+  <code class="css">
+.container {
+  display: grid;
+
+  grid-template-areas: 
+    'logo . menu  menu'
+    'hero hero hero hero'
+    'sidebar content content content'
+    'gallery gallery gallery gallery '
+    'footer footer footer footer';
+}
+  </code>
+</pre>
           <img
             src="./images/grid-named-areas-blank.png"
             alt="" />
@@ -360,7 +374,7 @@
         <!-- Specific column and row sizing -->
         <section>
           <h3>Track Sizing and Named Areas</h3>
-          <p>
+          <p class="fs-28 width-800">
             More specific sizing can still be declared or combined with
             <code>grid-template-areas</code>
           </p>
@@ -368,6 +382,10 @@
   <code class="css">
 .container {
   display: grid;
+  /* Setting height for visual/illustrative effect */
+  height: 100vh;
+
+  /* Adding specific track dimensions */
   grid-template-columns: 100px 1fr 1fr auto;
   grid-template-rows: auto 250px 50vh 150px auto;
 
@@ -382,6 +400,16 @@
 </pre>
         </section>
 
+        <!-- Visual: grid-area and track sizing -->
+        <section>
+          <h3>Track Sizing and Named Areas</h3>
+          <img
+            src="./images/grid-area-and-track-sizing.png"
+            width="500px"
+            alt="" />
+        </section>
+
+        <!-- grid-area and Line Numbers -->
         <section>
           <h3><code>grid-area</code> and Line Numbers</h3>
           <p>
@@ -392,6 +420,7 @@
 .item1 {
   grid-area: 1 / 3 / 2 / 4
 }
+
 /* The values correspond to:
 grid-row-start
 grid-column-start
@@ -402,15 +431,45 @@ grid-column-end
 </pre>
         </section>
 
+        <!-- Overlapping Named Areas-->
         <section>
           <h3>Overlapping and Named Areas</h3>
           <p
+            class="width-900 mb-16"
+            style="font-size: 28px">
+            With named areas, only one name can be assigned to a cell
+          </p>
+
+          <p
             class="width-800"
             style="font-size: 28px">
-            With named areas, only one name can be assigned to a cell; to create an
-            overlap effect, use line numbers with either <code>grid-area</code>,
-            <code>grid-column</code> or <code>grid-row</code>
+            To create an overlap effect, use line numbers with either
+            <code>grid-area</code>, <code>grid-column</code> or <code>grid-row</code>
           </p>
+        </section>
+
+        <!-- Code and Visual: Overlaping Named Area -->
+        <section>
+          <pre>
+  <code class="css">
+.item2 {
+  background: whitesmoke;
+  /* grid-area: menu; */
+
+  /* To create overlap */
+  grid-row: 2;
+  grid-column: 3 / 5;
+  z-index: 1;
+
+  /* Or can be written as: */
+  /* grid-area: 2 / 3 / 3 / 5; */
+}
+  </code>
+</pre>
+          <img
+            src="./images/grid-area-overlapping.png"
+            width="500px"
+            alt="" />
         </section>
 
         <!-- Hands-on Work -->
@@ -440,15 +499,14 @@ grid-column-end
         <!-- Responsive Grid with Media Queries -->
         <section>
           <h3>CSS Grid and Media Queries</h3>
-          <p>
+          <p class="fs-28 width-800">
             Media queries can be used with CSS Grid to alter page layout as screen sizes
             change
           </p>
           <pre>
   <code class="css">
-  /* Go from 4 cols to 2 col */
+  /* At tablet, resize to 2 columns */
   /* Change the placement of items */
-
   @media (max-width: 900px) {
     .container {    
       grid-template-areas:
@@ -458,8 +516,35 @@ grid-column-end
         'footer footer';
     }
   }
+
+  /* At mobile, resize to 1 column */
+  @media (max-width: 600px) {
+  .container {
+    grid-template-areas:
+      'logo'
+      'menu'
+      'hero'
+      'content'
+      'sidebar'
+      'gallery'
+      'footer';
+  }
+}
   </code>
 </pre>
+        </section>
+
+        <!-- Responsive Grid with Media Queries -->
+        <section>
+          <h4>CSS Grid and Media Queries</h4>
+          <img
+            src="./images/responsive-tablet.png"
+            width="600px"
+            alt="" /><br />
+          <img
+            src="./images/responsive-mobile.png"
+            height="300px"
+            alt="" />
         </section>
 
         <!-- Hands-on Work -->
@@ -477,6 +562,7 @@ grid-column-end
           </p>
         </section>
 
+        <!-- Exercise Instructions -->
         <section>
           <h3>Exercise Instructions</h3>
           <ul style="font-size: 28px">
@@ -520,15 +606,35 @@ grid-column-end
             When a grid is created with a specfic number of columns and/or rows, it is
             called an <code>explicit grid</code> and has explicit columns and rows
           </p>
+
+          <pre>
+  <code class="html">
+    <div class="container">
+      <div class="item item1">1</div>
+      <div class="item item2">2</div>
+      <div class="item item3">3</div>
+      <div class="item item4">4</div>
+    </div>
+  </code>
+</pre>
           <pre>
   <code class="css">
+/* Creates an explicit 2 x 2 grid */
 .container {    
   display: grid;
-  grid-template-columns: 1fr 2fr auto;
-  grid-template-rows: 2fr 1fr 2fr;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 100px 100px;
 }
   </code>
 </pre>
+        </section>
+
+        <!-- Visual: Explicit Grid -->
+        <section>
+          <h3>Explicit Grid</h3>
+          <img
+            src="./images/explicit-grid.png"
+            alt="" />
         </section>
 
         <!-- Implicit Grid -->
@@ -541,6 +647,38 @@ grid-column-end
             tracks to accommodate the extra items, and create what's known as an
             <code>implicit grid</code> that has implicit tracks
           </p>
+
+          <pre>
+  <code class="html">
+    <div class="container">
+      <div class="item item1">1</div>
+      <div class="item item2">2</div>
+      ... <!-- Adding 10 more items-->
+      <div class="item item13">13</div>
+      <div class="item item14">14</div>
+    </div>
+  </code>
+</pre>
+
+          <pre>
+  <code class="css">
+/* Notice that the CSS hasn't changed... */
+.container {    
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 100px 100px;
+}
+  </code>
+</pre>
+        </section>
+
+        <!-- Visual: Implicit Grid -->
+        <section>
+          <h3>Implicit Grid: Rows</h3>
+          <img
+            src="./images/implicit-grid.png"
+            width="800px"
+            alt="" />
         </section>
 
         <!-- Auto Placement -->
@@ -574,7 +712,7 @@ grid-column-end
           </p>
         </section>
 
-        <!-- grid-auto-flow -->
+        <!-- grid-auto-flow: columns -->
         <section>
           <h3><code>grid-auto-flow</code></h3>
           <p style="font-size: 28px">
@@ -598,6 +736,15 @@ grid-column-end
 }
   </code>
 </pre>
+        </section>
+
+        <!-- Visual: grid-auto-flow: column -->
+        <section>
+          <h3>Implicit Grid: Columns</h3>
+          <img
+            src="./images/implicit-grid-columns.png"
+            width="800px"
+            alt="" />
         </section>
 
         <!-- Sizing Implicit Tracks -->
@@ -638,14 +785,24 @@ grid-column-end
 </pre>
         </section>
 
+        <section>
+          <h4>Sized Implicit Columns</h4>
+          <img
+            src="./images/implicit-grid-columns-sizing.png"
+            alt="" />
+        </section>
+
         <!-- grid-auto-flow: dense -->
         <section>
           <h3><code>grid-auto-flow: dense</code></h3>
-          <p
-            class="width-800"
-            style="font-size: 28px">
+          <p class="width-800 fs-28">
             CSS Grid has the ability to fill up blank spaces that are left after explicit
             placement
+          </p>
+          <p class="width-800 fs-28 mt-16">
+            Caveat: Only use <code>dense</code> if the order in which blank spaces are
+            filled is
+            <em>not important</em>
           </p>
           <pre>
   <code class="css">

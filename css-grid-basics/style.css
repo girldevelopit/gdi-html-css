@@ -7,6 +7,11 @@
   padding: 3.5rem 0;
 }
 
+.width-600 {
+  width: 600px;
+  margin: 0 auto !important;
+}
+
 .width-800 {
   max-width: 800px;
   margin: 0 auto !important;
@@ -19,4 +24,21 @@
 
 .bold-600 {
   font-weight: 600;
+}
+
+.mt-16 {
+  margin-top: 1rem !important;
+}
+
+.mb-16 {
+  margin-bottom: 1rem !important;
+}
+
+/* Typography */
+.reveal .fs-24 {
+  font-size: 1.5rem;
+}
+
+.reveal .fs-28 {
+  font-size: 28px;
 }
