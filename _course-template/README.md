@@ -1,5 +1,17 @@
 # GDI HTML Slides Template
 
+<!-- TOC start -->
+
+- [GDI HTML Slides Template](#gdi-html-slides-template)
+  - [Usage Instructions](#usage-instructions)
+  - [Examples](#examples)
+  - [Course Creation Tips](#course-creation-tips)
+  - [Slide Markup](#slide-markup)
+    <!-- TOC end -->
+    <!-- TOC --><a name="gdi-html-slides-template"></a>
+
+---
+
 **Girl Develop It** uses a customized HTML slide template for its open-source course content.
 
 Our slides are powered by [Reveal.js](https://revealjs.com/), the popular HTML presentation framework. For simplicity and ease of use, the Reveal.js files are served via CDN.
@@ -13,6 +25,8 @@ The template files reference a shared **`assets`** folder in the repo that conta
 :exclamation: DO NOT ADD MATERIAL TO THE **`assets`** FOLDER.:exclamation:
 
 :exclamation: If you're using new images and/or custom CSS for your course, create a course-specific `images` folder and/or `style.css` file, and place them in the course folder.
+
+---
 
 ## Usage Instructions
 
@@ -60,6 +74,9 @@ The template files reference a shared **`assets`** folder in the repo that conta
   - Link the custom stylesheet to your course `html` file(s)
     <br/>
 
+- _CHANGELOG - Description coming..._
+  <br>
+
 - **Recommended**: Update this `README` (delete original content first) with any of the following that can help future instructors teaching the course:
 
   - Course goals and objectives
@@ -73,15 +90,15 @@ The template files reference a shared **`assets`** folder in the repo that conta
   - Create a `demos` and/or `exercises` folders
   - Create a `resources.html` file to curate recommended resources, links, etc cited in the course
 
-#### Examples
+## Examples
 
-A cohort course folder structure:
+Cohort course folder structure:
 
-- CSS Grids Basic
+- [CSS Grids Basic](https://github.com/girldevelopit/gdi-html-css/tree/main/css-grid-basics)
 
-A single-class course folder structure:
+Single-class course folder structure:
 
-- Intro to JavaScript
+- Intro to JavaScript (_Update in progress_)
 
 ## Course Creation Tips
 
@@ -99,7 +116,7 @@ A single-class course folder structure:
   - Add "teachers' notes" such as FAQs, class management tips/best practices to the course `README.md`
   - Add a `demos` and/or `exercises` folder to store exercises you've used or recommend for future classes
 
-### Slide Markup
+## Slide Markup
 
 Markup heirarchy needs to be `<div class="reveal"> <div class="slides"> <section>` where the `<section>` represents one slide and can be repeated indefinitely.
 
