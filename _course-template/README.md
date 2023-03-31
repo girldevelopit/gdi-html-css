@@ -1,5 +1,17 @@
 # GDI HTML Slides Template
 
+<!-- TOC start -->
+
+- [GDI HTML Slides Template](#gdi-html-slides-template)
+  - [Usage Instructions](#usage-instructions)
+  - [Examples](#examples)
+  - [Course Creation Tips](#course-creation-tips)
+  - [Slide Markup](#slide-markup)
+    <!-- TOC end -->
+    <!-- TOC --><a name="gdi-html-slides-template"></a>
+
+---
+
 **Girl Develop It** uses a customized HTML slide template for its open-source course content.
 
 Our slides are powered by [Reveal.js](https://revealjs.com/), the popular HTML presentation framework. For simplicity and ease of use, the Reveal.js files are served via CDN.
@@ -13,6 +25,8 @@ The template files reference a shared **`assets`** folder in the repo that conta
 :exclamation: DO NOT ADD MATERIAL TO THE **`assets`** FOLDER.:exclamation:
 
 :exclamation: If you're using new images and/or custom CSS for your course, create a course-specific `images` folder and/or `style.css` file, and place them in the course folder.
+
+---
 
 ## Usage Instructions
 
@@ -60,7 +74,11 @@ The template files reference a shared **`assets`** folder in the repo that conta
   - Link the custom stylesheet to your course `html` file(s)
     <br/>
 
+- _CHANGELOG - Description coming..._
+  <br>
+
 - **Recommended**: Update this `README` (delete original content first) with any of the following that can help future instructors teaching the course:
+
   - Course goals and objectives
   - Course outline or structure
   - Teaching tips
@@ -68,17 +86,37 @@ The template files reference a shared **`assets`** folder in the repo that conta
   - Resources
   - etc.
 
+- **Optional**:
+  - Create a `demos` and/or `exercises` folders
+  - Create a `resources.html` file to curate recommended resources, links, etc cited in the course
+
+## Examples
+
+Cohort course folder structure:
+
+- [CSS Grids Basic](https://github.com/girldevelopit/gdi-html-css/tree/main/css-grid-basics)
+
+Single-class course folder structure:
+
+- Intro to JavaScript (_Update in progress_)
+
 ## Course Creation Tips
 
-- We recommend using unstacked slides (rather than nested slides) for better readability.
+- Use unstacked slides (rather than nested slides) for better readability
 
-- Limit the amount of content added to each slide. An image, a sentence, or a short code sample are much more understandable than a long list of bullet points.
+- Limit the amount of content on each slide
 
-- Prefer visual explanations to text where possible.
+  - An image, a sentence, or a short code sample is more understandable than a long list of bullet points
+  - Or split long text content into two slides
 
-- Add "teachers' notes" such as FAQs, class management tips/best practices to the course `README.md` that can help future instructors.
+- Lean more towards visual content (images, gifs, videos) to support learning concepts
 
-### Slide Markup
+- To make the course curriculum useful/helpful for future instructors to use:
+
+  - Add "teachers' notes" such as FAQs, class management tips/best practices to the course `README.md`
+  - Add a `demos` and/or `exercises` folder to store exercises you've used or recommend for future classes
+
+## Slide Markup
 
 Markup heirarchy needs to be `<div class="reveal"> <div class="slides"> <section>` where the `<section>` represents one slide and can be repeated indefinitely.
 
