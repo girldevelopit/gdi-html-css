@@ -61,6 +61,7 @@ The template files reference a shared **`assets`** folder in the repo that conta
     <br/>
 
 - **Recommended**: Update this `README` (delete original content first) with any of the following that can help future instructors teaching the course:
+
   - Course goals and objectives
   - Course outline or structure
   - Teaching tips
@@ -68,15 +69,35 @@ The template files reference a shared **`assets`** folder in the repo that conta
   - Resources
   - etc.
 
+- **Optional**:
+  - Create a `demos` and/or `exercises` folders
+  - Create a `resources.html` file to curate recommended resources, links, etc cited in the course
+
+#### Examples
+
+A cohort course folder structure:
+
+- CSS Grids Basic
+
+A single-class course folder structure:
+
+- Intro to JavaScript
+
 ## Course Creation Tips
 
-- We recommend using unstacked slides (rather than nested slides) for better readability.
+- Use unstacked slides (rather than nested slides) for better readability
 
-- Limit the amount of content added to each slide. An image, a sentence, or a short code sample are much more understandable than a long list of bullet points.
+- Limit the amount of content on each slide
 
-- Prefer visual explanations to text where possible.
+  - An image, a sentence, or a short code sample is more understandable than a long list of bullet points
+  - Or split long text content into two slides
 
-- Add "teachers' notes" such as FAQs, class management tips/best practices to the course `README.md` that can help future instructors.
+- Lean more towards visual content (images, gifs, videos) to support learning concepts
+
+- To make the course curriculum useful/helpful for future instructors to use:
+
+  - Add "teachers' notes" such as FAQs, class management tips/best practices to the course `README.md`
+  - Add a `demos` and/or `exercises` folder to store exercises you've used or recommend for future classes
 
 ### Slide Markup
 
