@@ -1,0 +1,745 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <meta
+      name="description"
+      content="Girl Develop It framework for easily creating beautiful presentations using HTML in GDI theme. Based on Hakim El Hattab's reveal.js" />
+    <meta
+      name="author"
+      content="Girl Develop It" />
+    <meta
+      name="apple-mobile-web-app-capable"
+      content="yes" />
+    <meta
+      name="apple-mobile-web-app-status-bar-style"
+      content="black-translucent" />
+    <!-- Update with GDI Course Name -->
+    <title>CSS Grid Basics - Class 3</title>
+    <link
+      rel="icon"
+      type="image/x-icon"
+      href="../assets/imgs/favicon.ico" />
+    <!-- RevealJS CDN -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/reveal.js@4.1.0/dist/reset.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/reveal.js@4.1.0/dist/reveal.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/reveal.js@4.1.0/dist/theme/simple.css"
+      id="theme" />
+    <!-- GDI Custom Theme -->
+    <link
+      rel="stylesheet"
+      href="../assets/css/gdi-theme.css" />
+    <!-- Course Custom Styles if Applicable-->
+    <link
+      rel="stylesheet"
+      href="style.css" />
+    <!-- Theme used for syntax highlighted code -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.1.0/styles/monokai.min.css" />
+  </head>
+  <body>
+    <div class="reveal">
+      <!-- Start of Slides container -->
+      <!-- A section element is displayed as a single slide -->
+      <!-- Do Not Delete slide instructions -->
+      <!---->
+      <!---->
+      <div class="slides">
+        <!-- Course Title -->
+        <section>
+          <h2>CSS Grid Basics</h2>
+          <h2>Class 3</h2>
+        </section>
+
+        <!-- Course Agenda / Topics / Course Outline -->
+        <section>
+          <h2>Class Agenda</h2>
+          <ul>
+            <li>Sizing with <code>minmax()</code></li>
+            <li>Sizing with <code>auto-fit</code> and <code>auto-fill</code></li>
+            <li>Layout Solutions with Grid <em>(CodePens)</em></li>
+            <li>Nesting Grid<em>(CodePen)</em></li>
+            <li>Combining CSS Grid and Flexbox</li>
+            <li>Final Project: Pet Gallery</li>
+          </ul>
+        </section>
+
+        <!-- Break -->
+        <section>
+          <h2>Break</h2>
+          <p>7p EST / 6p CST / 4p PST</p>
+        </section>
+
+        <!-- Course Slides -->
+        <!-- Create as many new sections (slides) as needed -->
+        <!---->
+        <!---->
+
+        <!-- Sizing Function Keywords -->
+        <section>
+          <h2>Sizing Function & Keywords</h2>
+        </section>
+
+        <!-- minmax -->
+        <section>
+          <h3><code>minmax()</code></h3>
+          <p class="width-800 fs-28">
+            To set a minimum and maximum size for tracks, use the
+            <code>minmax()</code> function
+          </p>
+
+          <p class="fs-28"><code>minmax(min value, max value)</code></p>
+
+          <pre>
+  <code class="css">
+.container {
+  display: grid;
+
+  grid-template-columns: repeat(3, 1fr);
+  
+  /* grid-template-rows: 100px; */
+  /* What happens if content is more than 100px?
+   It will result in an overflow. */
+
+  grid-template-rows: minmax(100px, auto);
+  /* Set row to be at least 100px high, but 
+  just in case, set a max value of auto to
+  take up as much height as needed! */
+}
+  </code>
+</pre>
+        </section>
+
+        <!-- Visual: With and Without minmax -->
+        <section>
+          <h4>Before <code>minmax()</code></h4>
+          <img
+            src="./images/grid-overflow.png"
+            alt="" />
+          <h4>After <code>minmax()</code></h4>
+          <img
+            src="./images/grid-overflow-minmax-fix.png"
+            alt="" />
+        </section>
+
+        <!-- minmax and Auto Placement -->
+        <section>
+          <h3><code>minmax</code> and Auto Placement</h3>
+          <p class="fs-28 width-800">
+            <code>minmax()</code> is especially useful with the
+            <code>grid-auto-rows</code> and
+            <code>grid-auto-columns</code> properties--when the number of extra tracks
+            that the grid might create is unknown AND also if the content these tracks
+            will hold is also unknown
+          </p>
+        </section>
+
+        <!-- Code: mimmax and Auto Placement -->
+        <section>
+          <h3><code>minmax</code> and Auto Placement</h3>
+          <pre>
+  <code class="css">
+.container {
+  display: grid;
+
+  grid-template-columns: repeat(3, 1fr);
+
+  grid-template-rows: minmax(100px, auto);
+
+  /* grid-auto-rows: 50px; */
+  /* What happens if content is taller than 50px?! */
+
+  /* Just to be prepared... */
+  grid-auto-rows: minmax(50px, 1fr);
+
+}
+  </code>
+</pre>
+        </section>
+
+        <!-- Visual: mimmax and Auto Placement -->
+        <section>
+          <h4>Before <code>minmax()</code></h4>
+          <img
+            src="./images/minmax-auto-placement-BEFORE.png"
+            alt="" />
+
+          <h4>After <code>minmax()</code></h4>
+          <img
+            src="./images/minmax-auto-placement-AFTER.png"
+            alt="" />
+        </section>
+
+        <!-- Intro: auto-fit and auto-fill-->
+        <section>
+          <h3><code>auto-fit</code> and <code>auto-fill</code></h3>
+          <p class="fs-28 width-800">
+            <code>auto-fit</code> and <code>auto-fill</code> are auto placement keywords
+            that when combined with the <code>repeat()</code> function can determine how
+            to size and arrange extra columns
+          </p>
+        </section>
+
+        <!-- Definitions: auto-fit and auto-fill-->
+        <section>
+          <h3><code>auto-fit</code> and <code>auto-fill</code></h3>
+          <p class="fs-28 width-800 mb-32">
+            <code>auto-fit</code> will fit whatever columns are available and
+            <code>expand</code> them to avoid creating empty space
+          </p>
+          <p class="fs-28 width-800">
+            <code>auto-fill</code> will do the same EXCEPT leave empty space if there are
+            not enough columns
+          </p>
+        </section>
+
+        <!-- Code & Visual: BEFORE auto-fit / auto-fill  -->
+        <section>
+          <h4>Before <code>auto-fit</code> and <code>auto-fill</code></h4>
+          <pre>
+  <code class="css">
+.container {
+  display: grid;
+
+  grid-template-columns: repeat(12, 200px);
+  /* Creates an overflow */
+}
+  </code>
+</pre>
+          <img
+            src="./images/auto-fit-auto-fill-BEFORE.png"
+            alt="" />
+        </section>
+
+        <!-- Code & Visual: AFTER auto-fit / auto-fill -->
+        <section>
+          <h4>After <code>auto-fit</code> and <code>auto-fill</code></h4>
+          <pre>
+  <code class="css">
+.container {
+  display: grid;
+
+  grid-template-columns: repeat(auto-fit, 200px);
+
+  /* OR */
+  
+  grid-template-columns: repeat(auto-fiil, 200px);
+}
+  </code>
+</pre>
+          <img
+            src="./images/auto-fit-auto-fill-AFTER.png"
+            alt=""
+            width="600px" />
+        </section>
+
+        <!-- Definitions: auto-fit and auto-fill-->
+        <section>
+          <h3><code>auto-fit</code> and <code>auto-fill</code></h3>
+          <p class="fs-28 width-800 mb-32">
+            <code>auto-fit</code> and <code>auto-fill</code> tell the browser to size
+            columns wide enough to fit or fill the given space, and then wrap whatever's
+            left to prevent an overflow
+          </p>
+          <p class="fs-28 width-800 mb-32">
+            In practice, they often end up achieving the same result
+          </p>
+          <div>
+            <small
+              ><a
+                href="https://css-tricks.com/auto-sizing-columns-css-grid-auto-fill-vs-auto-fit/"
+                target="_blank"
+                rel="noopener noreferrer"
+                >Auto-Sizing Columns in CSS Grid: `auto-fill` vs `auto-fit`</a
+              >
+              (CSS Tricks)</small
+            >
+          </div>
+        </section>
+
+        <!-- Flexible grid with minmax
+        and auto-fit / auto-fill -->
+        <section>
+          <h4 class="width-900 mb-16">
+            Flexible Grids with <code>minmax()</code> and keywords!
+          </h4>
+          <p class="fs-28 width-800 mb-32">
+            When <code>minmax()</code> is combined with <code>auto-fit</code> or
+            <code>auto-fill</code>, the result is a flexible grid--without media queries!
+            🤯 🤯 🤯
+          </p>
+
+          <div class="mt-32">
+            <small
+              >This is considered to be the
+              <a
+                href="https://css-tricks.com/books/greatest-css-tricks/flexible-grids/"
+                target="_blank"
+                >greatest CSS Grid Trick of all time!</a
+              ></small
+            >
+          </div>
+        </section>
+
+        <!-- Flexible Grid -->
+        <section>
+          <h4>Responsive Grid -- No Media Queries!</h4>
+          <pre>
+  <code class="css">
+.container {
+  display: grid;
+
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+
+  /* Or use auto-fill -- the effect is the same */
+}
+  </code>
+</pre>
+          <img
+            src="./images/flexible-grid.gif"
+            alt=""
+            width="600px" />
+        </section>
+
+        <!-- What Other Cool Things Can Grid Do? -->
+        <section>
+          <h3>A Few Cool Things CSS Grid Can Do</h3>
+        </section>
+
+        <!-- Sticky Footer -->
+        <section>
+          <h3>Sticky Footer</h3>
+          <img
+            src="./images/grid-trick-sticky-footer.png"
+            alt="" />
+          <div>
+            <small
+              ><a
+                href="https://codepen.io/tinuola/pen/RwYzrLy"
+                target="_blank"
+                >CodePen Demo</a
+              ></small
+            >
+          </div>
+        </section>
+
+        <!-- Horizontal and Vertical Centering -->
+        <section>
+          <h3>Horizontal and Vertical Centering</h3>
+          <img
+            src="./images/grid-trick-centering.png"
+            alt="" />
+          <div>
+            <small
+              ><a
+                href="https://codepen.io/tinuola/pen/YzOowjv"
+                target="_blank"
+                >CodePen Demo</a
+              ></small
+            >
+          </div>
+          <div>
+            <small
+              ><a
+                href="https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Box_Alignment"
+                target="_blank"
+                >CSS Box Alignment Properties</a
+              ></small
+            >
+          </div>
+        </section>
+
+        <!-- Nested Grids -->
+        <section>
+          <h3>Nested Grids</h3>
+          <img
+            src="./images/nested-grids.png"
+            alt="" />
+          <div>
+            <small
+              ><a
+                href="https://codepen.io/tinuola/pen/eYLwJog"
+                target="_blank"
+                >CodePen Demo</a
+              ></small
+            >
+          </div>
+        </section>
+
+        <!-- CSS Flexbox + CSS Grid -->
+        <section>
+          <h3>Flexbox and Grid</h3>
+          <p class="fs-28 width-800 mb-32">
+            Another example of nesting is to pair CSS Flexbox and CSS Grid together!
+          </p>
+          <p class="fs-28 width-800 mb-32">
+            A typical use case is to create the main structure of a page with CSS Grid,
+            and then apply CSS Flexbox to the contents of the grid items
+          </p>
+
+          <p class="fs-28 width-800 mb-32">
+            Note: Grid does not have to be applied to an entire page; it can be applied to
+            sections of a page
+          </p>
+        </section>
+
+        <!-- Visual Examples -->
+        <section>
+          <img
+            src="./images/flex-and-grid-combo1.png"
+            alt="" />
+          <div>
+            <p class="fs-28">
+              <a
+                href="https://nostrongbeliefs.com/blog/using-css-grid-and-flexbox-together/"
+                target="_blank"
+                rel="noopener noreferrer"
+                >Using CSS Grid and Flexbox Together</a
+              >
+              (NoStrongBeliefs)
+            </p>
+          </div>
+          <div>
+            <p class="fs-28">
+              <a
+                href="https://codepen.io/derekjohnson/pen/BVWPRV"
+                target="_blank"
+                rel="noopener noreferrer"
+                >CodePen</a
+              >
+            </p>
+          </div>
+        </section>
+
+        <section>
+          <img
+            src="./images/flex-and-grid-combo2.jpeg"
+            alt="" />
+          <div>
+            <small
+              ><a
+                href="https://www.siteinspire.com/websites/7202-accurat"
+                target="_blank"
+                >Site Inspire: Accurat</a
+              ></small
+            >
+          </div>
+        </section>
+
+        <section>
+          <img
+            src="./images/flex-and-grid-combo3.jpeg"
+            alt="" />
+          <div>
+            <small
+              ><a
+                href="https://www.siteinspire.com/websites/4423-fibb"
+                target="_blank"
+                >Site Inspire: Fibb</a
+              ></small
+            >
+          </div>
+        </section>
+
+        <section>
+          <img
+            src="./images/flex-and-grid-combo4.jpeg"
+            alt="" />
+          <div>
+            <small
+              ><a
+                href="https://www.siteinspire.com/websites/9882-honk"
+                target="_blank"
+                >Site Inspire: Honk</a
+              ></small
+            >
+          </div>
+        </section>
+
+        <section>
+          <img
+            src="./images/flex-and-grid-combo5.jpeg"
+            alt="" />
+          <div>
+            <small
+              ><a
+                href="https://www.siteinspire.com/websites/11469-works-in-progress"
+                target="_blank"
+                >Site Inspire: Works in Progress</a
+              ></small
+            >
+          </div>
+        </section>
+
+        <!-- Final Project -->
+        <section>
+          <h3>Let's Develop It!</h3>
+          <h4>Final Project</h4>
+          <p class="fs-28">
+            <a
+              href="https://codepen.io/tinuola/full/BaOvbRe"
+              target="_blank"
+              >Codepen Sandbox
+            </a>
+          </p>
+          <p class="fs-28 mb-32">Clone or Fork: <code>Final Project</code></p>
+        </section>
+
+        <!-- Instructions -->
+        <section>
+          <h3>Instructions</h3>
+          <h4>Student's Choice!</h4>
+          <p class="fs-28">Create the gallery grid however you want!</p>
+          <p class="fs-28">Or model the sample finished version</p>
+        </section>
+
+        <!-- Finished Result -->
+        <section>
+          <h4>Possible Finished Result</h4>
+          <img
+            src="./images/pet-gallery-project-END-v1.png"
+            alt="" />
+        </section>
+
+        <!-- OPTIONAL: Showcase Student Work -->
+        <section>
+          <h3>Share What You've Built!</h3>
+        </section>
+
+        <!-- You Did It! -->
+        <section>
+          <h3>You did it!</h3>
+          <img
+            src="/assets/imgs/stock-img/celebration_clay-banks-unsplash.jpg"
+            alt="Woman celebrating" />
+          <div>
+            <small
+              >Photo credit:
+              <a
+                href="https://unsplash.com/@claybanks"
+                target="_blank"
+                >Clay Banks</a
+              >
+              <a
+                href="http://creativecommons.org/licenses/by-sa/2.0/"
+                target="_blank"
+                >cc</a
+              >
+            </small>
+          </div>
+        </section>
+
+        <!-- Resources -->
+        <section>
+          <h4>Additional Resources for Learning & Practice</h4>
+          <div class="width-900">
+            <small>
+              <a
+                href="https://codepip.com/games/grid-garden/"
+                target="_blank"
+                rel="noopener noreferrer"
+                >CSS Grid Garden</a
+              ></small
+            ><br />
+            <small>
+              <a
+                href="https://learncssgrid.com/"
+                target="_blank"
+                rel="noopener noreferrer"
+                >Learn CSS Grid</a
+              ></small
+            ><br />
+            <small>
+              <a
+                href="https://griddy.io/"
+                target="_blank"
+                >Griddy.io</a
+              >
+              (A Grid Sandbox) </small
+            ><br />
+            <small>
+              <a
+                href="https://developer.mozilla.org/en-US/docs/Learn/CSS/CSS_layout/Grids"
+                target="_blank"
+                rel="noopener noreferrer"
+                >Any Tutorial on MDN</a
+              > </small
+            ><br />
+            <small
+              ><a
+                href="https://css-tricks.com/snippets/css/complete-guide-grid/"
+                target="_blank"
+                rel="noopener noreferrer"
+                >CSS Tricks' Complete Guide to Grid</a
+              ></small
+            ><br />
+            <small
+              >People:
+              <a
+                href="https://rachelandrew.co.uk/"
+                target="_blank"
+                rel="noopener noreferrer"
+                >Rachel Andrews</a
+              >,
+              <a
+                href="https://youtube.com/kevinpowell"
+                target="_blank"
+                rel="noopener noreferrer"
+                >Kevin Powell</a
+              >,
+              <a
+                href="https://jensimmons.com/"
+                target="_blank"
+                rel="noopener noreferrer"
+                >Jen Simmons</a
+              >
+            </small>
+          </div>
+        </section>
+
+        <!-- MUST-USE SLIDE -->
+        <!-- Add Course Survey Link -->
+        <section>
+          <h2>Give Us Your Feedback</h2>
+          <h3>
+            <a
+              href="https://forms.gle/2gEGeqYWKfVJ4fFcA"
+              target="_blank"
+              >Final Survey</a
+            >
+          </h3>
+        </section>
+
+        <!-- Q&A -->
+        <section>
+          <h2>Q&A</h2>
+        </section>
+
+        <!-- MUST-USE SLIDE -->
+        <!-- Promote Upcoming GDI Courses -->
+        <section>
+          <h3>Upcoming GDI Courses</h3>
+          <ul style="list-style: none; font-size: 30px">
+            <li>Web Design Essentials 2</li>
+            <li>JavaScript: Intro to the DOM</li>
+            <li>Intro to CSS Animations</li>
+          </ul>
+          <p class="fs-28 mb-16">
+            <a
+              href="https://girldevelopit.com/events/#/list"
+              target="_blank"
+              rel="noopener noreferrer"
+              >GDI Classes and Events Calendar</a
+            >
+          </p>
+        </section>
+
+        <!-- Add Instructor and/or TA Contact -->
+        <section>
+          <h3>Keep in Touch</h3>
+          <p class="fs-28 mb-16">
+            <a
+              href="https://www.linkedin.com/in/tinuolaawopetu/"
+              target="_blank"
+              >https://www.linkedin.com/in/tinuolaawopetu/</a
+            >
+          </p>
+
+          <p class="fs-28">
+            <a
+              href="https://www.linkedin.com/in/annekatzeff/"
+              target="_blank"
+              >https://www.linkedin.com/in/annekatzeff/</a
+            >
+          </p>
+          <p class="fs-28">
+            <a
+              href="https://www.askdesign.biz/"
+              target="_blank"
+              rel="noopener noreferrer"
+              >www.askdesign.biz</a
+            >
+          </p>
+        </section>
+
+        <!-- Thank You -->
+        <section>
+          <img
+            src="../assets/imgs/gdi-logos/gdi-logo_peach.png"
+            alt="GDI Logo"
+            width="300px"
+            class="noborder" />
+          <br />
+          <h2>Thank You!</h2>
+        </section>
+      </div>
+      <!-- End of Slides container -->
+      <!---->
+      <!---->
+      <!-- Update Footer with Course Name -->
+      <footer>
+        <div class="copyright">
+          <img
+            src="../assets/imgs/gdi-logos/gdi-logo_peach.png"
+            alt="GDI Logo"
+            width="40px"
+            class="noborder" />
+          <p>CSS Grid Basics</p>
+          <a
+            rel="license"
+            href="http://creativecommons.org/licenses/by-nc/3.0/deed.en_US"
+            ><img
+              alt="Creative Commons License"
+              style="border-width: 0"
+              src="http://i.creativecommons.org/l/by-nc/3.0/80x15.png"
+          /></a>
+        </div>
+      </footer>
+    </div>
+    <!-- End of Reveal wrapper -->
+    <!---->
+    <!---->
+    <!-- REVEAL.JS Script Files - Do Not Edit -->
+    <script src="https://cdn.jsdelivr.net/npm/reveal.js@4.1.0/dist/reveal.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/reveal.js@4.1.0/plugin/highlight/highlight.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/highlightjs-badge@0.1.9/highlightjs-badge.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jsPlumb/2.15.5/js/jsplumb.min.js"></script>
+    <script>
+      const srcUrlPrefix = 'https://cdn.jsdelivr.net/npm/reveal.js@4.1.0/';
+      Reveal.initialize({
+        hash: true,
+        center: true,
+        slideNumber: true,
+        showNotes: false,
+        margin: 0.1,
+        preloadIframes: true,
+        plugins: [RevealHighlight],
+        pdfSeparateFragments: true,
+      });
+
+      // add HighlightJS-badge (options are optional)
+      var options = {
+        copyIconContent: '📄',
+        checkIconContent: '✅',
+      };
+      window.highlightJsBadge(options);
+
+      if (window.location.search == '?print-pdf') {
+        var uncounted = document.querySelectorAll("[data-visibility='uncounted']");
+        uncounted.forEach((node) => {
+          node.parentNode.classList.add('no-print');
+        });
+      }
+    </script>
+  </body>
+</html>
