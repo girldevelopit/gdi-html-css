@@ -24,7 +24,7 @@
     <link
       rel="icon"
       type="image/x-icon"
-      href="../assets/imgs/favicon.ico" />
+      href="../shared-assets/imgs/favicon.ico" />
 
     <!-- RevealJS CDN -->
     <link
@@ -41,17 +41,17 @@
     <!-- GDI Custom Theme -->
     <link
       rel="stylesheet"
-      href="../assets/css/gdi-theme.css" />
-
-    <!-- Course Custom Styles if Applicable-->
-    <link
-      rel="stylesheet"
-      href="style.css" />
+      href="../shared-assets/css/gdi-theme.css" />
 
     <!-- Theme used for syntax highlighted code -->
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.1.0/styles/monokai.min.css" />
+
+    <!-- Course Custom Styles if Applicable-->
+    <link
+      rel="stylesheet"
+      href="./css/style.css" />
   </head>
   <body>
     <div class="reveal">
@@ -65,7 +65,7 @@
         <!-- Opening Slide -->
         <section>
           <img
-            src="../assets/imgs/gdi-logos/gdi-circle-logo_peach.png"
+            src="../shared-assets/imgs/gdi-logos/gdi-circle-logo_peach.png"
             alt="GDI Logo"
             width="400px"
             class="noborder" />
@@ -176,7 +176,7 @@
       <footer>
         <div class="copyright">
           <img
-            src="../assets/imgs/gdi-logos/gdi-logo_peach.png"
+            src="../shared-assets/imgs/gdi-logos/gdi-logo_peach.png"
             alt="GDI Logo"
             width="40px"
             class="noborder" />
@@ -199,32 +199,6 @@
     <script src="https://cdn.jsdelivr.net/npm/reveal.js@4.1.0/plugin/highlight/highlight.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/highlightjs-badge@0.1.9/highlightjs-badge.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jsPlumb/2.15.5/js/jsplumb.min.js"></script>
-    <script>
-      const srcUrlPrefix = 'https://cdn.jsdelivr.net/npm/reveal.js@4.1.0/';
-      Reveal.initialize({
-        hash: true,
-        center: true,
-        slideNumber: true,
-        showNotes: false,
-        margin: 0.1,
-        preloadIframes: true,
-        plugins: [RevealHighlight],
-        pdfSeparateFragments: true,
-      });
-
-      // add HighlightJS-badge (options are optional)
-      var options = {
-        copyIconContent: '📄',
-        checkIconContent: '✅',
-      };
-      window.highlightJsBadge(options);
-
-      if (window.location.search == '?print-pdf') {
-        var uncounted = document.querySelectorAll("[data-visibility='uncounted']");
-        uncounted.forEach((node) => {
-          node.parentNode.classList.add('no-print');
-        });
-      }
-    </script>
+    <script src="../shared-assets/js/revealConfig.js"></script>
   </body>
 </html>
