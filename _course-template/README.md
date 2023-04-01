@@ -4,7 +4,8 @@
 
 - [GDI HTML Slides Template](#gdi-html-slides-template)
   - [Usage Instructions](#usage-instructions)
-  - [Examples](#examples)
+  - [Live Demo and Template Slides](#live-template-slides)
+  - [Example Courses](#example-courses)
   - [Course Creation Tips](#course-creation-tips)
   - [Slide Markup](#slide-markup)
   - [Publishing Your Course](#publishing-your-course)
@@ -26,7 +27,7 @@ The template files reference a **`shared-assets`** folder in the repo that hold 
 
 :exclamation: DO NOT ADD MATERIAL TO THE **`shared-assets`** FOLDER.:exclamation:
 
-:exclamation: If you're using new images or custom CSS or custom JS for your course, create course-specific `images`, `css`, or `js` folder in your course folder and place files there.
+:exclamation: If you're using new images or custom CSS or custom JS for your course, create a course-specific `images`, `css`, or `js` folder in your course folder and place files there.
 
 ---
 
@@ -49,6 +50,7 @@ The template files reference a **`shared-assets`** folder in the repo that hold 
 - To build content for a [single-class course](#examples):
 
   - Rename `template_index.html` to `index.html`
+    - Delete the duplicate `index` file
   - Make updates as outlined in the file's instructions, for example:
     - Update course name in the `<title>` tag
     - Update course name in the `<footer>` tag
@@ -94,7 +96,13 @@ The template files reference a **`shared-assets`** folder in the repo that hold 
   - Create folders for `demos` and `exercises`
   - Create a `resources.html` file to curate recommended resources, links, etc., cited in the course
 
-## Examples
+## Live Template Slides
+
+- [GDI Demo Slides](https://girldevelopit.github.io/gdi-html-css/_course-template/demo-gdi-slides.html)
+- [Template Index Slides](https://girldevelopit.github.io/gdi-html-css/_course-template/template_index.html)
+- [Template Cohort Index / Dashboard](https://girldevelopit.github.io/gdi-html-css/_course-template/template_cohort-index.html)
+
+## Example Courses
 
 Cohort course folder structure:
 
@@ -136,3 +144,5 @@ Markup heirarchy needs to be `<div class="reveal"> <div class="slides"> <section
 ```
 
 ## Publishing Your Course
+
+_Description coming..._
