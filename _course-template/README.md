@@ -7,6 +7,7 @@
   - [Examples](#examples)
   - [Course Creation Tips](#course-creation-tips)
   - [Slide Markup](#slide-markup)
+  - [Publishing Your Course](#publishing-your-course)
     <!-- TOC end -->
     <!-- TOC --><a name="gdi-html-slides-template"></a>
 
@@ -16,13 +17,14 @@
 
 Our slides are powered by [Reveal.js](https://revealjs.com/), the popular HTML presentation framework. For simplicity and ease of use, the Reveal.js files are served via CDN.
 
-The template files reference a shared **`assets`** folder in the repo that hold the following folders:
+The template files reference a **`shared-assets`** folder in the repo that hold the following folders:
 
 - `css` - Contains the `gdi-theme.css` stylesheet
 - `imgs` - Contains GDI logo images and stock (Unsplash) images
 - `fonts` - Contains files for GDI's primary fonts: `Gotham`, `League Gothic` and `Source Sans Pro`
+- `js` - Contains `revealConfig.js` file
 
-:exclamation: DO NOT ADD MATERIAL TO THE **`assets`** FOLDER.:exclamation:
+:exclamation: DO NOT ADD MATERIAL TO THE **`shared-assets`** FOLDER.:exclamation:
 
 :exclamation: If you're using new images and / or custom CSS for your course, create a course-specific `images` folder and / or `style.css` file, and place them in your course folder.
 
@@ -30,16 +32,18 @@ The template files reference a shared **`assets`** folder in the repo that hold 
 
 ## Usage Instructions
 
+- Fork the parent repo where your course folder will live
+
 - To create a new course, duplicate the `_course-template` folder
   <br/>
 
 - Rename the duplicate folder with your course title
   <br/>
 
-- Review `demo-gdi-slides.html` for common and recommended ways we use Reveal.js features
+- Review `demo-gdi-slides.html` for recommended ways we use Reveal.js features
 
   - Copy or model the demo slides and code snippets as needed
-  - Preserve (rather than delete) the `demo-gdi-slides.html` for future reference
+  - Keep (rather than delete) the `demo-gdi-slides.html` for future reference
     <br/>
 
 - To build content for a [single-class course](#examples):
@@ -54,7 +58,7 @@ The template files reference a shared **`assets`** folder in the repo that hold 
 
 - To build content for a course with [more than one class / session](#examples) -- also known as a **mini-cohort** _[2-3 classes]_ or a **cohort** _[4+ classes]_:
 
-  - Rename `template_cohort-index.html` to `index.html`; it serves as a cover page that links to all classes in the cohort
+  - Rename `template_cohort-index.html` to `index.html`; it serves as a cover page or 'dashboard' that links to all classes in the cohort
   - Duplicate `template_index.html` to create subsequent class files: `class1.html`, `class2.html`, etc.
     - OPTIONAL: Create an `intro.html` file for instructor and course introduction
   - Create course slides - Make updates as outlined in the file's instructions
@@ -62,15 +66,15 @@ The template files reference a shared **`assets`** folder in the repo that hold 
 
 - If using new images for your slides, create an `images` folder in your course folder
 
-  - :exclamation: Do not add images to the shared or main `assets` folder
+  - :exclamation: Do not add images to the `shared-assets` folder
   - :bulb: Include credit /attribution for image(s) when possible
   - :bulb: Optimize images to reduce file size
     - Use an image compression tool such as tinypng.com
       <br/>
 
-- Need or want to use custom CSS? Create a `style.css` file in your course folder and add your custom code there
+- Need or want to use custom CSS? Create a `style.css` file or a `css` folder in your course folder; add your custom code there
 
-  - :exclamation: Do not add custom css to the shared or main `gdi-theme.css` file
+  - :exclamation: Do not add custom css to the shared `gdi-theme.css` file in the `shared-assets` folder, or add custom css file to the folder
   - Link the custom stylesheet to your course `html` file(s)
     <br/>
 
@@ -102,14 +106,15 @@ Single-class course folder structure:
 
 ## Course Creation Tips
 
-- Use unstacked slides (rather than nested slides) for better readability
-
 - Limit the amount of content on each slide:
 
   - Avoid a long list of bullet points
   - Split long text content into two or more slides
+  - If using RevealJS's [fragments feature](https://revealjs.com/fragments/) to present content, do so sparingly
+    <br>
 
 - Lean more towards visual content (images, gifs, videos) to support learning concepts
+  <br>
 
 - To make the course curriculum helpful for future instructors to use:
 
@@ -129,3 +134,5 @@ Markup heirarchy needs to be `<div class="reveal"> <div class="slides"> <section
   </div>
 </div>
 ```
+
+## Publishing Your Course
