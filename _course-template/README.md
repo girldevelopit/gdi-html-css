@@ -26,7 +26,7 @@ The template files reference a **`shared-assets`** folder in the repo that hold 
 
 :exclamation: DO NOT ADD MATERIAL TO THE **`shared-assets`** FOLDER.:exclamation:
 
-:exclamation: If you're using new images and / or custom CSS for your course, create a course-specific `images` folder and / or `style.css` file, and place them in your course folder.
+:exclamation: If you're using new images or custom CSS or custom JS for your course, create course-specific `images`, `css`, or `js` folder in your course folder and place files there.
 
 ---
 
