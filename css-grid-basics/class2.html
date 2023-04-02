@@ -59,12 +59,12 @@
         <!-- Course Title -->
         <section>
           <h2>CSS Grid Basics</h2>
-          <h2>Class 2</h2>
+          <h3>Class 2</h3>
         </section>
 
         <!-- Course Agenda / Topics / Course Outline -->
         <section>
-          <h2>Class Agenda</h2>
+          <h3>Class Agenda</h3>
           <ul>
             <li>Overlapping Elements</li>
             <li>Name-based Placement</li>
@@ -77,7 +77,7 @@
 
         <!-- Break -->
         <section>
-          <h2>Break</h2>
+          <h3>Break</h3>
           <p>7p EST / 6p CST / 4p PST</p>
         </section>
 
@@ -103,16 +103,7 @@
             <li>True</li>
             <li>False</li>
           </ul>
-        </section>
-
-        <!-- Answer 1 -->
-        <section>
-          <h4 class="width-800 mb-16">
-            CSS Grid can only be used for two-dimensional layout
-          </h4>
-          <ul>
-            <li class="bold-600">False</li>
-          </ul>
+          <h4 class="fragment mt-16 highlight--black">False</h4>
         </section>
 
         <!-- Question 2 -->
@@ -125,16 +116,7 @@
             <li>True</li>
             <li>False</li>
           </ul>
-        </section>
-
-        <!-- Answer 2 -->
-        <section>
-          <h4 class="width-800 mb-16">
-            Declaring <code>display:grid</code> on an element creates a grid container
-          </h4>
-          <ul>
-            <li class="bold-600">True</li>
-          </ul>
+          <h4 class="fragment mt-16 highlight--black">True</h4>
         </section>
 
         <!-- Question 3 -->
@@ -146,14 +128,7 @@
             <li>Tracks</li>
             <li>Gutters</li>
           </ul>
-        </section>
-
-        <!-- Answer 3 -->
-        <section>
-          <h4 class="mb-16">Columns and rows created with grid are called:</h4>
-          <ul>
-            <li class="bold-600">Tracks</li>
-          </ul>
+          <h4 class="fragment mt-16 highlight--black">Tracks</h4>
         </section>
 
         <!-- Question 4 -->
@@ -168,18 +143,7 @@
             <li>True</li>
             <li>False</li>
           </ul>
-        </section>
-
-        <!-- Answer 4 -->
-        <section>
-          <h4 class="width-800 mb-16">
-            Fractional (<code>fr</code>) units can be mixed with other units (<code
-              >px, rem, %</code
-            >)
-          </h4>
-          <ul>
-            <li class="bold-600">True</li>
-          </ul>
+          <h4 class="fragment mt-16 highlight--black">True</h4>
         </section>
 
         <!-- Question 5 -->
@@ -194,17 +158,9 @@
             <li><code>grid-template-columns: repeat(5, 1fr auto);</code></li>
             <li><code>grid-template-columns: repeat(10, 1fr auto);</code></li>
           </ol>
-        </section>
-
-        <!-- Answer 5 -->
-        <section>
-          <h4 class="width-800 mb-16">
-            Which declaration will create a grid of 10 columns where every other column
-            takes up as much space as it needs?
-          </h4>
-          <ul class="fs-28">
-            <li><code>2. grid-template-columns: repeat(5, 1fr auto);</code></li>
-          </ul>
+          <h5 class="fragment mt-16 highlight--black">
+            <code>2. grid-template-columns: repeat(5, 1fr auto);</code>
+          </h5>
         </section>
 
         <!-- Results -->
@@ -219,8 +175,8 @@
 
         <!-- Overlapping Grid Items -->
         <section>
-          <h3>Overlapping Grid Items</h3>
-          <p>
+          <h4>Overlapping Grid Items</h4>
+          <p class="fs-28 width-800">
             Grid items can be positioned to occupy the same cell or track spaces--creating
             an overlapping or stacking effect
           </p>
@@ -228,9 +184,9 @@
 
         <!-- Demo: Original State -->
         <section>
-          <h3>Original State</h3>
+          <h4>Original State</h4>
           <pre>
-  <code class="css">
+            <code class="css">
 .item1 {
   grid-column: 2 / 5;
   grid-row: 2 / 4;
@@ -240,19 +196,19 @@
   grid-column: 1;
   grid-row: 1 / span 4;
 }
-  </code>
-</pre>
+            </code>
+          </pre>
           <img
             src="./images/grid-overlap-initial.png"
             alt=""
-            width="600px" />
+            width="550px" />
         </section>
 
         <!-- Demo: Overlapped State -->
         <section>
-          <h3>Overlapped State</h3>
+          <h4>Overlapped State</h4>
           <pre>
-  <code class="css">
+            <code class="css">
 .item1 {
   grid-column: 2 / 5;
   grid-row: 2 / 4;
@@ -262,31 +218,33 @@
   grid-column: 2; /* Shares same column line start as item1 */
   grid-row: 3 / span 4;
 }
-  </code>
-</pre>
+            </code>
+          </pre>
           <img
             src="./images/grid-overlap-end.png"
             alt=""
-            width="600px" />
+            width="550px" />
         </section>
 
         <!-- z-index -->
         <section>
-          <h3>Controlling Overlaps with Z-Index</h3>
-          <p>Use the <code>z-index</code> property to control the stacking order</p>
-          <small
-            ><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/z-index"
-              >z-index</a
-            >
-            (MDN Docs)</small
-          >
+          <h4>Controlling Overlaps with Z-Index</h4>
+          <p class="fs-28">
+            Use the <code class="highlight--yellow">z-index</code> property to control the
+            stacking order
+          </p>
+          <p class="mt-32">
+            Article:
+            <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/z-index">Z-Index</a>
+            (MDN Docs)
+          </p>
         </section>
 
         <!-- Demo: z-Index -->
         <section>
-          <h3>Overlapped State with <code>z-index</code></h3>
+          <h4>Overlapped State with <code>z-index</code></h4>
           <pre>
-  <code class="css">
+            <code class="css">
 .item1 {
   grid-column: 2 / 5;
   grid-row: 2 / 4;
@@ -297,17 +255,17 @@
   grid-column: 2; /* Shares same column line start as item1 */
   grid-row: 3 / span 4;
 }
-  </code>
-</pre>
+            </code>
+          </pre>
           <img
             src="./images/grid-overlap-end-zIndex.png"
             alt=""
-            width="600px" />
+            width="550px" />
         </section>
 
         <!-- Hands-on Work -->
         <section>
-          <h2>Let's Develop It!</h2>
+          <h3>Let's Develop It!</h3>
           <p>
             <a
               href="https://codepen.io/tinuola/full/BaOvbRe"
@@ -332,7 +290,7 @@
         <!-- Grid Area -->
         <section>
           <h3>Grid Area</h3>
-          <p>
+          <p class="fs-28 width-750">
             An alternative (and visual) way to size and place elements on a grid is to use
             grid areas
           </p>
@@ -342,29 +300,38 @@
         <section>
           <h3>Grid Area</h3>
           <p class="width-800">
-            A <code>grid area</code> is the total space surrounded by four grid lines. It
-            can contain any number of grid cells
+            A <code class="highlight--yellow">grid area</code> is the total space
+            surrounded by four grid lines. It can contain any number of grid cells
           </p>
           <img
             src="./images/grid-track-cell-area.png"
             alt=""
-            width="400px" />
+            width="375px" />
+          <div>
+            <small
+              >Image Credit:
+              <a
+                href="https://uploads.sitepoint.com/wp-content/uploads/2016/04/1461911969celltrackarea.jpg"
+                target="_blank"
+                >SitePoint.com</a
+              ></small
+            >
+          </div>
         </section>
 
         <!-- Name-based Sizing & Placement -->
         <section>
-          <h3>Name-Based Sizing & Placement</h3>
-          <p>
+          <h4>Name-Based Sizing & Placement</h4>
+          <p class="fs-28 width-750">
             Areas of the grid can be given specific names that can then be applied to grid
             items
           </p>
-          <small></small>
         </section>
 
         <!-- grid-template-areas Syntax -->
         <section>
-          <h3><code>grid-template-areas</code></h3>
-          <ul style="font-size: 28px">
+          <h4><code>grid-template-areas</code></h4>
+          <ul class="fs-28">
             <li>
               The <code>grid-template-areas</code> property is declared on the grid
               container and accepts one or more string values (enclosed in quotes)
@@ -373,7 +340,7 @@
             <li>Each word represents a column cell</li>
           </ul>
           <pre>
-  <code class="css">
+            <code class="css">
 .container {
   display: grid;
 
@@ -384,14 +351,14 @@
     'gallery gallery gallery gallery '
     'footer footer footer footer';
 }
-  </code>
-</pre>
+            </code>
+          </pre>
         </section>
 
         <!-- grid-area Syntax -->
         <section>
-          <h3><code>grid-area</code></h3>
-          <p style="font-size: 28px">
+          <h4><code>grid-area</code></h4>
+          <p class="width-750 fs-28">
             Grid items are then placed or positioned into the layout using the
             <code>grid-area</code> property and referencing the named areas
           </p>
@@ -415,7 +382,7 @@
           <div class="flex-container">
             <div class="flex-item">
               <pre>
-  <code class="css">
+                <code class="css">
 .container {
   display: grid;
 
@@ -426,12 +393,12 @@
     'gallery gallery gallery gallery '
     'footer footer footer footer';
 }
-  </code>
-</pre>
+                </code>
+              </pre>
             </div>
             <div class="flex-item">
               <pre>
-  <code class="css">
+                <code class="css">
 .item1 {
   grid-area: logo;
 }
@@ -440,8 +407,8 @@
   grid-area: hero
 }
 ...
-  </code>
-</pre>
+                </code>
+              </pre>
             </div>
           </div>
           <img
@@ -452,15 +419,15 @@
 
         <!-- Creating empty space in named areas -->
         <section>
-          <h3>Creating Empty Space</h3>
-          <p
-            class="width-800"
-            style="font-size: 28px">
-            To leave a cell blank or create empty space, insert a period (<code>.</code>)
-            into the desired area in the grid
+          <h4>Creating Empty Space</h4>
+          <p class="width-800 fs-28">
+            To leave a cell blank or create empty space, insert a period (<code
+              class="highlight--yellow"
+              >.</code
+            >) into the desired area in the grid
           </p>
           <pre>
-  <code class="css">
+            <code class="css">
 .container {
   display: grid;
 
@@ -471,14 +438,14 @@
     'gallery gallery gallery gallery '
     'footer footer footer footer';
 }
-  </code>
-</pre>
+            </code>
+          </pre>
         </section>
 
         <!-- Code & Visual: Creating empty space in named areas -->
         <section>
           <pre>
-  <code class="css">
+            <code class="css">
 .container {
   display: grid;
 
@@ -489,22 +456,23 @@
     'gallery gallery gallery gallery '
     'footer footer footer footer';
 }
-  </code>
-</pre>
+            </code>
+          </pre>
           <img
             src="./images/grid-named-areas-blank.png"
-            alt="" />
+            alt=""
+            width="750px" />
         </section>
 
         <!-- Specific column and row sizing -->
         <section>
-          <h3>Track Sizing and Named Areas</h3>
+          <h4>Track Sizing and Named Areas</h4>
           <p class="fs-28 width-800">
             More specific sizing can still be declared or combined with
             <code>grid-template-areas</code>
           </p>
           <pre>
-  <code class="css">
+            <code class="css">
 .container {
   display: grid;
   /* Setting height for visual/illustrative effect */
@@ -521,13 +489,13 @@
     'gallery gallery gallery gallery '
     'footer footer footer footer';
 }
-  </code>
-</pre>
+            </code>
+          </pre>
         </section>
 
         <!-- Visual: grid-area and track sizing -->
         <section>
-          <h3>Track Sizing and Named Areas</h3>
+          <h4>Track Sizing and Named Areas</h4>
           <img
             src="./images/grid-area-and-track-sizing.png"
             width="500px"
@@ -536,12 +504,12 @@
 
         <!-- grid-area and Line Numbers -->
         <section>
-          <h3><code>grid-area</code> and Line Numbers</h3>
-          <p>
+          <h4><code>grid-area</code> and Line Numbers</h4>
+          <p class="fs-28 width-900">
             The <code>grid-area</code> property can also be used with grid line numbers
           </p>
           <pre>
-  <code class="css">
+            <code class="css">
 .item1 {
   grid-area: 1 / 3 / 2 / 4
 }
@@ -552,22 +520,18 @@ grid-column-start
 grid-row-end
 grid-column-end
 */
-  </code>
-</pre>
+            </code>
+          </pre>
         </section>
 
         <!-- Overlapping Named Areas-->
         <section>
-          <h3>Overlapping and Named Areas</h3>
-          <p
-            class="width-900 mb-16"
-            style="font-size: 28px">
+          <h4>Overlapping and Named Areas</h4>
+          <p class="width-900 fs-28 mb-32">
             With named areas, only one name can be assigned to a cell
           </p>
 
-          <p
-            class="width-800"
-            style="font-size: 28px">
+          <p class="width-800 fs-28">
             To create an overlap effect, use line numbers with either
             <code>grid-area</code>, <code>grid-column</code> or <code>grid-row</code>
           </p>
@@ -576,7 +540,7 @@ grid-column-end
         <!-- Code and Visual: Overlaping Named Area -->
         <section>
           <pre>
-  <code class="css">
+            <code class="css">
 .item2 {
   background: whitesmoke;
   /* grid-area: menu; */
@@ -589,8 +553,8 @@ grid-column-end
   /* Or can be written as: */
   /* grid-area: 2 / 3 / 3 / 5; */
 }
-  </code>
-</pre>
+            </code>
+          </pre>
           <img
             src="./images/grid-area-overlapping.png"
             width="500px"
@@ -599,7 +563,7 @@ grid-column-end
 
         <!-- Hands-on Work -->
         <section>
-          <h2>Let's Develop It!</h2>
+          <h3>Let's Develop It!</h3>
           <p>
             <a
               href="https://codepen.io/tinuola/full/BaOvbRe"
@@ -623,7 +587,7 @@ grid-column-end
 
         <!-- Responsive Grid with Media Queries -->
         <section>
-          <h3>CSS Grid and Media Queries</h3>
+          <h4>CSS Grid and Media Queries</h4>
           <p class="fs-28 width-800">
             Media queries can be used with CSS Grid to alter page layout as screen sizes
             change
@@ -674,8 +638,8 @@ grid-column-end
 
         <!-- Hands-on Work -->
         <section>
-          <h2>Let's Develop It!</h2>
-          <p class="width-800">
+          <h3>Let's Develop It!</h3>
+          <p class="width-800 mb-16">
             Let's make the <code>Named Areas</code> layout exercise responsive!
           </p>
           <p>
@@ -689,8 +653,8 @@ grid-column-end
 
         <!-- Exercise Instructions -->
         <section>
-          <h3>Exercise Instructions</h3>
-          <ul style="font-size: 28px">
+          <h4>Exercise Instructions</h4>
+          <ul class="fs-28">
             <li>
               Create media queries to change the layout to 2 columns at tablet size and 1
               column at mobile size
@@ -708,7 +672,7 @@ grid-column-end
 
         <!-- Finished Result: Tablet -->
         <section>
-          <h3>Finished Result: Tablet</h3>
+          <h4>Finished Result: Tablet</h4>
           <img
             src="./images/responsive-exe-tablet-result.png"
             alt="" />
@@ -716,7 +680,7 @@ grid-column-end
 
         <!-- Finished Result: Mobile -->
         <section>
-          <h3>Finished Result: Mobile</h3>
+          <h4>Finished Result: Mobile</h4>
           <img
             src="./images/responsive-exe-mobile-result.png"
             alt="" />
@@ -724,39 +688,40 @@ grid-column-end
 
         <!-- Explicit Grid -->
         <section>
-          <h3>Explicit Grid</h3>
+          <h4>Explicit Grid</h4>
           <p
             class="width-800"
             style="font-size: 28px">
             When a grid is created with a specfic number of columns and/or rows, it is
-            called an <code>explicit grid</code> and has explicit columns and rows
+            called an <code class="highlight--yellow">explicit grid</code> and has
+            explicit columns and rows
           </p>
 
           <pre>
-  <code class="html">
+            <code class="html">
     <div class="container">
       <div class="item item1">1</div>
       <div class="item item2">2</div>
       <div class="item item3">3</div>
       <div class="item item4">4</div>
     </div>
-  </code>
-</pre>
+            </code>
+          </pre>
           <pre>
-  <code class="css">
+            <code class="css">
 /* Creates an explicit 2 x 2 grid */
 .container {    
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-template-rows: 100px 100px;
 }
-  </code>
-</pre>
+            </code>
+          </pre>
         </section>
 
         <!-- Visual: Explicit Grid -->
         <section>
-          <h3>Explicit Grid</h3>
+          <h4>Explicit Grid</h4>
           <img
             src="./images/explicit-grid.png"
             alt="" />
@@ -764,13 +729,13 @@ grid-column-end
 
         <!-- Implicit Grid -->
         <section>
-          <h3>Implicit Grid</h3>
+          <h4>Implicit Grid</h4>
           <p
             class="width-800"
             style="font-size: 28px">
             When a grid has more grid items than cells, it will automatically add new
             tracks to accommodate the extra items, and create what's known as an
-            <code>implicit grid</code> that has implicit tracks
+            <code class="highlight--yellow">implicit grid</code> that has implicit tracks
           </p>
 
           <pre>
@@ -799,7 +764,7 @@ grid-column-end
 
         <!-- Visual: Implicit Grid -->
         <section>
-          <h3>Implicit Grid: Rows</h3>
+          <h4>Implicit Grid: Rows</h4>
           <img
             src="./images/implicit-grid.png"
             width="800px"
@@ -808,7 +773,7 @@ grid-column-end
 
         <!-- Auto Placement -->
         <section>
-          <h3>Auto Placement</h3>
+          <h4>Auto Placement</h4>
           <p
             class="width-900"
             style="font-size: 28px">
@@ -820,17 +785,12 @@ grid-column-end
 
         <!-- grid-auto-flow -->
         <section>
-          <h3><code>grid-auto-flow</code></h3>
-          <p
-            class="width-800"
-            style="font-size: 28px">
+          <h4><code>grid-auto-flow</code></h4>
+          <p class="width-800 fs-28 mb-32">
             CSS Grid's ability to create extra tracks is defined by the
-            <code>grid-auto-flow</code> property
+            <code class="highlight--yellow">grid-auto-flow</code> property
           </p>
-          <br />
-          <p
-            class="width-800"
-            style="font-size: 28px">
+          <p class="width-800 fs-28">
             When we have more grid items than cells, by using
             <code>grid-auto-flow</code> we can tell the browser to create extra tracks as
             either rows (the default) or columns
@@ -839,13 +799,13 @@ grid-column-end
 
         <!-- grid-auto-flow: columns -->
         <section>
-          <h3><code>grid-auto-flow</code></h3>
-          <p style="font-size: 28px">
+          <h4><code>grid-auto-flow</code></h4>
+          <p class="fs-28 width-600">
             By default, <code>grid-auto-flow</code> is set to <code>row</code>, but can be
             set to <code>column</code>
           </p>
           <pre>
-  <code class="css">
+            <code class="css">
 .container {    
   display: grid;
 
@@ -859,13 +819,13 @@ grid-column-end
   
   /* grid-auto-flow: row; is the default setting */
 }
-  </code>
-</pre>
+            </code>
+          </pre>
         </section>
 
         <!-- Visual: grid-auto-flow: column -->
         <section>
-          <h3>Implicit Grid: Columns</h3>
+          <h4>Implicit Grid: Columns</h4>
           <img
             src="./images/implicit-grid-columns.png"
             width="800px"
@@ -874,10 +834,8 @@ grid-column-end
 
         <!-- Sizing Implicit Tracks -->
         <section>
-          <h3>Sizing Implicit Tracks</h3>
-          <p
-            class="width-800"
-            style="font-size: 28px">
+          <h4>Sizing Implicit Tracks</h4>
+          <p class="width-800 fs-28">
             We can define the sizing of implicit columns and rows by using
             <code>grid-auto-columns</code> and <code>grid-auto-rows</code>
           </p>
@@ -886,10 +844,10 @@ grid-column-end
         <!-- grid-auto columns -->
         <!-- grid-auto-rows -->
         <section>
-          <h3><code>grid-auto-columns</code></h3>
-          <h3><code>grid-auto-rows</code></h3>
+          <h4><code>grid-auto-columns</code></h4>
+          <h4><code>grid-auto-rows</code></h4>
           <pre>
-  <code class="css">
+            <code class="css">
 .container {    
   display: grid;
 
@@ -906,10 +864,11 @@ grid-column-end
   Sets height for implicit rows
   */
 }
-  </code>
-</pre>
+            </code>
+          </pre>
         </section>
 
+        <!-- Visual: Implicit Columns -->
         <section>
           <h4>Sized Implicit Columns</h4>
           <img
@@ -919,7 +878,7 @@ grid-column-end
 
         <!-- grid-auto-flow: dense -->
         <section>
-          <h3><code>grid-auto-flow: dense</code></h3>
+          <h4><code>grid-auto-flow: dense</code></h4>
           <p class="width-800 fs-28">
             CSS Grid has the ability to fill up blank spaces that are left after explicit
             placement
@@ -927,10 +886,10 @@ grid-column-end
           <p class="width-800 fs-28 mt-16">
             Caveat: Only use <code>dense</code> if the order in which blank spaces are
             filled is
-            <em>not important</em>
+            <code class="highlight--yellow">not important</code>
           </p>
           <pre>
-  <code class="css">
+            <code class="css">
 .container {    
   display: grid;
   grid-template-columns: repeat(4, 1fr 2fr);
@@ -939,8 +898,8 @@ grid-column-end
 
   grid-auto-flow: dense;
 }
-  </code>
-</pre>
+            </code>
+          </pre>
         </section>
 
         <!-- Before applying dense -->
@@ -961,7 +920,7 @@ grid-column-end
 
         <!-- Hands-on Work -->
         <section>
-          <h2>Let's Develop It!</h2>
+          <h3>Let's Develop It!</h3>
           <p>
             <a
               href="https://codepen.io/tinuola/full/BaOvbRe"
@@ -969,11 +928,11 @@ grid-column-end
               >Codepen Sandbox
             </a>
           </p>
-          <p style="font-size: 28px; margin-bottom: 2rem">
+          <p class="fs-28 mb-32">
             Clone or Fork:<br />
             <code>Implicit Sizing: Student's Choice!</code>
           </p>
-          <p style="font-size: 28px">
+          <p class="fs-28 width-750">
             Come up with your own grid and practice implicit sizing with
             <code>grid-auto-flow</code> and the values/properties you've just learned
           </p>
@@ -983,14 +942,14 @@ grid-column-end
         <section>
           <h3>Resources</h3>
           <div class="width-900">
-            <small>
+            <p>
               <a
                 href="https://www.builder.io/blog/css-grid-template-areas"
                 target="_blank"
                 rel="noopener noreferrer"
                 >Become a CSS Grid wizard with grid-template-areas</a
-              ></small
-            >
+              >
+            </p>
           </div>
         </section>
 
@@ -1066,7 +1025,7 @@ grid-column-end
     <!-- End of Reveal wrapper -->
     <!---->
     <!---->
-    <!-- REVEAL.JS Script Files - Do Not Edit -->
+    <!-- RevealJS Scripts & Config - Do Not Edit or Delete -->
     <script src="https://cdn.jsdelivr.net/npm/reveal.js@4.1.0/dist/reveal.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/reveal.js@4.1.0/plugin/highlight/highlight.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/highlightjs-badge@0.1.9/highlightjs-badge.min.js"></script>
