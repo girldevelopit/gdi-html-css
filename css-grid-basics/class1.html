@@ -59,12 +59,12 @@
         <!-- Course Title -->
         <section>
           <h2>CSS Grid Basics</h2>
-          <h2>Class 1</h2>
+          <h3>Class 1</h3>
         </section>
 
-        <!-- Course Agenda / Topics / Course Outline -->
+        <!-- Course Agenda -->
         <section>
-          <h2>Class Agenda</h2>
+          <h3>Class Agenda</h3>
           <ul>
             <li>Introducing CSS Grid</li>
             <li>The Evolution of Web Layout</li>
@@ -76,7 +76,7 @@
 
         <!-- Break -->
         <section>
-          <h2>Break</h2>
+          <h3>Break</h3>
           <p>7p EST / 6p CST / 4p PST</p>
         </section>
 
@@ -87,7 +87,7 @@
 
         <!-- CSS Grid: What & Why -->
         <section>
-          <h2>CSS Grid: What & Why?</h2>
+          <h3>CSS Grid: What & Why?</h3>
         </section>
 
         <!-- Definition: CSS Grid -->
@@ -95,112 +95,155 @@
           <h4 class="width-900">
             CSS Grid Layout (aka CSS Grid) is a layout module for creating flexible,
             responsive
-            <span class="bold-600"><em>two-dimensional</em></span> layout for web user
-            interfaces
+            <span class="bold-600 highlight--black">two-dimensional</span> layout for web
+            user interfaces
           </h4>
         </section>
 
         <!-- Definition: 2D Layout -->
         <section>
           <h3>2D Layout</h3>
-          <p class="width-900">
+          <p class="mb-32 width-800">
             We can create a grid of rows and columns, and place our UI elements into
             specific areas of the grid
           </p>
-          <p>Our elements can occupy horizontal AND vertical space at the SAME TIME</p>
+          <p class="width-800">
+            Our elements can occupy horizontal
+            <span class="bold-600 highlight--yellow">AND</span> vertical space at the
+            <span class="bold-600 highlight--yellow">SAME TIME</span>
+          </p>
         </section>
 
-        <!-- Image of rows and columns -->
+        <!-- Visual: Layout divided into rows and columns -->
         <section>
           <h4>A Grid of Rows and Columns</h4>
           <img
             src="./images/grid-layout-1b.jpeg"
-            alt="" />
+            alt="Annotated representation of a page divided into grids" />
+          <div class="mt-32">
+            <small
+              >Image:
+              <a
+                href="https://onaircode.com/10-creative-css-grid-examples/"
+                target="_blank"
+                >10+ Creative CSS Grid Examples</a
+              ></small
+            >
+          </div>
         </section>
 
-        <!-- Image of page elements on a grid -->
+        <!-- Visual: Page elements arranged on a grid -->
         <section>
           <h4>Arranging Page Elements into the Grid</h4>
           <img
             src="./images/grid-layout-1a.jpeg"
-            alt="" />
+            alt="Graphical representation of a page divided into grids" />
+          <div class="mt-32">
+            <small
+              >Image:
+              <a
+                href="https://onaircode.com/10-creative-css-grid-examples/"
+                target="_blank"
+                >10+ Creative CSS Grid Examples</a
+              ></small
+            >
+          </div>
         </section>
 
-        <!-- History of Web Layout -->
+        <!-- Quick History of Web Layout -->
         <section>
           <h3>A Quick History of Web Layout</h3>
         </section>
 
-        <!-- Single column -->
+        <!-- Web Layout with minimal formatting -->
         <section>
           <h3>In the beginning...</h3>
-          <div class="flex-container">
-            <div class="flex-item">
-              <img
-                src="./images/amazon-1.png"
-                alt="" />
-              <small>
-                <a
-                  href="https://www.versionmuseum.com/history-of/amazon-website"
-                  target="_blank"
-                  >Version Museum</a
-                >
-              </small>
-            </div>
-            <div class="flex-item">
-              <p class="left-align">
-                "Web Layout" was a page with text, colored links, images, and text
-                alignment to make things really interesting
-              </p>
-            </div>
+          <p class="width-800 mb-16">
+            "Web Layout" was a page with text, colored links, images, and text alignment
+            to make things really interesting
+          </p>
+          <img
+            src="./images/amazon-1.png"
+            alt="The original Amazon website (August 1995)"
+            width="400px" />
+          <div>
+            <small
+              >Image:
+              <a
+                href="https://www.versionmuseum.com/history-of/amazon-website"
+                target="_blank"
+                >Version Museum</a
+              >
+            </small>
           </div>
         </section>
 
-        <!-- Tables -->
+        <!-- Web Layout with Tables -->
         <section>
           <h3>Then came tables...</h3>
-          <div class="flex-container">
-            <div class="flex-item">
-              <img
-                src="./images/amazon-2.png"
-                alt="" />
-              <small>
-                <a
-                  href="https://www.versionmuseum.com/history-of/amazon-website"
-                  target="_blank"
-                  >Version Museum</a
-                >
-              </small>
-            </div>
-            <div class="flex-item">
-              <p class="left-align">
-                ...as in the HTML tag, which was used to create more structured layout
-                because CSS was often not reliable across browsers
-              </p>
-            </div>
+          <p class="width-900 mb-16">
+            ...as in the HTML tag, which was used to create more structured layout because
+            CSS was often not reliable across browsers
+          </p>
+          <img
+            src="./images/amazon-2.png"
+            alt="Amazon homepage image, restored by Version Museum (1997)"
+            width="400px" />
+          <div>
+            <small
+              >Image:
+              <a
+                href="https://www.versionmuseum.com/history-of/amazon-website"
+                target="_blank"
+                >Version Museum</a
+              >
+            </small>
           </div>
         </section>
 
-        <!-- Floats, Positioning -->
+        <!-- Web Layout with Floats, Positioning -->
         <section>
           <h3>Hello floats and positioning...</h3>
-          <p>Goodbye tables!</p>
+          <p class="fs-32">Goodbye tables!</p>
           <img
             src="./images/amazon-3.png"
-            width="600px"
-            alt="" />
+            width="500px"
+            alt="Amazon homepage (1999)" />
+          <div>
+            <small
+              >Image:
+              <a
+                href="https://www.versionmuseum.com/history-of/amazon-website"
+                target="_blank"
+                >Version Museum</a
+              >
+            </small>
+          </div>
         </section>
 
-        <!-- Flexbox -->
+        <!-- Web Layout with Flexbox -->
         <section>
-          <h3>Then a thing called 'Flexbox' happened</h3>
+          <h3>Then Flexbox happened</h3>
           <img
             src="./images/amazon-4.png"
-            width="600px"
-            alt="" />
+            width="500px"
+            alt="Amazon cell phone store (2015)" />
+          <div>
+            <small
+              >Image:
+              <a
+                href="https://www.versionmuseum.com/history-of/amazon-website"
+                target="_blank"
+                >Version Museum</a
+              >
+            </small>
+          </div>
         </section>
 
-        <!-- Flexbox limitations -->
+        <!-- TO UPDATE: What was Flexbox really
+        built for -->
+
+        <!-- limitations of Flexbox -->
         <section>
           <h3>Flexbox Limitations</h3>
           <ul>
@@ -216,7 +259,11 @@
           <ul>
             <li>Two-dimensional system</li>
             <ul>
-              <li class="mb-16"><em>Can also be used for one-dimension layout</em></li>
+              <li class="mb-16">
+                <span class="highlight--yellow"
+                  >Can also be used for one-dimension layout</span
+                >
+              </li>
             </ul>
             <li>Complex or unique layouts with less hacks</li>
             <li>Less precision of markup placement</li>
@@ -227,6 +274,16 @@
         <!-- CSS Flexbox or CSS Grid? -->
         <section data-background="./images/boxinggloves.jpg">
           <h3 class="data-bground-contrast">CSS Flexbox vs CSS Grid?</h3>
+          <div class="mt-32">
+            <small class="photo-label--white"
+              >Photo credit:
+              <a
+                href="https://www.expertreviews.co.uk/health-and-grooming/1407584/best-boxing-gloves"
+                target="_blank"
+                >Expert Reviews</a
+              ></small
+            >
+          </div>
         </section>
 
         <section>
@@ -241,25 +298,29 @@
           <p>They can be used together</p>
           <img
             src="./images/css-wkgroup-2.png"
-            alt="" />
-          <small class="small">
-            <a
-              href="https://www.w3.org/TR/css-grid-1/#intro"
-              target="_blank"
-              >CSS Working Group</a
-            >
-          </small>
+            alt="Excerpt from CSS Working Group explaining relationship between CSS Grid and CSS Flexbox" />
+          <div>
+            <small
+              >Excerpt:
+              <a
+                href="https://www.w3.org/TR/css-grid-1/#intro"
+                target="_blank"
+                >CSS Working Group</a
+              >
+            </small>
+          </div>
         </section>
 
         <!-- Flexbox and Grid Combined -->
         <section>
           <h3>Flexbox and Grid Combined</h3>
           <img
-            src="./images/flex-and-grid-combined1.png"
-            alt="" />
+            src="./images/flex-and-grid-combo1.png"
+            alt="A web page of article listings arranged in a 4 by 3 grid" />
           <div class="mt-16">
             <small
-              ><a
+              >Image Credit:
+              <a
                 href="https://nostrongbeliefs.com/blog/using-css-grid-and-flexbox-together/"
                 target="_blank"
                 rel="noopener noreferrer"
@@ -283,12 +344,14 @@
               <li>gap</li>
             </ul>
           </div>
-          <small class="mt-16"
-            ><a
+          <small class="mt-32 fs-24"
+            >Learn More:
+            <a
               href="https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Box_Alignment"
               target="_blank"
               >CSS Box Alignment</a
-            ></small
+            >
+            (MDN Docs)</small
           >
         </section>
 
@@ -297,7 +360,7 @@
           <h3>Simple Guidelines for Deciding</h3>
         </section>
 
-        <!-- Grid for layout emphasis -->
+        <!-- Grid for layout -->
         <section>
           <h4>CSS Grid is ideal for layout or content placement</h4>
           <ul>
@@ -307,7 +370,7 @@
           </ul>
         </section>
 
-        <!-- Flexbox for flexible items focus -->
+        <!-- Flexbox for flexible items -->
         <section>
           <h4>CSS Flexbox is ideal for content flow</h4>
           <ul>
@@ -321,39 +384,42 @@
           <h3>Same Markup, Different Focus</h3>
           <div class="flex-container">
             <div class="flex-item">
-              <h4>CSS Grid</h4>
-              <img
-                src="./images/comparison-1.png"
-                alt="" />
+              <h5>CSS Grid</h5>
+              <a href=""
+                ><img
+                  src="./images/flex-grid-comparison-1.png"
+                  alt=""
+              /></a>
             </div>
             <div class="flex-item">
-              <h4>CSS Flexbox</h4>
+              <h5>CSS Flexbox</h5>
               <img
-                src="./images/comparison-2.png"
+                src="./images/flex-grid-comparison-2.png"
                 alt="" />
             </div>
           </div>
+          <div class="mt-32"><small class="fs-28">CodePen</small></div>
         </section>
 
         <!-- Kevin Powell YouTube Clip -->
         <section>
           <h4>How Does Kevin Powell Decide?</h4>
           <iframe
-            height="450"
+            height="400"
             src="https://www.youtube.com/embed/qI6zRC_0a5Q?t=14"
             title="Avoid making this mistake in your CSS"
             frameborder="0"
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
             allowfullscreen></iframe>
-          <div class="mt-16 width-900">
-            <small
-              ><a
+          <div class="mt-32">
+            <p class="fs-24">
+              <a
                 href="https://www.kevinpowell.co/"
                 target="_blank"
                 >Kevin Powell</a
               >
-              is a well-known CSS Evangelist, Instructor and YouTuber</small
-            >
+              is a CSS Evangelist, Instructor and YouTuber
+            </p>
           </div>
         </section>
 
@@ -361,38 +427,38 @@
         <section>
           <h4>A Few Articles About How to Decide</h4>
           <div class="width-900">
-            <small
-              ><a
+            <p class="fs-24">
+              <a
                 href="https://css-irl.info/to-grid-or-to-flex/"
                 target="_blank"
                 >To Grid or to Flex?</a
               >
-              (CSS {In Real Life})</small
-            >
-            <small
-              ><a
+              (CSS {In Real Life})
+            </p>
+            <p class="fs-24">
+              <a
                 href="https://alvarotrigo.com/blog/css-grid-vs-flexbox/"
                 target="_blank"
                 >CSS Grid vs Flexbox | Which one should I use?</a
               >
-              (fullPage.js)</small
-            >
-            <small
-              ><a
+              (fullPage.js)
+            </p>
+            <p class="fs-24">
+              <a
                 href="https://css-tricks.com/quick-whats-the-difference-between-flexbox-and-grid/"
                 target="_blank"
                 >What’s the Difference Between Flexbox and Grid?</a
               >
-              (CSS Tricks)</small
-            >
-            <small
-              ><a
+              (CSS Tricks)
+            </p>
+            <p class="fs-24">
+              <a
                 href="https://scrimba.com/articles/css-grid-vs-flexbox/"
                 target="_blank"
                 >CSS Grid vs Flexbox: How to decide (with examples)</a
               >
-              (Scrimba)</small
-            >
+              (Scrimba)
+            </p>
           </div>
         </section>
 
@@ -411,7 +477,7 @@
 
         <!-- CSS Grid Syntax -->
         <section>
-          <h2>CSS Grid Syntax</h2>
+          <h3>CSS Grid Syntax</h3>
           <h3>Fundamentals</h3>
         </section>
 
@@ -435,40 +501,39 @@
 
         <!-- display:grid -->
         <section>
-          <h3><code>display: grid</code></h3>
-          <p>Declare <code>grid</code> property on a container</p>
-          <!-- prettier-ignore -->
+          <h4><code>display: grid</code></h4>
+          <p>
+            Declare <code class="highlight--yellow">grid</code> property on a container
+          </p>
+          <!-- Code Snippet -->
           <pre>
-  <code class="css">
+            <code class="css">
 .container {
 
   display: grid;
 
 }
-  </code>
-</pre>
-          <p>
+            </code>
+          </pre>
+          <p class="mt-32 width-800">
             When <code>grid</code> is declared on a container, the container becomes a
-            <code>grid container</code>; elements inside the container become
-            <code>grid items</code>
+            <code class="highlight--yellow">grid container</code>; elements inside the
+            container become
+            <code class="highlight--yellow">grid items</code>
           </p>
         </section>
 
         <!-- Creating Columns & Rows -->
         <section>
-          <h3
-            class="width-800"
-            style="margin-bottom: 1.25rem !important">
-            Creating and Sizing Columns&nbsp;& Rows
-          </h3>
-          <small class="width-800">
+          <h4 class="width-800 mb-32">Creating and Sizing Columns&nbsp;& Rows</h4>
+          <p class="width-800">
             Create columns and rows (aka 'tracks') with
-            <code>grid-template-columns</code> and
-            <code>grid-template-rows</code>
-          </small>
-          <!-- prettier-ignore -->
+            <code class="highlight--yellow">grid-template-columns</code> and
+            <code class="highlight--yellow">grid-template-rows</code>
+          </p>
+          <!-- Code Snippet -->
           <pre>
-  <code class="css">
+            <code class="css">
 .container {
 
   display: grid;
@@ -478,46 +543,64 @@
   grid-template-rows: 50px 100px 150px;
 
 }
-  </code>
-</pre>
+            </code>
+          </pre>
         </section>
 
         <!-- Grid Tracks, Cells, Area-->
         <section>
-          <h3>Key Terms: Tracks & Cells</h3>
-          <small>A grid <code>track</code> is a column or row of the grid</small><br />
-          <small>A grid <code>cell</code> is an individual unit of the grid</small><br />
+          <h4>Key Terms: Tracks & Cells</h4>
+          <p>
+            A grid <code class="highlight--yellow">track</code> is a column or row of the
+            grid
+          </p>
+          <p>
+            A grid <code class="highlight--yellow">cell</code> is an individual unit of
+            the grid
+          </p>
           <img
             src="./images/grid-track-cell-area.png"
             height="375px"
             alt="" />
+          <div>
+            <small
+              >Image Credit:
+              <a
+                href="https://uploads.sitepoint.com/wp-content/uploads/2016/04/1461911969celltrackarea.jpg"
+                target="_blank"
+                >SitePoint.com</a
+              ></small
+            >
+          </div>
         </section>
 
         <!-- Fractional Unit -->
         <section>
-          <h3>Fractional Unit: <code>fr</code></h3>
-          <ul>
+          <h4>Fractional Unit: <code>fr</code></h4>
+          <ul class="mb-32">
             <li>New syntax that is unique to CSS Grid</li>
             <li>The browser divides an element into equal or proportional parts</li>
             <li>We don't have to do the math! 👏</li>
           </ul>
-          <br /><br />
-          <small
-            ><a
-              href="https://medium.com/flexbox-and-grids/the-css-fractional-unit-fr-in-approachable-plain-language-fdc47bd387f7"
-              target="_blank"
-              rel="noopener noreferrer"
-              >The CSS Fractional Unit (Fr) in Approachable, Plain Language</a
-            ></small
-          >
+          <div class="width-600">
+            <p class="fs-24">
+              Article:
+              <a
+                href="https://medium.com/flexbox-and-grids/the-css-fractional-unit-fr-in-approachable-plain-language-fdc47bd387f7"
+                target="_blank"
+                rel="noopener noreferrer"
+                >The CSS Fractional Unit (Fr) in Approachable, Plain Language</a
+              >
+            </p>
+          </div>
         </section>
 
         <!-- Fractional Unit code snippet -->
         <section>
-          <h3>Fractional Unit: <code>fr</code></h3>
-          <!-- prettier-ignore -->
+          <h4>Fractional Unit: <code>fr</code></h4>
+          <!-- Code Snippet -->
           <pre>
-  <code class="css">
+            <code class="css">
 .container {
 
   display: grid;
@@ -525,24 +608,23 @@
   grid-template-columns: 1fr 1fr 1f;
 
 }
-  </code>
-</pre>
-
-          <ul>
+            </code>
+          </pre>
+          <ul class="fs-28 mt-16">
             <li>Creates a grid with three columns</li>
             <li>
-              The three columns are <code>1fr</code> each, meaning they take up equal
-              space
+              The three columns are <code class="highlight--yellow">1fr</code> each,
+              meaning they take up equal space
             </li>
           </ul>
         </section>
 
         <!-- Auto -->
         <section>
-          <h3><code>auto</code> Unit</h3>
-          <!-- prettier-ignore -->
+          <h4><code>auto</code> Unit</h4>
+          <!-- Code Snippet -->
           <pre>
-  <code class="css">
+            <code class="css">
 .container {
 
   display: grid;
@@ -550,30 +632,30 @@
   grid-template-columns: 1fr 1fr 1fr auto;
 
 }
-  </code>
-</pre>
+            </code>
+          </pre>
 
-          <ul>
+          <ul class="fs-28">
             <li>Creates a grid with four columns</li>
             <li>The first three columns take up equal space</li>
             <li>
-              The fourth column is set to <code>auto</code>, meaning it gets whatever
-              space is left or is needed for its content
+              The fourth column is set to <code class="highlight--yellow">auto</code>,
+              meaning it gets whatever space is left or is needed for its content
             </li>
           </ul>
         </section>
 
         <!-- Repeat() -->
         <section>
-          <h3><code>repeat()</code></h3>
-          <p>
-            <code>repeat()</code> is a function to write shorter code when there's a
-            recurring pattern
+          <h4><code>repeat()</code></h4>
+          <p class="width-750 mb-16">
+            <code class="highlight--yellow">repeat()</code> is a function to write shorter
+            code when there's a recurring pattern
           </p>
-          <small><code>repeat(number_of_times, dimension)</code></small>
-          <!-- prettier-ignore -->
+          <p class="fs-24"><code>repeat(number_of_times, dimension)</code></p>
+          <!-- Code Snippet -->
           <pre>
-  <code class="css">
+            <code class="css">
 .container {
   display: grid;
 
@@ -583,15 +665,15 @@
   /* More than one unit can also be specified */
   grid-template-columns: repeat(3, 1fr 50px)
 }
-  </code>
-</pre>
+            </code>
+          </pre>
         </section>
 
         <!-- Gap -->
         <section>
-          <h3><code>gap</code></h3>
+          <h4><code>gap</code></h4>
           <p class="width-800">Creates space or margins (aka gutters) between tracks</p>
-          <!-- prettier-ignore -->
+          <!-- Code Snippet -->
           <pre>
   <code class="css">
 .container {
@@ -607,13 +689,13 @@
     column-gap: 1rem; 
   */
 }
-  </code>
-</pre>
+            </code>
+          </pre>
         </section>
 
         <!-- Hands-on Work -->
         <section>
-          <h2>Let's Develop It!</h2>
+          <h3>Let's Develop It!</h3>
           <p>
             <a
               href="https://codepen.io/tinuola/full/BaOvbRe"
@@ -641,28 +723,45 @@
 
         <!-- Grid Lines -->
         <section>
-          <h3>Key Term: Grid Lines</h3>
-          <p>
-            Grid items are arranged along <code>grid lines</code> -- the dividing
-            horizontal and vertical lines that make up the grid
+          <h4>Key Term: Grid Lines</h4>
+          <p class="width-800 mb-32">
+            Grid items are arranged along
+            <code class="highlight--yellow">grid lines</code> -- the dividing horizontal
+            and vertical lines that make up the grid
           </p>
-          <small
-            ><a
-              href="https://www.smashingmagazine.com/2020/01/understanding-css-grid-lines/"
-              target="_blank"
-              rel="noopener noreferrer"
-              >Understanding CSS Grid: Grid Lines</a
-            >
-            (Smashing Magazine)</small
-          >
+          <div>
+            <p class="fs-24">
+              Article:
+              <a
+                href="https://www.smashingmagazine.com/2020/01/understanding-css-grid-lines/"
+                target="_blank"
+                rel="noopener noreferrer"
+                >Understanding CSS Grid: Grid Lines</a
+              >
+              (Smashing Magazine)
+            </p>
+          </div>
         </section>
 
         <!-- Image of Grid Lines -->
         <section>
-          <h3>Grid Lines</h3>
+          <h4>Grid Lines</h4>
           <img
             src="./images/grid-lines.png"
-            alt="" />
+            alt=""
+            width="600px" />
+          <div>
+            <p class="fs-24">
+              Image:
+              <a
+                href="https://www.smashingmagazine.com/2020/01/understanding-css-grid-lines/"
+                target="_blank"
+                rel="noopener noreferrer"
+                >Understanding CSS Grid: Grid Lines</a
+              >
+              (Smashing Magazine)
+            </p>
+          </div>
         </section>
 
         <!-- Grid Lines Demo -->
@@ -683,15 +782,16 @@
 
         <!-- Dev Tools -->
         <section>
-          <h3>Grid Lines in Dev Tools</h3>
-          <ul>
+          <h4>Grid Lines in Dev Tools</h4>
+          <ul class="fs-28">
             <li>Open up your browser's Developer Tools</li>
             <li>
-              In the <code>Elements</code> (Chrome) or <code>Inspector</code> (Firefox)
-              tool tab, select the <code>Layout</code> panel
+              In the <code class="highlight--yellow">Elements</code> (Chrome) or
+              <code>Inspector</code> (Firefox) tool tab, select the
+              <code class="highlight--yellow">Layout</code> panel
             </li>
             <li>
-              Select the <code>Grid Overlays</code> (Chrome) or
+              Select the <code class="highlight--yellow">Grid Overlays</code> (Chrome) or
               <code>Overlay Grid</code> (Firefox) option
             </li>
           </ul>
@@ -699,8 +799,8 @@
 
         <!-- Line-based Placement  -->
         <section>
-          <h3>Line-Based Placement</h3>
-          <p>
+          <h4>Line-Based Placement</h4>
+          <p class="fs-28 width-750">
             Grid lines are used to position where an element or grid item should start and
             end
           </p>
@@ -708,14 +808,15 @@
 
         <!-- Placement properties -->
         <section>
-          <h3>Placement Properties</h3>
-          <p>
-            The following placement properties are used on <code>grid items</code> to
-            position them on the grid
+          <h4>Placement Properties</h4>
+          <p class="width-750">
+            The following placement properties are used on
+            <code class="highlight--yellow">grid&nbsp;items</code> to position them on the
+            grid
           </p>
-          <!-- prettier-ignore -->
+          <!-- Code Snippet -->
           <pre>
-  <code class="css">
+            <code class="css">
 .item1 {
 
   grid-column-start: 1; /* Start at Column Line 1*/
@@ -727,22 +828,22 @@
   grid-row-end: 3; /* End at Row Line 3*/
 
 }
-  </code>
-</pre>
+            </code>
+          </pre>
         </section>
 
         <section>
-          <p>
+          <p class="fs-28 width-750 mb-32">
             A <code>grid item</code> can start at any point on the grid--not just at
             <code>line 1</code>
           </p>
-          <p>
+          <p class="fs-28 width-750">
             When this happens, the browser will shift other elements to maintain the flow
             of the grid
           </p>
-          <!-- prettier-ignore -->
+          <!-- Code Snippet -->
           <pre>
-  <code class="css">
+            <code class="css">
 .item1 {
 
   grid-column-start: 3;
@@ -754,21 +855,25 @@
   grid-row-end: 6;
 
 }
-</code>
-</pre>
+            </code>
+          </pre>
         </section>
 
         <!-- Placement Property shorthand -->
         <section>
-          <h3>Placement Shorthands</h3>
-          <p>The placement properties can also be written in shorthand form:</p>
-
-          <small><code>grid-column: start / end</code></small
-          ><br />
-          <small><code>grid-row: start / end</code></small>
-          <!-- prettier-ignore -->
+          <h4>Placement Shorthands</h4>
+          <p class="fs-28">
+            The placement properties can also be written in shorthand form:
+          </p>
+          <p class="fs-24">
+            <code class="highlight--yellow">grid-column: start / end</code>
+          </p>
+          <p class="fs-24">
+            <code class="highlight--yellow">grid-row: start / end</code>
+          </p>
+          <!-- Code Snippet -->
           <pre>
-  <code class="css">
+            <code class="css">
 .item1 {
 
   grid-column: 1 / 3;
@@ -776,20 +881,20 @@
   grid-row: 1 / 3;
 
 }
-  </code>
-</pre>
+            </code>
+          </pre>
         </section>
 
         <!-- One-Cell Placement -->
         <section>
-          <h3>One-Cell Placement</h3>
-          <p>
+          <h4>One-Cell Placement</h4>
+          <p class="width-800">
             When a <code>grid item</code> occupies only one cell, the
             <code>ending grid line number</code> can be omitted
           </p>
-          <!-- prettier-ignore -->
+          <!-- Code Snippet -->
           <pre>
-  <code class="css">
+            <code class="css">
 .item1 {
 
   grid-column: 3;
@@ -797,29 +902,27 @@
   grid-row: 2;
 
 }
-  </code>
-</pre>
+            </code>
+          </pre>
         </section>
 
         <!-- Spanning -->
         <section>
-          <h3>Span-Based Placement</h3>
-          <p>
+          <h4>Span-Based Placement</h4>
+          <p class="width-750">
             An alternate way to place grid items across multiple cells is to use the
-            <code>span</code> keyword
+            <code class="highlight--yellow">span</code> keyword
           </p>
         </section>
 
         <section>
-          <h3><code>span</code> Syntax</h3>
-          <small><code>grid-column: span #_of_cells</code></small
-          ><br />
-          <small><code>grid-column: starting line # / span #_of_cells</code></small
-          ><br />
-          <small><code>grid-column: span #_of_cells / ending line #</code></small>
-          <!-- prettier-ignore -->
+          <h4><code>span</code> Syntax</h4>
+          <p class="fs-24"><code>grid-column: span #_of_cells</code></p>
+          <p class="fs-24"><code>grid-column: starting line # / span #_of_cells</code></p>
+          <p class="fs-24"><code>grid-column: span #_of_cells / ending line #</code></p>
+          <!-- Code Snippet -->
           <pre>
-  <code class="css">
+            <code class="css">
 .item1 {
 
   grid-column: span 3;
@@ -829,20 +932,20 @@
   /* Start at grid-row line 2 and span down 2 cells */
 
 }
-  </code>
-</pre>
+            </code>
+          </pre>
         </section>
 
         <!-- Full-Width Spanning -->
         <section>
-          <h3>CSS Grid Trick: Full Width Spanning</h3>
-          <p>
+          <h4>CSS Grid Trick: Full Width Spanning</h4>
+          <p class="width-750">
             Create a full-width span effect by setting the ending grid line number to
             <code>-1</code>
           </p>
-          <!-- prettier-ignore -->
+          <!-- Code Snippet -->
           <pre>
-  <code class="css">
+            <code class="css">
 .item1 {
 
   grid-column: 1 / -1;
@@ -850,13 +953,13 @@
   grid-row: 3;
   
 }
-  </code>
-</pre>
+            </code>
+          </pre>
         </section>
 
         <!-- Hands-on Work -->
         <section>
-          <h2>Let's Develop It!</h2>
+          <h3>Let's Develop It!</h3>
           <p>
             <a
               href="https://codepen.io/tinuola/full/BaOvbRe"
@@ -882,30 +985,30 @@
         <section>
           <h3>Resources</h3>
           <div class="width-900">
-            <small>
+            <p>
               <a
                 href="https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Grid_Layout"
                 target="_blank"
                 rel="noopener noreferrer"
                 >CSS Grid Layout (MDN Docs)</a
-              ></small
-            >
-            <small>
+              >
+            </p>
+            <p>
               <a
                 href="https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Grid_Layout/Basic_Concepts_of_Grid_Layout"
                 target="_blank"
                 rel="noopener noreferrer"
                 >Basic Concepts of Grid Layout (MDN Docs)</a
-              ></small
-            >
-            <small>
+              >
+            </p>
+            <p>
               <a
                 href="https://css-tricks.com/snippets/css/complete-guide-grid/"
                 target="_blank"
                 rel="noopener noreferrer"
                 >A Complete Guide to CSS Grid (CSS Tricks)</a
               >
-            </small>
+            </p>
           </div>
         </section>
 

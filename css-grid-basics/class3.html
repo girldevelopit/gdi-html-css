@@ -58,12 +58,12 @@
         <!-- Course Title -->
         <section>
           <h2>CSS Grid Basics</h2>
-          <h2>Class 3</h2>
+          <h3>Class 3</h3>
         </section>
 
         <!-- Course Agenda / Topics / Course Outline -->
         <section>
-          <h2>Class Agenda</h2>
+          <h3>Class Agenda</h3>
           <ul>
             <li>Sizing with <code>minmax()</code></li>
             <li>Sizing with <code>auto-fit</code> and <code>auto-fill</code></li>
@@ -76,7 +76,7 @@
 
         <!-- Break -->
         <section>
-          <h2>Break</h2>
+          <h3>Break</h3>
           <p>7p EST / 6p CST / 4p PST</p>
         </section>
 
@@ -87,13 +87,13 @@
 
         <!-- Sizing Function Keywords -->
         <section>
-          <h2>Sizing Function & Keywords</h2>
+          <h3>Sizing Function & Keywords</h3>
         </section>
 
         <!-- minmax -->
         <section>
-          <h3><code>minmax()</code></h3>
-          <p class="width-800 fs-28">
+          <h4><code>minmax()</code></h4>
+          <p class="width-800 fs-28 mb-32">
             To set a minimum and maximum size for tracks, use the
             <code>minmax()</code> function
           </p>
@@ -134,7 +134,7 @@
 
         <!-- minmax and Auto Placement -->
         <section>
-          <h3><code>minmax</code> and Auto Placement</h3>
+          <h4><code>minmax</code> and Auto Placement</h4>
           <p class="fs-28 width-800">
             <code>minmax()</code> is especially useful with the
             <code>grid-auto-rows</code> and
@@ -146,7 +146,7 @@
 
         <!-- Code: mimmax and Auto Placement -->
         <section>
-          <h3><code>minmax</code> and Auto Placement</h3>
+          <h4><code>minmax</code> and Auto Placement</h4>
           <pre>
             <code class="css">
 .container {
@@ -163,8 +163,8 @@
   grid-auto-rows: minmax(50px, 1fr);
 
 }
-  </code>
-</pre>
+            </code>
+          </pre>
         </section>
 
         <!-- Visual: mimmax and Auto Placement -->
@@ -182,23 +182,27 @@
 
         <!-- Intro: auto-fit and auto-fill-->
         <section>
-          <h3><code>auto-fit</code> and <code>auto-fill</code></h3>
+          <h4><code>auto-fit</code> and <code>auto-fill</code></h4>
           <p class="fs-28 width-800">
-            <code>auto-fit</code> and <code>auto-fill</code> are auto placement keywords
-            that when combined with the <code>repeat()</code> function can determine how
-            to size and arrange extra columns
+            <code class="highlight--yellow">auto-fit</code> and
+            <code class="highlight--yellow">auto-fill</code> are auto placement keywords
+            that when combined with the
+            <code class="highlight--yellow">repeat()</code> function can determine how to
+            size and arrange extra columns
           </p>
         </section>
 
         <!-- Definitions: auto-fit and auto-fill-->
         <section>
-          <h3><code>auto-fit</code> and <code>auto-fill</code></h3>
+          <h4><code>auto-fit</code> and <code>auto-fill</code></h4>
           <p class="fs-28 width-800 mb-32">
             <code>auto-fit</code> will fit whatever columns are available and
-            <code>expand</code> them to avoid creating empty space
+            <code class="highlight--yellow">expand</code> them to avoid creating empty
+            space
           </p>
           <p class="fs-28 width-800">
-            <code>auto-fill</code> will do the same EXCEPT leave empty space if there are
+            <code>auto-fill</code> will do the same
+            <span class="highlight--yellow">EXCEPT leave empty space</span> if there are
             not enough columns
           </p>
         </section>
@@ -207,15 +211,15 @@
         <section>
           <h4>Before <code>auto-fit</code> and <code>auto-fill</code></h4>
           <pre>
-  <code class="css">
+            <code class="css">
 .container {
   display: grid;
 
   grid-template-columns: repeat(12, 200px);
   /* Creates an overflow */
 }
-  </code>
-</pre>
+            </code>
+          </pre>
           <img
             src="./images/auto-fit-auto-fill-BEFORE.png"
             alt="" />
@@ -225,7 +229,7 @@
         <section>
           <h4>After <code>auto-fit</code> and <code>auto-fill</code></h4>
           <pre>
-  <code class="css">
+            <code class="css">
 .container {
   display: grid;
 
@@ -235,8 +239,8 @@
   
   grid-template-columns: repeat(auto-fiil, 200px);
 }
-  </code>
-</pre>
+            </code>
+          </pre>
           <img
             src="./images/auto-fit-auto-fill-AFTER.png"
             alt=""
@@ -245,7 +249,7 @@
 
         <!-- Definitions: auto-fit and auto-fill-->
         <section>
-          <h3><code>auto-fit</code> and <code>auto-fill</code></h3>
+          <h4><code>auto-fit</code> and <code>auto-fill</code></h4>
           <p class="fs-28 width-800 mb-32">
             <code>auto-fit</code> and <code>auto-fill</code> tell the browser to size
             columns wide enough to fit or fill the given space, and then wrap whatever's
@@ -255,15 +259,15 @@
             In practice, they often end up achieving the same result
           </p>
           <div>
-            <small
-              ><a
+            <p class="fs-24"></p>
+              <a
                 href="https://css-tricks.com/auto-sizing-columns-css-grid-auto-fill-vs-auto-fit/"
                 target="_blank"
                 rel="noopener noreferrer"
                 >Auto-Sizing Columns in CSS Grid: `auto-fill` vs `auto-fit`</a
               >
-              (CSS Tricks)</small
-            >
+              (CSS Tricks)
+            </p>
           </div>
         </section>
 
@@ -280,13 +284,13 @@
           </p>
 
           <div class="mt-32">
-            <small
+            <p class="fs-24"
               >This is considered to be the
               <a
                 href="https://css-tricks.com/books/greatest-css-tricks/flexible-grids/"
                 target="_blank"
                 >greatest CSS Grid Trick of all time!</a
-              ></small
+              ></p
             >
           </div>
         </section>
@@ -295,7 +299,7 @@
         <section>
           <h4>Responsive Grid -- No Media Queries!</h4>
           <pre>
-  <code class="css">
+            <code class="css">
 .container {
   display: grid;
 
@@ -303,8 +307,8 @@
 
   /* Or use auto-fill -- the effect is the same */
 }
-  </code>
-</pre>
+            </code>
+          </pre>
           <img
             src="./images/flexible-grid.gif"
             alt=""
@@ -318,67 +322,65 @@
 
         <!-- Sticky Footer -->
         <section>
-          <h3>Sticky Footer</h3>
+          <h4>Sticky Footer</h4>
           <img
             src="./images/grid-trick-sticky-footer.png"
             alt="" />
           <div>
-            <small
+            <p class="fs-28"
               ><a
                 href="https://codepen.io/tinuola/pen/RwYzrLy"
                 target="_blank"
                 >CodePen Demo</a
-              ></small
+              ></p
             >
           </div>
         </section>
 
         <!-- Horizontal and Vertical Centering -->
         <section>
-          <h3>Horizontal and Vertical Centering</h3>
+          <h4>Horizontal and Vertical Centering</h4>
           <img
             src="./images/grid-trick-centering.png"
             alt="" />
           <div>
-            <small
+            <p class="fs-28"
               ><a
                 href="https://codepen.io/tinuola/pen/YzOowjv"
                 target="_blank"
                 >CodePen Demo</a
-              ></small
+              ></p
             >
-          </div>
-          <div>
-            <small
+            <p class="fs-28"
               ><a
                 href="https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Box_Alignment"
                 target="_blank"
                 >CSS Box Alignment Properties</a
-              ></small
+              ></p
             >
           </div>
         </section>
 
         <!-- Nested Grids -->
         <section>
-          <h3>Nested Grids</h3>
+          <h4>Nested Grids</h4>
           <img
             src="./images/nested-grids.png"
             alt="" />
           <div>
-            <small
+            <p class="fs-28"
               ><a
                 href="https://codepen.io/tinuola/pen/eYLwJog"
                 target="_blank"
                 >CodePen Demo</a
-              ></small
+              ></p
             >
           </div>
         </section>
 
         <!-- CSS Flexbox + CSS Grid -->
         <section>
-          <h3>Flexbox and Grid</h3>
+          <h4>Flexbox and Grid</h4>
           <p class="fs-28 width-800 mb-32">
             Another example of nesting is to pair CSS Flexbox and CSS Grid together!
           </p>
@@ -399,7 +401,7 @@
             src="./images/flex-and-grid-combo1.png"
             alt="" />
           <div>
-            <p class="fs-28">
+            <p class="fs-24">
               <a
                 href="https://nostrongbeliefs.com/blog/using-css-grid-and-flexbox-together/"
                 target="_blank"
@@ -408,9 +410,7 @@
               >
               (NoStrongBeliefs)
             </p>
-          </div>
-          <div>
-            <p class="fs-28">
+            <p class="fs-24">
               <a
                 href="https://codepen.io/derekjohnson/pen/BVWPRV"
                 target="_blank"
@@ -426,12 +426,12 @@
             src="./images/flex-and-grid-combo2.jpeg"
             alt="" />
           <div>
-            <small
+            <p class="fs-24"
               ><a
                 href="https://www.siteinspire.com/websites/7202-accurat"
                 target="_blank"
                 >Site Inspire: Accurat</a
-              ></small
+              ></p
             >
           </div>
         </section>
@@ -441,12 +441,12 @@
             src="./images/flex-and-grid-combo3.jpeg"
             alt="" />
           <div>
-            <small
+            <p class="fs-24"
               ><a
                 href="https://www.siteinspire.com/websites/4423-fibb"
                 target="_blank"
                 >Site Inspire: Fibb</a
-              ></small
+              ></p
             >
           </div>
         </section>
@@ -456,12 +456,12 @@
             src="./images/flex-and-grid-combo4.jpeg"
             alt="" />
           <div>
-            <small
+            <p class="fs-24"
               ><a
                 href="https://www.siteinspire.com/websites/9882-honk"
                 target="_blank"
                 >Site Inspire: Honk</a
-              ></small
+              ></
             >
           </div>
         </section>
@@ -471,12 +471,12 @@
             src="./images/flex-and-grid-combo5.jpeg"
             alt="" />
           <div>
-            <small
+            <p class="fs-24"
               ><a
                 href="https://www.siteinspire.com/websites/11469-works-in-progress"
                 target="_blank"
                 >Site Inspire: Works in Progress</a
-              ></small
+              ></p
             >
           </div>
         </section>
@@ -543,47 +543,47 @@
         <section>
           <h4>Additional Resources for Learning & Practice</h4>
           <div class="width-900">
-            <small>
+            <p class="fs-24">
               <a
                 href="https://codepip.com/games/grid-garden/"
                 target="_blank"
                 rel="noopener noreferrer"
                 >CSS Grid Garden</a
-              ></small
-            ><br />
-            <small>
+              ></p
+            >
+            <p class="fs-24">
               <a
                 href="https://learncssgrid.com/"
                 target="_blank"
                 rel="noopener noreferrer"
                 >Learn CSS Grid</a
-              ></small
-            ><br />
-            <small>
+              ></p
+            >
+            <p class="fs-24">
               <a
                 href="https://griddy.io/"
                 target="_blank"
                 >Griddy.io</a
               >
-              (A Grid Sandbox) </small
-            ><br />
-            <small>
+              (A Grid Sandbox) </p
+            >
+            <p class="fs-24">
               <a
                 href="https://developer.mozilla.org/en-US/docs/Learn/CSS/CSS_layout/Grids"
                 target="_blank"
                 rel="noopener noreferrer"
                 >Any Tutorial on MDN</a
-              > </small
-            ><br />
-            <small
+              > </p
+            >
+            <p class="fs-24"
               ><a
                 href="https://css-tricks.com/snippets/css/complete-guide-grid/"
                 target="_blank"
                 rel="noopener noreferrer"
                 >CSS Tricks' Complete Guide to Grid</a
-              ></small
-            ><br />
-            <small
+              ></p
+            >
+            <p class="fs-24"
               >People:
               <a
                 href="https://rachelandrew.co.uk/"
@@ -603,7 +603,7 @@
                 rel="noopener noreferrer"
                 >Jen Simmons</a
               >
-            </small>
+            </p>
           </div>
         </section>
 
@@ -634,7 +634,7 @@
             <li>JavaScript: Intro to the DOM</li>
             <li>Intro to CSS Animations</li>
           </ul>
-          <p class="fs-28 mb-16">
+          <p class="fs-28 mt-16">
             <a
               href="https://girldevelopit.com/events/#/list"
               target="_blank"
@@ -709,7 +709,7 @@
     <!-- End of Reveal wrapper -->
     <!---->
     <!---->
-    <!-- REVEAL.JS Script Files - Do Not Edit -->
+    <!-- RevealJS Scripts & Config - Do Not Edit or Delete -->
     <script src="https://cdn.jsdelivr.net/npm/reveal.js@4.1.0/dist/reveal.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/reveal.js@4.1.0/plugin/highlight/highlight.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/highlightjs-badge@0.1.9/highlightjs-badge.min.js"></script>
