@@ -107,6 +107,7 @@ The template files reference a **`shared-assets`** folder in the repo that hold 
 Cohort course folder structure:
 
 - [CSS Grids Basic](https://github.com/girldevelopit/gdi-html-css/tree/main/css-grid-basics) (_Update in progress_)
+  - [Live Slides](https://girldevelopit.github.io/gdi-html-css/css-grid-basics/)
 
 Single-class course folder structure:
 
@@ -121,7 +122,7 @@ Single-class course folder structure:
   - If using RevealJS's [fragments feature](https://revealjs.com/fragments/) to present content, do so sparingly
     <br>
 
-- Lean more towards visual content (images, gifs, videos) to support learning concepts
+- Lean more towards visual content (images, gifs, videos, code snippets) to support learning concepts
   <br>
 
 - To make the course curriculum helpful for future instructors to use:
@@ -131,7 +132,7 @@ Single-class course folder structure:
 
 ## Slide Markup
 
-Markup heirarchy needs to be `<div class="reveal"> <div class="slides"> <section>` where the `<section>` represents one slide and can be repeated indefinitely.
+Markup hierarchy needs to be `<div class="reveal"> <div class="slides"> <section>` where the `<section>` represents one slide and can be repeated indefinitely.
 
 ```html
 <div class="reveal">
