@@ -4,6 +4,7 @@
 
 - [GDI HTML Slides Template](#gdi-html-slides-template)
   - [Usage Instructions](#usage-instructions)
+    - [Using the CHANGELOG](#using-the-changelog)
   - [Live Demo and Template Slides](#live-template-slides)
   - [Example Courses](#example-courses)
   - [Course Creation Tips](#course-creation-tips)
@@ -18,7 +19,7 @@
 
 Our slides are powered by [Reveal.js](https://revealjs.com/), the popular HTML presentation framework. For simplicity and ease of use, the Reveal.js files are served via CDN.
 
-The template files reference a **`shared-assets`** folder in the repo that hold the following folders:
+The template files reference a **`shared-assets`** folder in the [main repo](/shared-assets/) that hold the following folders:
 
 - `css` - Contains the `gdi-theme.css` stylesheet
 - `imgs` - Contains GDI logo images and stock (Unsplash) images
@@ -80,9 +81,6 @@ The template files reference a **`shared-assets`** folder in the repo that hold 
   - Link the custom stylesheet to your course `html` file(s)
     <br/>
 
-- _CHANGELOG - Description coming..._
-  <br>
-
 - **Recommended**: Update this `README` (delete original content first) with any of the following that can help future instructors to teach the course:
 
   - Course goals and objectives
@@ -91,10 +89,13 @@ The template files reference a **`shared-assets`** folder in the repo that hold 
   - Suggested exercises
   - Resources
   - etc.
+    <br>
 
-- **Optional / Useful to do**:
+- **Optional / Useful Material to Include**:
   - Create folders for `demos` and `exercises`
   - Create a `resources.html` file to curate recommended resources, links, etc., cited in the course
+
+### Using the CHANGELOG
 
 ## Live Template Slides
 
