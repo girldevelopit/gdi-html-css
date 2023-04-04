@@ -51,10 +51,14 @@
 
 .highlight--yellow {
   background-color: rgba(240, 225, 130, 0.7);
+  padding-left: 0.35rem;
+  padding-right: 0.35rem;
 }
 
 .highlight--black {
   background-color: #1a1735;
+  padding-left: 0.35rem;
+  padding-right: 0.35rem;
 }
 
 .mt-16 {
