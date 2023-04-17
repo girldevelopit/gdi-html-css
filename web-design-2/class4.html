@@ -1,203 +1,290 @@
-<!doctype html>
+<!DOCTYPE html>
 <html>
-<head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
-  <meta name="description" content="Girl Develop It Web Design Essentials 2 Cohort Series">
-  <meta name="author" content="Girl Develop It">
-  <meta name="apple-mobile-web-app-capable" content="yes" />
-  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <meta
+      name="description"
+      content="Girl Develop It Web Design Essentials 2 Cohort Series" />
+    <meta
+      name="author"
+      content="Girl Develop It" />
+    <meta
+      name="apple-mobile-web-app-capable"
+      content="yes" />
+    <meta
+      name="apple-mobile-web-app-status-bar-style"
+      content="black-translucent" />
 
-  <!-- Update with GDI Course Name -->
-  <title>GDI - Web Design Essentials 2, Class 4</title>
+    <!-- Update with GDI Course Name -->
+    <title>GDI - Web Design Essentials 2 Cohort, Class 4</title>
+    <link
+      rel="icon"
+      type="image/x-icon"
+      href="../shared-assets/imgs/favicon.ico" />
 
-  <link rel="icon" type="image/x-icon" href="./assets/images/favicon.ico" />
+    <!-- RevealJS CDN -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/reveal.js@4.1.0/dist/reset.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/reveal.js@4.1.0/dist/reveal.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/reveal.js@4.1.0/dist/theme/simple.css"
+      id="theme" />
 
-  <!-- RevealJS CDN -->
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reveal.js@4.1.0/dist/reset.css">
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reveal.js@4.1.0/dist/reveal.css">
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reveal.js@4.1.0/dist/theme/simple.css" id="theme">
+    <!-- GDI Custom Theme -->
+    <link
+      rel="stylesheet"
+      href="../shared-assets/css/gdi-theme.css" />
 
-  <!-- GDI Custom Theme -->
-  <link rel="stylesheet" href="./assets/css/gdi-theme.css">
+    <!-- Theme used for syntax highlighted code -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.1.0/styles/monokai.min.css" />
 
-  <!-- Theme used for syntax highlighted code -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.1.0/styles/monokai.min.css">
-  <style>
-    p.gdi-p {
-      font-size: 32px;
-      line-height: 1.5;
-    }
-  </style>
-</head>
-<body>
-  <div class="reveal">
-    <!-- Start of Slides container -- Any section element in this container is displayed as a slide -->
-    <div class="slides">
+    <!-- Course Custom Styles if Applicable-->
+    <link
+      rel="stylesheet"
+      href="./css/style.css" />
+  </head>
+  <body>
+    <div class="reveal">
+      <!-- Start of Slides container -->
+      <!-- A section element is displayed as a single slide -->
+      <!-- Do Not Delete slide comments / instructions -->
+      <!---->
+      <!---->
+      <div class="slides">
+        <!-- Course Title -->
+        <section>
+          <h2>Web Design Essentials 2</h2>
+          <h3>Class 4</h3>
+        </section>
 
-      <!-- Course and Class Titles -->
-      <section>
-        <h2>Web Design Essentials 2</h2>
-        <h2>Class 4</h3>
-      </section>
-
-      <!-- Class Agenda -->
-      <section>
-        <h3>AGENDA</h3>
+        <!-- Class Agenda -->
+        <section>
+          <h3>AGENDA</h3>
           <ul>
             <li>Project Review</li>
-            <li>Flexbox Layout Review</li>
-            <li>CSS Frameworks: 
-              <ul>
-                <li>Bootstrap Basics</li>
-              </ul>
+            <li>CSS Frameworks Overview</li>
             <li>Cohort Feedback</li>
           </ul>
-      </section>
-      
-      <!-- Stretch Break -->
-      <section>
-        <h3>Stretch - "Bio" Break</h3>
-        <p>11:30a PST /  1:30p CST / 2:30p EST</p>
-      </section>
+        </section>
 
-      <!-- Project page review -->
-      <section>
-        <h3>Project Review</h3>
-      </section>
+        <!-- Stretch Break -->
+        <section>
+          <h3>Stretch - "Bio" Break</h3>
+          <p>Time</p>
+        </section>
 
-      <!-- CSS Flexbox -->
-      <section>
-        <h3>Flexbox Layout Review</h3>
-      </section>
+        <!-- Project page review -->
+        <section>
+          <h3>Project Review</h3>
+        </section>
 
-      <!-- CSS Frameworks -->
-      <section>
-        <h3>CSS Frameworks</h3>
-        <p>A CSS framework is a library of pre-set CSS styles <br>or classes that we can use to quickly build projects <br>or use to add components to projects</p>
-      </section>
+        <!-- CSS Flexbox -->
+        <section>
+          <h3>Flexbox Layout Review</h3>
+        </section>
 
-      <section>
-        <h3>Common CSS Frameworks</h3>
-        <ul>
-          <li><a href="https://getbootstrap.com/" target="_blank">Bootstrap</a></li>
-          <li><a href="https://tailwindcss.com/" target="_blank">Tailwind</a></li>
-          <li><a href="http://getskeleton.com/" target="_blank">Skeleton</a></li>
-          <li><a href="https://get.foundation/" target="_blank">Foundation</a></li>
-          <li><a href="https://bulma.io/" target="_blank">Bulma</a></li>
-          <li>And more!</li>
-        </ul>
-        <p><a href="https://dev.to/theme_selection/best-css-frameworks-in-2020-1jjh" target="_blank">Best CSS Frameworks in 2022</a> (Dev.to)</p>
-      </section>
+        <!-- CSS Frameworks -->
+        <section>
+          <h3>CSS Frameworks</h3>
+          <p>
+            A CSS framework is a library of pre-set CSS styles <br />or classes that we
+            can use to quickly build projects <br />or use to add components to projects
+          </p>
+        </section>
 
-      <section>
-        <h3>Advantages of Frameworks</h3>
-        <ul>
-          <li>Give us standardized layouts and styles</li>
-          <li>Provide solutions for complex components:
-            <ul>
-              <li>Navbars</li>
-              <li>Carousels</li>
-              <li>Modals</li>
-            </ul>
-          </li>
-          <li>Built-in responsiveness; accessibility compliance</li>
-          <li>Speed up our development workflow</li>
-        </ul>
-      </section>
+        <section>
+          <h3>Common CSS Frameworks</h3>
+          <ul>
+            <li>
+              <a
+                href="https://getbootstrap.com/"
+                target="_blank"
+                >Bootstrap</a
+              >
+            </li>
+            <li>
+              <a
+                href="https://tailwindcss.com/"
+                target="_blank"
+                >Tailwind</a
+              >
+            </li>
+            <li>
+              <a
+                href="http://getskeleton.com/"
+                target="_blank"
+                >Skeleton</a
+              >
+            </li>
+            <li>
+              <a
+                href="https://get.foundation/"
+                target="_blank"
+                >Foundation</a
+              >
+            </li>
+            <li>
+              <a
+                href="https://bulma.io/"
+                target="_blank"
+                >Bulma</a
+              >
+            </li>
+            <li>And more!</li>
+          </ul>
+          <p>
+            <a
+              href="https://dev.to/theme_selection/best-css-frameworks-in-2020-1jjh"
+              target="_blank"
+              >Best CSS Frameworks in 2022</a
+            >
+            (Dev.to)
+          </p>
+        </section>
 
-      <!--  -->
-      <section>
-        <h3>Caveats of Frameworks</h3>
-        <ul>
-          <li>Generic appearance</li>
-          <li>Framework CSS can be difficult to override</li>
-          <li>Heavy reliance on non-semantic selector naming</li>
-          <li>Increases codebase size</li>
-        </ul>
-      </section>
+        <section>
+          <h3>Advantages of Frameworks</h3>
+          <ul>
+            <li>Give us standardized layouts and styles</li>
+            <li>
+              Provide solutions for complex components:
+              <ul>
+                <li>Navbars</li>
+                <li>Carousels</li>
+                <li>Modals</li>
+              </ul>
+            </li>
+            <li>Built-in responsiveness; accessibility compliance</li>
+            <li>Speed up our development workflow</li>
+          </ul>
+        </section>
 
-      <!--  -->
-      <section>
-        <h3>Bootstrap</h3>
-        <ul>
-          <li>Popular CSS Framework</li>
-          <li>Based on Flexbox</li>
-          <li>Uses a 12-column grid system</li>
-          <li>Library of common UI components:
-            <ul>
-              <li>Navbars, dropdowns, forms, buttons</li>
-              <li>Typography, cards, carousels and more</li>
-            </ul>
-          </li>
-          <li>Responsive and mobile-first</li>
-        </ul>
-      </section>
+        <!--  -->
+        <section>
+          <h3>Caveats of Frameworks</h3>
+          <ul>
+            <li>Generic appearance</li>
+            <li>Framework CSS can be difficult to override</li>
+            <li>Heavy reliance on non-semantic selector naming</li>
+            <li>Increases codebase size</li>
+          </ul>
+        </section>
 
-      <!--  -->
-      <section>
-        <h3>Using Bootstrap</h3>
-        <ul>
-          <li>Download Bootstrap package OR</li>
-          <li>Link to Bootstrap from an external CDN</li>
-          <li>Link Bootstrap stylesheets and JS files in our <code>HTML</code> file</li>
-          <li>Use Bootstrap class names in our markup</li>
-        </ul>
-      </section>
+        <!--  -->
+        <section>
+          <h3>Bootstrap</h3>
+          <ul>
+            <li>Popular CSS Framework</li>
+            <li>Based on Flexbox</li>
+            <li>Uses a 12-column grid system</li>
+            <li>
+              Library of common UI components:
+              <ul>
+                <li>Navbars, dropdowns, forms, buttons</li>
+                <li>Typography, cards, carousels and more</li>
+              </ul>
+            </li>
+            <li>Responsive and mobile-first</li>
+          </ul>
+        </section>
 
-      <!--  -->
-      <section>
-        <h3>Bootstrap Basics</h3>
-      </section>
+        <!--  -->
+        <section>
+          <h3>Using Bootstrap</h3>
+          <ul>
+            <li>Download Bootstrap package OR</li>
+            <li>Link to Bootstrap from an external CDN</li>
+            <li>Link Bootstrap stylesheets and JS files in our <code>HTML</code> file</li>
+            <li>Use Bootstrap class names in our markup</li>
+          </ul>
+        </section>
 
-      <!--  -->
-      <section>
-        <h3>Bootstrap Breakpoints</h3>
-        <p>Bootstrap has six default breakpoints that control responsiveness:</p>
-        <ul>
-          <li><code>xs </code> X-Small (<576px)</li>
-          <li><code>sm  </code> Small (>=576px)</li>
-          <li><code>md </code> Medium (>=768px)</li>
-          <li><code>lg </code> Large (>=992px)</li>
-          <li><code>xl </code> Extra Large (>=1200px)</li>
-          <li><code>xxl </code> Extra Extra Large (>=1400px)</li>
-        </ul>
-        <p><a href="https://getbootstrap.com/docs/5.0/layout/breakpoints/" target="_blank">Bootstrap Breakpoints</a></p>
-      </section>
+        <!--  -->
+        <section>
+          <h3>Bootstrap Basics</h3>
+        </section>
 
-      <!--  -->
-      <section>
-        <h3>Bootstrap Grid</h3>
-        <ul>
-          <li>A <code>container</code> of <code>rows</code> and <code>columns</code> </li>
-          <li>Rows live inside of containers</li>
-          <li>Columns live inside of rows</li>
-          <li>The grid holds up to 12 columns per row</li>
-        </ul>
-      </section>
+        <!--  -->
+        <section>
+          <h3>Bootstrap Breakpoints</h3>
+          <p>Bootstrap has six default breakpoints that control responsiveness:</p>
+          <ul>
+            <li><code>xs </code> X-Small (<576px)</li>
+            <li><code>sm </code> Small (>=576px)</li>
+            <li><code>md </code> Medium (>=768px)</li>
+            <li><code>lg </code> Large (>=992px)</li>
+            <li><code>xl </code> Extra Large (>=1200px)</li>
+            <li><code>xxl </code> Extra Extra Large (>=1400px)</li>
+          </ul>
+          <p>
+            <a
+              href="https://getbootstrap.com/docs/5.0/layout/breakpoints/"
+              target="_blank"
+              >Bootstrap Breakpoints</a
+            >
+          </p>
+        </section>
 
-      <!--  -->
-      <section>
-        <h3>Bootstrap Grid</h3>
-        <img src="./assets/images/bootstrap-grid.png" alt="Bootstrap grid">
-        <small><a href="https://uxplanet.org/how-the-bootstrap-4-grid-works-a1b04703a3b7" target="_blank">How the Bootstrap 4 Grid Works</a> (UX Planet)</small>
-      </section>
+        <!--  -->
+        <section>
+          <h3>Bootstrap Grid</h3>
+          <ul>
+            <li>
+              A <code>container</code> of <code>rows</code> and <code>columns</code>
+            </li>
+            <li>Rows live inside of containers</li>
+            <li>Columns live inside of rows</li>
+            <li>The grid holds up to 12 columns per row</li>
+          </ul>
+        </section>
 
-      <section>
-        <h3>Bootstrap Grid</h3>
-        <img src="./assets/images/bootstrap-grid3.png" alt="">
-      </section>
+        <!--  -->
+        <section>
+          <h3>Bootstrap Grid</h3>
+          <img
+            src="./assets/images/bootstrap-grid.png"
+            alt="Bootstrap grid" />
+          <small
+            ><a
+              href="https://uxplanet.org/how-the-bootstrap-4-grid-works-a1b04703a3b7"
+              target="_blank"
+              >How the Bootstrap 4 Grid Works</a
+            >
+            (UX Planet)</small
+          >
+        </section>
 
-      <!--  -->
-      <section>
-        <h3>Basic Bootstrap Grid Syntax</h3>
-        <p>A container or parent element is required<br> for Bootstrap grid layout to work properly</p>
-        <ul>
-          <li>Add a class name of <code>container</code> to a parent element</li>
-          <li>Add a child element with the class name of <code>row</code></li>
-          <li>Inside the row, add a child element with class name of <code>col</code></li>
-        </ul>
-<pre><code class="html"><div class="container">
+        <section>
+          <h3>Bootstrap Grid</h3>
+          <img
+            src="./assets/images/bootstrap-grid3.png"
+            alt="" />
+        </section>
+
+        <!--  -->
+        <section>
+          <h3>Basic Bootstrap Grid Syntax</h3>
+          <p>
+            A container or parent element is required<br />
+            for Bootstrap grid layout to work properly
+          </p>
+          <ul>
+            <li>Add a class name of <code>container</code> to a parent element</li>
+            <li>Add a child element with the class name of <code>row</code></li>
+            <li>
+              Inside the row, add a child element with class name of <code>col</code>
+            </li>
+          </ul>
+          <pre><code class="html"><div class="container">
   <div class="row">
     <div class="col">
       My first bootstrap component
@@ -205,26 +292,32 @@
   </div>
 </div>
 </code></pre>
-      </section>
+        </section>
 
-      <section>
-        <h3>Containers</h3>
-        <p>Bootstrap's grid has three container types:</p>
-        <ul>
-          <li><code>.container</code>: the default, a set max-width</li>
-          <li><code>.container-{breakpoint}</code>: a responsive container</li>
-          <li><code>.container-fluid</code>: a 100% [full] width container</li>
-        </ul>
-        <p><a href="https://getbootstrap.com/docs/5.0/layout/containers/" target="_blank">Bootstrap Containers</a></p>
-      </section>
+        <section>
+          <h3>Containers</h3>
+          <p>Bootstrap's grid has three container types:</p>
+          <ul>
+            <li><code>.container</code>: the default, a set max-width</li>
+            <li><code>.container-{breakpoint}</code>: a responsive container</li>
+            <li><code>.container-fluid</code>: a 100% [full] width container</li>
+          </ul>
+          <p>
+            <a
+              href="https://getbootstrap.com/docs/5.0/layout/containers/"
+              target="_blank"
+              >Bootstrap Containers</a
+            >
+          </p>
+        </section>
 
-      <section>
-        <h3><code>col</code> Ratios</h3>
-        <ul>
-          <li>We can specify how wide a <code>col</code> should span</li>
-          <li>Total span of all <code>col</code>s in a row should add to 12</li>
-        </ul>
-<pre><code class="html"><div class="container">
+        <section>
+          <h3><code>col</code> Ratios</h3>
+          <ul>
+            <li>We can specify how wide a <code>col</code> should span</li>
+            <li>Total span of all <code>col</code>s in a row should add to 12</li>
+          </ul>
+          <pre><code class="html"><div class="container">
   <div class="row">
     <div class="col-2">
       My first bootstrap component
@@ -238,17 +331,22 @@
   </div>
 </div>
 </code></pre>
-      </section>
+        </section>
 
-      <section>
-        <h3>Bootstrap Grid</h3>
-        <img src="./assets/images/bootstrap-grid2.png" alt="Bootstrap grid">
-      </section>
+        <section>
+          <h3>Bootstrap Grid</h3>
+          <img
+            src="./assets/images/bootstrap-grid2.png"
+            alt="Bootstrap grid" />
+        </section>
 
-      <section>
-        <h3><code>col</code> Ratios & Breakpoints</h3>
-        <p>We can set how wide a <code>col</code> element <br>should span at different breakpoints</p>
-<pre><code class="html"><!--
+        <section>
+          <h3><code>col</code> Ratios & Breakpoints</h3>
+          <p>
+            We can set how wide a <code>col</code> element <br />should span at different
+            breakpoints
+          </p>
+          <pre><code class="html"><!--
 Each col element is initially 100%, until the
 medium breakpoint where the middle col is 3x
 larger, and then at the extra-large breakpoint
@@ -268,134 +366,161 @@ the col elements are sized equally
   </div>
 </div>
 </code></pre>
-      </section>
+        </section>
 
-      <!--  -->
-      <section>
-        <h3>Bootstrap Styles and Utilities</h3>
-        <p>Bootstrap offers other uses beyond its grid system,<br> and where the <code>container</code> element is NOT required:</p>
-        <ul>
-          <li>Colors</li>
-          <li>Spacing</li>
-          <li>Flexbox</li>
-          <li>Images</li>
-          <li>Borders</li>
-          <li>And more...</li>
-        </ul>
-      </section>
+        <!--  -->
+        <section>
+          <h3>Bootstrap Styles and Utilities</h3>
+          <p>
+            Bootstrap offers other uses beyond its grid system,<br />
+            and where the <code>container</code> element is NOT required:
+          </p>
+          <ul>
+            <li>Colors</li>
+            <li>Spacing</li>
+            <li>Flexbox</li>
+            <li>Images</li>
+            <li>Borders</li>
+            <li>And more...</li>
+          </ul>
+        </section>
 
-      <!--  -->
-      <section>
-        <h3>Bootstrap Components</h3>
-        <p>Components, especially JavaScript-based ones, are great ways to use Bootstrap and save time. Common components include:</p>
-        <ul>
-          <li>Navbars</li>
-          <li>Buttons</li>
-          <li>Accordions</li>
-          <li>Carousels</li>
-        </ul>
-      </section>
+        <!--  -->
+        <section>
+          <h3>Bootstrap Components</h3>
+          <p>
+            Components, especially JavaScript-based ones, are great ways to use Bootstrap
+            and save time. Common components include:
+          </p>
+          <ul>
+            <li>Navbars</li>
+            <li>Buttons</li>
+            <li>Accordions</li>
+            <li>Carousels</li>
+          </ul>
+        </section>
 
-      <section>
-        <h3>Practice</h3>
-        <p>Use some of the Bootstrap features we've learned<br> to build a 3-card component similar to the one below</p>
-        <img src="./assets/images/bootstrap-practice.png" alt="">
-      </section>
+        <section>
+          <h3>Practice</h3>
+          <p>
+            Use some of the Bootstrap features we've learned<br />
+            to build a 3-card component similar to the one below
+          </p>
+          <img
+            src="./assets/images/bootstrap-practice.png"
+            alt="" />
+        </section>
 
-      <!--  -->
-      <section>
-        <h3>Working with Frameworks</h3>
-        <p>Bootstrap and other CSS frameworks can simplify some of our project needs. A framework's documentation is a good starting point for learning about what it offers and how to use it.</p>
-      </section>
+        <!--  -->
+        <section>
+          <h3>Working with Frameworks</h3>
+          <p>
+            Bootstrap and other CSS frameworks can simplify some of our project needs. A
+            framework's documentation is a good starting point for learning about what it
+            offers and how to use it.
+          </p>
+        </section>
 
-      <!-- Next Steps -->
-      <section>
-        <h3>Next Steps? Try ... </h3>
-        <ul>
-          <li>Building projects
-            <ul>
-              <li><a href="https://www.frontendmentor.io/" target="_blank">Frontend Mentor</a></li>
-            </ul>
-          </li>
-          <li>More Flexbox practice</li>
-          <li>CSS Frameworks: Bootstrap, et al
-            <ul>
-              <li><a href="https://dev.to/theme_selection/best-css-frameworks-in-2020-1jjh" target="_blank">Best CSS Frameworks in 2022</a></li>
-            </ul>
-          </li>
-          <li>CSS Grid</li>
-          <li>JavaScript</li>
-        </ul>
-      </section>   
+        <!-- Next Steps -->
+        <section>
+          <h3>Next Steps? Try ...</h3>
+          <ul>
+            <li>
+              Building projects
+              <ul>
+                <li>
+                  <a
+                    href="https://www.frontendmentor.io/"
+                    target="_blank"
+                    >Frontend Mentor</a
+                  >
+                </li>
+              </ul>
+            </li>
+            <li>More Flexbox practice</li>
+            <li>
+              CSS Frameworks: Bootstrap, et al
+              <ul>
+                <li>
+                  <a
+                    href="https://dev.to/theme_selection/best-css-frameworks-in-2020-1jjh"
+                    target="_blank"
+                    >Best CSS Frameworks in 2022</a
+                  >
+                </li>
+              </ul>
+            </li>
+            <li>CSS Grid</li>
+            <li>JavaScript</li>
+          </ul>
+        </section>
 
-      <!-- MUST USE SLIDE - Course Feedback Survey-->
-      <section>
-        <h3>Class Feedback</h3>
-        <p><a href="https://forms.gle/vWT7jKS572j4cWRdA" target="_blank">https://forms.gle/vWT7jKS572j4cWRdA</a></p>
-      </section>
+        <!-- MUST-USE SLIDE -->
+        <!-- Add Course Survey Link -->
+        <section>
+          <h2>Give Us Your Feedback</h2>
+          <h3>
+            <a
+              href="#"
+              target="_blank"
+              >Survey Link</a
+            >
+          </h3>
+        </section>
 
-      <!-- Q&A -->
-      <section>
-        <h2>Q&A</h2>
-      </section>
-      
-      <!-- Instructor and/or TA Contact -->
-      <section>
-        <h2>Keep in Touch!</h2>
-        <h4>Connect with me on LinkedIn:<br> <a href="https://www.linkedin.com/in/tinuolaawopetu/" target=")blank">linkedin.com/in/tinuolaawopetu/</a></h4>
-      </section>
+        <!-- Q&A -->
+        <section>
+          <h2>Q&A</h2>
+        </section>
 
-      <!-- Thank You -->
-      <section>
-        <img src="./assets/images/gdi-logos/GDI-Logo_Peach.png" alt="GDI Logo" width="300px" class="noborder" />
-        <br>
-        <h2>Thank You!</h2>
-      </section>
-    </div> <!-- End of Slides container -->
+        <!-- Instructor and/or TA Contact -->
+        <section>
+          <h3>Keep in Touch!</h3>
+          <h4>Instructor, TA Contact</h4>
+        </section>
 
-    <footer>
-      <!-- Update with Course Name -->
-      <div class="copyright">
-        <img src="./assets/images/gdi-logos/GDI-Logo_Peach.png" alt="GDI Logo" width="40px" class="noborder" />
-        <p>Web Design Essentials 2 - Class 4</p>
-        <a rel="license" href="http://creativecommons.org/licenses/by-nc/3.0/deed.en_US"><img
-            alt="Creative Commons License" style="border-width:0"
-            src="http://i.creativecommons.org/l/by-nc/3.0/80x15.png" /></a>
+        <!-- Thank You -->
+        <section>
+          <img
+            src="../shared-assets/imgs/gdi-logos/gdi-circle-logo_peach.png"
+            alt="GDI Logo"
+            width="300px"
+            class="noborder" />
+          <br />
+          <h2>Thank You!</h2>
+        </section>
       </div>
-    </footer>
-  </div> <!-- End of Reveal wrapper -->
-
-  <!-- REVEAL.JS Script Files - Do Not Edit -->
-  <script src="https://cdn.jsdelivr.net/npm/reveal.js@4.1.0/dist/reveal.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/reveal.js@4.1.0/plugin/highlight/highlight.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/highlightjs-badge@0.1.9/highlightjs-badge.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/jsPlumb/2.15.5/js/jsplumb.min.js"></script>
-  <script>
-    const srcUrlPrefix = "https://cdn.jsdelivr.net/npm/reveal.js@4.1.0/";
-    Reveal.initialize({
-      hash: true,
-      center: true,
-      slideNumber: true,
-      showNotes: false,
-      margin: 0.1,
-      preloadIframes: true,
-      plugins: [RevealHighlight],
-      pdfSeparateFragments: true
-    });
-
-    // add HighlightJS-badge (options are optional)
-    var options = {
-      copyIconContent: "📄",
-      checkIconContent: "✅"
-    };
-    window.highlightJsBadge(options);
-
-    if (window.location.search == "?print-pdf") {
-      var uncounted = document.querySelectorAll("[data-visibility='uncounted']");
-      uncounted.forEach(node => {
-        node.parentNode.classList.add("no-print")
-      })
-    }
-  </script>
-</body>
+      <!-- End of Slides container -->
+      <!---->
+      <!---->
+      <!-- Update Footer with Course Name -->
+      <footer>
+        <div class="copyright">
+          <img
+            src="../shared-assets/imgs/gdi-logos/gdi-circle-logo_peach.png"
+            alt="GDI Logo"
+            width="40px"
+            class="noborder" />
+          <p>Web Design Essentials 2 - Class 4</p>
+          <a
+            rel="license"
+            href="http://creativecommons.org/licenses/by-nc/3.0/deed.en_US"
+            ><img
+              alt="Creative Commons License"
+              style="border-width: 0"
+              src="http://i.creativecommons.org/l/by-nc/3.0/80x15.png"
+          /></a>
+        </div>
+      </footer>
+    </div>
+    <!-- End of Reveal wrapper -->
+    <!---->
+    <!---->
+    <!-- RevealJS Scripts & Config - Do Not Edit or Delete -->
+    <script src="https://cdn.jsdelivr.net/npm/reveal.js@4.1.0/dist/reveal.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/reveal.js@4.1.0/plugin/highlight/highlight.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/highlightjs-badge@0.1.9/highlightjs-badge.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jsPlumb/2.15.5/js/jsplumb.min.js"></script>
+    <script src="../shared-assets/js/revealConfig.js"></script>
+  </body>
 </html>
