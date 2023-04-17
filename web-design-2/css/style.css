@@ -1,1 +1,5 @@
 /* Add Custom CSS Here if Applicable */
+p.gdi-p {
+  font-size: 32px;
+  line-height: 1.5;
+}
