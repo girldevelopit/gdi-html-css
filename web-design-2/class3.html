@@ -19,7 +19,7 @@
       content="black-translucent" />
 
     <!-- Update with GDI Course Name -->
-    <title>GDI - Web Design Essentials 2 Cohort, Class 1</title>
+    <title>GDI - Web Design Essentials 2 Cohort, Class 3</title>
     <link
       rel="icon"
       type="image/x-icon"
@@ -54,13 +54,9 @@
   </head>
   <body>
     <div class="reveal">
-      <!-- Start of Slides container -->
-      <!-- A section element is displayed as a single slide -->
-      <!-- Do Not Delete slide comments / instructions -->
-      <!---->
-      <!---->
+      <!-- Start of Slides container -- Any section element in this container is displayed as a slide -->
       <div class="slides">
-        <!-- Course Title -->
+        <!-- Course and Class Titles -->
         <section>
           <h2>Web Design Essentials 2</h2>
           <h3>Class 3</h3>
@@ -70,9 +66,9 @@
         <section>
           <h3>AGENDA</h3>
           <ul>
-            <li>Project Review - Feedback</li>
-            <li>CSS Flexbox</li>
-            <li>Feedback & Class 4 Preview</li>
+            <li>CSS Cascade</li>
+            <li>CSS Specificity</li>
+            <li>CSS Inheritance</li>
           </ul>
         </section>
 
@@ -82,452 +78,277 @@
           <p>Time</p>
         </section>
 
-        <!-- Project page review -->
+        <!-- Cascade, Inheritance, Specificity -->
         <section>
-          <h3>Project Review - Feedback</h3>
+          <h3>CSS Cascade, Specificity & Inheritance</h3>
         </section>
 
-        <!-- CSS Flexbox -->
+        <!-- Cascade -->
         <section>
-          <h3>CSS Flexbox</h3>
-        </section>
-
-        <!-- Intro -->
-        <section>
-          <h3>CSS Flexbox</h3>
+          <h3>CSS Cascade</h3>
           <p>
-            Flexbox is a robust CSS module that allows us to easily create responsive
-            layout without floats, tables or positioning.
+            The <code>cascade</code> is how CSS determines what CSS rule or declaration
+            takes precedence when multiple stylesheets are in use; or when more than one
+            rule applies to a given element.
           </p>
         </section>
 
-        <!-- display: flex -->
+        <!-- Stylesheets -->
         <section>
-          <h3>Using CSS Flexbox</h3>
+          <h3>Origin of CSS Declarations</h3>
+          <p>The browser reads CSS from three sources:</p>
+          <ul>
+            <li>User Agent stylesheet (Browser defaults)</li>
+            <li>Author stylesheet (Our site's custom styles)</li>
+            <li>User stylesheet (CSS set by the user)</li>
+          </ul>
           <p>
-            We declare flexbox on an element (a parent container)<br />
-            by using the <code>display</code> property and a value of
-            <code>flex</code>,<br />
-            establishing a flex container to which we can now add<br />
-            flex settings
+            <a
+              href="https://developer.mozilla.org/en-US/docs/Web/CSS/Cascade"
+              target="_blank"
+              >CSS Cascade (MDN)</a
+            >
+          </p>
+        </section>
+
+        <!-- Importance -->
+        <section>
+          <h3>Stylesheet Order of Importance</h3>
+          <p>
+            CSS calculates the importance of declarations from the three types of
+            stylesheets from most to least importance:
+          </p>
+          <ul>
+            <li>User <code>!important</code> declarations</li>
+            <li>Author <code>!important</code> declarations</li>
+            <li>Author declarations</li>
+            <li>User declarations</li>
+            <li>Default browser declarations</li>
+          </ul>
+        </section>
+
+        <section>
+          <h3>!important</h3>
+          <p>
+            The <code>!important</code> flag in CSS means a style<br />
+            will override any other declaration
+          </p>
+          <pre><code class="css">p {
+  color: yellow !important;
+}</code></pre>
+        </section>
+
+        <!-- CSS Specificity -->
+        <section>
+          <h3>CSS Specificity</h3>
+          <p>
+            CSS is also calculating and comparing the weight or
+            <code>specificity</code> of the rules in our stylesheets;<br />
+            from most to least specific:
+          </p>
+          <ul>
+            <li>Inline CSS</li>
+            <li>IDs</li>
+            <li>
+              Classes, Pseudo-classes,
+              <a
+                href="https://developer.mozilla.org/en-US/docs/Web/CSS/Attribute_selectors"
+                target="_blank"
+                >Attribute selectors</a
+              >
+            </li>
+            <li>Elements, Pseudo-elements</li>
+          </ul>
+        </section>
+
+        <!-- Calculating Specificity -->
+        <section>
+          <h3>Calculating Specificity</h3>
+          <img
+            src="./assets/images/css-specificity1.webp"
+            alt="" />
+          <p>
+            Source:
+            <a
+              href="https://sudipta-deb.in/2021/08/understand-basic-css-selectors-and-specificity-part-2-of-fundamental-css-tutorial.html"
+              target="_blank"
+              >Technical Potpourri</a
+            >
+          </p>
+        </section>
+
+        <section>
+          <h3>Calculating Specificity</h3>
+          <img
+            src="./assets/images/css-specificity2.jpeg"
+            alt="" />
+          <p>
+            Source:
+            <a
+              href="https://devopedia.org/css-specificity"
+              target="_blank"
+              >Devopedia</a
+            >
+          </p>
+        </section>
+
+        <!-- Order -->
+        <section>
+          <h3>Same Specificity?</h3>
+          <p>
+            When two or more declarations targeting <br />an element have the same
+            specificity weight,<br />
+            the rule that comes last in the code wins
+          </p>
+
+          <pre><code class="html"><p class="square rectangle">Color me!</p>
+</code></pre>
+          <pre><code class="css">/*The two rules are both class selectors
+  with the same specificity; but the 
+  rectangle is the last code declared and 
+  will be applied to the element. */
+
+.square {
+  color: red;
+}
+
+.rectangle {
+  color: blue;
+}
+</code></pre>
+        </section>
+
+        <!-- Specificity Resources  -->
+        <section>
+          <h3>CSS Specificity Resources</h3>
+          <p>
+            <a
+              href="https://developer.mozilla.org/en-US/docs/Web/CSS/Specificity"
+              target="_blank"
+              >CSS Specificity (MDN)</a
+            >
+          </p>
+          <p>
+            <a
+              href="https://specificity.keegan.st/"
+              target="_blank"
+              >CSS Specificity Calculator</a
+            >
+          </p>
+          <p>
+            <a
+              href="https://isellsoap.github.io/specificity-visualizer/"
+              target="_blank"
+              >CSS Specificity Visualizer</a
+            >
+          </p>
+          <p>
+            <a
+              href="https://cssspecificity.com/"
+              target="_blank"
+              >CSS Specificity (The Shining)</a
+            >
+          </p>
+          <p>
+            <a
+              href="https://specifishity.com/"
+              target="_blank"
+              >CSS Specifishity (Estelle Weyl)</a
+            >
+          </p>
+        </section>
+
+        <!--  -->
+        <section>
+          <h3>Debugging the Cascade</h3>
+        </section>
+
+        <!-- Specificity Tips -->
+        <section>
+          <h3>Specificity Tips</h3>
+          <ul>
+            <li>1 ID selector out weighs 100+ class selectors</li>
+            <li>1 class selector outweighs 100+ element selectors</li>
+            <li>The Universal selector <code>*</code> has no specificity</li>
+            <li>Code architecture changes: Choose specificity over order</li>
+            <li>List your main stylesheet last</li>
+            <li><code>!important</code> only as a last resort</li>
+          </ul>
+        </section>
+
+        <section>
+          <h3>CSS Inheritance</h3>
+          <ul>
+            <li>
+              Some CSS property values set on parent elements <br />are inherited by their
+              child elements, and some are not
+            </li>
+            <li>
+              Understanding inheritance can help us write fewer, less redundant code
+            </li>
+          </ul>
+          <p>
+            <a
+              href="https://developer.mozilla.org/en-US/docs/Web/CSS/inheritance"
+              target="_blank"
+              >CSS Inheritance (MDN)</a
+            >
+          </p>
+        </section>
+
+        <section>
+          <h3>Inheritable Properties</h3>
+          <p>
+            Font properties, color, text alignment are common <br />properties can be
+            inherited by default when a child <br />element has no declared values for
+            these properties
           </p>
           <pre><code class="css">.parent {
-  display: flex;
+  color: red;
+  font-size: 20px;
+  text-align: center;
+}
+
+.child {
 }
 </code></pre>
         </section>
 
-        <!-- Flexbox Properties -->
         <section>
-          <h3>Flexbox Settings</h3>
-          <p>There are two categories of flexbox properties:</p>
-          <ul>
-            <li><code>flex-container</code> properties for the parent element</li>
-            <li><code>flex-items</code> properties for the children elements</li>
-          </ul>
-        </section>
+          <h3>CSS Inheritance</h3>
+          <p>We can force inheritance with the <code>inherit</code> keyword</p>
+          <pre><code class="css">.parent {
+  color: red;
+  border: 1px solid black;
+}
 
-        <section>
-          <h3>Flexbox Axes</h3>
-          <p>Flex children or <code>flex-items</code> are laid out in two directions:</p>
-          <ul>
-            <li>The <code>main</code> axis</li>
-            <li>The <code>cross</code> axis</li>
-          </ul>
-        </section>
-
-        <section>
-          <h3>Flexbox Axes</h3>
-          <img
-            src="assets/images/css-flex-box.png"
-            alt="" />
-          <small
-            >Image source:
-            <a
-              href="http://javascriptkit.com/dhtmltutors/css-flexbox.shtml"
-              target="_blank"
-              >JavaScript Kit</a
-            ></small
-          >
-        </section>
-
-        <!--Flex Container  -->
-        <section>
-          <h3>Flex-Container Properties</h3>
-          <ul>
-            <li>flex-direction</li>
-            <li>flex-wrap</li>
-            <li>flex-flow</li>
-            <li>justify-content</li>
-            <li>align-items</li>
-            <li>align-content</li>
-            <li>gap</li>
-          </ul>
-        </section>
-
-        <!-- Flex Direction -->
-        <section>
-          <h3>flex-direction</h3>
-          <p>Determines in what direction to stack flex items</p>
-          <pre><code class="css">.flex-parent {
-  display: flex;
-  flex-direction: row; /* default */
+.child {
+  border: inherit;
 }
 </code></pre>
-          <p>
-            <a
-              href="https://developer.mozilla.org/en-US/docs/Web/CSS/flex-direction"
-              target="_blank"
-              >Additional values for <code>flex-direction</code></a
-            >
-          </p>
-        </section>
-
-        <!-- Flex Wrap -->
-        <section>
-          <h3>flex-wrap</h3>
-          <p>Determines if flex items should wrap or not</p>
-          <pre><code class="css">.flex-parent {
-  display: flex;
-  flex-wrap: wrap;
-}
-</code></pre>
-          <p>
-            <a
-              href="https://developer.mozilla.org/en-US/docs/Web/CSS/flex-wrap"
-              target="_blank"
-              >Additional values for <code>flex-wrap</code></a
-            >
-          </p>
-        </section>
-
-        <!-- Flex Flow -->
-        <section>
-          <h3>flex-flow</h3>
-          <p>Shorthand for flex-direction and flex-wrap</p>
-          <pre><code class="css">.flex-parent {
-  display: flex;
-  flex-flow: row wrap;
-}
-</code></pre>
-          <p>
-            <a
-              href="https://developer.mozilla.org/en-US/docs/Web/CSS/flex-flow"
-              target="_blank"
-              >Additional values for <code>flex-flow</code></a
-            >
-          </p>
-        </section>
-
-        <!-- Justify Content -->
-        <section>
-          <h3>justify-content</h3>
-          <p>Aligns flex items along the main (or horizontal) axis</p>
-          <pre><code class="css">.flex-parent {
-  display: flex;
-  justify-content: center;
-}
-</code></pre>
-          <p>
-            <a
-              href="https://developer.mozilla.org/en-US/docs/Web/CSS/justify-content"
-              target="_blank"
-              >Additional values for <code>justify-content</code></a
-            >
-          </p>
-        </section>
-
-        <!-- Align Items  -->
-        <section>
-          <h3>align-items</h3>
-          <p>Aligns flex items along the cross (or perpendicular) axis</p>
-          <pre><code class="css">.flex-parent {
-  display: flex;
-  align-items: stretch;
-}
-</code></pre>
-          <p>
-            <a
-              href="https://developer.mozilla.org/en-US/docs/Web/CSS/align-items"
-              target="_blank"
-              >Additional values for <code>align-items</code></a
-            >
-          </p>
-        </section>
-
-        <!-- Align Content -->
-        <section>
-          <h3>align-content</h3>
-          <p>
-            Controls spacing between flex items when there's extra space <br />in the
-            cross-axis and items span across multiple rows;<br />
-            <code>flex-wrap must be enabled</code>
-          </p>
-          <pre><code class="css">.flex-parent {
-  display: flex;
-  flex-wrap: wrap;
-  align-content: center;
-}
-</code></pre>
-          <p>
-            <a
-              href="https://developer.mozilla.org/en-US/docs/Web/CSS/align-content"
-              target="_blank"
-              >Additional values for <code>align-content</code></a
-            >
-          </p>
-        </section>
-
-        <!-- Gap -->
-        <section>
-          <h3>gap</h3>
-          <p>
-            Determines the spacing between flex items,<br />
-            but not on their outer edges
-          </p>
-          <pre><code class="css">.flex-parent {
-  display: flex;
-  gap: 1rem;
-  gap: 1rem 2rem; /* row-gap, column-gap; */
-}
-</code></pre>
-          <p>
-            <a
-              href="https://developer.mozilla.org/en-US/docs/Web/CSS/gap"
-              target="_blank"
-              >Syntax for <code>gap</code></a
-            >
-          </p>
-        </section>
-
-        <!--Flex Item  -->
-        <section>
-          <h3>Flex-Item Properties</h3>
-          <ul>
-            <li>order</li>
-            <li>flex-grow</li>
-            <li>flex-shrink</li>
-            <li>flex-basis</li>
-            <li>flex</li>
-            <li>align-self</li>
-          </ul>
-        </section>
-
-        <!-- order -->
-        <section>
-          <h3>order</h3>
-          <p>
-            Sets the order on a flex item; items in a flex container are sorted by
-            ascending order and then by their code order
-          </p>
-          <pre><code class="css">.flex-child {
-  order: 2
-}
-
-.flex-child {
-  order: -1
-}
-</code></pre>
-          <p>
-            <a
-              href="https://developer.mozilla.org/en-US/docs/Web/CSS/order"
-              target="_blank"
-              ><code>order</code> property(MDN)</a
-            >
-          </p>
-        </section>
-
-        <!-- flex-grow -->
-        <section>
-          <h3>flex-grow</h3>
-          <p>Defines how much a flex-item can grow</p>
-          <pre><code class="css">.flex-child {
-  flex-grow: 0; /* default */
-}
-</code></pre>
-          <p>
-            <a
-              href="https://developer.mozilla.org/en-US/docs/Web/CSS/flex-grow"
-              target="_blank"
-              ><code>flex-grow</code> property(MDN)</a
-            >
-          </p>
-        </section>
-
-        <!-- flex-shrink -->
-        <section>
-          <h3>flex-shrink</h3>
-          <p>Defines how much a flex-item can shrink</p>
-          <pre><code class="css">.flex-child {
-  flex-shrink: 1; /* default */
-}
-</code></pre>
-          <p>
-            <a
-              href="https://developer.mozilla.org/en-US/docs/Web/CSS/flex-shrink"
-              target="_blank"
-              ><code>flex-grow</code> property(MDN)</a
-            >
-          </p>
-        </section>
-
-        <!-- flex-basis -->
-        <section>
-          <h3>flex-basis</h3>
-          <p>Defines the width of a flex item</p>
-          <pre><code class="css">.flex-child {
-  flex-basis: auto; /* default */
-}
-
-.flex-child {
-  flex-basis: 25%;
-}
-
-.flex-child {
-  flex-basis: 100px;
-}
-</code></pre>
-          <p>
-            <a
-              href="https://developer.mozilla.org/en-US/docs/Web/CSS/flex-basis"
-              target="_blank"
-              ><code>flex-basis</code> property(MDN)</a
-            >
-          </p>
-        </section>
-
-        <!-- flex -->
-        <section>
-          <h3>flex</h3>
-          <p>
-            A shorthand property for <code>flex-grow</code>, <code>flex-shrink</code>,
-            <code>flex-basis</code>
-          </p>
-          <pre><code class="css">.flex-child {
-  flex: 1 1 20%;
-}
-</code></pre>
-          <p>
-            <a
-              href="https://developer.mozilla.org/en-US/docs/Web/CSS/flex"
-              target="_blank"
-              ><code>flex</code> property(MDN)</a
-            >
-          </p>
-        </section>
-
-        <!-- align-self -->
-        <section>
-          <h3>align-self</h3>
-          <p>Aligns a single flex item on the cross axis</p>
-          <pre><code class="css">.flex-child {
-  align-self: stretch /* default */
-}
-
-.flex-child {
-  align-self: center;
-}
-</code></pre>
-          <p>
-            <a
-              href="https://developer.mozilla.org/en-US/docs/Web/CSS/align-self"
-              target="_blank"
-              >Additional values for <code>align-self</code></a
-            >
-          </p>
         </section>
 
         <section>
-          <h3>Practice</h3>
-        </section>
-
-        <!-- CSS Flexbox Resources -->
-        <section>
-          <h3>CSS Flexbox Resources</h3>
+          <h3>CSS Inheritance</h3>
           <p>
-            <a
-              href="https://css-tricks.com/snippets/css/a-guide-to-flexbox/"
-              target="_blank"
-              >A Complete Guide to Flexbox (CSS Tricks)</a
-            >
-          </p>
-          <p>
-            <a
-              href="https://www.freecodecamp.org/news/understanding-flexbox-everything-you-need-to-know-b4013d4dc9af"
-              target="_blank"
-              >Understanding Flexbox (Free Code Camp)</a
-            >
-          </p>
-          <p>
-            <a
-              href="https://codepen.io/enxaneta/pen/adLPwv?editors=1100"
-              target="_blank"
-              >Flexbox Playground (CodePen)</a
-            >
-          </p>
-          <p>
-            <a
-              href="https://flexboxfroggy.com/"
-              target="_blank"
-              >Flexbox Froggy</a
-            >
-          </p>
-          <p>
-            <a
-              href="http://www.flexboxdefense.com/"
-              target="_blank"
-              >Flexbox Defense</a
-            >
+            We can revert inheritance with three values:<br />
+            <code>initial</code>, <code>unset</code>, <code>revert</code>
           </p>
         </section>
 
         <!-- Home Practice -->
         <section>
           <h3>Home Practice</h3>
-          <ol>
-            <li>
-              Practice flexbox with
-              <a
-                href="https://flexboxfroggy.com/"
-                target="_blank"
-                >Flexbox Froggy!</a
-              >
-            </li>
-            <li>Use flexbox to structure your project page layout</li>
-            <li>
-              Want more practice?
-              <ul>
-                <li>
-                  Try recreating flexbox layout #2, #7, #13 or #17 from the
-                  <a
-                    href="https://blog.duda.co/flexbox-examples"
-                    target="_blank"
-                    >18 Great Flexbox Examples For 2021</a
-                  >
-                  article page
-                </li>
-                <li>OR</li>
-                <li>
-                  Try
-                  <a
-                    href="https://developer.mozilla.org/en-US/docs/Learn/CSS/CSS_layout/Flexbox_skills"
-                    target="_blank"
-                    >Flexbox Practice</a
-                  >
-                  (MDN)
-                </li>
-              </ul>
-            </li>
-          </ol>
+          <ul>
+            <li>Add a fixed nav or footer to your page</li>
+          </ul>
         </section>
 
         <!-- Next Class -->
         <section>
-          <h3>Class 4 - Agenda</h3>
+          <h3>Class 4</h3>
           <ul>
-            <li>Project Review-Feedback</li>
-            <li>Flexbox Review</li>
-            <li>Bootstrap Overview</li>
+            <li>Project Review</li>
           </ul>
         </section>
 

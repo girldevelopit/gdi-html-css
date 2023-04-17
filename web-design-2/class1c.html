@@ -1,0 +1,589 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <meta
+      name="description"
+      content="Girl Develop It Web Design Essentials 2 Cohort Series" />
+    <meta
+      name="author"
+      content="Girl Develop It" />
+    <meta
+      name="apple-mobile-web-app-capable"
+      content="yes" />
+    <meta
+      name="apple-mobile-web-app-status-bar-style"
+      content="black-translucent" />
+
+    <!-- Update with GDI Course Name -->
+    <title>GDI - Web Design Essentials 2 Cohort, Class 1</title>
+    <link
+      rel="icon"
+      type="image/x-icon"
+      href="../shared-assets/imgs/favicon.ico" />
+
+    <!-- RevealJS CDN -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/reveal.js@4.1.0/dist/reset.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/reveal.js@4.1.0/dist/reveal.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/reveal.js@4.1.0/dist/theme/simple.css"
+      id="theme" />
+
+    <!-- GDI Custom Theme -->
+    <link
+      rel="stylesheet"
+      href="../shared-assets/css/gdi-theme.css" />
+
+    <!-- Theme used for syntax highlighted code -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.1.0/styles/monokai.min.css" />
+
+    <!-- Course Custom Styles if Applicable-->
+    <link
+      rel="stylesheet"
+      href="./css/style.css" />
+  </head>
+  <body>
+    <div class="reveal">
+      <!-- Start of Slides container -->
+      <!-- A section element is displayed as a single slide -->
+      <!-- Do Not Delete slide comments / instructions -->
+      <!---->
+      <!---->
+      <div class="slides">
+        <!-- Course Title -->
+        <section>
+          <h2>Web Design Essentials 2</h2>
+          <h3>Class 1</h3>
+        </section>
+
+        <!-- Class Agenda -->
+        <section>
+          <h3>AGENDA</h3>
+          <ul>
+            <li>CSS Flexbox</li>
+            <li>Select Your Cohort Project</li>
+          </ul>
+        </section>
+
+        <!-- Stretch Break -->
+        <section>
+          <h3>Stretch - "Bio" Break</h3>
+          <p>Time</p>
+        </section>
+
+        <!-- CSS Flexbox -->
+        <section>
+          <h3>CSS Flexbox</h3>
+        </section>
+
+        <!-- Intro -->
+        <section>
+          <h3>CSS Flexbox</h3>
+          <p>
+            Flexbox is a robust CSS module that allows us to easily create responsive
+            layout without floats, tables or positioning.
+          </p>
+        </section>
+
+        <!-- display: flex -->
+        <section>
+          <h3>Using CSS Flexbox</h3>
+          <p>
+            We declare flexbox on an element (a parent container)<br />
+            by using the <code>display</code> property and a value of
+            <code>flex</code>,<br />
+            establishing a flex container to which we can now add<br />
+            flex settings
+          </p>
+          <pre><code class="css">.parent {
+  display: flex;
+}
+</code></pre>
+        </section>
+
+        <!-- Flexbox Properties -->
+        <section>
+          <h3>Flexbox Settings</h3>
+          <p>There are two categories of flexbox properties:</p>
+          <ul>
+            <li><code>flex-container</code> properties for the parent element</li>
+            <li><code>flex-items</code> properties for the children elements</li>
+          </ul>
+        </section>
+
+        <section>
+          <h3>Flexbox Axes</h3>
+          <p>Flex children or <code>flex-items</code> are laid out in two directions:</p>
+          <ul>
+            <li>The <code>main</code> axis</li>
+            <li>The <code>cross</code> axis</li>
+          </ul>
+        </section>
+
+        <section>
+          <h3>Flexbox Axes</h3>
+          <img
+            src="assets/images/css-flex-box.png"
+            alt="" />
+          <small
+            >Image source:
+            <a
+              href="http://javascriptkit.com/dhtmltutors/css-flexbox.shtml"
+              target="_blank"
+              >JavaScript Kit</a
+            ></small
+          >
+        </section>
+
+        <!--Flex Container  -->
+        <section>
+          <h3>Flex-Container Properties</h3>
+          <ul>
+            <li>flex-direction</li>
+            <li>flex-wrap</li>
+            <li>flex-flow</li>
+            <li>justify-content</li>
+            <li>align-items</li>
+            <li>align-content</li>
+            <li>gap</li>
+          </ul>
+        </section>
+
+        <!-- Flex Direction -->
+        <section>
+          <h3>flex-direction</h3>
+          <p>Determines in what direction to stack flex items</p>
+          <pre><code class="css">.flex-parent {
+  display: flex;
+  flex-direction: row; /* default */
+}
+</code></pre>
+          <p>
+            <a
+              href="https://developer.mozilla.org/en-US/docs/Web/CSS/flex-direction"
+              target="_blank"
+              >Additional values for <code>flex-direction</code></a
+            >
+          </p>
+        </section>
+
+        <!-- Flex Wrap -->
+        <section>
+          <h3>flex-wrap</h3>
+          <p>Determines if flex items should wrap or not</p>
+          <pre><code class="css">.flex-parent {
+  display: flex;
+  flex-wrap: wrap;
+}
+</code></pre>
+          <p>
+            <a
+              href="https://developer.mozilla.org/en-US/docs/Web/CSS/flex-wrap"
+              target="_blank"
+              >Additional values for <code>flex-wrap</code></a
+            >
+          </p>
+        </section>
+
+        <!-- Flex Flow -->
+        <section>
+          <h3>flex-flow</h3>
+          <p>Shorthand for flex-direction and flex-wrap</p>
+          <pre><code class="css">.flex-parent {
+  display: flex;
+  flex-flow: row wrap;
+}
+</code></pre>
+          <p>
+            <a
+              href="https://developer.mozilla.org/en-US/docs/Web/CSS/flex-flow"
+              target="_blank"
+              >Additional values for <code>flex-flow</code></a
+            >
+          </p>
+        </section>
+
+        <!-- Justify Content -->
+        <section>
+          <h3>justify-content</h3>
+          <p>Aligns flex items along the main (or horizontal) axis</p>
+          <pre><code class="css">.flex-parent {
+  display: flex;
+  justify-content: center;
+}
+</code></pre>
+          <p>
+            <a
+              href="https://developer.mozilla.org/en-US/docs/Web/CSS/justify-content"
+              target="_blank"
+              >Additional values for <code>justify-content</code></a
+            >
+          </p>
+        </section>
+
+        <!-- Align Items  -->
+        <section>
+          <h3>align-items</h3>
+          <p>Aligns flex items along the cross (or perpendicular) axis</p>
+          <pre><code class="css">.flex-parent {
+  display: flex;
+  align-items: stretch;
+}
+</code></pre>
+          <p>
+            <a
+              href="https://developer.mozilla.org/en-US/docs/Web/CSS/align-items"
+              target="_blank"
+              >Additional values for <code>align-items</code></a
+            >
+          </p>
+        </section>
+
+        <!-- Align Content -->
+        <section>
+          <h3>align-content</h3>
+          <p>
+            Controls spacing between flex items when there's extra space <br />in the
+            cross-axis and items span across multiple rows;<br />
+            <code>flex-wrap must be enabled</code>
+          </p>
+          <pre><code class="css">.flex-parent {
+  display: flex;
+  flex-wrap: wrap;
+  align-content: center;
+}
+</code></pre>
+          <p>
+            <a
+              href="https://developer.mozilla.org/en-US/docs/Web/CSS/align-content"
+              target="_blank"
+              >Additional values for <code>align-content</code></a
+            >
+          </p>
+        </section>
+
+        <!-- Gap -->
+        <section>
+          <h3>gap</h3>
+          <p>
+            Determines the spacing between flex items,<br />
+            but not on their outer edges
+          </p>
+          <pre><code class="css">.flex-parent {
+  display: flex;
+  gap: 1rem;
+  gap: 1rem 2rem; /* row-gap, column-gap; */
+}
+</code></pre>
+          <p>
+            <a
+              href="https://developer.mozilla.org/en-US/docs/Web/CSS/gap"
+              target="_blank"
+              >Syntax for <code>gap</code></a
+            >
+          </p>
+        </section>
+
+        <!--Flex Item  -->
+        <section>
+          <h3>Flex-Item Properties</h3>
+          <ul>
+            <li>order</li>
+            <li>flex-grow</li>
+            <li>flex-shrink</li>
+            <li>flex-basis</li>
+            <li>flex</li>
+            <li>align-self</li>
+          </ul>
+        </section>
+
+        <!-- order -->
+        <section>
+          <h3>order</h3>
+          <p>
+            Sets the order on a flex item; items in a flex container are sorted by
+            ascending order and then by their code order
+          </p>
+          <pre><code class="css">.flex-child {
+  order: 2
+}
+
+.flex-child {
+  order: -1
+}
+</code></pre>
+          <p>
+            <a
+              href="https://developer.mozilla.org/en-US/docs/Web/CSS/order"
+              target="_blank"
+              ><code>order</code> property(MDN)</a
+            >
+          </p>
+        </section>
+
+        <!-- flex-grow -->
+        <section>
+          <h3>flex-grow</h3>
+          <p>Defines how much a flex-item can grow</p>
+          <pre><code class="css">.flex-child {
+  flex-grow: 0; /* default */
+}
+</code></pre>
+          <p>
+            <a
+              href="https://developer.mozilla.org/en-US/docs/Web/CSS/flex-grow"
+              target="_blank"
+              ><code>flex-grow</code> property(MDN)</a
+            >
+          </p>
+        </section>
+
+        <!-- flex-shrink -->
+        <section>
+          <h3>flex-shrink</h3>
+          <p>Defines how much a flex-item can shrink</p>
+          <pre><code class="css">.flex-child {
+  flex-shrink: 1; /* default */
+}
+</code></pre>
+          <p>
+            <a
+              href="https://developer.mozilla.org/en-US/docs/Web/CSS/flex-shrink"
+              target="_blank"
+              ><code>flex-grow</code> property(MDN)</a
+            >
+          </p>
+        </section>
+
+        <!-- flex-basis -->
+        <section>
+          <h3>flex-basis</h3>
+          <p>Defines the width of a flex item</p>
+          <pre><code class="css">.flex-child {
+  flex-basis: auto; /* default */
+}
+
+.flex-child {
+  flex-basis: 25%;
+}
+
+.flex-child {
+  flex-basis: 100px;
+}
+</code></pre>
+          <p>
+            <a
+              href="https://developer.mozilla.org/en-US/docs/Web/CSS/flex-basis"
+              target="_blank"
+              ><code>flex-basis</code> property(MDN)</a
+            >
+          </p>
+        </section>
+
+        <!-- flex -->
+        <section>
+          <h3>flex</h3>
+          <p>
+            A shorthand property for <code>flex-grow</code>, <code>flex-shrink</code>,
+            <code>flex-basis</code>
+          </p>
+          <pre><code class="css">.flex-child {
+  flex: 1 1 20%;
+}
+</code></pre>
+          <p>
+            <a
+              href="https://developer.mozilla.org/en-US/docs/Web/CSS/flex"
+              target="_blank"
+              ><code>flex</code> property(MDN)</a
+            >
+          </p>
+        </section>
+
+        <!-- align-self -->
+        <section>
+          <h3>align-self</h3>
+          <p>Aligns a single flex item on the cross axis</p>
+          <pre><code class="css">.flex-child {
+  align-self: stretch /* default */
+}
+
+.flex-child {
+  align-self: center;
+}
+</code></pre>
+          <p>
+            <a
+              href="https://developer.mozilla.org/en-US/docs/Web/CSS/align-self"
+              target="_blank"
+              >Additional values for <code>align-self</code></a
+            >
+          </p>
+        </section>
+
+        <section>
+          <h3>Practice</h3>
+        </section>
+
+        <!-- CSS Flexbox Resources -->
+        <section>
+          <h3>CSS Flexbox Resources</h3>
+          <p>
+            <a
+              href="https://css-tricks.com/snippets/css/a-guide-to-flexbox/"
+              target="_blank"
+              >A Complete Guide to Flexbox (CSS Tricks)</a
+            >
+          </p>
+          <p>
+            <a
+              href="https://www.freecodecamp.org/news/understanding-flexbox-everything-you-need-to-know-b4013d4dc9af"
+              target="_blank"
+              >Understanding Flexbox (Free Code Camp)</a
+            >
+          </p>
+          <p>
+            <a
+              href="https://codepen.io/enxaneta/pen/adLPwv?editors=1100"
+              target="_blank"
+              >Flexbox Playground (CodePen)</a
+            >
+          </p>
+          <p>
+            <a
+              href="https://flexboxfroggy.com/"
+              target="_blank"
+              >Flexbox Froggy</a
+            >
+          </p>
+          <p>
+            <a
+              href="http://www.flexboxdefense.com/"
+              target="_blank"
+              >Flexbox Defense</a
+            >
+          </p>
+        </section>
+
+        <!-- Home Practice -->
+        <section>
+          <h3>Home Practice</h3>
+          <ol>
+            <li>
+              Practice flexbox with
+              <a
+                href="https://flexboxfroggy.com/"
+                target="_blank"
+                >Flexbox Froggy!</a
+              >
+            </li>
+            <li>Use flexbox to structure your project page layout</li>
+            <li>
+              Want more practice?
+              <ul>
+                <li>
+                  Try recreating flexbox layout #2, #7, #13 or #17 from the
+                  <a
+                    href="https://blog.duda.co/flexbox-examples"
+                    target="_blank"
+                    >18 Great Flexbox Examples For 2021</a
+                  >
+                  article page
+                </li>
+                <li>OR</li>
+                <li>
+                  Try
+                  <a
+                    href="https://developer.mozilla.org/en-US/docs/Learn/CSS/CSS_layout/Flexbox_skills"
+                    target="_blank"
+                    >Flexbox Practice</a
+                  >
+                  (MDN)
+                </li>
+              </ul>
+            </li>
+          </ol>
+        </section>
+
+        <!-- Next Class -->
+        <section>
+          <h3>Class 2 - Agenda</h3>
+          <ul>
+            <li>CSS Flexbox</li>
+            <li>Bootstrap Overview</li>
+          </ul>
+        </section>
+
+        <!-- MUST-USE SLIDE -->
+        <!-- Add Course Survey Link -->
+        <section>
+          <h2>Give Us Your Feedback</h2>
+          <h3>
+            <a
+              href="#"
+              target="_blank"
+              >Survey Link</a
+            >
+          </h3>
+        </section>
+
+        <!-- Q&A -->
+        <section>
+          <h2>Q&A</h2>
+        </section>
+
+        <!-- Thank You -->
+        <section>
+          <img
+            src="../shared-assets/imgs/gdi-logos/gdi-logo_peach.png"
+            alt="GDI Logo"
+            width="300px"
+            class="noborder" />
+          <br />
+          <h2>Thank You!</h2>
+        </section>
+      </div>
+      <!-- End of Slides container -->
+      <!---->
+      <!---->
+      <!-- Update Footer with Course Name -->
+      <footer>
+        <div class="copyright">
+          <img
+            src="../shared-assets/imgs/gdi-logos/gdi-logo_peach.png"
+            alt="GDI Logo"
+            width="40px"
+            class="noborder" />
+          <p>Web Design Essentials 2 - Class 1</p>
+          <a
+            rel="license"
+            href="http://creativecommons.org/licenses/by-nc/3.0/deed.en_US"
+            ><img
+              alt="Creative Commons License"
+              style="border-width: 0"
+              src="http://i.creativecommons.org/l/by-nc/3.0/80x15.png"
+          /></a>
+        </div>
+      </footer>
+    </div>
+    <!-- End of Reveal wrapper -->
+    <!---->
+    <!---->
+    <!-- RevealJS Scripts & Config - Do Not Edit or Delete -->
+    <script src="https://cdn.jsdelivr.net/npm/reveal.js@4.1.0/dist/reveal.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/reveal.js@4.1.0/plugin/highlight/highlight.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/highlightjs-badge@0.1.9/highlightjs-badge.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jsPlumb/2.15.5/js/jsplumb.min.js"></script>
+    <script src="../shared-assets/js/revealConfig.js"></script>
+  </body>
+</html>

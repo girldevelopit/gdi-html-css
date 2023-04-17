@@ -54,13 +54,9 @@
   </head>
   <body>
     <div class="reveal">
-      <!-- Start of Slides container -->
-      <!-- A section element is displayed as a single slide -->
-      <!-- Do Not Delete slide comments / instructions -->
-      <!---->
-      <!---->
+      <!-- Start of Slides container -- Any section element in this container is displayed as a slide -->
       <div class="slides">
-        <!-- Course Title -->
+        <!-- Course and Class Titles -->
         <section>
           <h2>Web Design Essentials 2</h2>
           <h3>Class 1</h3>
@@ -70,17 +66,8 @@
         <section>
           <h3>AGENDA</h3>
           <ul>
-            <li>Review: Selectors</li>
-            <li>
-              More Selectors!
-              <ul>
-                <li>Combinators</li>
-                <li>Pseudo Classes</li>
-                <li>Pseudo Elements</li>
-              </ul>
-            </li>
-            <li>Cohort Project</li>
-            <li>Feedback & Class 2 Preview</li>
+            <li>Positioning with CSS</li>
+            <li>CSS Flexbox Intro</li>
           </ul>
         </section>
 
@@ -90,412 +77,166 @@
           <p>Time</p>
         </section>
 
-        <!-- Review: Selectors -->
-        <!-- <section>
-        <h3>Review: CSS Selectors</h3>
-      </section> -->
-
-        <!-- Quiz -->
-        <!-- <section>
-        <h3>CSS Selectors</h3>
-        <p>What are selectors? What do selectors do?</p>
-        <p>What are the three common selectors?</p>
-      </section> -->
-
-        <!-- Selectors  -->
+        <!-- Positioning -->
         <section>
-          <h3>CSS Selectors</h3>
-          <ul>
-            <li>
-              A selector is used to select, identify or find HTML elements on a page
-            </li>
-            <li>
-              The elements will then be given the styles declared in between curly braces
-            </li>
-          </ul>
-          <pre><code class="css">selector {
-    property: value;
-    property: value;
-  }</code></pre>
-
-          <pre><code class="css">p {
-  color: yellow;
-  background-color: black;
-}</code></pre>
+          <h3>The Position Property</h3>
         </section>
 
-        <!-- 3 Common Selectors -->
         <section>
-          <h3>The Three Common CSS Selectors</h3>
-          <p>Element or Type selector</p>
-          <p>Class selector</p>
-          <p>ID selector</p>
-        </section>
-
-        <!-- Element or Type Selector -->
-        <section>
-          <h3>Element or Type Selector</h3>
-          <p>
-            An element selector targets or finds HTML elements on the page:
-            <code>div</code>, <code>p</code>, <code>h3</code>, <code>section</code>,
-            <code>nav</code>, etc.
+          <h4>Positioning Elements</h4>
+          <p class="width-750 mb-16">
+            A typical webpage contains multiple elements that we may want to position in
+            unique ways or position outside of their normal flow
           </p>
-          <pre><code class="css">h2 {
-  color: yellow;
-  background-color: black;
-}</code></pre>
-
-          <pre><code class="html">&lt;h2&gt;First Product Title&lt;/h2&gt;
-</code></pre>
-        </section>
-
-        <!-- Class Selector -->
-        <section>
-          <h3>Class Selector</h3>
-          <p>
-            <code>Class</code> selectors are prefixed with a dot: <code>"."</code>,
-            followed by the class name
+          <p class="width-750">
+            For example, a sticky navigation or a fixed sidebar or overlapping elements
           </p>
-          <pre><code class="css">.product-text {
-  color: purple;
-}</code></pre>
-
-          <pre><code class="html">&lt;p class="product-text product-bground"&gt;Some product detail.&lt;/p&gt;
-</code></pre>
         </section>
 
-        <!-- ID Selector -->
         <section>
-          <h3>ID Selector</h3>
-          <p>
-            <code>ID</code> selectors are prefixed with a hash symbol: <code>"#"</code>,
-            followed by an ID name
-          </p>
-          <pre><code class="css">#product-name {
-  background: tomato;
-}</code></pre>
-
-          <pre><code class="html">&lt;h2 id="product-name"&gt;First Product Title&lt;/h2&gt;
-</code></pre>
-        </section>
-
-        <!-- Diff between Class and ID  -->
-        <section>
-          <h3>Class vs ID Selector</h3>
-          <p>What's the primary difference between a Class and an ID selector?</p>
-        </section>
-
-        <!--  Diff between Class and ID -->
-        <section>
-          <h3>Class vs ID Selector</h3>
-          <ul>
-            <li>A Class selector can be applied to multiple elements</li>
-            <li>An ID selector can only be applied to a single element</li>
-          </ul>
-        </section>
-
-        <!-- More Selectors -->
-        <section>
-          <h3>Additional Selectors</h3>
-          <p>There are more ways to select or target HTML elements for styling.</p>
-        </section>
-
-        <!-- Universal selector -->
-        <section>
-          <h3>The Universal Selector</h3>
-          <ul>
-            <li>The <code>universal</code> selector selects all elements on a page</li>
-            <li>It is mostly used for applying the box-sizing property</li>
-            <pre><code class="css">* {
-  box-sizing: border-box;
-}
-</code></pre>
-          </ul>
-          <p>
+          <img
+            src="./images/fixed-nav-bar.gif"
+            width="700px"
+            alt="Animated gif of web page with fixed navigation bar" />
+          <div>
             <a
-              href="https://www.w3schools.com/css/css3_box-sizing.asp"
+              href="https://golde.co/pages/meet-our-founder"
               target="_blank"
-              >Box-sizing (W3Schools)</a
+              >Golde.co</a
             >
+          </div>
+        </section>
+
+        <!-- Position -->
+        <section>
+          <h3>Position</h3>
+          <p class="width-800 mb-16">
+            The <code>position</code> property defines how and where an element can move
+            on the page
           </p>
-        </section>
-
-        <!-- Grouping selector -->
-        <section>
-          <h3>Grouping Selectors</h3>
-          <ul>
-            <li>
-              The <code>selector list</code> groups other selectors and applies the same
-              style(s) to them
-            </li>
-            <pre><code class="css">p, h2, h4 {
-  color: purple;
-}
-</code></pre>
-          </ul>
-        </section>
-
-        <!-- Chaining selectors -->
-        <section>
-          <h3>Chaining Selectors</h3>
-          <p>We can chain selectors to more directly target them with CSS.</p>
-          <pre><code class="html">&lt;h2 id="product-name"&gt;First Product Title&lt;/h2&gt;
-</code></pre>
-          <pre><code class="html">&lt;a href="url.com" class="btn-large"&gt;Click Me!&lt;/a&gt;
-</code></pre>
-          <pre><code class="css">h2#productname,
-a.btn-large {
-  color: purple;
-}
-/* Only add the color purple to the h2 
-with an id of product-name, and to an
-a tag with the class name of btn-large. */
-</code></pre>
-        </section>
-
-        <!-- Attribute selectors -->
-        <section>
-          <h3>Attribute Selectors</h3>
-          <p>We can define selectors to identify elements by their attributes</p>
-          <pre><code class="html">&lt;a href="url.com" class="btn-large"&gt;Click Me!&lt;/a&gt;
-</code></pre>
-          <pre><code class="html">&lt;a href="apple.com" class="btn-large"&gt;Click Me!&lt;/a&gt;
-</code></pre>
-          <pre><code class="css">a[href="apple.com"] {
-    color:green;
-  }
-/* Apply the color green to any anchor tag
-pointing to the apple.com site */
-</code></pre>
-          <p>
-            <a
-              href="https://developer.mozilla.org/en-US/docs/Web/CSS/Attribute_selectors"
-              target="_blank"
-              >Attribute Selectors (MDN)</a
-            >
+          <p class="width-900 mb-32">
+            It has five values and five coordinate properties:
           </p>
+          <div
+            style="
+              display: flex;
+              justify-content: space-between;
+              width: 400px;
+              margin: 0 auto;
+            ">
+            <ul class="fs-28">
+              <li>Static</li>
+              <li>Fixed</li>
+              <li>Absolute</li>
+              <li>Relative</li>
+              <li>Sticky</li>
+            </ul>
+            <ul class="fs-28">
+              <li>Top</li>
+              <li>Bottom</li>
+              <li>Left</li>
+              <li>Right</li>
+              <li>Z-Index</li>
+            </ul>
+          </div>
         </section>
 
-        <!-- CSS Combinators -->
+        <!-- Static -->
         <section>
-          <h3>CSS Combinators</h3>
-          <p>
-            CSS Combinators describe the relationship between selectors. They help make
-            our CSS more specific. There are four types:
-          </p>
-          <ul>
-            <li>Descendant combinator</li>
-            <li>Child combinator</li>
-            <li>Adjacent Sibling combinator</li>
-            <li>General Sibling combinator</li>
+          <h4>position: static</h4>
+          <p>This is the default position of all elements; the normal document flow</p>
+        </section>
+
+        <!-- Fixed Positioning  -->
+        <section>
+          <h4>position: fixed</h4>
+          <ul class="fs-28">
+            <li>An element is fixed to a position relative to the browser window</li>
+            <li>The element is also moved out of the document flow</li>
+            <li>Coordinates can be applied for precise positioning</li>
           </ul>
-          <p>
-            <a
-              href="https://developer.mozilla.org/en-US/docs/Learn/CSS/Building_blocks/Selectors/Combinators"
-              target="_blank"
-              >CSS Combinators (MDN)</a
-            >
-          </p>
-        </section>
-
-        <!-- Descendant Combinator  -->
-        <section>
-          <h3>Descendant Combinator</h3>
-          <ul>
-            <li>
-              Targets all (similar) elements that are descendants of a specified element
-            </li>
-            <li>It is characterized by a single space between the elements</li>
-          </ul>
-          <pre><code class="css">div p {
-  color: purple;
-}
-</code></pre>
-        </section>
-
-        <!-- Child Combinator -->
-        <section>
-          <h3>Child Combinator</h3>
-          <ul>
-            <li>
-              Targets only child elements that are direct children of the specified parent
-              element
-            </li>
-            <li>It is characterized by a closing angle bracket: <code>></code></li>
-          </ul>
-          <pre><code class="css">div > p {
-  color: purple;
-}
-</code></pre>
-        </section>
-
-        <!-- Adjacent Sibling -->
-        <section>
-          <h3>Adjacent Sibling Combinator</h3>
-          <ul>
-            <li>
-              Targets elements that come directly after each other and share the same
-              parent
-            </li>
-            <li>It is characterized by a plus mark: <code>+</code></li>
-          </ul>
-          <pre><code class="css">h2 + p {
-  color: aquamarine;
-}
-</code></pre>
-        </section>
-
-        <!-- General Sibling Combinator -->
-        <section>
-          <h3>General Sibling Combinator</h3>
-          <ul>
-            <li>
-              Targets sibling elements that share the same parent, but do not necessarily
-              come after each other
-            </li>
-            <li>It is characterized by the tilde mark: <code>~</code></li>
-          </ul>
-          <pre><code class="css">h2 ~ p {
-  color: yellowgreen;
-}
-</code></pre>
-        </section>
-
-        <!-- Pseudo Classes -->
-        <section>
-          <h3>Pseudo Classes</h3>
-          <p>
-            Pseudo-classes are selectors that select and style elements in a particular
-            state. For example:
-          </p>
-          <ul>
-            <li>Styling anchor tags depending on their state</li>
-            <li>Styling an element when a user hovers/mouses over it</li>
-            <li>Styling the first or last or nth type of an element</li>
-          </ul>
-          <p>
-            <a
-              href="https://developer.mozilla.org/en-US/docs/Learn/CSS/Building_blocks/Selectors/Pseudo-classes_and_pseudo-elements"
-              target="_blank"
-              >Pseudo-Classes (MDN)</a
-            >
-          </p>
-        </section>
-
-        <section>
-          <h3>Pseudo Classes</h3>
-          <p>
-            Pseudo-classes start with the target selector/element, then a colon
-            <code>:</code>, and the pseudo-class keyword:
-          </p>
-          <pre><code class="css">/* Pseudo-Class Syntax */
-
-selector:pseudo-class-keyword {
-  property: value;
-}
-
-/* Target every first-child p tag */
-p:first-child {
-  color:yellowgreen;
-}
-</code></pre>
-        </section>
-
-        <!-- Hover State -->
-        <section>
-          <h3>Hover State</h3>
           <pre><code class="css">
-h2 {
-  color: red;
-}
-
-/* Change the color on hover */
-h2:hover {
-  color:yellowgreen;
+.box-three {
+  position: fixed;
+  top: 10px;
+  left: 0;
 }
 </code></pre>
         </section>
 
-        <!-- Anchor tag states -->
+        <!-- Absolute -->
         <section>
-          <h3>Anchor Tag States</h3>
-          <p>Anchor tags exists in the five following states.</p>
-          <p>Note that there's a pseudo-class for each state.</p>
-          <ul>
-            <li><code>a:link</code> - an unvisited link; the default state</li>
-            <li><code>a:visited</code> - when the link has been visited</li>
-            <li><code>a:hover</code> - when a mouse hovers over the link</li>
-            <li><code>a:active</code> - when the mouse is clicked</li>
-            <li><code>a:focus</code> - when a user uses the tab key to select a link</li>
-          </ul>
-        </section>
-
-        <!-- Anchor state order -->
-        <section>
-          <h3>Ordering Anchor Tag States</h3>
-          <p>Anchor tag states have to be defined in a specific order in CSS.</p>
-          <ul>
+          <h4>position: absolute</h4>
+          <ul class="fs-28">
+            <li>The element is positioned relative to its parent container</li>
             <li>
-              <code>:hover</code> must come after <code>:link</code> and
-              <code>:visited</code>
+              The parent container must have a position value of <code>relative</code>, or
+              the element will be positioned relative to the closest parent with a
+              non-static value
             </li>
-            <li><code>:active</code> must come after <code>:hover</code></li>
+            <li>The element is removed out of the normal document flow</li>
+            <li>Coordinates can be applied for precise positioning</li>
           </ul>
-          <p>
-            <a
-              href="https://www.w3schools.com/css/css_link.asp"
-              target="_blank"
-              >Styling Links (W3Schools)</a
-            >
-          </p>
-        </section>
-
-        <!-- Type Position -->
-        <section>
-          <h3>Type Position</h3>
-          <p>Pseudo-classes can be used to target specific elements in a group.</p>
-          <pre><code class="css">/* Target every first-child h3 tag */
-h3:first-child {
-  color:yellowgreen;
+          <pre><code class="css">
+.box-two {
+  position: absolute;
+  top: 0;
 }
 </code></pre>
         </section>
 
-        <!-- Pseudo Element -->
+        <!-- Relative -->
         <section>
-          <h3>Pseudo-Elements</h3>
-          <ul>
-            <li>
-              Pseudo-elements add specific styling effects to page elements or add "extra"
-              content to elements
-            </li>
-            <li>
-              The four commonly used pseudo-elements are:
-              <ul>
-                <li>::before</li>
-                <li>::after</li>
-                <li>::first-line</li>
-                <li>::first-letter</li>
-              </ul>
-            </li>
+          <h4>position: relative</h4>
+          <ul class="fs-28">
+            <li>An element is positioned relative to itself</li>
+            <li>It does not move out of the document flow</li>
+            <li>Coordinates can be applied for precise positioning</li>
           </ul>
+          <pre><code class="css">
+.box-five {
+  position: relative;
+  right: 100px;
+}
+</code></pre>
         </section>
 
-        <!-- Pseudo element syntax -->
+        <!-- Sticky -->
         <section>
-          <h3>Pseudo-Element Syntax</h3>
-          <p>
-            The syntax of pseudo-classes and pseudo-elements look the same, with one
-            exception. Can you spot it?
-          </p>
-          <pre><code class="css">/* Pseudo-Class Syntax */
-selector:pseudo-class-keyword {
-  css-property: value;
+          <h4>position: sticky</h4>
+          <ul class="fs-28">
+            <li>
+              The element is fixed and relative to a parent container until the parent
+              container moves out of the viewport
+            </li>
+            <li>Browser support is not at 100%; use with care</li>
+          </ul>
+          <pre><code class="css">
+.box-one {
+  position: sticky;
+  top: 10px;
 }
+</code></pre>
+        </section>
 
-/* Pseudo-Elements Syntax */
-selector::pseudo-element-keyword {
-  css-property: value;
+        <!-- Z Index -->
+        <section>
+          <h4>Z-Index</h4>
+          <ul class="fs-28">
+            <li>
+              The z-index property defines the order of how elements overlap each other
+            </li>
+            <li>The default value of an element's z-index is auto or 0</li>
+            <li>
+              An element with a high z-index will stack over elements with lower z-index
+              values
+            </li>
+            <li>Only works on elements that have a non-static position</li>
+          </ul>
+          <pre><code class="css">
+.box-four {
+  position: sticky;
+  top: 10px;
 }
 </code></pre>
         </section>
@@ -503,33 +244,17 @@ selector::pseudo-element-keyword {
         <!-- Home Practice -->
         <section>
           <h3>Home Practice</h3>
-          <ol>
-            <li>
-              If you don't have a project yet:
-              <ul>
-                <li>Decide on your project choice and create a hand-drawn sketch</li>
-                <li>Code the markup (HTML) for the page</li>
-                <li>Apply basic styling (CSS) to the page</li>
-                <li>Optional: Email me links if you'd like feedback</li>
-              </ul>
-            </li>
-            <li>
-              For those with ongoing projects from WDE1:
-              <ul>
-                <li>Continue to refine and build out your page</li>
-              </ul>
-            </li>
-          </ol>
+          <ul>
+            <li>Add a fixed nav or footer to your page</li>
+          </ul>
         </section>
 
-        <!-- Next Class and Topics -->
+        <!-- Next Class -->
         <section>
           <h3>Class 2</h3>
           <ul>
-            <li>Project Pages Review-Feedback</li>
-            <li>Positioning</li>
-            <li>CSS Cascade, Inheritance & Specificity</li>
-            <li>CSS Flexbox</li>
+            <li>CSS Flexbox (contd)</li>
+            <li>Responsive Images</li>
           </ul>
         </section>
 
