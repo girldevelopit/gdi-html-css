@@ -1,0 +1,157 @@
+/* Flex Container Demo */
+
+.flex-container {
+	max-width: 800px;
+	width: 100%;
+	/* height: 1000px; */
+	margin: 2rem auto;
+	padding: 0.5rem;
+	border: 2px solid red;
+	background: whitesmoke;
+	/* Add flexbox properties:*/
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: center;
+	align-items: center;
+}
+
+.box {
+	width: 200px;
+	height: 200px;
+	background-size: cover;
+	background-repeat: no-repeat;
+	color: hotpink;
+	font-size: 2.5rem;
+	font-weight: 600;
+	padding-left: 1rem;
+}
+
+.box1 {
+	background-image: url(./images/img1.jpg);
+}
+
+.box2 {
+	background-image: url(./images/img2.jpg);
+}
+
+.box3 {
+	background-image: url(./images/img3.jpg);
+}
+
+.box4 {
+	background-image: url(./images/img4.jpg);
+}
+
+.box5 {
+	background-image: url(./images/img5.jpg);
+}
+
+.box6 {
+	background-image: url(./images/img6.jpg);
+}
+
+.box7 {
+	background-image: url(./images/img7.jpg);
+}
+
+.box8 {
+	background-image: url(./images/img8.jpg);
+}
+
+.box9 {
+	background-image: url(./images/img9.jpg);
+}
+
+/* Flex Items Demo */
+.flex-container2 {
+	border: 4px solid green;
+	max-width: 800px;
+	width: 100%;
+	margin: 0 auto;
+	padding: 1rem;
+	display: flex;
+	gap: 0.5rem;
+}
+
+article {
+	border: 2px dashed goldenrod;
+	background: wheat;
+	/* width: 25%; */
+	/* flex-grow: 1; */
+	/* flex-shrink: 1 */
+}
+
+article:nth-child(2) {
+	/* flex-grow: 1; */
+}
+
+article:nth-child(1) {
+	/* flex-shrink: 2; */
+	flex: 2 0 200px;
+}
+
+/* Flexbox NavBar */
+.flex-navbar {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	padding: 1rem;
+}
+
+.nav-menu {
+	display: flex;
+	justify-content: space-between;
+	width: 400px;
+}
+
+/* Centering with Flexbox */
+.parent {
+	background: gold;
+	width: 300px;
+	height: 300px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.child {
+	width: 50px;
+	height: 50px;
+	background: teal;
+}
+/* Flexbox Examples */
+
+.flex-parent {
+	display: flex;
+	border: 2px solid red;
+	background: whitesmoke;
+	max-width: 600px;
+	width: 100%;
+	height: 400px;
+	justify-content: space-between;
+}
+
+.flex-child {
+	flex-basis: 50%;
+}
+
+.flex-child1 {
+	background-color: gold;
+}
+
+.flex-child2 {
+	background-color: teal;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+}
+
+.flex-grandchild {
+	border: 2px dashed white;
+	height: 50%;
+}
+
+.flex-grandchild:nth-child(1) {
+	background-color: tomato;
+}

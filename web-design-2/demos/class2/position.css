@@ -1,0 +1,85 @@
+html {
+	height: 2000px;
+	margin: 3rem 1rem 0 1rem;
+}
+
+body {
+	background: yellowgreen;
+	padding: 20px;
+	font-family: verdana;
+}
+
+.grandparent {
+	/* background: yellow;
+	padding: 40px;
+	border: 2px dashed tomato;
+	margin: 0;
+	position: relative; */
+}
+
+.parent {
+	background: whitesmoke;
+	padding: 20px;
+	border: 3px solid black;
+	margin: 0;
+	position: relative;
+}
+
+.box {
+	background: rgb(105, 105, 109);
+	color: white;
+	padding: 10px;
+	border: 3px solid rgb(224, 25, 214);
+	margin: 10px;
+}
+
+/* Fixed */
+.box-three {
+	/* position: fixed; */
+	/* top: 0; */
+	/* bottom: 0; */
+	/* left: 0; */
+	/* margin: 0; */
+	/* width: 100%; */
+}
+
+/* Absolute */
+.box-two {
+	/* position: absolute;
+	top: 0;
+	left: 0;
+	margin: 0; */
+	/* width: 100%; */
+}
+
+/* Relative */
+.box-five {
+	/* position: relative;
+	right: -100px;
+	bottom: 50px; */
+}
+
+/* Sticky */
+.box-one {
+	/* position: sticky;
+	top: 1rem; */
+}
+
+/* Z index */
+.box-four {
+	/* position: absolute; */
+	/* top: 30px; */
+	/* width: 50%; */
+	/* background-color: aqua; */
+	/* z-index: 1; */
+}
+
+.box-one {
+	/* position: relative; */
+	/* z-index: 3; */
+}
+
+.box-five {
+	/* position: relative; */
+	/* z-index: 2; */
+}

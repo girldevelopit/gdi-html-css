@@ -1,0 +1,38 @@
+/************ CSS Exercises *************/
+
+/*** Universal selector ***/
+/* * {
+	color: palevioletred;
+	background: black;
+} */
+
+/*** Selector List ***/
+/* h3,
+h4,
+p {
+	color: blue;
+} */
+
+/*** Descendant combinator ***/
+/* div p {
+	color: purple;
+} */
+
+/*** Child combinator ***/
+/* div > p {
+	color: tomato;
+}
+
+section > p {
+	color: blue;
+} */
+
+/*** The Adjacent Sibling combinator ***/
+/* h2 + p {
+	color: seagreen;
+} */
+
+/*** The General Sibling combinator ***/
+/* h2 ~ p {
+	color: mediumvioletred;
+} */

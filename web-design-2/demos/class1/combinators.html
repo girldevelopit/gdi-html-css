@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<!-- Google Font -->
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;600&display=swap"
+			rel="stylesheet"
+		/>
+		<!-- Reset CSS -->
+		<link rel="stylesheet" href="../reset.css" />
+		<link rel="stylesheet" href="../base.css" />
+		<link rel="stylesheet" href="selectors.css" />
+		<title>Selectors Demo</title>
+	</head>
+	<body>
+		<!-- Selector List -->
+		<p class="heading-label">The Selector List</p>
+		<!-- <h3>This h3 heading will be blue</h3>
+		<h4>This h4 heading will also be blue</h4>
+		<p>This paragraph will be blue as well</p> -->
+
+		<!-- Descendant -->
+		<p class="heading-label">The Descendant Combinator</p>
+		<!-- <div>
+			<h2>This h2 should be black</h2>
+			<p>This p tag should be purple, because all p tags inside the parent div are targeted</p>
+			<p>This p tag should be purple, because all p tags inside the parent div are targeted</p>
+		</div> -->
+
+		<!-- Child -->
+		<p class="heading-label">The Child Combinator</p>
+		<!-- <div>
+			<h3>This h3 is black because it is not a p tag that is a direct child</h3>
+			<p>This p tag should be tomato because it is a direct child of the div</p>
+			<section>
+				<p>
+					This p tag should be blue because it is a direct child of the section
+					tag, not the div tag
+				</p>
+			</section>
+		</div> -->
+
+		<!-- Adjacent Sibling -->
+		<p class="heading-label">The Adjacent Sibling Combinator</p>
+		<!-- <div>
+			<h2>This is black</h2>
+			<p>
+				This should be seagreen; it comes right the h2--its adjacent sibling,
+				and they have the same parent div
+			</p>
+			<p>This should be black</p>
+		</div> -->
+
+		<!-- General Sibling -->
+		<p class="heading-label">The General Sibling Combinator</p>
+		<!-- <div>
+			<p>What color will I be?</p>
+			<h2>This h2 is black</h2>
+			<h3>This h3 is black</h3>
+			<p>
+				This p tag should be medium violet red because it is a sibling of the
+				the h2;
+			</p>
+			<p>
+				This p tag should be medium violet red because it is a sibling of the
+				the h2;
+			</p>
+			<div>
+				<p>What color will I be?</p>
+			</div>
+		</div> -->
+	</body>
+</html>

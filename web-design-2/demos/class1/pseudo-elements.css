@@ -1,0 +1,23 @@
+/************ CSS Exercises *************/
+
+/* .pretty-box::before {
+	content: 'A pretty green box';
+	background: yellowgreen;
+	border: 2px dashed red;
+	padding: 4px;
+	margin-right: 4px;
+} */
+
+/* .emoji::after {
+	content: '🔥';
+} */
+
+/* .big-first-letter::first-letter {
+	font-size: 48px;
+	font-weight: 600;
+} */
+
+/* .red-line::first-line {
+	color: gold;
+	background: darkgreen;
+} */

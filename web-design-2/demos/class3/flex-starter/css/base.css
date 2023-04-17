@@ -1,0 +1,13 @@
+/************ CSS for Exercise Headings *************/
+
+body {
+	font-family: 'Quicksand', sans-serif;
+}
+
+.heading-label {
+	padding: 0.5rem;
+	margin-top: 0.5rem;
+	margin-bottom: 0.5rem;
+	color: rgb(39, 35, 35);
+	background: rgb(165, 160, 159);
+}
