@@ -1,0 +1,144 @@
+/*** Flexbox Layout 2 ***/
+.parent-layout2 {
+	display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+	border: 3px solid red;
+  padding: 1rem 1rem 2.75rem 1rem;
+  margin: 0 auto;
+	background: whitesmoke;
+	max-width: 600px;
+	width: 100%;
+	height: 400px;
+}
+
+.child-layout2 {
+	flex-basis: 25%;
+  border: 2px dashed goldenrod;
+}
+
+.child-layout2:nth-child(2){
+  align-self: flex-end;
+}
+
+.img-box {
+  background: #3d348b;
+  height: 200px;
+}
+
+.text-box {
+  background: #7678ed;
+  height: 75px;
+}
+
+/*** Flexbox Layout 7 ***/
+.parent-layout7 {
+	display: flex;
+	border: 3px solid red;
+  margin: 0 auto;
+	background: whitesmoke;
+	max-width: 600px;
+	width: 100%;
+	height: 270px;
+}
+
+.child-layout7 {
+  flex-basis: 50%;
+}
+
+.child-layout7:nth-child(1){
+  background-color: teal;
+}
+
+.child-layout7:nth-child(2){
+  background-color: gold;
+}
+
+/*** Flexbox Layout 13 ***/
+.parent-layout13 {
+	display: flex;
+	border: 3px solid red;
+  margin: 0 auto;
+  padding: .25rem;
+	background: whitesmoke;
+	max-width: 600px;
+	width: 100%;
+	height: 300px;
+  gap: .5rem;
+}
+
+.child-layout13:nth-child(1) {
+  flex-basis: 38%;
+  border: 2px dashed magenta;
+  background: #e63946;
+}
+
+.child-layout13:nth-child(2) {
+  flex-basis: 62%;
+  border: 2px dashed purple;
+  display: flex;
+  justify-content: space-between;
+}
+
+.grandchild-layout13 {
+  flex-basis: 32%;
+}
+
+.img-box13 {
+  background: #a8dadc;
+  height: 80%;
+}
+
+.text-box13 {
+  background: #457b9d;
+  height: 20%;
+}
+
+/*** Flexbox Layout 17 ***/
+.parent-layout17 {
+	display: flex;
+	border: 3px solid red;
+  margin: 0 auto;
+  padding: 1.5rem;
+	/* background: whitesmoke; */
+  background: black;
+	max-width: 600px;
+	width: 100%;
+	height: 300px;
+  gap: .5rem;
+}
+
+.child-layout17 {
+  /* border: 2px dashed white; */
+}
+
+.child-layout17:nth-child(1){
+  flex-basis: 55%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1.25rem;
+}
+
+.child-layout17:nth-child(2){
+  flex-basis: 45%;
+  display: flex;
+  align-items: center;
+}
+
+.grandchildA-layout17 {
+  width: 75%;
+  background: white;
+  height: 40px;
+}
+
+.grandchildA-layout17:nth-of-type(2) {
+  align-self: flex-start;
+}
+
+.grandchildB-layout17 {
+  background: tomato;
+  width: 150px;
+  height: 150px;
+}

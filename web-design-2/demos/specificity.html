@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      http-equiv="X-UA-Compatible"
+      content="IE=edge" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0" />
+    <!-- Google Font -->
+    <link
+      rel="preconnect"
+      href="https://fonts.googleapis.com" />
+    <link
+      rel="preconnect"
+      href="https://fonts.gstatic.com"
+      crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;600&display=swap"
+      rel="stylesheet" />
+    <!-- Reset CSS -->
+    <link
+      rel="stylesheet"
+      href="reset.css" />
+    <link
+      rel="stylesheet"
+      href="base.css" />
+    <link
+      rel="stylesheet"
+      href="specificity.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <!-- !important -->
+    <p class="heading-label">!important</p>
+    <!-- <p class="blue-text">Hey, make me blue.</p> -->
+
+    <!-- Specificity -->
+    <p class="heading-label">Specificity</p>
+    <div>
+      <span
+        class="btn btn-dark"
+        id="click-btn"
+        >Click me!</span
+      >
+    </div>
+
+    <!-- Calculating Specificity -->
+    <p class="heading-label">Calculating Specificity</p>
+    <div class="specificity-container">
+      <!-- <p><code>div#container #box ul li</code></p>
+			<div class="specificity-parent">
+				<div class="specificity-child id">ID Selectors</div>
+				<div class="specificity-child class">
+					Class, Pseudo-class, Attribute Selectors
+				</div>
+				<div class="specificity-child element">Element Selectors</div>
+			</div>
+			<p><code>Total: ???</code></p> -->
+
+      <!-- <hr />
+
+			<p><code>nav#nav div.text-lg button:hover</code></p>
+			<div class="specificity-parent">
+				<div class="specificity-child id">ID Selectors</div>
+				<div class="specificity-child class">
+					Class, Pseudo-class, Attribute Selectors
+				</div>
+				<div class="specificity-child element">Element Selectors</div>
+			</div>
+			<p><code>Total: ???</code></p> -->
+    </div>
+  </body>
+</html>

@@ -1,0 +1,113 @@
+/************ CSS Exercises *************/
+
+/* !important */
+
+/* .blue-text {
+	color: blue;
+} */
+
+/* p {
+	color: red !important;
+} */
+
+/* Specificity */
+/* The rules below target the same element */
+/* Which rule wins? */
+
+/* Value: 0 0 0 1 */
+span {
+	color: yellowgreen;
+	font-weight: 600;
+	background-color: black;
+	padding: 0.5rem;
+	margin: 0.5rem;
+	display: inline-block;
+}
+
+/* Value: 0 0 0 2  */
+div span {
+	color: palevioletred;
+}
+
+/* Value: 0 0 1 0  */
+.btn {
+	color: aquamarine;
+}
+
+/* Value: 0 0 2 0  */
+.btn.btn-dark {
+	color: khaki;
+}
+
+/* Value: 0 1 0 0  */
+/* #click-btn {
+	color: teal;
+} */
+
+/* Value: 0 1 0 0 */
+/* #click-btn {
+	color: blue;
+} */
+
+/* Inline Style */
+/* Value: 1 0 0 0 */
+/* thistle */
+/* Add the inline style in the html */
+
+/* !important */
+/* span {
+	color: white !important;
+} */
+
+hr {
+	border: none;
+	border-top: 3px double #333;
+	color: #333;
+	overflow: visible;
+	text-align: center;
+	height: 5px;
+	margin: 2rem 0;
+}
+
+/* Calculating Specificity */
+.specificity-container p {
+	text-align: center;
+	font-size: 2rem;
+}
+.specificity-parent {
+	width: 100%;
+	max-width: 600px;
+	margin: 1rem auto;
+	padding: 1rem 0;
+	background: whitesmoke;
+	border: 2px dashed tomato;
+	display: flex;
+	justify-content: space-around;
+}
+
+.specificity-child {
+	height: 150px;
+	width: 150px;
+	border: 1px solid gray;
+	font-size: 0.875rem;
+	color: white;
+	font-weight: 600;
+	text-align: center;
+}
+
+.id {
+	background-color: tomato;
+}
+
+.class {
+	background: mediumseagreen;
+}
+
+.element {
+	background: blueviolet;
+}
+
+/* Value: 0 0 2 1  */
+span.btn.btn-dark {
+	color: tomato;
+}

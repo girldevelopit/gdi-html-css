@@ -1,0 +1,33 @@
+body {
+	font-size: 16px;
+	color: deeppink;
+	font-weight: 600;
+	text-align: center;
+}
+
+p {
+	font-size: 12px;
+}
+
+.parent {
+	max-width: 750px;
+	width: 100%;
+	margin: 1rem auto;
+	padding: 1rem;
+	background: whitesmoke;
+	border: 4px dashed darkgoldenrod;
+	color: darkorchid;
+	text-align: left;
+	font-size: 20px;
+	/* line-height: 150%; */
+}
+
+.child {
+	/* border: inherit;
+	padding: inherit; */
+	/* font-size: initial; */
+	/* font-size: unset; */
+	/* color: unset;/ */
+	/* all: initial; */
+	/* all: inherit; */
+}

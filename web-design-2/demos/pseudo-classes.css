@@ -1,0 +1,66 @@
+/************ CSS Exercises *************/
+
+/* Hover state */
+/* h2 {
+	color: red;
+} */
+
+/* h2:hover {
+	color: yellowgreen;
+} */
+
+/* Anchor tags */
+/* a {
+	display: block;
+	margin-bottom: 0.5rem;
+} */
+
+/* a:visited {
+	color: tomato;
+} */
+
+/* a:hover {
+	color: magenta;
+} */
+
+/* Hover comes after Link and Visited */
+/* Active comes after Hover */
+
+/* h3:first-child {
+	color: sienna;
+} */
+
+.container {
+	width: 600px;
+	/* Quiz! */
+	/* margin: 0 auto; */
+	background: rgb(134, 134, 131);
+	border: 5px solid red;
+}
+
+.box {
+	width: 150px;
+	height: 150px;
+	background: #d96b6b;
+	border: 3px solid black;
+	/* Quiz! */
+	/* display: inline-block; */
+	/* Quiz! */
+	/* margin: 0.5rem 1rem 0.5rem 1rem; */
+	/* margin-top: 0.5rem;
+	margin-right: 1rem; */
+}
+
+.box:hover {
+	background: white;
+}
+
+.box:nth-child(even) {
+	background: blue;
+	/* Quiz! */
+	/* border-bottom-right-radius: 50px; */
+}
+
+.box:nth-child(even):hover {
+	background: tomato;
+}

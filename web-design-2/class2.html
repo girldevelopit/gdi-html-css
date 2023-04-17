@@ -1,425 +1,802 @@
-<!doctype html>
+<!DOCTYPE html>
 <html>
-<head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
-  <meta name="description" content="Girl Develop It Web Design Essentials 2 Cohort Series">
-  <meta name="author" content="Girl Develop It">
-  <meta name="apple-mobile-web-app-capable" content="yes" />
-  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <meta
+      name="description"
+      content="Girl Develop It Web Design Essentials 2 Cohort Series" />
+    <meta
+      name="author"
+      content="Girl Develop It" />
+    <meta
+      name="apple-mobile-web-app-capable"
+      content="yes" />
+    <meta
+      name="apple-mobile-web-app-status-bar-style"
+      content="black-translucent" />
 
-  <!-- Update with GDI Course Name -->
-  <title>GDI - Web Design Essentials 2, Class 2</title>
+    <!-- Update with GDI Course Name -->
+    <title>GDI - Web Design Essentials 2 Cohort, Class 2</title>
+    <link
+      rel="icon"
+      type="image/x-icon"
+      href="../shared-assets/imgs/favicon.ico" />
 
-  <link rel="icon" type="image/x-icon" href="./assets/images/favicon.ico" />
+    <!-- RevealJS CDN -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/reveal.js@4.1.0/dist/reset.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/reveal.js@4.1.0/dist/reveal.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/reveal.js@4.1.0/dist/theme/simple.css"
+      id="theme" />
 
-  <!-- RevealJS CDN -->
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reveal.js@4.1.0/dist/reset.css">
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reveal.js@4.1.0/dist/reveal.css">
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reveal.js@4.1.0/dist/theme/simple.css" id="theme">
+    <!-- GDI Custom Theme -->
+    <link
+      rel="stylesheet"
+      href="../shared-assets/css/gdi-theme.css" />
 
-  <!-- GDI Custom Theme -->
-  <link rel="stylesheet" href="./assets/css/gdi-theme.css">
+    <!-- Theme used for syntax highlighted code -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.1.0/styles/monokai.min.css" />
 
-  <!-- Theme used for syntax highlighted code -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.1.0/styles/monokai.min.css">
-  <style>
-    p.gdi-p {
-      font-size: 32px;
-      line-height: 1.5;
-    }
-  </style>
-</head>
-<body>
-  <div class="reveal">
-    <!-- Start of Slides container -- Any section element in this container is displayed as a slide -->
-    <div class="slides">
+    <!-- Course Custom Styles if Applicable-->
+    <link
+      rel="stylesheet"
+      href="./css/style.css" />
+  </head>
+  <body>
+    <div class="reveal">
+      <!-- Start of Slides container -->
+      <!-- A section element is displayed as a single slide -->
+      <!-- Do Not Delete slide comments / instructions -->
+      <!---->
+      <!---->
+      <div class="slides">
+        <!-- Course Title -->
+        <section>
+          <h2>Web Design Essentials 2</h2>
+          <h3>Class 2</h3>
+        </section>
 
-      <!-- Course and Class Titles -->
-      <section>
-        <h2>Web Design Essentials 2</h2>
-        <h2>Class 2</h3>
-      </section>
-
-      <!-- Class Agenda -->
-      <section>
-        <h3>AGENDA</h3>
+        <!-- Class Agenda -->
+        <section>
+          <h3>AGENDA</h3>
           <ul>
-            <li>Project Pages Review</li>
-            <li>Positioning</li>
-            <li>CSS Cascade, Specificity & Inheritance</li>
-            <li>CSS Flexbox</li>
-            <li>Feedback & Class 3 Preview</li>
+            <li>CSS Flexbox contd</li>
+            <li>Advanced Selectors</li>
+            <li>Pseudo-Classes & Pseudo-Elements</li>
           </ul>
-      </section>
-      
-      <!-- Stretch Break -->
-      <section>
-        <h3>Stretch - "Bio" Break</h3>
-        <p>11:30a PST /  1:30p CST / 2:30p EST</p>
-      </section>
+        </section>
 
-      <!-- Project page review -->
-      <section>
-        <h3>Project Review - Feedback</h3>
-      </section>
+        <!-- Stretch Break -->
+        <section>
+          <h3>Stretch - "Bio" Break</h3>
+          <p>Time</p>
+        </section>
 
-      <!-- Positioning -->
-      <section>
-        <h3>The Position Property</h3>
-      </section>
+        <!-- CSS Flexbox -->
+        <section>
+          <h3>CSS Flexbox Recap</h3>
+        </section>
 
-      <!-- Position -->
-      <section>
-        <h3>Position</h3>
-        <p>The <code>position</code> property defines how and where an element can move on the page. It has five values and five coordinate properties:</p>
-        <div style="display: flex; justify-content: space-between; width:400px; margin:0 auto;">
+        <!-- display: flex -->
+        <section>
+          <h4>Using CSS Flexbox</h4>
+          <p>
+            We declare flexbox on an element (a parent container)<br />
+            by using the <code>display</code> property and a value of
+            <code>flex</code>
+          </p>
+          <pre><code class="css">.parent {
+  display: flex;
+}
+</code></pre>
+        </section>
+
+        <!-- Flexbox Properties -->
+        <section>
+          <h4>Flexbox Settings</h4>
+          <p>There are two categories of flexbox properties:</p>
+          <ul class="fs-28">
+            <li><code>flex-container</code> properties for the parent element</li>
+            <li><code>flex-items</code> properties for the children elements</li>
+          </ul>
+        </section>
+
+        <!--Flex Container  -->
+        <section>
+          <h4>Flex-Container Properties</h4>
           <ul>
-            <li>Static</li>
-            <li>Fixed</li>
-            <li>Absolute</li>
-            <li>Relative</li>
-            <li>Sticky</li>
+            <li>flex-direction</li>
+            <li>flex-wrap</li>
+            <li>flex-flow</li>
+            <li>justify-content</li>
+            <li>align-items</li>
+            <li>align-content</li>
+            <li>gap</li>
           </ul>
+        </section>
+
+        <section>
+          <h3>Flex Item Properties</h3>
+        </section>
+
+        <!--Flex Item  -->
+        <section>
+          <h3>Flex-Item Properties</h3>
           <ul>
-            <li>Top</li>
-            <li>Bottom</li>
-            <li>Left</li>
-            <li>Right</li>
-            <li>Z-Index</li>
+            <li>order</li>
+            <li>flex-grow</li>
+            <li>flex-shrink</li>
+            <li>flex-basis</li>
+            <li>flex</li>
+            <li>align-self</li>
           </ul>
-        </div>
-      </section>
+        </section>
 
-      <!-- Static -->
-      <section>
-        <h3>position: static</h3>
-        <p>This is the default position of all elements; the normal document flow</p>
-      </section>
+        <!-- order -->
+        <section>
+          <h4>order</h4>
+          <p>Sets the order on a flex item</p>
+          <p class="mt-16 width-750">
+            Items in a flex container are sorted by ascending order and then by their code
+            order
+          </p>
+          <pre><code class="css">.flex-child {
+  order: 2
+}
 
-      <!-- Fixed Positioning  -->
-      <section>
-        <h3>position: fixed</h3>
-        <ul>
-          <li>An element is fixed to a position relative to the browser window</li>
-          <li>The element is also moved out of the document flow</li>
-          <li>Coordinates can be applied for precise positioning</li>
-        </ul>
-<pre><code class="css">
-.box-three {
-  position: fixed;
-  top: 10px;
-  left: 0;
+.flex-child {
+  order: -1
 }
 </code></pre>
-      </section>     
-      
-      <!-- Absolute -->
-      <section>
-        <h3>position: absolute</h3>
-        <ul>
-          <li>The element is positioned relative to its parent container</li>
-          <li>The parent container must have a position value of <code>relative</code>, or the element will be positioned relative to the closest parent with a non-static value</li>
-          <li>The element is removed out of the normal document flow</li>
-          <li>Coordinates can be applied for precise positioning</li>
+          <p>
+            <a
+              href="https://developer.mozilla.org/en-US/docs/Web/CSS/order"
+              target="_blank"
+              ><code>order</code> property(MDN)</a
+            >
+          </p>
+        </section>
 
-        </ul>
-<pre><code class="css">
-.box-two {
-  position: absolute;
-  top: 0;
+        <!-- flex-grow -->
+        <section>
+          <h4>flex-grow</h4>
+          <p>Defines how much a flex-item can grow</p>
+          <pre><code class="css">.flex-child {
+  flex-grow: 0; /* default */
 }
 </code></pre>
-      </section>
+          <p>
+            <a
+              href="https://developer.mozilla.org/en-US/docs/Web/CSS/flex-grow"
+              target="_blank"
+              ><code>flex-grow</code> property(MDN)</a
+            >
+          </p>
+        </section>
 
-      <!-- Relative -->
-      <section>
-        <h3>position: relative</h3>
-        <ul>
-          <li>An element is positioned relative to itself</li>
-          <li>It does not move out of the document flow</li>
-          <li>Coordinates can be applied for precise positioning</li>
-        </ul>
-<pre><code class="css">
-.box-five {
-  position: relative;
-  right: 100px;
+        <!-- flex-shrink -->
+        <section>
+          <h4>flex-shrink</h4>
+          <p>Defines how much a flex-item can shrink</p>
+          <pre><code class="css">.flex-child {
+  flex-shrink: 1; /* default */
 }
 </code></pre>
-      </section>
+          <p>
+            <a
+              href="https://developer.mozilla.org/en-US/docs/Web/CSS/flex-shrink"
+              target="_blank"
+              ><code>flex-grow</code> property(MDN)</a
+            >
+          </p>
+        </section>
 
-      <!-- Sticky -->
-      <section>
-        <h3>position: sticky</h3>
-        <ul>
-          <li>The element is fixed and relative to a parent container until the parent container moves out of the viewport</li>
-          <li>Browser support is not at 100%; use with care</li>
-        </ul>
-<pre><code class="css">
-.box-one {
-  position: sticky;
-  top: 10px;
+        <!-- flex-basis -->
+        <section>
+          <h4>flex-basis</h4>
+          <p>Defines the width of a flex item</p>
+          <pre><code class="css">.flex-child {
+  flex-basis: auto; /* default */
+}
+
+.flex-child {
+  flex-basis: 25%;
+}
+
+.flex-child {
+  flex-basis: 100px;
 }
 </code></pre>
-      </section>
+          <p>
+            <a
+              href="https://developer.mozilla.org/en-US/docs/Web/CSS/flex-basis"
+              target="_blank"
+              ><code>flex-basis</code> property(MDN)</a
+            >
+          </p>
+        </section>
 
-      <!-- Z Index -->
-      <section>
-        <h3>Z-Index</h3>
-        <ul>
-          <li>The z-index property defines the order of how elements overlap each other</li>
-          <li>The default value of an element's z-index is auto or 0</li>
-          <li>An element with a high z-index will stack over elements with lower z-index values </li>
-          <li>Only works on elements that have a non-static position</li>
-        </ul>
-<pre><code class="css">
-.box-four {
-  position: sticky;
-  top: 10px;
+        <!-- flex -->
+        <section>
+          <h4>flex</h4>
+          <p>
+            A shorthand property for <code>flex-grow</code>, <code>flex-shrink</code>,
+            <code>flex-basis</code>
+          </p>
+          <pre><code class="css">.flex-child {
+  flex: 1 1 20%;
 }
 </code></pre>
-      </section>
+          <p>
+            <a
+              href="https://developer.mozilla.org/en-US/docs/Web/CSS/flex"
+              target="_blank"
+              ><code>flex</code> property(MDN)</a
+            >
+          </p>
+        </section>
 
-      <!-- Cascade, Inheritance, Specificity -->
-      <section>
-        <h3>CSS Cascade, Specificity & Inheritance</h3>
-      </section>
+        <!-- align-self -->
+        <section>
+          <h4>align-self</h4>
+          <p>Aligns a single flex item on the cross axis</p>
+          <pre><code class="css">.flex-child {
+  align-self: stretch /* default */
+}
 
-      <!-- Cascade -->
-      <section>
-        <h3>CSS Cascade</h3>
-        <p>The <code>cascade</code> is how CSS determines what CSS rule or declaration takes precedence when multiple stylesheets are in use; or when more than one rule applies to a given element.</p>
-      </section>
+.flex-child {
+  align-self: center;
+}
+</code></pre>
+          <p>
+            <a
+              href="https://developer.mozilla.org/en-US/docs/Web/CSS/align-self"
+              target="_blank"
+              >Additional values for <code>align-self</code></a
+            >
+          </p>
+        </section>
 
-      <!-- Stylesheets -->
-      <section>
-        <h3>Origin of CSS Declarations</h3>
-        <p>The browser reads CSS from three sources:</p>
-        <ul>
-          <li>User Agent stylesheet (Browser defaults)</li>
-          <li>Author stylesheet (Our site's custom styles)</li>
-          <li>User stylesheet (CSS set by the user)</li>
-        </ul>
-        <p><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/Cascade" target="_blank">CSS Cascade (MDN)</a></p>
-      </section>
+        <section>
+          <h3>Let's Develop It</h3>
+          <p>
+            Try your hands at MDN's
+            <a
+              href="https://developer.mozilla.org/en-US/docs/Learn/CSS/CSS_layout/Flexbox_skills"
+              target="_blank"
+              >Flexbox Practice</a
+            >
+          </p>
+        </section>
 
-      <!-- Importance -->
-      <section>
-        <h3>Stylesheet Order of Importance</h3>
-        <p>CSS calculates the importance of declarations from the three types of stylesheets from most to least importance:</p>
-        <ul>
-          <li>User <code>!important</code> declarations</li>
-          <li>Author <code>!important</code> declarations</li>
-          <li>Author declarations</li>
-          <li>User declarations</li>
-          <li>Default browser declarations</li>
-        </ul>
-      </section>
+        <section>
+          <h3>Selectors: Beyond the Basics</h3>
+        </section>
 
-      <section>
-        <h3>!important</h3>
-        <p>The <code>!important</code> flag in CSS means a style<br> will override any other declaration</p>
-<pre><code class="css">p {
-  color: yellow !important;
+        <!-- Selectors  -->
+        <section>
+          <h4>CSS Selectors</h4>
+          <ul>
+            <li>
+              A selector is used to select, identify or find HTML elements on a page
+            </li>
+          </ul>
+          <pre><code class="css">selector {
+    property: value;
+    property: value;
+  }</code></pre>
+
+          <pre><code class="css">p {
+  color: yellow;
+  background-color: black;
 }</code></pre>
-      </section>
+        </section>
 
-      <!-- CSS Specificity -->
-      <section>
-        <h3>CSS Specificity</h3>
-        <p>CSS is also calculating and comparing the weight or <code>specificity</code> of the rules in our stylesheets;<br> from most to least specific:</p>
-        <ul>
-          <li>Inline CSS</li>
-          <li>IDs</li>
-          <li>Classes, Pseudo-classes, <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/Attribute_selectors" target="_blank">Attribute selectors</a></li>
-          <li>Elements, Pseudo-elements</li>
-        </ul>
-      </section>
+        <!-- 3 Common Selectors -->
+        <section>
+          <h4>The Three Common or Basic CSS Selectors</h4>
+          <p>Element or Type selector</p>
+          <p>Class selector</p>
+          <p>ID selector</p>
+        </section>
 
-      <!-- Calculating Specificity -->
-      <section>
-        <h3>Calculating Specificity</h3>
-        <img src="./assets/images/css-specificity1.webp" alt="">
-        <p>Source: <a href="https://sudipta-deb.in/2021/08/understand-basic-css-selectors-and-specificity-part-2-of-fundamental-css-tutorial.html" target="_blank">Technical Potpourri</a></p>
-      </section>
+        <!-- More Selectors -->
+        <section>
+          <h4>Additional Selectors</h4>
+          <p>
+            There are more ways to be more precise in selecting or targeting HTML elements
+            for styling
+          </p>
+        </section>
 
-      <section>
-        <h3>Calculating Specificity</h3>
-        <img src="./assets/images/css-specificity2.jpeg" alt="">
-        <p>Source: <a href="https://devopedia.org/css-specificity" target="_blank">Devopedia</a></p>
-      </section>
+        <!-- Universal selector -->
+        <section>
+          <h4>The Universal Selector</h4>
+          <ul class="fs-28">
+            <li>The <code>universal</code> selector selects all elements on a page</li>
+            <li>It is most often used for applying the box-sizing property</li>
+          </ul>
+          <pre><code class="css">* {
 
-      <!-- Order -->
-      <section>
-        <h3>Same Specificity?</h3>
-        <p>When two or more declarations targeting <br>an element have the same specificity weight,<br> the rule that comes last in the code wins</p>
+  box-sizing: border-box;
 
-<pre><code class="html"><p class="square rectangle">Color me!</p>
+}
 </code></pre>
-<pre><code class="css">/*The two rules are both class selectors
-  with the same specificity; but the 
-  rectangle is the last code declared and 
-  will be applied to the element. */
+          <p>
+            <a
+              href="https://www.w3schools.com/css/css3_box-sizing.asp"
+              target="_blank"
+              >Box-sizing (W3Schools)</a
+            >
+          </p>
+        </section>
 
-.square {
+        <!-- Grouping selector -->
+        <section>
+          <h4>Grouping Selectors</h4>
+          <ul class="fs-28">
+            <li>
+              The <code>selector list</code> groups other selectors and applies the same
+              style(s) to them
+            </li>
+          </ul>
+          <pre><code class="css">p, h2, h4 {
+
+  color: purple;
+
+}
+</code></pre>
+        </section>
+
+        <!-- Chaining selectors -->
+        <section>
+          <h4>Chaining Selectors</h4>
+          <p>We can chain selectors to target more specific elements with CSS</p>
+          <pre><code class="html">&lt;h2 id="product-name"&gt;First Product Title&lt;/h2&gt;
+</code></pre>
+          <pre><code class="html">&lt;a href="url.com" class="btn-large"&gt;Click Me!&lt;/a&gt;
+</code></pre>
+          <pre><code class="css">h2#productname,
+
+a.btn-large {
+
+  color: purple;
+
+}
+/* Only add the color purple to the h2 with an id of product-name, 
+and to any anchor tag with the class name of btn-large. */
+</code></pre>
+        </section>
+
+        <!-- Attribute selectors -->
+        <section>
+          <h4>Attribute Selectors</h4>
+          <p>We can define selectors to identify elements by their attributes</p>
+          <pre><code class="html">&lt;a href="url.com" class="btn-large"&gt;Click Me!&lt;/a&gt;
+</code></pre>
+          <pre><code class="html">&lt;a href="apple.com" class="btn-large"&gt;Click Me!&lt;/a&gt;
+</code></pre>
+          <pre><code class="css">a[href="apple.com"] {
+
+    color:green;
+
+  }
+/* Apply the color green to any anchor tag that links 
+to apple.com */
+</code></pre>
+          <p>
+            <a
+              href="https://developer.mozilla.org/en-US/docs/Web/CSS/Attribute_selectors"
+              target="_blank"
+              >Attribute Selectors (MDN)</a
+            >
+          </p>
+        </section>
+
+        <section>
+          <h3>CSS Combinators</h3>
+        </section>
+
+        <!-- CSS Combinators -->
+        <section>
+          <h4>CSS Combinators</h4>
+          <p>
+            CSS Combinators describe the relationship between selectors. They help make
+            our CSS more specific. There are four types:
+          </p>
+          <ul class="fs-28 mb-32">
+            <li>Descendant combinator</li>
+            <li>Child combinator</li>
+            <li>Adjacent Sibling combinator</li>
+            <li>General Sibling combinator</li>
+          </ul>
+          <p>
+            <a
+              href="https://developer.mozilla.org/en-US/docs/Learn/CSS/Building_blocks/Selectors/Combinators"
+              target="_blank"
+              >CSS Combinators (MDN)</a
+            >
+          </p>
+        </section>
+
+        <!-- Descendant Combinator  -->
+        <section>
+          <h4>Descendant Combinator</h4>
+          <ul class="fs-28">
+            <li>
+              Targets all (similar) elements that are descendants of a specified element
+            </li>
+            <li>It is characterized by a single space between the elements</li>
+          </ul>
+          <pre><code class="css">div p {
+
+  color: purple;
+
+}
+</code></pre>
+        </section>
+
+        <!-- Child Combinator -->
+        <section>
+          <h4>Child Combinator</h4>
+          <ul class="fs-28">
+            <li>
+              Targets only child elements that are direct children of the specified parent
+              element
+            </li>
+            <li>It is characterized by a closing angle bracket: <code>></code></li>
+          </ul>
+          <pre><code class="css">div > p {
+
+  color: purple;
+
+}
+</code></pre>
+        </section>
+
+        <!-- Adjacent Sibling -->
+        <section>
+          <h4>Adjacent Sibling Combinator</h4>
+          <ul class="fs-28">
+            <li>
+              Targets elements that come directly after each other and share the same
+              parent
+            </li>
+            <li>It is characterized by a plus mark: <code>+</code></li>
+          </ul>
+          <pre><code class="css">h2 + p {
+
+  color: aquamarine;
+
+}
+</code></pre>
+        </section>
+
+        <!-- General Sibling Combinator -->
+        <section>
+          <h4>General Sibling Combinator</h4>
+          <ul class="fs-28">
+            <li>
+              Targets sibling elements that share the same parent, but do not necessarily
+              come after each other
+            </li>
+            <li>It is characterized by the tilde mark: <code>~</code></li>
+          </ul>
+          <pre><code class="css">h2 ~ p {
+
+  color: yellowgreen;
+
+}
+</code></pre>
+        </section>
+
+        <!-- Pseudo Classes & Pseudo Elements -->
+        <section>
+          <h3>Pseudo-Classes</h3>
+          <h3>Pseudo-Elements</h3>
+        </section>
+
+        <!-- Pseudo-Classes -->
+        <section>
+          <h4>Pseudo-Classes</h4>
+          <p>
+            Pseudo-classes are selectors that select and style elements in a particular
+            state. For example:
+          </p>
+          <ul class="fs-28 mb-32">
+            <li>Styling anchor tags depending on their state</li>
+            <li>Styling an element when a user hovers/mouses over it</li>
+            <li>Styling the first or last or nth type of an element</li>
+          </ul>
+          <p>
+            <a
+              href="https://developer.mozilla.org/en-US/docs/Learn/CSS/Building_blocks/Selectors/Pseudo-classes_and_pseudo-elements"
+              target="_blank"
+              >Pseudo-Classes (MDN)</a
+            >
+          </p>
+        </section>
+
+        <section>
+          <h4>Pseudo-Classes</h4>
+          <p class="fs-28 width-750">
+            Pseudo-classes start with the target selector/element, then a colon
+            <code>:</code>, and the pseudo-class keyword:
+          </p>
+          <pre><code class="css">/* Pseudo-Class Syntax */
+
+selector:pseudo-class-keyword {
+
+  property: value;
+
+}
+
+/* Target every first-child p tag */
+
+p:first-child {
+
+  color:yellowgreen;
+
+}
+</code></pre>
+        </section>
+
+        <!-- Hover State -->
+        <section>
+          <h4>Hover State</h4>
+          <pre><code class="css">
+h2 {
   color: red;
 }
 
-.rectangle {
-  color: blue;
+/* Change the color on hover */
+
+h2:hover {
+
+  color:yellowgreen;
+
 }
 </code></pre>
-      </section>
+        </section>
 
-      <!-- Specificity Resources  -->
-      <section>
-        <h3>CSS Specificity Resources</h3>
-        <p><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/Specificity" target="_blank">CSS Specificity (MDN)</a></p>
-        <p><a href="https://specificity.keegan.st/" target="_blank">CSS Specificity Calculator</a></p>
-        <p><a href="https://isellsoap.github.io/specificity-visualizer/" target="_blank">CSS Specificity Visualizer</a></p>
-        <p><a href="https://cssspecificity.com/" target="_blank">CSS Specificity (The Shining)</a></p>
-        <p><a href="https://specifishity.com/" target="_blank">CSS Specifishity (Estelle Weyl)</a></p>
-      </section>
+        <!-- Anchor tag states -->
+        <section>
+          <h4>Anchor Tag States</h4>
+          <p>Anchor tags exists in the five following states.</p>
+          <p>Note that there's a pseudo-class for each state.</p>
+          <ul class="fs-28">
+            <li><code>a:link</code> - an unvisited link; the default state</li>
+            <li><code>a:visited</code> - when the link has been visited</li>
+            <li><code>a:hover</code> - when a mouse hovers over the link</li>
+            <li><code>a:active</code> - when the mouse is clicked</li>
+            <li><code>a:focus</code> - when a user uses the tab key to select a link</li>
+          </ul>
+        </section>
 
-      <!--  -->
-      <section>
-        <h3>Debugging the Cascade</h3>
-      </section>
+        <!-- Anchor state order -->
+        <section>
+          <h4>Ordering Anchor Tag States</h4>
+          <p>Anchor tag states have to be defined in a specific order in CSS.</p>
+          <ul class="fs-28 mb-32">
+            <li>
+              <code>:hover</code> must come after <code>:link</code> and
+              <code>:visited</code>
+            </li>
+            <li><code>:active</code> must come after <code>:hover</code></li>
+          </ul>
+          <p>
+            <a
+              href="https://www.w3schools.com/css/css_link.asp"
+              target="_blank"
+              >Styling Links (W3Schools)</a
+            >
+          </p>
+        </section>
 
-      <!-- Specificity Tips -->
-      <section>
-        <h3>Specificity Tips</h3>
-        <ul>
-          <li>1 ID selector out weighs 100+ class selectors</li>
-          <li>1 class selector outweighs 100+ element selectors</li>
-          <li>The Universal selector <code>*</code> has no specificity</li>
-          <li>Code architecture changes: Choose specificity over order</li>
-          <li>List your main stylesheet last</li>
-          <li><code>!important</code> only as a last resort</li>
-        </ul>
-      </section>
+        <!-- Type Position -->
+        <section>
+          <h4>Type Position</h4>
+          <p>Pseudo-classes can be used to target specific elements in a group.</p>
+          <pre><code class="css">/* Target every first-child h3 tag */
 
-      <section>
-        <h3>CSS Inheritance</h3>
-        <ul>
-          <li>Some CSS property values set on parent elements <br>are inherited by their child elements, and some are not</li>
-          <li>Understanding inheritance can help us write fewer, less redundant code</li>
-        </ul>
-        <p><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/inheritance" target="_blank">CSS Inheritance (MDN)</a>
-      </section>
+h3:first-child {
 
-      <section>
-        <h3>Inheritable Properties</h3>
-        <p>Font properties, color, text alignment are common <br>properties can be inherited by default when a child <br>element has no declared values for these properties </p>
-<pre><code class="css">.parent {
-  color: red;
-  font-size: 20px;
-  text-align: center;
-}
+  color:yellowgreen;
 
-.child {
 }
 </code></pre>
-      </section>
+        </section>
 
-      <section>
-        <h3>CSS Inheritance</h3>
-        <p>We can force inheritance with the <code>inherit</code> keyword</p>
-<pre><code class="css">.parent {
-  color: red;
-  border: 1px solid black;
+        <!-- Pseudo-Element -->
+        <section>
+          <h3>Pseudo-Elements</h3>
+        </section>
+
+        <section>
+          <h4>Pseudo-Elements</h4>
+          <ul class="fs-28">
+            <li>
+              Pseudo-elements add specific styling effects to page elements or add "extra"
+              content to elements
+            </li>
+            <li>
+              Four commonly used pseudo-elements are:
+              <ul class="mt-16">
+                <li>::before</li>
+                <li>::after</li>
+                <li>::first-line</li>
+                <li>::first-letter</li>
+              </ul>
+            </li>
+          </ul>
+        </section>
+
+        <!-- Pseudo-Element syntax -->
+        <section>
+          <h4>Pseudo-Element Syntax</h4>
+          <p class="width-800">
+            The syntax of pseudo-classes and pseudo-elements look the same, with one
+            exception. Can you spot it?
+          </p>
+          <pre><code class="css">/* Pseudo-Class Syntax */
+
+selector:pseudo-class-keyword {
+
+  css-property: value;
+
 }
 
-.child {
-  border: inherit;
+/* Pseudo-Elements Syntax */
+
+selector::pseudo-element-keyword {
+
+  css-property: value;
+
 }
 </code></pre>
-      </section>
+        </section>
 
-      <section>
-        <h3>CSS Inheritance</h3>
-        <p>We can revert inheritance with three values:<br> <code>initial</code>, <code>unset</code>, <code>revert</code></p>
-      </section>
+        <!-- Home Practice -->
+        <section>
+          <h3>Home Practice</h3>
+          <ul class="fs-28">
+            <li>Use flexbox to structure your project page layout</li>
+            <li>Practice using some of the new selectors</li>
+            <li>
+              Want more Flexbox practice?
+              <ul>
+                <li>
+                  Try recreating flexbox layout #2, #7, #13 or #17 from the
+                  <a
+                    href="https://blog.duda.co/flexbox-examples"
+                    target="_blank"
+                    >18 Great Flexbox Examples For 2021</a
+                  >
+                  article page
+                </li>
+                <li>
+                  No need to recreate the content; simple boxes with colored backgrounds
+                  will suffice
+                </li>
+              </ul>
+            </li>
+          </ul>
+        </section>
 
-      <!-- Home Practice -->
-      <section>
-        <h3>Home Practice</h3>
-        <ul>
-          <li>Add a fixed nav or footer to your page</li>
-        </ul>
-      </section>
+        <!-- CSS Flexbox Resources -->
+        <section>
+          <h4>Additional CSS Flexbox Resources</h4>
+          <p>
+            <a
+              href="https://www.freecodecamp.org/news/understanding-flexbox-everything-you-need-to-know-b4013d4dc9af"
+              target="_blank"
+              >Understanding Flexbox (Free Code Camp)</a
+            >
+          </p>
+          <p>
+            <a
+              href="https://codepen.io/enxaneta/pen/adLPwv?editors=1100"
+              target="_blank"
+              >Flexbox Playground (CodePen)</a
+            >
+          </p>
+          <p>
+            <a
+              href="https://flexboxfroggy.com/"
+              target="_blank"
+              >Flexbox Froggy</a
+            >
+          </p>
+          <p>
+            <a
+              href="http://www.flexboxdefense.com/"
+              target="_blank"
+              >Flexbox Defense</a
+            >
+          </p>
+        </section>
 
-      <!-- Next Class -->
-      <section>
-        <h3>Class 3 - Agenda</h3>
-        <ul>
-          <li>Project Review-Feedback</li>
-          <li>CSS Flexbox</li>
-        </ul>
-      </section>
+        <!-- Next Class -->
+        <section>
+          <h3>Class 3</h3>
+          <ul>
+            <li>CSS Cascade</li>
+            <li>CSS Specificity</li>
+            <li>CSS Inheritance</li>
+            <li>Project Review or Optional Topic</li>
+          </ul>
+        </section>
 
-      <!-- MUST USE SLIDE - Course Feedback Survey-->
-      <section>
-        <h3>Class Feedback</h3>
-        <p><a href="https://forms.gle/5K8bizABE4sqiYNx8" target="_blank">https://forms.gle/5K8bizABE4sqiYNx8</a></p>
-      </section>
+        <!-- MUST-USE SLIDE -->
+        <!-- Add Course Survey Link -->
+        <section>
+          <h2>Give Us Your Feedback</h2>
+          <h3>
+            <a
+              href="#"
+              target="_blank"
+              >Survey Link</a
+            >
+          </h3>
+        </section>
 
-      <!-- Q&A -->
-      <section>
-        <h2>Q&A</h2>
-      </section>
+        <!-- Q&A -->
+        <section>
+          <h2>Q&A</h2>
+        </section>
 
-      <!-- Thank You -->
-      <section>
-        <img src="./assets/images/gdi-logos/GDI-Logo_Peach.png" alt="GDI Logo" width="300px" class="noborder" />
-        <br>
-        <h2>Thank You!</h2>
-      </section>
-    </div> <!-- End of Slides container -->
-
-    <footer>
-      <!-- Update with Course Name -->
-      <div class="copyright">
-        <img src="./assets/images/gdi-logos/GDI-Logo_Peach.png" alt="GDI Logo" width="40px" class="noborder" />
-        <p>Web Design Essentials 2 - Class 2</p>
-        <a rel="license" href="http://creativecommons.org/licenses/by-nc/3.0/deed.en_US"><img
-            alt="Creative Commons License" style="border-width:0"
-            src="http://i.creativecommons.org/l/by-nc/3.0/80x15.png" /></a>
+        <!-- Thank You -->
+        <section>
+          <img
+            src="../shared-assets/imgs/gdi-logos/gdi-logo_peach.png"
+            alt="GDI Logo"
+            width="300px"
+            class="noborder" />
+          <br />
+          <h2>Thank You!</h2>
+        </section>
       </div>
-    </footer>
-  </div> <!-- End of Reveal wrapper -->
-
-  <!-- REVEAL.JS Script Files - Do Not Edit -->
-  <script src="https://cdn.jsdelivr.net/npm/reveal.js@4.1.0/dist/reveal.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/reveal.js@4.1.0/plugin/highlight/highlight.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/highlightjs-badge@0.1.9/highlightjs-badge.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/jsPlumb/2.15.5/js/jsplumb.min.js"></script>
-  <script>
-    const srcUrlPrefix = "https://cdn.jsdelivr.net/npm/reveal.js@4.1.0/";
-    Reveal.initialize({
-      hash: true,
-      center: true,
-      slideNumber: true,
-      showNotes: false,
-      margin: 0.1,
-      preloadIframes: true,
-      plugins: [RevealHighlight],
-      pdfSeparateFragments: true
-    });
-
-    // add HighlightJS-badge (options are optional)
-    var options = {
-      copyIconContent: "📄",
-      checkIconContent: "✅"
-    };
-    window.highlightJsBadge(options);
-
-    if (window.location.search == "?print-pdf") {
-      var uncounted = document.querySelectorAll("[data-visibility='uncounted']");
-      uncounted.forEach(node => {
-        node.parentNode.classList.add("no-print")
-      })
-    }
-  </script>
-</body>
+      <!-- End of Slides container -->
+      <!---->
+      <!---->
+      <!-- Update Footer with Course Name -->
+      <footer>
+        <div class="copyright">
+          <img
+            src="../shared-assets/imgs/gdi-logos/gdi-logo_peach.png"
+            alt="GDI Logo"
+            width="40px"
+            class="noborder" />
+          <p>Web Design Essentials 2 - Class 2</p>
+          <a
+            rel="license"
+            href="http://creativecommons.org/licenses/by-nc/3.0/deed.en_US"
+            ><img
+              alt="Creative Commons License"
+              style="border-width: 0"
+              src="http://i.creativecommons.org/l/by-nc/3.0/80x15.png"
+          /></a>
+        </div>
+      </footer>
+    </div>
+    <!-- End of Reveal wrapper -->
+    <!---->
+    <!---->
+    <!-- RevealJS Scripts & Config - Do Not Edit or Delete -->
+    <script src="https://cdn.jsdelivr.net/npm/reveal.js@4.1.0/dist/reveal.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/reveal.js@4.1.0/plugin/highlight/highlight.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/highlightjs-badge@0.1.9/highlightjs-badge.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jsPlumb/2.15.5/js/jsplumb.min.js"></script>
+    <script src="../shared-assets/js/revealConfig.js"></script>
+  </body>
 </html>
