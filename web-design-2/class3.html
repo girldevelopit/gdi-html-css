@@ -85,19 +85,19 @@
 
         <!-- Cascade -->
         <section>
-          <h3>CSS Cascade</h3>
-          <p>
+          <h4>CSS Cascade</h4>
+          <p class="width-800">
             The <code>cascade</code> is how CSS determines what CSS rule or declaration
-            takes precedence when multiple stylesheets are in use; or when more than one
-            rule applies to a given element.
+            takes precedence when multiple stylesheets are in use; or which rule gets
+            priority when more than one rule is applied to a given element
           </p>
         </section>
 
         <!-- Stylesheets -->
         <section>
-          <h3>Origin of CSS Declarations</h3>
+          <h4>Origin of CSS Declarations</h4>
           <p>The browser reads CSS from three sources:</p>
-          <ul>
+          <ul class="fs-28 mb-32">
             <li>User Agent stylesheet (Browser defaults)</li>
             <li>Author stylesheet (Our site's custom styles)</li>
             <li>User stylesheet (CSS set by the user)</li>
@@ -113,12 +113,12 @@
 
         <!-- Importance -->
         <section>
-          <h3>Stylesheet Order of Importance</h3>
-          <p>
+          <h4>Stylesheet Order of Importance</h4>
+          <p class="width-800 mb-32">
             CSS calculates the importance of declarations from the three types of
             stylesheets from most to least importance:
           </p>
-          <ul>
+          <ul class="fs-28">
             <li>User <code>!important</code> declarations</li>
             <li>Author <code>!important</code> declarations</li>
             <li>Author declarations</li>
@@ -128,25 +128,27 @@
         </section>
 
         <section>
-          <h3>!important</h3>
+          <h4>!important</h4>
           <p>
             The <code>!important</code> flag in CSS means a style<br />
             will override any other declaration
           </p>
           <pre><code class="css">p {
+
   color: yellow !important;
+
 }</code></pre>
         </section>
 
         <!-- CSS Specificity -->
         <section>
-          <h3>CSS Specificity</h3>
-          <p>
+          <h4>CSS Specificity</h4>
+          <p class="width-750">
             CSS is also calculating and comparing the weight or
-            <code>specificity</code> of the rules in our stylesheets;<br />
-            from most to least specific:
+            <code>specificity</code> of the rules in our stylesheets; from most to least
+            specific:
           </p>
-          <ul>
+          <ul class="fs-28">
             <li>Inline CSS</li>
             <li>IDs</li>
             <li>
@@ -163,9 +165,9 @@
 
         <!-- Calculating Specificity -->
         <section>
-          <h3>Calculating Specificity</h3>
+          <h4>Calculating Specificity</h4>
           <img
-            src="./assets/images/css-specificity1.webp"
+            src="./images/css-specificity1.webp"
             alt="" />
           <p>
             Source:
@@ -178,9 +180,9 @@
         </section>
 
         <section>
-          <h3>Calculating Specificity</h3>
+          <h4>Calculating Specificity</h4>
           <img
-            src="./assets/images/css-specificity2.jpeg"
+            src="./images/css-specificity2.jpeg"
             alt="" />
           <p>
             Source:
@@ -194,7 +196,7 @@
 
         <!-- Order -->
         <section>
-          <h3>Same Specificity?</h3>
+          <h4>Same Specificity?</h4>
           <p>
             When two or more declarations targeting <br />an element have the same
             specificity weight,<br />
@@ -220,7 +222,7 @@
 
         <!-- Specificity Resources  -->
         <section>
-          <h3>CSS Specificity Resources</h3>
+          <h4>CSS Specificity Resources</h4>
           <p>
             <a
               href="https://developer.mozilla.org/en-US/docs/Web/CSS/Specificity"
@@ -265,20 +267,20 @@
 
         <!-- Specificity Tips -->
         <section>
-          <h3>Specificity Tips</h3>
-          <ul>
-            <li>1 ID selector out weighs 100+ class selectors</li>
+          <h4>Specificity Tips</h4>
+          <ul class="fs-28">
+            <li>1 ID selector outweighs 100+ class selectors</li>
             <li>1 class selector outweighs 100+ element selectors</li>
             <li>The Universal selector <code>*</code> has no specificity</li>
             <li>Code architecture changes: Choose specificity over order</li>
             <li>List your main stylesheet last</li>
-            <li><code>!important</code> only as a last resort</li>
+            <li>Use <code>!important</code> rarely and only as a last resort</li>
           </ul>
         </section>
 
         <section>
-          <h3>CSS Inheritance</h3>
-          <ul>
+          <h4>CSS Inheritance</h4>
+          <ul class="fs-28">
             <li>
               Some CSS property values set on parent elements <br />are inherited by their
               child elements, and some are not
@@ -297,7 +299,7 @@
         </section>
 
         <section>
-          <h3>Inheritable Properties</h3>
+          <h4>Inheritable Properties</h4>
           <p>
             Font properties, color, text alignment are common <br />properties can be
             inherited by default when a child <br />element has no declared values for
@@ -315,7 +317,7 @@
         </section>
 
         <section>
-          <h3>CSS Inheritance</h3>
+          <h4>CSS Inheritance</h4>
           <p>We can force inheritance with the <code>inherit</code> keyword</p>
           <pre><code class="css">.parent {
   color: red;
@@ -329,7 +331,7 @@
         </section>
 
         <section>
-          <h3>CSS Inheritance</h3>
+          <h4>CSS Inheritance</h4>
           <p>
             We can revert inheritance with three values:<br />
             <code>initial</code>, <code>unset</code>, <code>revert</code>
@@ -340,7 +342,7 @@
         <section>
           <h3>Home Practice</h3>
           <ul>
-            <li>Add a fixed nav or footer to your page</li>
+            <li>Continue to build out your project page</li>
           </ul>
         </section>
 
@@ -348,7 +350,8 @@
         <section>
           <h3>Class 4</h3>
           <ul>
-            <li>Project Review</li>
+            <li>Frontend Mentor Project Wrapup & Review</li>
+            <li>General Web Dev Tips</li>
           </ul>
         </section>
 
