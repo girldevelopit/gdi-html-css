@@ -34,445 +34,523 @@
         <h2>Class 4</h3>
       </section>
 
+      <!-- Housekeeping -->
+      <section>
+        <h3>Some Helpful Zoom Shortcuts</h3>
+        <img src="assets/imgs/zoom-short-cuts.PNG" alt="list of Zoom shortcuts">
+        <p><a href="https://webaim.org/techniques/keyboard/#intro" target="_blank">Keyboard Accessibility</a></p>
+      </section>
+
       <!-- Class Agenda -->
       <section>
         <h3>AGENDA</h3>
         <ul>
-          <li>Class 3 Review</li>
-          <li>Basic CSS Properties (contd)</li>
-          <li>CSS Box Model
+          <li>Continue Styling</li>
+          <li>Accessibility</li>
             <ul>
-              <li>Block vs Inline Elements</li>
-              <li>Box-Sizing Property</li>
-              <li>"CSS Reset"</li>
+              <li>fonts, colors, skip-to-content button</li>
             </ul>
-          </li>
-          <li>Class 5 Preview</li>
-          <li>Class Feedback and Q&A</li>
-        </ul>
-      </section>
-
-      <!-- Stretch Break -->
-      <section>
-        <h3>Stretch - "Bio" Break</h3>
-        <p>8:00p EST / 7:00p CST / 5:00p PST</p>
-      </section>
-
-      <!-- CSS Properties -->
-      <section>
-        <h3>CSS Properties (contd)</h3>
-      </section>
-
-      <!-- CSS Colors -->
-      <section>
-        <h3>CSS Color Values</h3>
-        <p>Browsers can accept colors in different ways:</p>
-        <table style="margin: 0 auto">
-          <tr>
-            <td><strong>Color name: </strong></td>
-            <td><code>red</code></td>
-          </tr>
-          <tr>
-            <td><strong>Hexadecimal value: </strong></td>
-            <td><code>#FF0000</code></td>
-          </tr>
-          <tr>
-            <td><strong>RGB value: </strong></td>
-            <td><code>rgb(255, 0, 0)</code></td>
-          </tr>
-          <tr>
-            <td><strong>RGBa value: </strong></td>
-            <td><code>rgb(255, 0, 0, 1)</code></td>
-          </tr>
-          <tr>
-            <td><strong>HSL value</strong></td>
-            <td><code>hsl(0, 100%, 50%)</code></td>
-          </tr>
-        </table>
-        <hr />
-        <p><a href="http://www.colors.commutercreative.com/grid/" target="_blank">CSS Color Names</a></p>
-        <p><a href="http://www.w3schools.com/colors/colors_picker.asp" target="_blank">W3Schools Color Picker</a></p>
-
-      </section>
-
-      <section>
-        <h3>Color Values Demo</h3>
-      </section>
-
-      <!-- Size Units -->
-      <section>
-        <h3>Common Size Units</h3>
-        <ul>
-          <li>Pixels: px</li>
-          <li>Root element font-size: rem
+          <li>Responsive Web Design</li>
             <ul>
-              <li>Default root font-size: 16px</li>
-            </ul>
-          </li>
-          <li>Element font-size: em</li>
-          <li>Percentage: %</li>
+              <li>media queries, mobile first approach</li>
+            </ul> 
+          <li>Online tools for testing and evaluating accessibility and responsiveness</li>
+          <li>CSS Tips and Tricks</li>
+          <li>Supported Independent Practice</li>
+          <li>Cultivating a Web Dev Practice</li>
+          <li>Cohort Feedback</li>
         </ul>
-        <hr />
-        <p><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/font-size" target="_blank">CSS Length Data Types
-            (MDN)</a></p>
-      </section>
-
-      <section>
-        <h3>Size Units Demo</h3>
-      </section>
-
-      <!-- Fonts -->
-      <section>
-        <h3>Fonts</h3>
-      </section>
-
-      <!-- Web Safe Fonts -->
-      <section>
-        <h3>Web Safe Fonts</h3>
-        <ul>
-          <li>Fonts that all browsers can display by default</li>
-          <li>They don't have to be loaded into our projects</li>
-          <li>They don't have to be linked from an external source</li>
-          <li>Web safe fonts can be used as "fallbacks" for custom fonts</li>
-        </ul> 
-        <pre><code class = "css">p {
-  font-family: "Times New Roman"; /* Specific font name */
-  font-family: serif; /* Generic name */
-  font-family: "Arial", sans-serif; /* Comma-separated list */
-}
-</code></pre>
-        <hr>
-        <p><a href="https://www.w3schools.com/cssref/css_websafe_fonts.asp" target="_blank">Web Safe Fonts (W3
-            School)</a></p>
-      </section>
-
-      <!-- Custom Fonts -->
-      <section>
-        <h3>Custom Fonts</h3>
-        <p style='font-size: 32px'>Two ways to apply custom fonts:</p>
-        <ul>
-          <li>Load font files into our project directory, or</li>
-          <li>Link to external font libraries such as <a href="https://fonts.google.com/" target="_blank">Google Fonts</a></li>
-        </ul>
-      </section>
-
-      <!-- Google Fonts Demo -->
-      <section>
-        <h3>Google Fonts</h3>
-        <h4>Demo</h4>
-      </section>
-
-      <!-- CSS Box Model -->
-      <section>
-        <h3>CSS Box Model</h3>
-      </section>
-
-      <!-- Box Model image -->
-      <section>
-        <h3>Boxes Everywhere!</h3>
-        <p style='font-size: 32px'>Every HTML element on a page is wrapped in a box.</p>
-        <img src="./assets/imgs/box-model.png" width='500px' alt="the CSS box model">
-        <p><small>Image source: <a
-              href="https://complete-concrete-concise.com/tutorials/webdev/front-end-basics/html-flow-and-the-css-box-model-the-display-property/"
-              target='_blank'>complete-concrete-concise.com</a></small></p>
-      </section>
-
-      <!-- Box Model Properties -->
-      <section>
-        <h3>Box Model Properties</h3>
-        <ul>
-          <li style="margin-bottom: 1rem;"><strong>Content</strong>: Text, image, form, etc.</li>
-          <li style="margin-bottom: 1rem;"><strong>Padding:</strong>The space around the content, or the distance between the content and its borders</li>
-          <li style="margin-bottom: 1rem;"><strong>Border:</strong>The wrapper around the content and its padding </li>
-          <li><strong>Margin:</strong> The distance between an element and its neighbors</li>
-        </ul>
-      </section>
-
-      <!-- Box Model diagram -->
-      <section>
-        <h3>Box Model</h3>
-        <img src="./assets/imgs/box-model2.png" alt="">
-        <p><small>Image source: <a href="http://thenewcode.com/49/The-CSS-Box-Model"
-              target='_blank'>thenewcode.com</a></small></p>
-      </section>
-
-      <!-- Box Model in Dev Tools demo -->
-      <section>
-        <h3>Box Model in Developer Tools</h3>
-        <h4>Demo</h4>
-      </section>
-
-      <!-- Display Flow -->
-      <section>
-        <h3>Display Flow</h3>
-        <p style='font-size: 32px'>Every element has a default flow or way that it renders on the page before any CSS styling is applied. It is either:</p>
-        <ul>
-          <li>Stacking on top of another element</li>
-          <li>Side by side with another element</li>
-        </ul>
-      </section>
-
-      <!-- Block and Inline Elements -->
-      <section>
-        <h3>Block and Inline Elements</h3>
-        <ul>
-          <li style="margin-bottom: 1rem;">Elements that stack are: <code>Block</code> elements</li>
-          <li>Elements that are side-by-side on the same line are <code>Inline</code> elements</li>
-        </ul>
-        <p style='font-size: 32px'>This is also referred to as an element's <code>display</code> property.</p>
       </section>
       
-      <!-- Behavior -->
+      <!-- Breaks -->
       <section>
-        <h3>Block vs Inline Behavior</h3>
-        <ul>
-          <li style="margin-bottom: 1rem;">Block elements start a new line or live on their own line; they take up the full width of their line or their parent container</li>
-          <li>Inline elements don't start a new line and take up only as much space as their content needs</li>
-        </ul>
+        <h3>We have scheduled five-minute breaks every hour.</h3>
+        <p>Feel free to take additional breaks as needed.</p>
       </section>
 
-      <!-- Example Block Elements -->
-      <section>
-        <h3>Block Elements</h3>
-        <p style='font-size: 32px'>Block-level elements include:</p>
-        <ul>
-          <li>Headings (h1, h2, etc)</li>
-          <li>Paragraphs</li>
-          <li>Divs</li>
-          <li>Lists</li>
-        </ul>
-        <p><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Block-level_elements" target="_blank">Block Level Elements (MDN)</a></p>
-      </section>
-      
-      <!-- Example Inline Elements -->
-      <section>
-        <h3>Inline Elements</h3>
-        <p style='font-size: 32px'>Inline-level elements include:</p>
-        <ul>
-          <li>Anchor "a" tags</li>
-          <li>Images</li>
-          <li>Spans</li>
-        </ul>
-        <p><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Inline_elements" target="_blank">Inline Level Elements (MDN)</a></p>
-      </section>
-      
-      <!-- CSS Display property -->
-      <section>
-        <h3>The CSS "Display" Property</h3>
-        <ul>
-          <li style="margin-bottom: 1rem;">CSS can be used to change an element's default flow or display property</li>
-          <li>A block element can be changed to an inline element and vice versa</li>
-        </ul>
-      </section>
+    <!-- Difference between inlne and background -->
+    <section>
+      <h3>Use an Inline or Background Image?</h3>
+      <ul>
+        <li style="margin-bottom: 1rem;">Inline images are semantic--they are relevant to the page's content and are better for accessibility</li>
+        <li>Background images are primarily decorative, that is, they don't add meaning to the content</li>
+      </ul>
+    </section>
 
-      <!-- Display property code example -->
-      <section>
-        <h3>The CSS "Display" Property</h3>
-<pre><code class="css">/* This paragraph element will now be an inline element */
+    <!-- Few tips for working with images -->
+    <section>
+      <h3>Tips for Images</h3>
+      <ul>
+        <li style="margin-bottom: 1rem;">Work with larger images--it is easier to scale down than up!</li>
+        <li style="margin-bottom: 1rem;">Image properties can be set with CSS</li>
+        <li style="margin-bottom: 1rem;">Use a compression tool such as <a href="https://tinypng.com/" target="_blank">TinyPNG</a> to reduce image file size</li>
+      </ul>
+    </section>
+
+<!-- Accessibility in Web Design -->
+<section>
+  <h3>Accessibility in Web Design</h3>
+</section>
+
+<!-- WCAG Defined -->
+<section>
+  <h3>WCAG Overview</h3>
+  <p style="font-size: 32px;">Web Content Accessibility Guidelines (WCAG) 2 is developed through the World Wide Web Consortium (W3C).</p>
+  <p><a href="https://www.w3.org/WAI/standards-guidelines/wcag/" target="_blank">WCAG 2 Overview</a></p>
+</section>
+
+<!-- Keyboard Accessibility -->
+<section>
+  <h3>Keyboard Accessibility</h3>
+  <p style="font-size: 32px;">Keyboard accessibility is one of the most important aspects of web accessibility.</p>
+  <p><a href="https://webaim.org/techniques/keyboard/#navigation" target="_blank">WebAIM: Keyboard Accessibility</a></p>
+  <p><a href="https://www.whitehouse.gov/" target="_blank">A great example: whitehouse.gov</a></p>
+</section>
+
+<!-- Skip to Main Content Button-->
+<section>
+  <h3>Let's Develop It!</h3>
+  <p>Let's add a skip-to-content button to the top of our Getflix page:</p>
+  <ol style="font-size: .8em; line-height: 1.75;">
+    <li>In the opening tag of the header element, use the id attribute to create a bookmark called "main-content".</li>
+    <li>Add a link above the nav section. Link it to the "main-content" bookmark.</li>
+    <li>Give the link the class name "skip".</li>
+    <li>Set the clickable content of the link to read "skip to main content"</li>
+    <li>Use the class selector .skip to style the link's color black.</li>
+    <li><strong>CHALLENGE:</strong> Use the class selector .skip, along with the pseudo-class :focus, to style the link's color white when it is tabbed.</li>
+  </ol>
+</section>
+
+    <!-- Responsive Web Design -->
+    <section>
+      <h3>Responsive Web Design</h3>
+    </section>
+
+    <!-- RWD Explanation -->
+    <section>
+      <h3>Responsive Web Design</h3>
+      <p style="font-size: 32px;">A design and development approach to creating web pages and applications that respond or adapt to different devices and screen sizes.</p>
+    </section>
+
+    <!-- Three tools for RWD -->
+    <section>
+      <h3>RWD with CSS</h3>
+      <p style="font-size: 32px;">We can make our pages responsive using three tools in CSS:</p>
+      <ul>
+        <li>Media Queries</li>
+        <li>*CSS Flexbox</li>
+        <li>*CSS Grid</li>
+      </ul>
+      <hr>
+      <p style="font-style: italic;">*CSS Flexbox and CSS Grid are topics in Web Essentials 2</p>
+    </section>
+
+    <!-- Media Queries -->
+    <section>
+      <h3>Media Queries</h3>
+      <ul>
+        <li>Media queries tell the browser at what <code>breakpoint</code>, that is, the screen size at which to apply a specific style</li>
+        <li>Media queries are applied in the CSS</li>
+      </ul>
+<pre><code class="css">
+@media (min-width: 600px){
+/* When the screen is at least 600px wide,
+apply the following CSS rule: */
 p {
-  display: inline;
+  font-size: 14px;
 }
-
-/* This span element will now be a block element */
-span {
-  display: block;
 }
 </code></pre>
-      </section>
+    </section>
 
-      <!-- Block and Inline Elements Demo -->
-      <section>
-        <h3>Block and Inline Elements</h3>
-        <h4>Demo</h4>
-      </section>
+    <!-- Demo -->
+    <section>
+      <h3>Media Queries</h3>
+      <h4>Demo</h4>
+    </section>
 
-      <!-- Layout Pitfalls  -->
-      <section>
-        <h3>Layout Pitfalls</h3>
-        <p>A few default properties of CSS can lead to unexpected layout behavior. There are two common culprits:</p>
-        <ol>
-          <li>the CSS property <code>box-sizing</code></li>
-          <li>Browser defaults</li>
-        </ol>
-      </section>
-      
-      <!-- Box Sizing -->
-      <section>
-        <h3>Box-Sizing</h3>
-        <p style='font-size: 32px'>The CSS <code>box-sizing</code> property determines how we calculate the total width and height of an element. It has two values:</p>
-<pre><code class="css">/* content-box is the default box-sizing 
-   value of all elements */
-box-sizing: content-box;
-
-/* border-box will be your layout's best friend! */
-box-sizing: border-box;
-</code></pre>
-      </section>
-      
-      <!-- Layout Tip #1 -->
-      <section>
-        <h3>Layout Tip #1</h3>
-        <p style='font-size: 32px'>Set the <code>box-sizing</code> property of all elements in your project to <code>border-box</code>.</p>
-<pre><code class="css">/* This declaration will target every element in the project */
-
-* {
-  box-sizing: border-box;
+    <!-- Min and Max widths -->
+    <section>
+      <h3>Size Up or Size Down</h3>
+      <p>Media queries can be sized up with <code>min-width</code></p>
+<pre><code class="css">
+@media (min-width: 600px){
+/* When the screen is at least 600px wide, do this... */
+selector {
+  property: value;
+}
 }
 </code></pre>
-      </section>
+      <p>Or sized down with <code>max-width</code></p>
+<pre><code class="css">
+@media (max-width: 600px){
+/* When the screen is 600px wide or less, do this... */
+selector {
+  property: value;
+}
+}
+</code></pre>
+      <p><a href="https://developer.mozilla.org/en-US/docs/Web/Progressive_web_apps/Responsive/Mobile_first" target="_blank">MDN: Mobile First</a></p>
+    </section>
+    
+    <!-- Breakpoints -->
+    <section>
+      <h3>Breakpoints</h3>
+      <p>There are common device breakpoints:</p>
+      <ul>
+        <li>Mobile, small screens: < 576px </li>
+        <li>Tablet: 768px - 991px</li>
+        <li>Desktop: 992px - 1199px</li>
+        <li>XL screens: 1200px - 1440px</li>
+        <li>XXL screens: 1920px</li>
+      </ul>
+      <p>But you can also define your own breakpoints to fit your layout!</p>
+    </section>
 
-      <!-- Box Sizing Demo  -->
-      <section>
-        <h3>Box Sizing</h3>
-        <h4>Demo</h4>
-      </section>
-      
-      <!-- Layout Tip #2: CSS Resets -->
-      <section>
-        <h3>Layout Tip #2</h3>
-        <p style='font-size: 36px'>Use CSS resets.</p>
-      </section>
+    <!-- Breakpoint range -->
+    <section>
+      <h3>Breakpoint Ranges</h3>
+      <p>We can set breakpoint minimum and maximum ranges:</p>
+<pre><code class="css">
+@media (min-width: 600px) and (max-width: 900px){
+/* When the screen is between 600px and 900px,
+do this... */
+}
+</code></pre>
+</section>
 
-      <!-- Browser Defaults -->
-      <section>
-        <h3>Browser Defaults</h3>
-        <ul>
-          <li style="margin-bottom: 1rem;">Most HTML elements have one or more default browser values, that is, they have some basic CSS that influences their appearance on a page</li>
-          <li>Some of these defaults can throw off our page layout; others may not be needed</li>
-        </ul>
-      </section>
-      
-      <!-- CSS Reset  -->
-      <section>
-        <h3>Resetting CSS</h3>
-        <ul>
-          <li style="margin-bottom: 1rem;">A "CSS Reset" stylesheet is one way to remove some of these defaults globally in our project</li>
-          <li>In this stylesheet, we are writing new CSS values to overwrite the browser defaults</li>
-        </ul>
-      </section>
-      
-      <!-- Popular CSS Resets -->
-      <section>
-        <h3>CSS Resets</h3>
-        <p style='font-size: 32px'>You can create your own reset rules or use any number of well-known reset stylesheets such as:</p>
-        <ul>
-          <li><a href="https://piccalil.li/blog/a-modern-css-reset/" target="_blank">Andy Bell's CSS Reset</a></li>
-          <li><a href="https://meyerweb.com/eric/tools/css/reset/" target="_blank">MeyerWeb CSS</a></li>
-          <li><a href="https://necolas.github.io/normalize.css/" target="_blank">Normalize.css</a></li>
-        </ul>
-      </section>
-      
-      <!-- Two ways to reset -->
-      <section>
-        <h3>Two Ways to Reset</h3>
-        <ol>
-          <li style="margin-bottom: 1rem;">Add a separate reset.css stylesheet to your project with the <code>link</code> tag in the <code>head</code> section of your HTML page
-          <ul>
-            <li>Make sure the link comes before the project's stylesheet link</li>
-          </ul></li>
-          <li>Include/Import the new CSS rules at the top of your project's stylesheet</li>
-        </ol>
-      </section>
+<!-- Screen Orientation -->
+<section>
+  <h3>Screen Orientation</h3>
+  <p>Media queries also work for screen orientation:</p>
+<pre><code class="css">
+@media (orientation: landscape){
+/* When the screen is rotated, do this... */
+}
+</code></pre>
+</section>
 
-      <!-- CSS Reset demo  -->
-      <section>
-        <h3>CSS Reset</h3>
-        <h4>Demo</h4>
-      </section>
+<!-- Testing Responsiveness with Dev Tools -->
+<section>
+  <h3>Testing Responsiveness with Chrome developer tools</h3>
+  <h4>Demo</h4>
+</section>
 
-      <!-- Home Practice -->
-      <section>
-        <h3>Home Practice</h3>
-        <ol>
-          <li>Continue refining your page markup</li>
-          <li>Continue styling with CSS properties we've covered and/or other properties you look up!</li>
-          <li>Add custom font(s) from Google Fonts</li>
-          <li>Optional: Share your layout sketch and markup with me:
-            <ul>
-              <li>Image link to your sketch</li>
-              <li>Your REPL project link</li>
-            </ul>
-          </li>
-        </ol>
-      </section>
+<!-- Testing Responsiveness with amiresponsive -->
+<section>
+  <h3>Testing Responsiveness with AmIResponsive Website</h3>
+  <p><a href="https://ui.dev/amiresponsive" target="_blank">Am I Responsive? | </a><a href="https://getflix-example.faraja.repl.co/" target="_blank">Getflix Example on Replit</a></p>
+</section>
 
-      <!-- Class 5 Preview -->
-      <section>
-        <h3>Class 5 - Agenda</h3>
-        <ul>
-          <li>CSS Box Model (contd)</li>
-          <li>CSS Combinators & Pseudo-Classes</li>
-          <li>Working with Images</li>
-          <li>Responsive Web Design
-            <ul>
-              <li>Media Queries</li>
-            </ul>
-          </li>
-        </ul>
-      </section>
+<!-- Testing Accessibility -->
+<section>
+  <h3>Testing Accessibility with the web accessibility evaluation tool (WAVE®)</h3>
+  <p>WAVE® is a suite of evaluation tools that helps authors make their web content more accessible to individuals with disabilities.</p>
+  <p><a href="https://wave.webaim.org/" target="_blank">WAVE tool | </a><a href="https://getflix-example.faraja.repl.co/" target="_blank">Getflix Example on Replit</a></p>
+</section>
 
-      <!-- Q&A -->
-      <section>
-        <h3>Q&A</h3>
-      </section>
+<!-- CSS Tips and Tricks -->
+<section>
+  <h3>CSS Tips & Tricks</h3>
+</section>
 
-      <!-- MUST USE SLIDE - Course Feedback Survey-->
-      <section>
-        <h3>Class Feedback</h3>
-        <p><a href="https://forms.gle/MzMndG5s52a2HiB77" target="_blank">https://forms.gle/MzMndG5s52a2HiB77</a></p>
-      </section>
+<!-- Hiding Things -->
+<section>
+  <h3>Hiding Things</h3><pre><code class="css">
+h2 {
+display: none;
+}
+/* Removes the element and its space from the page */
 
-      <!-- Thank You -->
-      <section>
-        <img src="./assets/imgs/gdi-logos/GDI-Logo_Peach.png" alt="GDI Logo" width="300px" class="noborder" />
-        <br>
-        <h3>Thank You!</h3>
-      </section>
-    </div> <!-- End of Slides container -->
 
-    <footer>
-      <!-- Update with Course Name -->
-      <div class="copyright">
-        <img src="./assets/imgs/gdi-logos/GDI-Logo_Peach.png" alt="GDI Logo" width="40px" class="noborder" />
-        <p>Web Design Essentials 1 - Class 4</p>
-        <a rel="license" href="http://creativecommons.org/licenses/by-nc/3.0/deed.en_US"><img
-            alt="Creative Commons License" style="border-width:0"
-            src="http://i.creativecommons.org/l/by-nc/3.0/80x15.png" /></a>
-      </div>
-    </footer>
-  </div> <!-- End of Reveal wrapper -->
+h3 {
+visibility: hidden;
+}
+/* Hides the element, and retains its original space */
+</code></pre>        
+</section>
 
-  <!-- REVEAL.JS Script Files - Do Not Edit -->
-  <script src="https://cdn.jsdelivr.net/npm/reveal.js@4.1.0/dist/reveal.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/reveal.js@4.1.0/plugin/highlight/highlight.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/highlightjs-badge@0.1.9/highlightjs-badge.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/jsPlumb/2.15.5/js/jsplumb.min.js"></script>
-  <script>
-    const srcUrlPrefix = "https://cdn.jsdelivr.net/npm/reveal.js@4.1.0/";
-    Reveal.initialize({
-      hash: true,
-      center: true,
-      slideNumber: true,
-      showNotes: false,
-      margin: 0.1,
-      preloadIframes: true,
-      plugins: [RevealHighlight],
-      pdfSeparateFragments: true
-    });
+<!-- Centering Things - HTML markup-->
+<section>
+  <h3>Centering Things</h3>
+  <p>To center horizontally and vertically: <br> Make sure the element to be centered is in a parent container</p><pre><code class="html"><div class="container">
+<div class="content">Center Me</div>
+</div>
+</code></pre>        
+  <p><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/position" target="_blank">MDN: Position Property</a></p>
+</section>
 
-    // add HighlightJS-badge (options are optional)
-    var options = {
-      copyIconContent: "📄",
-      checkIconContent: "✅"
-    };
-    window.highlightJsBadge(options);
+<!-- Centering Things - CSS v1 -->
+<section>
+  <h3>Centering Things</h3>
+  <p>Apply the CSS: <br>To center horizontally and vertically</p><pre><code class="css">
+.container {
+/* Give the parent container width, height 
+and the position properties */
+width: 200px;
+height: 200px;
+position: relative;
+}
 
-    if (window.location.search == "?print-pdf") {
-      var uncounted = document.querySelectorAll("[data-visibility='uncounted']");
-      uncounted.forEach(node => {
-        node.parentNode.classList.add("no-print")
-      })
-    }
-  </script>
+.content {
+/* Apply these rules to the content to be centered */
+position: absolute;
+top: 50%;
+left: 50%;
+transform: translate(-50%, -50%);
+}
+</code></pre>        
+</section>
+
+<!-- Centering Things - CSS v2 -->
+<section>
+  <h3>Centering Things</h3>
+  <p>Apply the CSS: <br>To center horizontally alone</p><pre><code class="css">
+.container {
+/* Parent container can have a specific width 
+or be full width. */
+width: 800px;
+height: 200px;
+}
+
+.content {
+/* The content to be centered must have a 
+width that's less than its parent container. */
+width: 300px;
+
+/* This CSS rule creates the centering effect */
+margin: 0 auto;
+}
+</code></pre>        
+</section>
+
+<!-- Smooth Scrolling -->
+<section>
+  <h3>Smooth Scrolling</h3><pre><code class="css">/* Apply to the html element selector 
+at the top of your CSS stylesheet. */
+
+html {
+scroll-behavior: smooth;
+
+scroll-padding: 50px; /* Optional */
+/* Adds spacing above the sections we're scrolling to */
+}</code></pre>
+</section>
+
+<!-- PRACTICE-->
+<section>
+  <h3>Let's Develop It!</h3>
+  <h3>Supported Independent Practice</h3>
+  <ul style="font-size: .8em; line-height: 1.75;">
+    <li>Use all that you have learned to refine your Getflix website!</li>
+      <ul>
+        <li>Revisit <a target="_blank" href="https://www.webdesignmuseum.org/timeline">the Web Design Museum</a> or <a target="_blank" href="https://archive.org/web/">the Wayback Machine</a> to view how Netflix.com has changed over the last month (March 4-25, 2023).</li>
+        <li>Do you agree or disagree with these changes, in terms of accessibility?</li>
+        <li>Style your signup.html page and link it to your index.html.</li>
+      </ul>
+    <li>Join an optional break-out room to share progress or to tackle bugs.</li>
+  </ul>
+</section>
+
+<!-- Code Review, Projects feedback -->
+<section>
+  <h3>Code Review</h3>
+  <h3>Project Feedback</h3>
+</section>
+
+<!-- Recap, Review -->
+<section>
+  <h3>Recap</h3>
+</section>
+
+<!-- Topics Covered -->
+<section>
+  <h3>Topics Covered</h3>
+  <ul>
+    <li>HTML Elements & CSS Properties</li>
+    <li>Semantic HTML & CSS</li>
+    <li>Hero Image Header Design</li>
+    <li>CSS Box Model</li>
+    <li>Using Documentation</li>
+    <li>Working with Dev Tools</li>
+    <li>Accessibility in Web Design</li>
+    <li>Responsive Web Design</li>
+  </ul>
+</section>
+
+<!-- Cultivating a WebDev Practice -->
+<section>
+  <h3>Cultivating a Web<br>Development Practice</h3>
+  <ul>
+    <li>Progressive Practice aka "Start Small"
+      <ul>
+        <li>How can I use what I currently know?</li>
+        <li>What do I want to do and what is my (current) knowledge gap?</li>
+        <li>Where can I find answers?</li>
+      </ul>
+    </li>
+    <li>Deliberate Practice</li>
+  </ul>
+</section>
+
+<section>
+  <h3>Cultivating a Web<br>Development Practice</h3>
+  <ul>
+    <li>Create checklists!
+      <ul>
+        <li>Accessibility basics</li>
+        <li>Visual Design principles</li>
+        <li>Project setup</li>
+      </ul>
+    </li>
+    <li>Start a collection of frequently-used code snippets</li>
+  </ul>
+</section>
+
+<section>
+  <h3>Cultivating a Web<br>Development Practice</h3>
+  <ul>
+    <li>80-20 Rule:
+      <ul>
+        <li>Spend time pre-planning a project</li>
+        <li>Organize your markup/code (indentations, etc)</li>
+      </ul>
+    </li>
+    <li>Read documentation
+      <ul>
+        <li>"Real" developers look things up!</li>
+      </ul>
+    </li>
+    <li>Review other developers' code</li>
+    <li>Be comfortable asking questions</li>
+    <li>Use Dev Tools--a lot!</li>
+  </ul>
+</section>
+
+<section>
+  <h3>Cultivating a Web<br>Development Practice</h3>
+  <img src="./assets/imgs/learning-to-code.jpeg" width="600px" alt="Graph of coding learning curve">
+  <p style="font-size: 14px;">Source: <a href="https://www.thinkful.com/blog/why-learning-to-code-is-so-damn-hard/" target="_blank">Why Learning to Code is So Damn Hard</a> (Thinkful.com)</p>
+</section>
+
+<section>
+  <h3>Cultivating a Web<br>Development Practice</h3>
+  <ul>
+    <li>Be prepared for the "dips"
+      <ul>
+        <li>It's okay not knowing everything</li>
+      </ul>
+    </li>
+    <li>Take breaks!</li>
+    <li>Welcome "happy coincidences"</li>
+    <li>Acknowledge your growth!</li>
+  </ul>
+</section>
+
+<!-- Course Conclusion -->
+<section>
+  <h3>You did it!</h3>
+  <img src="assets/imgs/stock-img/celebration_hannah-busing-unsplash.jpg"  alt="Happy woman jumping"/>
+  <p> 
+    <small>Photo credit:
+      <a href="https://unsplash.com/@hannahbusing" target="_blank">Hannah Busing</a>
+      <a href="http://creativecommons.org/licenses/by-sa/2.0/" target="_blank">cc</a>
+    </small>
+  </p>		
+</section>
+
+<!-- OPTIONAL: Show and Tell  -->
+<section>
+  <h2>Share What You've Built!</h2>
+</section>
+
+<!-- MUST USE/SHOW SLIDE -->
+<!-- Course Survey -->
+<section>
+  <h2>Give Us Your Feedback</h2>
+  <h3><a href="https://forms.gle/quMEbz2HdLZoAhU97" target="blank">Survey Link</a></h3>
+</section>
+
+<!-- Q&A -->
+<section>
+  <h2>Q&A</h2>
+</section>
+
+<!-- Resources -->
+<section>
+  <h2>External Resources</h2>
+  <p>Free Code Camp</p>
+  <p>Codecademy</p>
+  <p>CSS Tricks</p>
+  <p>Udemy</p>
+</section>	
+
+<!-- MUST USE/SHOW SLIDE -->
+<!-- GDI Promo - Upcoming Courses -->
+<section>
+  <h2>New GDI Courses</h2>
+  <h4>Visit our <a href="https://girldevelopit.com/events/#/list" target="_blank">Events Page</a>!</h4>
+</section>	
+
+<!-- Instructor and/or TA Contact -->
+<section>
+  <h2>Keep in Touch</h2>
+  <p>Faraja, Instructor: <a href="https://www.linkedin.com/in/faraja-thompson-m-ed-70885b8/" target="_blank">LinkedIn</a>, <a href="https://github.com/Faraja17/" target="_blank">Github</a></p>
+  <p>Marki, Teaching Assistant: <a href="https://www.linkedin.com/in/marki-lyons/" target="_blank">LinkedIn</a>, <a href="https://github.com/MsMLyons" target="_blank">Github</a></p>
+</section>
+
+<!-- Thank You -->
+<section>
+  <img src="assets/imgs/gdi-logos/gdi-logo_peach.png" alt="GDI Logo" width="300px" class="noborder"/>
+  <br>
+  <h2>Thank You!</h2>
+</section>      
+
+</div> <!-- End of Slides container -->
+  
+<footer>
+  <!-- Update with Course Name -->
+  <div class="copyright">
+    <img src="./assets/imgs/gdi-logos/GDI-Logo_Peach.png" alt="GDI Logo" width="40px" class="noborder" />
+    <p>Web Design Essentials 1 - Class 4</p>
+    <a rel="license" href="http://creativecommons.org/licenses/by-nc/3.0/deed.en_US"><img alt="Creative Commons License"
+        style="border-width:0" src="http://i.creativecommons.org/l/by-nc/3.0/80x15.png" /></a>
+  </div>
+</footer>
+</div> <!-- End of Reveal wrapper -->
+
+<!-- REVEAL.JS Script Files - Do Not Edit -->
+<script src="https://cdn.jsdelivr.net/npm/reveal.js@4.1.0/dist/reveal.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/reveal.js@4.1.0/plugin/highlight/highlight.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/highlightjs-badge@0.1.9/highlightjs-badge.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jsPlumb/2.15.5/js/jsplumb.min.js"></script>
+<script>
+const srcUrlPrefix = "https://cdn.jsdelivr.net/npm/reveal.js@4.1.0/";
+Reveal.initialize({
+ hash: true,
+ center: true,
+ slideNumber: true,
+ hashOneBasedIndex: true,
+ showNotes: false,
+ margin: 0.1,
+ preloadIframes: true,
+ plugins: [ RevealHighlight ],
+ pdfSeparateFragments: true
+});
+
+// add HighlightJS-badge (options are optional)
+var options = {
+   copyIconContent: "📄",
+   checkIconContent: "✅"
+};
+window.highlightJsBadge(options);
+
+if (window.location.search == "?print-pdf") {
+   var uncounted = document.querySelectorAll("[data-visibility='uncounted']");
+   uncounted.forEach(node => {
+       node.parentNode.classList.add("no-print")
+   })
+}
+</script>
 </body>
 </html>

@@ -85,19 +85,19 @@
 				<!-- Course Title -->
 				<section>
 					<h2>Intro to HTML & CSS</h2>
+          <p>Images sourced from pixabay.com</p>
 				</section>
 
 				<!-- Instructor Intro -->
 				<section>
 					<h2>Instructor Intro</h2>
-					<p>Name, title, company, bio, etc.</p>
+					<p>Faraja Thompson, Educator</p>
 				</section>
 
-				<!-- OPTIONAL: TAs Intro -->
+        <!-- Teaching Assistant Intro -->
 				<section>
-					<p style="font-size: 16px; font-style: italic;">(Optional Slide for TAs.<br>Comment out the slide section if there is no TA or not using.)</p>
-					<h2>TA Intro(s)</h2>
-					<p>Names, titles</p>
+					<h2>TA Intro</h2>
+					<p>Marki Lyons, Freelance Web Developer and Educator</p>
 				</section>
 
 				<!-- Student Intros / IceBreaker -->
@@ -113,6 +113,9 @@
           <ul style="line-height: 1.75;">
             <li>Name?</li>
             <li>Location?</li>
+            <li>What do you hope to get out of this class?</li>
+            <li>Do you have an interesting YouTube or TikTok habit?</li>
+
           </ul>
           </div>
         </section>
@@ -127,16 +130,6 @@
             <li>- Some experience (familiar with the basics)</li>
           </ol>
           </div>
-        </section>
-
-        <section>
-          <h3>Welcome!</h3>
-          <p>What do you hope to get out of this class?</p>
-        </section>
-
-        <section>
-          <h3>Welcome!</h3>
-          <p>Current favorite or binge TV show?</p>
         </section>
 
 				<!-- Course Agenda/Topics/Course Outline -->
@@ -159,12 +152,47 @@
           </div>
 				</section>
 
+        <section>
+					<h2>Steps</h2>
+          <div class = "left-align">
+            <ol style="line-height: 1.75;">
+              <li>Build a practice HTML web page.</li>
+              <li>Build a hero image web page styled with CSS.</li>
+              <li>Optional: Join break-out rooms to collaborate.</li>
+            </ol>
+          </div>
+          
+				</section>
+
 				<!-- Course Slides -->
 				<!-- Create as many new sections as needed -->
 
 				<!-- Slide Name -->
 				<section>
 					<h2>HTML</h2>
+				</section>
+
+        <!-- ANATOMY OF A WEBSITE -->
+        <section>
+					<h3>Anatomy of a website</h3>
+					<div style="font-size:.875em;">
+            <p>Content (Text + Media)</p>
+            <p style="background-color: rgb(236, 201, 201);">+ HTML(Structure + Semantics)</p>
+            <p>+ CSS (Presentation + Design)</p>
+            <p>+ JavaScript (Interactivity)</p>
+            <p>= Website</p>
+					</div>
+				</section>
+
+        <section>
+					<h3>A Very, Very Quick History of HTML</h3>
+					<ul style="font-size: .8em; line-height: 1.75;">
+						<li>Invented by Tim Berners-Lee</li>
+						<li>Created "hypertext" to share scientific papers</li>
+						<li>First web page built: August 6, 1991</li>
+						<li>Standardized by w3 Consortium</li>
+            <li>The first web page address was <a target="_blank" href="http://info.cern.ch/hypertext/WWW/TheProject.html">http://info.cern.ch/hypertext/WWW/TheProject.html.</a></li>
+					</ul>
 				</section>
 
 				<!-- WHAT IS HTML?-->
@@ -175,24 +203,14 @@
 				
 				<section>
 					<h3>What is HTML?</h3>
-					<p>HTML is the language that allows us to build websites.</p>
-					<img src = "assets/imgs/gdi-homepage-view.png" width="500px" alt="Screenshot of the Girl Develop It Homepage">
-				</section>
-
-				<section>
-					<h3>A Very, Very Quick History of HTML</h3>
-					<ul style="font-size: .8em; line-height: 1.75;">
-						<li>Invented by Tim Berners-Lee</li>
-						<li>Created "hypertext" to share scientific papers</li>
-						<li>First web page built: August 6, 1991</li>
-						<li>Standardized by w3 Consortium</li>
-					</ul>
+					<p>HTML is the language that allows us to build the structure of websites.</p>
+					<img src = "assets/imgs/construction-ga190beeb8_1920.jpg" width="500px" alt="Screenshot of construction house building shell">
 				</section>
 
 				<section>
 					<h3>What is HTML?</h3>
-					<p>HTML is composed of HTML tags that together provide a blueprint for a webpage.</p>
-					<img src = "assets/imgs/gdi-homepage-view.png" width="500px" alt="Screenshot of the Girl Develop It Homepage">
+					<p>HTML is composed of HTML elements, which are containers for placing content. Together, HTML elements provide the blueprint for a web page.</p>
+					<img src = "assets/imgs/blueprint-g6b416464d_1920.jpg"500px" alt="Screenshot of a blueprint">
 				</section>
 
 				<section>
@@ -201,39 +219,7 @@
 					<img src = "assets/imgs/gdi-homepage-html.png" alt="Screenshot of the Girl Develop It page source code">
 				</section>
 
-        <!-- ANATOMY OF A WEBSITE -->
-        <section>
-					<h3>Anatomy of a website</h3>
-					<div style="font-size:.875em;">
-            <p>Content (Text + Media)</p>
-            <p>+ HTML(Structure + Semantics)</p>
-            <p>+ CSS (Presentation + Design)</p>
-            <p>+ JavaScript (Interactivity)</p>
-            <p>= Website</p>
-					</div>
-				</section>
-
-				<section>
-					<h3>Anatomy of a website</h3>
-					<ul style="line-height: 1.75;">
-            <li>A paragraph is your <code>content</code>.</li>
-            <li>Putting your content into an HTML tag to make it look like a paragraph is <code>structure</code>.
-<pre><code class ="html">&lt;p&gt;A paragraph is your content&lt;/p&gt;
-</code></pre>
-            </li>
-          </ul>
-        </section>
-
-        <section>
-          <h3>Anatomy of a website</h3>
-					<ul>
-            <li>Making the font of your paragraph green and smaller is  <code>presentation</code>.
-					  <p style="font-size:30px; color:green;">This paragraph has been styled with CSS.</p>
-					  </li>
-					</ul>
-				</section>    
-        
-				<!-- TOOLS -->
+        <!-- TOOLS -->
 				<section>
 					<h3>Basic Tools</h3>
           <p>Browsers:</p>
@@ -264,12 +250,12 @@
           </ul>
         </section>
 
-				<!-- PRACTICE -->
+        				<!-- PRACTICE -->
 				<section>
 					<h2>Let's Develop It!</h2>
 				</section>
 
-				<!-- ONLINE EDITOR SETUP - WALKTHROUGH -->
+        	<!-- ONLINE EDITOR SETUP - WALKTHROUGH -->
 				<section>
 					<h3>Get Started: REPL.it</h3>
 					<ul style="font-size: .8em; line-height: 1.75;">
@@ -283,7 +269,7 @@
 					<h3>REPL.it Demo</h3>
 				</section>
 
-				<!-- HTML ELEMENTS -->
+        <!-- HTML ELEMENTS -->
 				<section>
 					<h3>Anatomy of an HTML element</h3>
 					<p>HTML pages are made up of elements.</p>
@@ -306,80 +292,34 @@
 <pre><code class ="html">&lt;p&gt;This is a sample paragraph.&lt;/p&gt;</code></pre>
 				</section>
 
-				<!-- HTML TAGS -->
+        <!-- HTML TAGS -->
 				<section>
 					<h3>Tag Breakdown</h3>
 					<img src="assets/imgs/html-tag-diagram.png" alt="Tag breakdown"><br>
 					<hr />
 					<p><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element" target="_blank">List of HTML Elements (MDN)</a></p>
 				</section>
-				
-        <!-- HTML DOCTYPE -->
-        <section>
-          <h3>Doctype</h3>
-          <p style="font-size: .8em;">The first thing on an HTML page is the doctype, which tells the browser which version of the markup language the page is using.</p>
-<pre><code class = "html"> &lt;!DOCTYPE html&gt; </code></pre>
-          <p><small>* The doctype is case-insensitive. <br><br>DOCtype, doctype, DocType and DoCtYpe are all valid.</small></p>
-        </section>
 
-        <!-- HTML TAG -->
+        <!-- SELF CLOSING TAGS -->
         <section>
-          <h3>HTML Tag</h3>
-          <p>After &lt;doctype&gt;, the page content must be contained between &lt;html&gt; tags.</p>
-<pre><code class = "html">&lt;!DOCTYPE html&gt;
-&lt;html&gt;
-
-&lt;/html&gt;
-</code></pre>
-        </section>
-
-        <!-- HEAD AND BODY TAGS -->
-        <section>
-          <h3>Head and Body Tags</h3>
-          <p class="left-align"><code>head</code>: Information about the page, such as its title.</p>
-  <pre><code class = "html">&lt;!DOCTYPE html&gt;
-  &lt;html&gt;
-   &lt;head&gt;
-    &lt;title&gt;The title of the page&lt;/title&gt;
-   &lt;/head&gt;
-  &lt;/html&gt;
-  </code></pre>
-        </section>
-
-        <!-- HEAD AND BODY TAGS -->
-        <section>
-          <h3>Head and Body Tags</h3>
-          <p class="left-align"><code>body</code>: The actual content of the page, what shows up in the browser window.</p>
-  <pre><code class = "html">&lt;!DOCTYPE html&gt;
-  &lt;html&gt;
-   &lt;head&gt;
-    &lt;title&gt;The title of the page&lt;/title&gt;
-   &lt;/head&gt;
-   &lt;body&gt;
-    The exciting content.
-   &lt;/body&gt;
-  &lt;/html&gt;
-  </code></pre>
-        </section>
-
-        <!-- META TAGS -->
-        <section>
-          <h3>Meta Tags</h3>
-          <p>It's best practice to include meta tags that tell the browser the <code>charset</code> and <code>viewport</code>.</p>
-<pre><code class = "html">&lt;!DOCTYPE html&gt;
-&lt;html&gt;
- &lt;head&gt;
-  &lt;meta charset="utf-8"/&gt;
-  &lt;meta name="viewport" content="width=device-width, initial-scale=1"/&gt;
-  &lt;title&gt;Title of the page &lt;/title&gt;
- &lt;/head&gt;
-&lt;/html&gt;
+          <h3>Self Closing Tags</h3>
+          These elements don't need a closing tag:<br>
+<pre><code class = "html">&lt;br&gt;
+&lt;hr&gt;
+&lt;img&gt;
+&lt;link&gt;
+&lt;input&gt;
 </code></pre>
         </section>
 
         <!-- NESTING -->
         <section>
-          <h3>Nesting &amp; Indentation</h3>
+          <h3><img style="width:15%; margin: 0;" src="assets/imgs/matryoshka-doll-g469658faf_1920-removebg-preview.png" alt="image of matryoshka dolls"> Nesting &amp; Indentation</h3>
+          <img src="assets/imgs/nesting-dolls-gae2a50120_1920.png" alt="image of nesting dolls"><br>
+        </section>
+        
+        <section>
+          <h3><img style="width:15%; margin: 0;" src="assets/imgs/flipped nesting dolls.png" alt="image of matryoshka dolls">Nesting &amp; Indentation</h3>
           <p style="font-size:.8em;">Elements "nest" inside the tag that contains them.</p>
           <p style="font-size:.8em;">What elements are nested here?</p>
 <pre><code class="html">&lt;html&gt;
@@ -394,45 +334,61 @@
           <p style="font-size:.65em;">Notice: Whichever element opens first, closes last.</p>
         </section>
 
-        <!-- ELEMENTS: HEADINGS -->
-        <section>
-          <h3>Headings</h3>
-          <img src="assets/imgs/html-headings.png" alt="Example of headings" />
+        <!--PRACTICE: HEADINGS, PARAGRAPHS, LINE BREAKS, HORIZONTAL RULES, ORDERED/UNORDERED LISTS, ATTRIBUTES, FORMATTING, IMAGES -->
+        <section >
+          <h3>Let's Develop It!</h3>
+          <p class="left-align">Develop a basic practice page about a topic of choice. Include the following HTML elements:</p>
+          <ol style="font-size: .8em; line-height: 1.75;">
+            <li>a heading</li>
+            <li>a paragraph</li>
+            <li> a line break or horizontal rule</li>
+            <li>an ordered or unordered list</li>
+            <li>an image<a target= "blank" href="https://pixabay.com/images/search/transparent%20background/"> Pixabay Images</a></li>
+            <li>Experiment with formatting and adding attributes.</li>
+          </ol>
+          <p style="font-size:30px;">*IMPORTANT: A page can contain only ONE h1 tag.</p>
         </section>
 
-        <section>
-          <h3>Element: Heading</h3>
-          <div>
-            <div class="flex-container">
-              <div class="flex-item">
+<!-- ELEMENTS: HEADINGS -->
+<section>
+  <h3>Headings</h3>
+  <img src="assets/imgs/html-headings.png" alt="Example of headings" />
+</section>
+
+<section>
+  <h3>Element: Heading</h3>
+  <div>
+    <div class="flex-container">
+      <div class="flex-item">
 <pre><code class="html">&lt;h1&gt;Heading 1&lt;/h1&gt;
 &lt;h2&gt;Heading 2&lt;/h2&gt;
 &lt;h3&gt;Heading 3&lt;/h3&gt;
 &lt;h4&gt;Heading 4&lt;/h4&gt;
 &lt;h5&gt;Heading 5&lt;/h5&gt;
 &lt;h6&gt;Heading 6&lt;/h6&gt;</code></pre>
-            </div>
-            <div class="flex-item">
-              <h1 style = "font-size: 120%">Heading 1</h1>
-              <h2 style = "font-size: 110%">Heading 2</h2>
-              <h3 style = "font-size: 105%">Heading 3</h3>
-              <h4 style = "font-size: 95%">Heading 4</h4>
-              <h5 style = "font-size: 85%">Heading 5</h5>
-              <h6 style = "font-size: 75%">Heading 6</h6>
-            </div>
-          </div>
-			  <p style="font-size:30px;">* Heading number indicates hierarchy, not size.<br>Think of outlines from high school papers.</p>
-        </section>
+    </div>
+    <div class="flex-item">
+      <h1 style = "font-size: 120%">Heading 1</h1>
+      <h2 style = "font-size: 110%">Heading 2</h2>
+      <h3 style = "font-size: 105%">Heading 3</h3>
+      <h4 style = "font-size: 95%">Heading 4</h4>
+      <h5 style = "font-size: 85%">Heading 5</h5>
+      <h6 style = "font-size: 75%">Heading 6</h6>
+    </div>
+  </div>
+<p style="font-size:30px;">* Heading number indicates hierarchy, not size.<br>Think of outlines from high school papers.</p>
+</section>
 
-        <!--PRACTICE: HEADINGS-->
-        <section >
-          <h3>Let's Develop It!</h3>
-          <p class="left-align">A basic page about your favorite television show.</p>
-          <ol style="font-size: .8em; line-height: 1.75;">
-            <li>Include an h1 header.</li>
-            <li>Add additional headings for potential sections of your page.</li>
-          </ol>
-          <p style="font-size:30px;">*IMPORTANT: A page can contain only ONE h1 tag.</p>
+
+        <section>
+					<h3>Anatomy of a website</h3>
+					<ul style="line-height: 1.75;">
+            <li>A paragraph is your <code>content</code>.</li>
+            <li>Putting your content into an HTML tag to make it look like a paragraph is <code>structure</code>.
+<pre><code class ="html">&lt;p&gt;A paragraph is your content&lt;/p&gt;
+</code></pre>
+            </li>
+          </ul>
         </section>
 
         <!-- ELEMENTS: PARAGRAPHS -->
@@ -469,38 +425,24 @@
           </div>
         </section>
 
-        <!-- ELEMENTS: Em and Strong -->
         <section>
-          <h3>Formatted Text</h3>
-          <div>
-<pre><code class="html xml">&lt;p&gt;This paragraph has &lt;em&gt;emphasized&lt;/em&gt; text 
-and &lt;strong&gt;important&lt;/strong&gt; text.&lt;/p&gt;
-</code></pre>
-          <p>This paragraph has <em>emphasized</em> text and <strong>important</strong> text.</p>
-        </div>
-        <p style="font-size:24px;">* <code>em</code> and <code>strong</code> are meant to indicate meaning through style. If you want to have italicized for appearance and not to communicate meaning, you should use CSS.</p>
-        </section>
-  
-        <!--PRACTICE - PARAGRAPH-->
-        <section >
-          <h3>Let's Develop It!</h3>
-          <p>Add on to the page for your favorite television show.</p>
-          <ol style="font-size: .8em; line-height: 1.75;">
-            <li>Text! You can either copy and paste from a Wikipedia article, or generate text from an Ipsum like <a href="https://hipsum.co/">Hipster Ipsum</a>.</li>
-            <li>Add paragraph tags to break up your text into at least 2 paragraphs.</li>
-            <li>Add formatting tags to emphasize "important" words.</li>
-          </ol>
-        </section>
-  
+          <h3>Element: Paragraph</h3>
+					<ul>
+            <li>Making the font of your paragraph green and smaller is  <code>presentation</code>.
+					  <p style="font-size:30px; color:green;">This paragraph has been styled with CSS.</p>
+					  </li>
+					</ul>
+				</section>    
+
         <!-- ELEMENTS: Line Break -->
         <section>
           <h3>Element: Line Break</h3>
           <div class="flex-container">
             <div class="flex-item">
 <pre><code class="html xml">&lt;p&gt;
-Imagine there&apos;s no Heaven&lt;br/&gt;It's
-easy if you try &lt;br/&gt;No hell below
-us &lt;br/&gt;Above us only sky
+Imagine there&apos;s no Heaven&lt;br&gt;It's
+easy if you try &lt;br&gt;No hell below
+us &lt;br&gt;Above us only sky
 &lt;/p&gt;
 </code></pre>
             </div>
@@ -510,24 +452,6 @@ us &lt;br/&gt;Above us only sky
           </div>
         </section>
 
-        <!-- SELF CLOSING TAGS -->
-        <section>
-          <h3>Self Closing Tags</h3>
-          These elements don't need a closing tag:<br>
-<pre><code class = "html">&lt;br/&gt;
-&lt;hr/&gt;
-&lt;img/&gt;
-&lt;link/&gt;
-&lt;input/&gt;
-</code></pre>
-        </section>
-
-        <!--PRACTICE - ADD A BREAK OR HORIZONTAL RULE -->
-        <section >
-          <h3>Let's Develop It!</h3>
-          <p>Add a break tag or a horizontal rule to your code.</p>
-        </section>
-  
         <!-- ELEMENTS: LISTS -->
         <section>
           <h3>Lists</h3>
@@ -571,38 +495,24 @@ us &lt;br/&gt;Above us only sky
           </div>
         </section>
 
-        <!-- PRACTICE - ADD A LIST -->
-        <section >
-          <h3>Let's Develop It!</h3>
-          <ol style="font-size: .8em; line-height: 1.75;">
-            <li>Add an unordered list of characters from your favorite show to your code.</li>
-            <li>Add an ordered list of seasons or episodes to your code.</li>
-            <li>EXTRA CHALLENGE:
-            <ul>
-              <li>Nest an ordered list in an unordered list</li>
-            </ul>
-            </li>
-          </ol>
-        </section>
-
-        <!-- ATTRIBUTES -->
+        <!-- ELEMENTS: Em and Strong -->
         <section>
-          <h3>Element Details: Attributes</h3>
-          <ul style="font-size: .8em; line-height: 1.75;">
-            <li>Attributes describe additional characteristics of an HTML element</li>
-            <li>An attribute has 2 parts: Name &amp; Value.</li>
-          </ul>
-          <br>
-<pre><code class ="html">&lt;tagname name="value"&gt;content&lt;/tagname&gt;</code></pre>
-          <p style="font-size:30px;">*Values should be contained inside quotation marks.</p>
-        </section>
+          <h3>Formatted Text</h3>
+          <div>
+<pre><code class="html xml">&lt;p&gt;This paragraph has &lt;em&gt;emphasized&lt;/em&gt; text 
+and &lt;strong&gt;important&lt;/strong&gt; text.&lt;/p&gt;
+</code></pre>
+          <p>This paragraph has <em>emphasized</em> text and <strong>important</strong> text.</p>
+        </div>
+        <p style="font-size:24px;">* <code>em</code> and <code>strong</code> are meant to indicate meaning through style. If you want to have italicized for appearance and not to communicate meaning, you should use CSS.</p>
+        </section>       
 
         <!-- IMAGES -->
         <section>
           <h3>Images</h3>
           <p>To make an image, you need 3 parts:</p>
           <ul style="font-size: .8em; line-height: 1.75;">
-            <li>An image tag: <code>&lt;img /&gt;</code></li>
+            <li>An image tag: <code>&lt;img&gt;</code></li>
             <li>A <code>src</code> attribute: the location and name of the image file</li>
             <li>An <code>alt</code> attribute: a brief description of the image content</li>
           </ul>
@@ -613,7 +523,7 @@ us &lt;br/&gt;Above us only sky
           <div class="flex-container">
             <div class="flex-item">
 <pre><code class="html">&lt;img src="img/example-gdi-logo.png"
-alt="Girl Develop It logo"/&gt;
+alt="Girl Develop It logo"&gt;
 </code></pre>
             </div>
             <div class="flex-item">
@@ -624,7 +534,7 @@ alt="Girl Develop It logo"/&gt;
           <div class="flex-container">
             <div class="flex-item">
 <pre><code class="html">&lt;img src="img/blinkylights.gif"
-alt=""/&gt;
+alt=""&gt;
 </code></pre>
             </div>
             <div class="flex-item">
@@ -633,17 +543,165 @@ alt=""/&gt;
           </div>
         </section>
 
-        <!-- PRACTICE - ADD AN IMAGE -->
-        <section >
+         <!-- ATTRIBUTES -->
+         <section>
+          <h3>Element Details: Attributes</h3>
+          <ul style="font-size: .8em; line-height: 1.75;">
+            <li>Attributes describe additional characteristics of an HTML element</li>
+            <li>An attribute has 2 parts: Name &amp; Value.</li>
+          </ul>
+          <br>
+<pre><code class ="html">&lt;tagname name="value"&gt;content&lt;/tagname&gt;</code></pre>
+          <p style="font-size:30px;">*Values should be contained inside quotation marks.</p>
+        </section>
+        
+
+        <!-- The Boiler Plate -->
+        <section>
+          <h3>The Boiler Plate</h3>
+          <p>This is a reusable template for creating websites with cross-browser compatibility. </p>
+<pre><code class = "html">&lt;!DOCTYPE html&gt;
+&lt;html lang="en"&gt;
+ &lt;head&gt;
+  &lt;meta charset="UTF-8"&gt;
+  &lt;meta http-equiv="X-UA-Compatible" content="IE=edge"&gt;
+  &lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;
+  &lt;title&gt;Title of the page &lt;/title&gt;
+  &lt;link href="style.css" rel="stylesheet" type="text/css" /&gt;
+ &lt;/head&gt;
+ &lt;body&gt;
+ &lt;/body&gt;
+&lt;/html&gt;
+</code></pre>
+<a target="_blank" href="https://www.freecodecamp.org/news/html-starter-template-a-basic-html5-boilerplate-for-index-html/">freeCodeCamp: HTML5 Boilerplate</a>
+
+        </section>
+
+         <!-- PRACTICE - ADD THE BOILERPLATE -->
+         <section >
           <h3>Let's Develop It!</h3>
           <ol style="font-size: .8em; line-height: 1.75;">
-            <li>Using the img tag, add an image of your TV show to your page.
-              <ul>
-                <li>Tip: Do an online search; copy an image link from the web.</li>
-              </ul>
-            </li>
-            <li>Include an ALT attribute in the img tag.</li>
+            <li>Copy the boilerplate from the previous slide and paste it at the top of your web page.</li>
+            <li>Enter a title to display in the tab.</li>
+            <li>Find the body tags.</li>
+            <li>Copy and paste all of your content within the body tags.</li>
           </ol>
+        </section>
+
+        <!-- HTML DOCTYPE -->
+        <section>
+          <h3>Doctype</h3>
+          <p style="font-size: .8em;">The first thing on an HTML page is the doctype, which tells the browser which version of the markup language the page is using.</p>
+<pre><code class = "html"> &lt;!DOCTYPE html&gt; </code></pre>
+          <p><small>* The doctype is case-insensitive. <br><br>DOCtype, doctype, DocType and DoCtYpe are all valid.</small></p>
+        </section>
+
+        <!-- HTML TAG -->
+        <section>
+          <h3>HTML Tag</h3>
+          <p>After &lt;doctype&gt;, the page content must be contained between &lt;html&gt; tags.</p>
+<pre><code class = "html">&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+
+&lt;/html&gt;
+</code></pre>
+        </section>
+
+        <!-- HEAD AND TAGS -->
+        <section>
+          <h3>Head Tag</h3>
+          <p class="left-align"><code>head</code>: Information about the page, such as its title.</p>
+  <pre><code class = "html">&lt;!DOCTYPE html&gt;
+  &lt;html&gt;
+   &lt;head&gt;
+    &lt;title&gt;The title of the page&lt;/title&gt;
+   &lt;/head&gt;
+  &lt;/html&gt;
+  </code></pre>
+        </section>
+
+        <!-- META TAGS -->
+        <section>
+          <h3>Meta Tags</h3>
+          <p>Search engines, social media platforms, and web services use this metadata to understand the content of your website and to determine how to present it to users.</p>
+<pre><code class = "html">&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+ &lt;head&gt;
+  &lt;meta charset="utf-8"/&gt;
+  &lt;meta name="viewport" content="width=device-width, initial-scale=1"/&gt;
+  &lt;title&gt;Title of the page &lt;/title&gt;
+ &lt;/head&gt;
+&lt;/html&gt;
+</code></pre>
+        </section>
+
+        <!-- BODY TAG -->
+        <section>
+          <h3>Body Tag</h3>
+          <p class="left-align"><code>body</code>: The actual content of the page, what shows up in the browser window.</p>
+  <pre><code class = "html">&lt;!DOCTYPE html&gt;
+  &lt;html&gt;
+   &lt;head&gt;
+    &lt;title&gt;The title of the page&lt;/title&gt;
+   &lt;/head&gt;
+   &lt;body&gt;
+    The exciting content.
+   &lt;/body&gt;
+  &lt;/html&gt;
+  </code></pre>
+        </section>
+
+         <!-- HTML Part 2: The Hero Image Web Page -->
+         <section>
+          <h3>HTML Part 2: The Hero Image Web Page</h3>
+          <p style="font-size:.8em;">The purpose of placing a hero image within the header element is to capture the visitor's attention and to call them to action.</p>
+          <a target="_blank" href="https://uxplanet.org/how-to-design-a-hero-image-website-in-2022-best-practices-and-examples-256b7e8c31fb">UX Planet: Best Practices and Examples</a>
+          <br>
+          <a target="_blank" href="https://uxplanet.org/hero-image-website-design-21-best-examples-templates-for-your-inspiration-56cd3d79c688">UX Planet: More examples</a>
+        </section>
+
+           <!-- PRACTICE - ADD COMMENTS AND LINKS-->
+           <section >
+            <h3>Let's Develop It!</h3>
+            <ol style="font-size: .8em; line-height: 1.75;">
+              <li>Open a new repl. <a target="_blank" href="https://faraja17.github.io/gdi-html-css/intro-html-css/index.html#/49">Boiler Plate | </a>
+                <a target="_blank" href="https://replit.com/@faraja/GDI-HTML-and-CSS-Hero-Image-HTML-Template#index.html">Optional Template</a>  </li>
+              <li>Develop the following sections for your hero image web page using HTML elements:
+                  <ul>
+                    <li>navigation bar</li>
+                    <li>header</li>
+                    <li>footer</li>
+                  </ul>
+              </li>
+              <li>Add comments to organize your sections.</li>
+              <li>Add links to direct users to other websites.</li>
+              
+            </ol>
+          </section>
+  
+
+        <!--COMMENTS 1-->
+        <section>
+          <h3>Comments</h3>
+          <p style="font-size: .8em;">You can add comments to your code that will not be displayed by the browser, but only visible when viewing the code.</p>
+<pre><code class="html">&lt;!-- Comment goes here --&gt;
+</code></pre>
+        </section>
+
+        <section>
+        <h3>Comments</h3>
+        <p style="font-size: .8em">Comments can be used to organize your code into sections so you (or someone else) can easily understand your code. It can also be used to 'comment out' large chunks of code to hide it from the browser.</p>
+<pre><code class="html">&lt;!-- Beginning of header --&gt;
+&lt;div id="header"&gt;Header Content&lt;/div&gt;
+&lt;!-- End of header --&gt;
+
+&lt;!--
+&lt;ol&gt;
+&lt;li&gt;List Item&lt;/li&gt;
+&lt;li&gt;Another List Item&lt;/li&gt;
+&lt;/ol>
+-->
+</code></pre>
         </section>
 
         <!-- LINKS-->
@@ -672,52 +730,35 @@ alt=""/&gt;
           </p>
         </section>
 
-        <!-- PRACTICE: LINKS-->
-        <section>
-          <h3>Let's Develop It!</h3>
-            <p>Add 2 or more links about your show that open up in a new tab.</p> 
-          <br>
-        </section>
-
-        <!--COMMENTS 1-->
-        <section>
-          <h3>Comments</h3>
-          <p style="font-size: .8em;">You can add comments to your code that will not be displayed by the browser, but only visible when viewing the code.</p>
-<pre><code class="html">&lt;!-- Comment goes here --&gt;
-</code></pre>
-        </section>
-
-        <section>
-        <h3>Comments</h3>
-        <p style="font-size: .8em">Comments can be used to organize your code into sections so you (or someone else) can easily understand your code. It can also be used to 'comment out' large chunks of code to hide it from the browser.</p>
-<pre><code class="html">&lt;!-- Beginning of header --&gt;
-&lt;div id="header"&gt;Header Content&lt;/div&gt;
-&lt;!-- End of header --&gt;
-
-&lt;!--
-&lt;ol&gt;
-&lt;li&gt;List Item&lt;/li&gt;
-&lt;li&gt;Another List Item&lt;/li&gt;
-&lt;/ol>
--->
-</code></pre>
-        </section>
-
-        <!-- BREAK -->
-        <section>
-          <h2>Break - 10 Minutes</h2>
-        </section>
-
         <!-- CSS -->
         <section>
           <h2>CSS</h2>
         </section>
+
+
+        <!-- ANATOMY OF A WEBSITE -->
+        <section>
+					<h3>Anatomy of a website</h3>
+					<div style="font-size:.875em;">
+            <p>Content (Text + Media)</p>
+            <p>+ HTML(Structure + Semantics)</p>
+            <p style="background-color: rgb(236, 201, 201);">+ CSS (Presentation + Design)</p>
+            <p>+ JavaScript (Interactivity)</p>
+            <p>= Website</p>
+					</div>
+				</section>
 
         <section>
           <h3>CSS: What is it?</h3>
           <p><strong>CSS</strong> = <strong>C</strong>ascading <strong>S</strong>tyle <strong>S</strong>heets</p>
           <p>CSS is a "style sheet language" that lets you style the elements on your page.</p>
           <p>CSS is works in conjunction with HTML, but is not HTML itself.</p>
+        </section>
+
+        <section>
+          <h3>CSS: What can it do?</h3>
+          <p>Adds all the bells and whistles!</p>
+          <img src="assets/imgs/kitchen-gdc3113a61_1920.jpg " alt="image of kitchen" height="400" />
         </section>
   
         <section>
@@ -757,7 +798,28 @@ alt=""/&gt;
           <p class="green">3 Ways:</p>
           <p>Inline</p>
           <p>Embedded</p>
-          <p>External</p>
+          <p style="background-color: rgb(236, 201, 201);">External</p>
+        </section>
+
+        <!-- PRACTICE STYLING THE HERO IMAGE WEB PAGE-->
+        <section>
+          <h3>Let's Develop It!</h3>
+          <ol style="font-size: .8em; line-height: 1.75;">
+            <li>Open the CSS file of your hero web page. <a target="_blank" href="https://replit.com/@faraja/GDI-HTML-and-CSS-Hero-Image-CSS-Template#style.css">Optional Template</a></li>
+            <li>Style the following sections for your hero image web page using CSS properties:
+                <ul>
+                  <li>navigation bar</li>
+                  <li>header</li>
+                  <li>footer</li>
+                </ul>
+            </li>
+            <li>Add a logo image to the nav bar and a hero image to the header. <a target="_blank" href="https://pixabay.com/images/search/transparent%20background/"> Pixabay Images</a></li>
+            <li>Change justification of text and images.</li>
+            <li>Experiment with font and background colors.</li>
+            <li>Experiment with different font families and font sizes.</li>
+            <li>Add links to direct users to other websites.</li>
+            
+          </ol>
         </section>
 
         <!-- Inline -->
@@ -863,14 +925,21 @@ property: value;
           <p><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/Reference" target="_blank">All standard CSS properties (MDN)</a></p>
         </section>
 
-        <!-- COLOR -->
+        <!-- FONT FAMILY-->
         <section>
-          <h3>Property: color</h3>
-          <p>The <code>color</code> property changes the color of the text.</p>
+          <h3>Property: font-family</h3>
+          <p>The font-family property defines which font is used.</p>
 <pre><code class = "css">p {
-  color: red;
+  font-family: "Times New Roman"; /* Specific font name */
+  /* or */
+  font-family: serif; /* Generic name */
+  /* or */
+  font-family: "Arial", sans-serif; /* Comma-separated list */
 }
 </code></pre>
+          <p style="font-size: 28px;">*When listing multiple fonts, always list a generic name last.</p>
+          <p><a href="https://www.w3schools.com/cssref/css_websafe_fonts.asp" target="_blank">Web Safe Fonts (W3 School)</a></p>
+          <p><a href="https://fonts.google.com/" target="_blank">Google Fonts</a></p>
         </section>
 
         <!-- BACKGROUND COLOR -->
@@ -905,15 +974,8 @@ property: value;
           <hr />
           <p><a href="http://www.w3schools.com/colors/colors_picker.asp" target="_blank">W3Schools Color Picker</a></p>
           <p><a href="http://www.colors.commutercreative.com/grid/" target="_blank">CSS Color Names</a></p>
-        </section>
-
-        <!-- PRACTICE-->
-        <section>
-          <h3>Let's Develop It!</h3>
-          <p>Colors!</p>
-          <ol style="font-size: .8em; line-height: 1.75;">
-            <li>Change the background color of your site. Use a color name, hexcode or RGB value</li>
-            <li>Change the font color of one or all of your heading.</li>
+          <h5>Tip: A quick way to pick colors is to start with either white (#FFFFFF) or black (#000000). The code editor will show a small sample square. 
+            <br>Click the square to reveal and select other color choices.</h5>
         </section>
 
         <!-- FONT SIZE -->
@@ -940,41 +1002,31 @@ property: value;
           <p><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/font-size" target="_blank">font-size property (MDN)</a></p>
         </section>
 
-        <!-- FONT FAMILY-->
+        <!-- COLOR -->
         <section>
-          <h3>Property: font-family</h3>
-          <p>The font-family property defines which font is used.</p>
+          <h3>Property: color</h3>
+          <p>The <code>color</code> property changes the color of the text.</p>
 <pre><code class = "css">p {
-  font-family: "Times New Roman"; /* Specific font name */
-  /* or */
-  font-family: serif; /* Generic name */
-  /* or */
-  font-family: "Arial", sans-serif; /* Comma-separated list */
+  color: red;
 }
 </code></pre>
-          <p style="font-size: 28px;">*When listing multiple fonts, always list a generic name last.</p>
-          <p><a href="https://www.w3schools.com/cssref/css_websafe_fonts.asp" target="_blank">Web Safe Fonts (W3 School)</a></p>
-          <p><a href="https://fonts.google.com/" target="_blank">Google Fonts</a></p>
         </section>
 
         <!-- PRACTICE-->
         <section>
           <h3>Let's Develop It!</h3>
-          <p>Typography</p>
-          <ol style="font-size: .8em; line-height: 1.75;">
-            <li>Change the font-size of your h1 element. Use the px unit.</li>
-            <li>Change the font-size of other elements on your page (headings or paragraphs).</li>
-            <li>Give your headings and/or paragraphs a different font type.</li>
-          </ol>
-        </section>
-
-        <!-- PRACTICE-->
-        <section>
-          <h3>Let's Develop It!: Extra Tips</h3>
+          <h3>Next Steps</h3>
           <ul style="font-size: .8em; line-height: 1.75;">
-            <li>Centering your entire page</li>
-            <li>(Re)Sizing your images</li>
-            <li>Checking for responsiveness (Using Dev Tools)</li>
+            <li>Revisit the <a target="_blank" href="https://uxplanet.org/how-to-design-a-hero-image-website-in-2022-best-practices-and-examples-256b7e8c31fb"> hero image web page examples </a>for inspiration.</li>
+            <li>Add more <a target="_blank" href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element">HTML elements</a> to your web page.</li>
+            <li>Experiment with different<a target="_blank" href="https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Properties_Reference"> CSS properties.</a></li>
+            <li>Join a break-out room to share progress or to tackle bugs.</li>
+            <li>Make plans for <a target="_blank" href="https://girldevelopit.com/events/details/girl-develop-it-frontend-classes-presents-web-design-essentials-1-four-class-cohort/">further development</a>:</li>
+              <ul>
+                <li>Learn about bookmark links for the nav bar.</li>
+                <li>Learn about the box model for spacing and positioning.</li>
+                <li>Learn about making your web page responsive and accessible.</li>
+              </ul>
           </ul>
         </section>
 
@@ -999,7 +1051,7 @@ property: value;
 				<!-- Course Survey -->
 				<section>
 					<h2>Give Us Your Feedback</h2>
-					<h3><a href="">Survey Link</a></h3>
+					<h3><a href="https://forms.gle/cX2LNm6BPDhNKWxNA" target="blank">Survey Link</a></h3>
 				</section>
 				
 				<!-- Q&A -->
@@ -1020,16 +1072,14 @@ property: value;
 				<!-- GDI Promo - Upcoming Courses -->
 				<section>
 					<h2>New GDI Courses</h2>
-					<h4>Course Name</h4>
-					<h4>Course Name</h4>
-					<h4>Course Name</h4>
+          <h4>Visit our <a href="https://girldevelopit.com/events/#/list" target="_blank">Events Page</a>!</h4>
 				</section>	
 				
 				<!-- Instructor and/or TA Contact -->
 				<section>
 					<h2>Keep in Touch</h2>
-					<p>Instructor: <a href="" target="_blank">LinkedIn</a>, <a href="">Github</a></p>
-          <p>TAs: <a href="" target="_blank">LinkedIn</a>, <a href="">Github</a></p>
+					<p>Faraja, Instructor: <a href="https://www.linkedin.com/in/faraja-thompson-m-ed-70885b8/" target="_blank">LinkedIn</a>, <a href="https://github.com/Faraja17/" target="_blank">Github</a></p>
+          <p>Marki, Teaching Assistant: <a href="https://www.linkedin.com/in/marki-lyons/" target="_blank">LinkedIn</a>, <a href="https://github.com/MsMLyons" target="_blank">Github</a></p>
 				</section>
 
 				<!-- Thank You -->
@@ -1061,6 +1111,7 @@ property: value;
 				hash: true,
 				center: true,
 				slideNumber: true,
+        hashOneBasedIndex: true,
 				showNotes: false,
 				margin: 0.1,
 				preloadIframes: true,
